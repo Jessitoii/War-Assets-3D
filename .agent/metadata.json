@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "index": [
+    "gemini_md",
+    "context_md",
+    "rules",
+    "workflows",
+    "docs",
+    "skills"
+  ]
+}

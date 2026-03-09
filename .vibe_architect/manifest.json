@@ -1,0 +1,1900 @@
+{
+  "version": "1.0.0",
+  "project_name": "New Project",
+  "status": "COMPLETED",
+  "user_in_the_loop": true,
+  "auto_accept": false,
+  "product_scope": {
+    "features": [
+      "Splash screen with animated logo",
+      "Onboarding flow introducing app capabilities",
+      "Home dashboard with quick‑access cards for featured assets",
+      "Category browsing (Air, Land, Sea, Missile, Drone)",
+      "Paginated asset list with thumbnail previews",
+      "Asset detail view with high‑resolution images and specs",
+      "Interactive 3D model viewer using React‑Three‑Fiber (rotate, zoom, pan)",
+      "Technical specifications screen with sortable tables and charts",
+      "Side‑by‑side comparison of up to three assets",
+      "Advanced search & filter panel (range, speed, generation, country, etc.)",
+      "Favorites / saved assets collection synced locally",
+      "Dark / Light mode with premium iOS‑style UI",
+      "Offline‑ready asset database (bundled JSON + cached 3D models)",
+      "Settings screen for theme, data sync, and AR toggle"
+    ],
+    "tech_stack": {
+      "frontend": "Expo React Native (TypeScript) + React Navigation + React‑Three‑Fiber (Three.js) + Reanimated 2 + Zustand (state management)",
+      "backend": "Optional Node.js/Express REST API (JSON) or static CDN hosting for asset data and GLB models",
+      "database": "SQLite (via expo‑sqlite) for local caching of asset metadata and favorites; remote JSON endpoint for updates"
+    },
+    "constraints": [
+      "Must run smoothly on iOS devices (iPhone 12+ baseline) and meet Apple App Store performance guidelines",
+      "3D models limited to GLB/GLTF format, max file size ~5 MB per model for mobile bandwidth",
+      "No proprietary or copyrighted military data; use publicly available specifications only",
+      "All UI components must follow Apple Human Interface Guidelines (glassmorphism/minimal military aesthetic)",
+      "Offline mode must not require network after initial asset bundle download",
+      "AR mode optional and must gracefully degrade on devices without ARKit support"
+    ],
+    "high_level_goals": [
+      "Deliver a premium‑quality, iOS‑styled encyclopedia of modern military assets",
+      "Enable users to explore detailed specifications and interact with high‑fidelity 3D models",
+      "Provide powerful comparison tools and advanced filtering to aid analysis",
+      "Maintain a clean, modular codebase that is easy to extend with new assets or features",
+      "Ensure smooth performance and responsive gestures on mobile hardware"
+    ]
+  },
+  "ui_map": {
+    "screens": [
+      {
+        "id": "e794b35d-884d-40d4-9dad-51c5edd7fec2",
+        "name": "SplashScreen",
+        "components": [
+          {
+            "id": "3544b7fc-fa30-467b-9860-ea0b9619ff92",
+            "name": "AnimatedLogo",
+            "description": "Full‑screen SVG logo that fades‑in, scales, and rotates on app launch.",
+            "logic": "When animation ends, check 'firstLaunch' flag → if true navigate to OnboardingScreen, else navigate to HomeScreen.",
+            "data_source_id": "DS_APP_STATE"
+          }
+        ],
+        "user_journey": "App launch → SplashScreen shows animated logo → auto‑redirects to onboarding or home."
+      },
+      {
+        "id": "83c15787-eb26-4eb1-a4fa-f45c63a6ed80",
+        "name": "OnboardingScreen",
+        "components": [
+          {
+            "id": "2563d069-8680-4ee6-84b2-e24243350be8",
+            "name": "OnboardingCarousel",
+            "description": "Swipeable pages (4‑5) that introduce app capabilities with illustrations.",
+            "logic": "Swipe left/right updates internal page index; when last page is reached, enable GetStartedButton.",
+            "data_source_id": "DS_ONBOARDING_CONTENT"
+          },
+          {
+            "id": "cb064b2f-93eb-4908-910d-4d04bbbb20cb",
+            "name": "NextButton",
+            "description": "Advances carousel to the next page.",
+            "logic": "On press → increment carousel index.",
+            "data_source_id": "DS_ONBOARDING_STATE"
+          },
+          {
+            "id": "0551792c-675c-4997-8210-c3cff6428428",
+            "name": "SkipButton",
+            "description": "Immediately exits onboarding.",
+            "logic": "On press → set 'firstLaunch' = false and navigate to HomeScreen.",
+            "data_source_id": "DS_APP_STATE"
+          },
+          {
+            "id": "16d57e85-b358-4c28-9e7b-2e51c1e96e4e",
+            "name": "GetStartedButton",
+            "description": "Final call‑to‑action on the last onboarding page.",
+            "logic": "On press → set 'firstLaunch' = false and navigate to HomeScreen.",
+            "data_source_id": "DS_APP_STATE"
+          }
+        ],
+        "user_journey": "First‑time user sees onboarding → swipes through pages → taps Get Started → HomeScreen."
+      },
+      {
+        "id": "bb398d5b-067b-4cbd-a5dc-141b88c3b7fb",
+        "name": "HomeScreen",
+        "components": [
+          {
+            "id": "adc0fa63-a634-4c18-92ef-d8f64f39f0b4",
+            "name": "HeaderBar",
+            "description": "Top bar with app title, theme toggle, and a search icon.",
+            "logic": "ThemeToggle → updates global theme store; SearchIcon → opens SearchFilterScreen modal.",
+            "data_source_id": "DS_APP_STATE"
+          },
+          {
+            "id": "a59e6f17-2330-4742-a18e-9e91d3881311",
+            "name": "QuickAccessCard",
+            "description": "Horizontal scroll cards for featured assets (image + name).",
+            "logic": "On press → navigate to AssetDetailScreen with selected assetId.",
+            "data_source_id": "DS_FEATURED_ASSETS"
+          },
+          {
+            "id": "f244c1e1-60c1-4952-a471-53ee0ae87466",
+            "name": "CategoryGrid",
+            "description": "4‑column grid of categories (Air, Land, Sea, Missile, Drone).",
+            "logic": "On press → navigate to CategoryScreen passing categoryId.",
+            "data_source_id": "DS_CATEGORIES"
+          },
+          {
+            "id": "f0610498-3fbe-4a3a-be36-4b15a5044b14",
+            "name": "SearchBar",
+            "description": "Inline bar that opens the advanced filter panel.",
+            "logic": "On focus → open SearchFilterScreen modal.",
+            "data_source_id": "DS_SEARCH_STATE"
+          }
+        ],
+        "user_journey": "User lands on Home → browses featured cards or taps a category → moves to CategoryScreen."
+      },
+      {
+        "id": "1427ff39-e847-4ad9-8239-e4e9418ebba0",
+        "name": "CategoryScreen",
+        "components": [
+          {
+            "id": "024c4228-3c98-4be4-b811-1aa9d6612cd0",
+            "name": "CategoryHeader",
+            "description": "Shows selected category name and a back button.",
+            "logic": "BackButton → pop navigation stack to HomeScreen.",
+            "data_source_id": "DS_CATEGORY_META"
+          },
+          {
+            "id": "eda230e9-9941-4487-868f-d72c9f927923",
+            "name": "FilterButton",
+            "description": "Opens the advanced search & filter panel.",
+            "logic": "On press → open SearchFilterScreen modal.",
+            "data_source_id": "DS_FILTER_STATE"
+          },
+          {
+            "id": "92478e5e-6e2d-44e0-a95b-be13e9066a30",
+            "name": "AssetList",
+            "description": "Paginated vertical list of asset thumbnails with name and brief specs.",
+            "logic": "On item press → navigate to AssetDetailScreen with assetId; on scroll to bottom → fetch next page.",
+            "data_source_id": "DS_ASSET_LIST"
+          },
+          {
+            "id": "9978054d-e765-4698-b9d3-e234234ac467",
+            "name": "LoadMoreButton",
+            "description": "Manual pagination fallback.",
+            "logic": "On press → request next page of assets.",
+            "data_source_id": "DS_ASSET_LIST"
+          }
+        ],
+        "user_journey": "User selects a category → sees filtered asset list → scrolls/paginates → selects an asset → AssetDetailScreen."
+      },
+      {
+        "id": "0fd4fff7-e9e6-4ac3-938d-91effa829761",
+        "name": "AssetDetailScreen",
+        "components": [
+          {
+            "id": "d51a4b8e-243f-456e-8a7f-bc39de1efa6c",
+            "name": "AssetHeader",
+            "description": "Asset name, back arrow, and favorite (heart) toggle.",
+            "logic": "Heart toggle → add/remove assetId in Favorites store (SQLite) and update UI.",
+            "data_source_id": "DS_ASSET_DETAIL"
+          },
+          {
+            "id": "9bdfd4dd-c074-4fbb-809e-edcd529703ee",
+            "name": "ImageCarousel",
+            "description": "Swipeable high‑resolution photos of the asset.",
+            "logic": "Swipe → change displayed image; pinch → zoom (via Reanimated).",
+            "data_source_id": "DS_ASSET_IMAGES"
+          },
+          {
+            "id": "7eb8411a-71a6-477c-a40a-7e42711bc934",
+            "name": "SpecsSummary",
+            "description": "Key specs displayed as cards (range, speed, generation, country).",
+            "logic": "Tap a spec card → navigate to TechnicalSpecsScreen for full table/charts.",
+            "data_source_id": "DS_ASSET_SPECS"
+          },
+          {
+            "id": "8cd1e15d-aca3-4976-b2d9-5d49370431a1",
+            "name": "View3DButton",
+            "description": "Primary CTA to open interactive 3‑D model.",
+            "logic": "On press → navigate to ModelViewerScreen with assetId.",
+            "data_source_id": "DS_ASSET_3D_MODEL"
+          },
+          {
+            "id": "34c24aef-72a6-4125-9744-26c69d5f0f90",
+            "name": "CompareButton",
+            "description": "Adds asset to the side‑by‑side comparison queue (max 3).",
+            "logic": "On press → add assetId to ComparisonStore; if 3 assets already, show toast warning.",
+            "data_source_id": "DS_COMPARISON_QUEUE"
+          }
+        ],
+        "user_journey": "User views asset details → can favorite, explore images, view specs, launch 3‑D viewer, or add to comparison."
+      },
+      {
+        "id": "ddf63492-f53e-44e9-a7dd-3d332119b57a",
+        "name": "ModelViewerScreen",
+        "components": [
+          {
+            "id": "1988b407-2f9f-4868-987c-49e669055ce5",
+            "name": "ThreeDModelViewer",
+            "description": "React‑Three‑Fiber canvas rendering GLB model with lighting and environment.",
+            "logic": "Gestures: drag → rotate, pinch → zoom, two‑finger drag → pan. Model loads from local cache; if missing, fetch from CDN and cache.",
+            "data_source_id": "DS_ASSET_3D_MODEL"
+          },
+          {
+            "id": "b455b0fb-c7ef-4925-aad8-79283089311b",
+            "name": "ControlsOverlay",
+            "description": "Floating UI with reset view, AR toggle, and close button.",
+            "logic": "Reset → restore default camera; AR toggle → if device supports ARKit, navigate to ARViewerScreen, else show disabled toast; Close → go back to AssetDetailScreen.",
+            "data_source_id": "DS_DEVICE_CAPABILITIES"
+          }
+        ],
+        "user_journey": "User interacts with 3‑D model → optionally switches to AR → returns to asset details."
+      },
+      {
+        "id": "66930a24-9b8f-4778-bc4a-3a7c94cd7dfe",
+        "name": "TechnicalSpecsScreen",
+        "components": [
+          {
+            "id": "ca5a1c15-c2c5-4acb-adfc-f9b438ef1891",
+            "name": "SpecsTable",
+            "description": "Sortable table of all technical parameters.",
+            "logic": "Tap column header → toggle ascending/descending sort; rows are scrollable.",
+            "data_source_id": "DS_ASSET_SPECS"
+          },
+          {
+            "id": "1edcf245-db9e-4fbe-88f6-22e91301d34d",
+            "name": "ChartsPanel",
+            "description": "Bar/line charts visualizing performance metrics.",
+            "logic": "Select metric from dropdown → render corresponding chart using Reanimated/React‑Native‑Svg.",
+            "data_source_id": "DS_ASSET_CHART_DATA"
+          }
+        ],
+        "user_journey": "From AssetDetail → open TechnicalSpecs → explore detailed tables and visual charts."
+      },
+      {
+        "id": "0d6907e4-d24d-4e1b-9fe8-796fed9209a1",
+        "name": "ComparisonScreen",
+        "components": [
+          {
+            "id": "037f47d8-5120-47ea-b1d3-a3ba460dd38d",
+            "name": "ComparisonHeader",
+            "description": "Title with 'Add Asset' button and clear all action.",
+            "logic": "Add Asset → open AssetPicker modal limited to assets not already in queue; Clear All → empty ComparisonStore.",
+            "data_source_id": "DS_COMPARISON_QUEUE"
+          },
+          {
+            "id": "0ed7bdfe-ae2b-43b5-a0a6-d1945cc4d8a2",
+            "name": "AssetComparisonCard",
+            "description": "Three columns side‑by‑side showing image, key specs, and a mini 3‑D preview.",
+            "logic": "Remove icon on each column → delete asset from queue; tap mini preview → open ModelViewerScreen for that asset.",
+            "data_source_id": "DS_ASSET_DETAIL"
+          }
+        ],
+        "user_journey": "User adds up to three assets via CompareButton → navigates to ComparisonScreen → evaluates differences → may launch individual 3‑D viewers."
+      },
+      {
+        "id": "b7c7b3c6-c63c-442c-b73d-ed1312500431",
+        "name": "SearchFilterScreen",
+        "components": [
+          {
+            "id": "fb751a93-88ab-4eef-8afd-66b7312ff11c",
+            "name": "FilterPanel",
+            "description": "Collapsible sections for Range, Speed, Generation, Country, Category, etc., with sliders, dropdowns, and toggles.",
+            "logic": "Adjust controls → update local filter state; Apply → dispatch filter query to AssetList (CategoryScreen) and close modal.",
+            "data_source_id": "DS_FILTER_DEFINITIONS"
+          },
+          {
+            "id": "2996e9db-fbbe-4fb0-9730-c33eb2944496",
+            "name": "ApplyFiltersButton",
+            "description": "Primary button to confirm filter selection.",
+            "logic": "On press → save filters to Zustand store, trigger asset list refresh, close modal.",
+            "data_source_id": "DS_FILTER_STATE"
+          },
+          {
+            "id": "b658cfb0-a34b-46fe-bc01-b208ba3b9b7b",
+            "name": "ResetFiltersButton",
+            "description": "Resets all controls to default (no filter).",
+            "logic": "On press → clear filter store, refresh asset list, close modal.",
+            "data_source_id": "DS_FILTER_STATE"
+          }
+        ],
+        "user_journey": "User opens filter panel from Home or Category → selects criteria → applies → asset list updates accordingly."
+      },
+      {
+        "id": "232b69b8-b78c-472f-b63f-ce4322034981",
+        "name": "FavoritesScreen",
+        "components": [
+          {
+            "id": "5eb8c887-6388-424e-8c26-b4c53258e198",
+            "name": "FavoritesHeader",
+            "description": "Title with back button and 'Clear All' action.",
+            "logic": "Clear All → prompt confirmation → delete all favorite rows from SQLite and update store.",
+            "data_source_id": "DS_FAVORITES"
+          },
+          {
+            "id": "3e405650-c732-4baf-8876-71ebbbd4ef10",
+            "name": "FavoritesList",
+            "description": "List similar to AssetList but only showing saved assets.",
+            "logic": "Item press → navigate to AssetDetailScreen; swipe left → reveal 'Remove' action.",
+            "data_source_id": "DS_FAVORITES"
+          }
+        ],
+        "user_journey": "User taps Favorites icon → sees saved assets → can open details or remove them."
+      },
+      {
+        "id": "a2526d7d-ad4d-4f0f-a0cb-912ed26f3359",
+        "name": "SettingsScreen",
+        "components": [
+          {
+            "id": "cdef5fc5-1265-4457-a045-00bd691cfa06",
+            "name": "ThemeToggle",
+            "description": "Switch between Dark and Light mode.",
+            "logic": "On toggle → update global theme store; persist choice in async storage.",
+            "data_source_id": "DS_APP_STATE"
+          },
+          {
+            "id": "74e8c83e-0029-455d-836c-39e49b797910",
+            "name": "DataSyncButton",
+            "description": "Manually trigger remote JSON download and SQLite refresh.",
+            "logic": "On press → fetch latest asset bundle, replace local cache, show progress toast.",
+            "data_source_id": "DS_REMOTE_ASSET_BUNDLE"
+          },
+          {
+            "id": "573186d2-54d2-498f-a00c-7947f3caae09",
+            "name": "ARToggle",
+            "description": "Enable/disable AR mode globally.",
+            "logic": "On toggle → set AREnabled flag; if device lacks ARKit, disable and show info toast.",
+            "data_source_id": "DS_DEVICE_CAPABILITIES"
+          },
+          {
+            "id": "2fd4683c-83c4-498a-8e79-bb9eb381d946",
+            "name": "OfflineStatusIndicator",
+            "description": "Shows whether the app is in offline‑ready mode and storage usage.",
+            "logic": "Reads from local DB size and sync timestamp; updates in real time.",
+            "data_source_id": "DS_OFFLINE_STATUS"
+          }
+        ],
+        "user_journey": "User opens Settings → switches theme, syncs data, toggles AR, checks offline status."
+      }
+    ],
+    "theme": {
+      "primary": "#0A84FF",
+      "secondary": "#1C1C1E"
+    }
+  },
+  "tech_specs": {
+    "api_routes": [
+      {
+        "id": "3544b7fc-fa30-467b-9860-ea0b9619ff92",
+        "path": "/api/v1/app/state",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "firstLaunch": "boolean",
+          "theme": "string",
+          "arEnabled": "boolean",
+          "lastSync": "string (ISO 8601 datetime)"
+        }
+      },
+      {
+        "id": "2563d069-8680-4ee6-84b2-e24243350be8",
+        "path": "/api/v1/onboarding/content",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "pages": [
+            {
+              "title": "string",
+              "subtitle": "string",
+              "illustrationUrl": "string (URL)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "cb064b2f-93eb-4908-910d-4d04bbbb20cb",
+        "path": "/api/v1/onboarding/next",
+        "method": "POST",
+        "request": {},
+        "response": {
+          "currentPageIndex": "integer",
+          "isLastPage": "boolean"
+        }
+      },
+      {
+        "id": "0551792c-675c-4997-8210-c3cff6428428",
+        "path": "/api/v1/app/firstLaunch",
+        "method": "POST",
+        "request": {
+          "firstLaunch": "boolean"
+        },
+        "response": {
+          "updated": "boolean"
+        }
+      },
+      {
+        "id": "16d57e85-b358-4c28-9e7b-2e51c1e96e4e",
+        "path": "/api/v1/app/firstLaunch",
+        "method": "POST",
+        "request": {
+          "firstLaunch": "boolean"
+        },
+        "response": {
+          "updated": "boolean"
+        }
+      },
+      {
+        "id": "adc0fa63-a634-4c18-92ef-d8f64f39f0b4",
+        "path": "/api/v1/app/state",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "theme": "string",
+          "arEnabled": "boolean",
+          "firstLaunch": "boolean"
+        }
+      },
+      {
+        "id": "a59e6f17-2330-4742-a18e-9e91d3881311",
+        "path": "/api/v1/assets/featured",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "assets": [
+            {
+              "assetId": "string",
+              "name": "string",
+              "thumbnailUrl": "string (URL)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "f244c1e1-60c1-4952-a471-53ee0ae87466",
+        "path": "/api/v1/categories",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "categories": [
+            {
+              "categoryId": "string",
+              "name": "string",
+              "iconUrl": "string (URL)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "f0610498-3fbe-4a3a-be36-4b15a5044b14",
+        "path": "/api/v1/search/state",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "lastQuery": "string",
+          "filters": {
+            "range": "string",
+            "speed": "string",
+            "generation": "string",
+            "country": "string",
+            "category": "string"
+          }
+        }
+      },
+      {
+        "id": "024c4228-3c98-4be4-b811-1aa9d6612cd0",
+        "path": "/api/v1/categories/{categoryId}",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "categoryId": "string",
+          "name": "string",
+          "description": "string",
+          "iconUrl": "string (URL)"
+        }
+      },
+      {
+        "id": "eda230e9-9941-4487-868f-d72c9f927923",
+        "path": "/api/v1/filters/definitions",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "definitions": {
+            "range": {
+              "min": "number",
+              "max": "number",
+              "step": "number"
+            },
+            "speed": {
+              "min": "number",
+              "max": "number",
+              "step": "number"
+            },
+            "generation": {
+              "options": [
+                "string"
+              ]
+            },
+            "country": {
+              "options": [
+                "string"
+              ]
+            },
+            "category": {
+              "options": [
+                "string"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "92478e5e-6e2d-44e0-a95b-be13e9066a30",
+        "path": "/api/v1/assets",
+        "method": "GET",
+        "request": {
+          "categoryId": "string (optional)",
+          "page": "integer (default 1)",
+          "pageSize": "integer (default 20)",
+          "filters": "object (optional)"
+        },
+        "response": {
+          "page": "integer",
+          "pageSize": "integer",
+          "totalPages": "integer",
+          "totalItems": "integer",
+          "assets": [
+            {
+              "assetId": "string",
+              "name": "string",
+              "thumbnailUrl": "string (URL)",
+              "categoryId": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "9978054d-e765-4698-b9d3-e234234ac467",
+        "path": "/api/v1/assets",
+        "method": "GET",
+        "request": {
+          "categoryId": "string (optional)",
+          "page": "integer",
+          "pageSize": "integer",
+          "filters": "object (optional)"
+        },
+        "response": {
+          "page": "integer",
+          "pageSize": "integer",
+          "totalPages": "integer",
+          "totalItems": "integer",
+          "assets": [
+            {
+              "assetId": "string",
+              "name": "string",
+              "thumbnailUrl": "string (URL)",
+              "categoryId": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "d51a4b8e-243f-456e-8a7f-bc39de1efa6c",
+        "path": "/api/v1/assets/{assetId}",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "assetId": "string",
+          "name": "string",
+          "description": "string",
+          "categoryId": "string",
+          "isFavorite": "boolean",
+          "specs": "object",
+          "thumbnailUrl": "string (URL)"
+        }
+      },
+      {
+        "id": "9bdfd4dd-c074-4fbb-809e-edcd529703ee",
+        "path": "/api/v1/assets/{assetId}/images",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "images": [
+            {
+              "imageId": "string",
+              "url": "string (URL)",
+              "caption": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "7eb8411a-71a6-477c-a40a-7e42711bc934",
+        "path": "/api/v1/assets/{assetId}/specs",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "specs": {
+            "range": "string",
+            "speed": "string",
+            "generation": "string",
+            "country": "string",
+            "weight": "string",
+            "payload": "string"
+          }
+        }
+      },
+      {
+        "id": "8cd1e15d-aca3-4976-b2d9-5d49370431a1",
+        "path": "/api/v1/assets/{assetId}/3d",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "modelUrl": "string (CDN URL to .glb)",
+          "sizeBytes": "integer"
+        }
+      },
+      {
+        "id": "34c24aef-72a6-4125-9744-26c69d5f0f90",
+        "path": "/api/v1/comparison/add",
+        "method": "POST",
+        "request": {
+          "assetId": "string"
+        },
+        "response": {
+          "queue": [
+            "string"
+          ],
+          "message": "string"
+        }
+      },
+      {
+        "id": "1988b407-2f9f-4868-987c-49e669055ce5",
+        "path": "/api/v1/assets/{assetId}/3d",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "modelUrl": "string (CDN URL)",
+          "sizeBytes": "integer"
+        }
+      },
+      {
+        "id": "b455b0fb-c7ef-4925-aad8-79283089311b",
+        "path": "/api/v1/device/capabilities",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "supportsAR": "boolean",
+          "os": "string",
+          "osVersion": "string",
+          "deviceModel": "string"
+        }
+      },
+      {
+        "id": "ca5a1c15-c2c5-4acb-adfc-f9b438ef1891",
+        "path": "/api/v1/assets/{assetId}/specs",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "specs": {
+            "range": "string",
+            "speed": "string",
+            "generation": "string",
+            "country": "string",
+            "weight": "string",
+            "payload": "string"
+          }
+        }
+      },
+      {
+        "id": "1edcf245-db9e-4fbe-88f6-22e91301d34d",
+        "path": "/api/v1/assets/{assetId}/charts",
+        "method": "GET",
+        "request": {
+          "metric": "string"
+        },
+        "response": {
+          "metric": "string",
+          "dataPoints": [
+            {
+              "label": "string",
+              "value": "number"
+            }
+          ]
+        }
+      },
+      {
+        "id": "037f47d8-5120-47ea-b1d3-a3ba460dd38d",
+        "path": "/api/v1/comparison/queue",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "queue": [
+            {
+              "assetId": "string",
+              "name": "string",
+              "thumbnailUrl": "string (URL)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "0ed7bdfe-ae2b-43b5-a0a6-d1945cc4d8a2",
+        "path": "/api/v1/assets/{assetId}",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "assetId": "string",
+          "name": "string",
+          "description": "string",
+          "specs": "object",
+          "thumbnailUrl": "string (URL)"
+        }
+      },
+      {
+        "id": "fb751a93-88ab-4eef-8afd-66b7312ff11c",
+        "path": "/api/v1/filters/definitions",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "definitions": {
+            "range": {
+              "min": "number",
+              "max": "number",
+              "step": "number"
+            },
+            "speed": {
+              "min": "number",
+              "max": "number",
+              "step": "number"
+            },
+            "generation": {
+              "options": [
+                "string"
+              ]
+            },
+            "country": {
+              "options": [
+                "string"
+              ]
+            },
+            "category": {
+              "options": [
+                "string"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "2996e9db-fbbe-4fb0-9730-c33eb2944496",
+        "path": "/api/v1/filters/apply",
+        "method": "POST",
+        "request": {
+          "filters": "object"
+        },
+        "response": {
+          "applied": "boolean",
+          "message": "string"
+        }
+      },
+      {
+        "id": "b658cfb0-a34b-46fe-bc01-b208ba3b9b7b",
+        "path": "/api/v1/filters/reset",
+        "method": "POST",
+        "request": {},
+        "response": {
+          "reset": "boolean"
+        }
+      },
+      {
+        "id": "5eb8c887-6388-424e-8c26-b4c53258e198",
+        "path": "/api/v1/favorites",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "favorites": [
+            {
+              "assetId": "string",
+              "name": "string",
+              "thumbnailUrl": "string (URL)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "3e405650-c732-4baf-8876-71ebbbd4ef10",
+        "path": "/api/v1/favorites",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "favorites": [
+            {
+              "assetId": "string",
+              "name": "string",
+              "thumbnailUrl": "string (URL)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "cdef5fc5-1265-4457-a045-00bd691cfa06",
+        "path": "/api/v1/settings/theme",
+        "method": "POST",
+        "request": {
+          "theme": "string (\"light\"|\"dark\")"
+        },
+        "response": {
+          "updated": "boolean"
+        }
+      },
+      {
+        "id": "74e8c83e-0029-455d-836c-39e49b797910",
+        "path": "/api/v1/sync",
+        "method": "POST",
+        "request": {},
+        "response": {
+          "started": "boolean",
+          "message": "string"
+        }
+      },
+      {
+        "id": "573186d2-54d2-498f-a00c-7947f3caae09",
+        "path": "/api/v1/settings/ar",
+        "method": "POST",
+        "request": {
+          "enabled": "boolean"
+        },
+        "response": {
+          "updated": "boolean"
+        }
+      },
+      {
+        "id": "2fd4683c-83c4-498a-8e79-bb9eb381d946",
+        "path": "/api/v1/offline/status",
+        "method": "GET",
+        "request": {},
+        "response": {
+          "isOfflineReady": "boolean",
+          "dbSizeBytes": "integer",
+          "lastSync": "string (ISO 8601 datetime)"
+        }
+      }
+    ],
+    "database_schema": {
+      "tables": [
+        {
+          "name": "app_state",
+          "columns": [
+            {
+              "name": "firstLaunch",
+              "type": "BOOLEAN",
+              "primary_key": false
+            },
+            {
+              "name": "theme",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "arEnabled",
+              "type": "BOOLEAN",
+              "primary_key": false
+            },
+            {
+              "name": "lastSync",
+              "type": "TEXT",
+              "primary_key": false
+            }
+          ]
+        },
+        {
+          "name": "onboarding_content",
+          "columns": [
+            {
+              "name": "page_index",
+              "type": "INTEGER",
+              "primary_key": true
+            },
+            {
+              "name": "title",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "subtitle",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "illustration_url",
+              "type": "TEXT",
+              "primary_key": false
+            }
+          ]
+        },
+        {
+          "name": "onboarding_state",
+          "columns": [
+            {
+              "name": "current_page",
+              "type": "INTEGER",
+              "primary_key": true
+            }
+          ]
+        },
+        {
+          "name": "categories",
+          "columns": [
+            {
+              "name": "category_id",
+              "type": "TEXT",
+              "primary_key": true
+            },
+            {
+              "name": "name",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "icon_url",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "description",
+              "type": "TEXT",
+              "primary_key": false
+            }
+          ]
+        },
+        {
+          "name": "assets",
+          "columns": [
+            {
+              "name": "asset_id",
+              "type": "TEXT",
+              "primary_key": true
+            },
+            {
+              "name": "name",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "description",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "category_id",
+              "type": "TEXT",
+              "primary_key": false,
+              "foreign_key": "categories(category_id)"
+            },
+            {
+              "name": "thumbnail_url",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "specs_json",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "is_favorite",
+              "type": "BOOLEAN",
+              "primary_key": false
+            }
+          ]
+        },
+        {
+          "name": "asset_images",
+          "columns": [
+            {
+              "name": "image_id",
+              "type": "TEXT",
+              "primary_key": true
+            },
+            {
+              "name": "asset_id",
+              "type": "TEXT",
+              "primary_key": false,
+              "foreign_key": "assets(asset_id)"
+            },
+            {
+              "name": "url",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "caption",
+              "type": "TEXT",
+              "primary_key": false
+            }
+          ]
+        },
+        {
+          "name": "asset_3d_models",
+          "columns": [
+            {
+              "name": "asset_id",
+              "type": "TEXT",
+              "primary_key": true,
+              "foreign_key": "assets(asset_id)"
+            },
+            {
+              "name": "model_url",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "size_bytes",
+              "type": "INTEGER",
+              "primary_key": false
+            }
+          ]
+        },
+        {
+          "name": "favorites",
+          "columns": [
+            {
+              "name": "asset_id",
+              "type": "TEXT",
+              "primary_key": true,
+              "foreign_key": "assets(asset_id)"
+            },
+            {
+              "name": "added_at",
+              "type": "TEXT",
+              "primary_key": false
+            }
+          ]
+        },
+        {
+          "name": "comparison_queue",
+          "columns": [
+            {
+              "name": "queue_position",
+              "type": "INTEGER",
+              "primary_key": true
+            },
+            {
+              "name": "asset_id",
+              "type": "TEXT",
+              "primary_key": false,
+              "foreign_key": "assets(asset_id)"
+            }
+          ]
+        },
+        {
+          "name": "device_capabilities",
+          "columns": [
+            {
+              "name": "supports_ar",
+              "type": "BOOLEAN",
+              "primary_key": true
+            },
+            {
+              "name": "os",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "os_version",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "device_model",
+              "type": "TEXT",
+              "primary_key": false
+            }
+          ]
+        },
+        {
+          "name": "offline_status",
+          "columns": [
+            {
+              "name": "is_offline_ready",
+              "type": "BOOLEAN",
+              "primary_key": true
+            },
+            {
+              "name": "db_size_bytes",
+              "type": "INTEGER",
+              "primary_key": false
+            },
+            {
+              "name": "last_sync",
+              "type": "TEXT",
+              "primary_key": false
+            }
+          ]
+        },
+        {
+          "name": "remote_asset_bundle",
+          "columns": [
+            {
+              "name": "bundle_version",
+              "type": "TEXT",
+              "primary_key": true
+            },
+            {
+              "name": "download_url",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "checksum",
+              "type": "TEXT",
+              "primary_key": false
+            },
+            {
+              "name": "released_at",
+              "type": "TEXT",
+              "primary_key": false
+            }
+          ]
+        },
+        {
+          "name": "charts_data",
+          "columns": [
+            {
+              "name": "asset_id",
+              "type": "TEXT",
+              "primary_key": true,
+              "foreign_key": "assets(asset_id)"
+            },
+            {
+              "name": "metric",
+              "type": "TEXT",
+              "primary_key": true
+            },
+            {
+              "name": "data_json",
+              "type": "TEXT",
+              "primary_key": false
+            }
+          ]
+        }
+      ]
+    },
+    "external_integrations": [
+      "CDN for high‑resolution images and GLB 3D models",
+      "Apple ARKit / Google ARCore for augmented‑reality rendering",
+      "SQLite (local persistence) accessed via expo‑sqlite / react‑native‑sqlite‑2",
+      "AsyncStorage for lightweight key‑value settings",
+      "React‑Native Reanimated for gesture handling (client‑side, no server integration)",
+      "Analytics provider (e.g., Firebase Analytics) – optional"
+    ]
+  },
+  "instructional_brain": {
+    "gemini_md": "# Executive Briefing\n\n**Project:** *New Project* – Premium iOS‑styled military‑asset encyclopedia.\n\n**Core Goals ↔ Blueprint Elements**\n| Goal | Linked Rules | Linked Workflows | Linked Docs |\n|------|--------------|----------------|------------|\n| Premium UI/UX (Apple HIG, glassmorphism) | `ui_naming_conventions.md`, `design_system.md` | `phase_1_setup.md`, `phase_2_onboarding.md`, `phase_3_home_navigation.md` | All `ui/*.md` files |\n| High‑fidelity 3‑D & AR | `ar_integration_rules.md`, `performance_constraints.md` | `phase_5_model_viewer.md`, `phase_6_comparison.md` | `ui/ModelViewerScreen.md`, `ui/TechnicalSpecsScreen.md` |\n| Offline‑first reliability | `offline_sync_rules.md`, `data_privacy.md` | `phase_7_settings_sync.md` | `docs/logic/OfflineSyncLogic.md` |\n| Scalable, modular codebase | `state_management_rules.md`, `code_quality.md` | All phases | `skills/state_management_expert.md` |\n| Fast, buttery gestures | `gesture_handling_rules.md` | `phase_4_asset_detail.md`, `phase_5_model_viewer.md` | `skills/gesture_handling_expert.md` |\n\nEvery rule, workflow and doc below explicitly references the goal(s) it serves, ensuring 100 % architectural alignment for the Antigravity execution agent.\n\n---\n*Generated by the **Principal Visionary Architect** – the `.agent` Instructional Brain.*",
+    "context_md": "# The Soul of the Project\n\n## Why?\nTo empower analysts, enthusiasts, and educators with a **fast, beautiful, and trustworthy** mobile encyclopedia of modern military platforms—delivered as a native iOS‑styled React‑Native app that works offline and leverages cutting‑edge 3‑D visualization.\n\n## Core Philosophy\n- **Transparency:** All data is public‑domain; no copyrighted material.\n- **Performance‑First:** Every interaction must stay > 60 fps on iPhone 12+.\n- **User‑Centric:** Minimal friction, progressive disclosure, and tactile feedback.\n- **Future‑Proof:** Modular architecture so new asset categories or AR features can be added without refactoring core layers.\n\n## Target Audience & Personas\n| Persona | Motivation | Pain Points |\n|---------|------------|-------------|\n| **Analyst** (defense researcher) | Deep dive into specs, compare assets | Slow loading, data gaps |\n| **Enthusiast** (hobbyist) | Explore 3‑D models, share screenshots | Clunky UI, missing AR |\n| **Educator** (teacher) | Use as teaching aid, offline class | Internet‑dependence, complex UI |\n\n## Vibe\n- **Minimal Military Aesthetic:** Slate‑gray, muted blues, crisp lines.\n- **Glassmorphism:** Subtle translucency for panels, respecting Apple HIG.\n- **Responsive Gestures:** Fluid, physics‑based interactions.\n- **Quiet Confidence:** No flashy ads, just data.\n\n---\n*All downstream artifacts inherit this soul.*",
+    "metadata_json": {
+      "version": 1,
+      "index": [
+        "gemini_md",
+        "context_md",
+        "rules",
+        "workflows",
+        "docs",
+        "skills"
+      ]
+    },
+    "rules": [
+      {
+        "filename": "ui_naming_conventions.md",
+        "content": "## UI Naming Conventions\n- **Screens**: PascalCase ending with `Screen` (e.g., `HomeScreen`).\n- **Components**: PascalCase ending with `Component` or a domain‑specific suffix (`HeaderBar`, `QuickAccessCard`).\n- **Data Sources**: Upper‑snake case prefixed with `DS_` (e.g., `DS_ASSET_LIST`).\n- **Navigation Routes**: kebab‑case matching screen name (`home`, `asset-detail`).\n- **File Structure**: `ui/<ScreenName>.md` for documentation, `components/<ComponentName>.tsx` for code.\n\nAll developers must adhere to these names to keep the navigation graph deterministic.",
+        "description": "Standardized naming for screens, components, and data sources."
+      },
+      {
+        "filename": "design_system.md",
+        "content": "## Design System\n- **Palette**: Primary `#0A84FF`, Secondary `#1C1C1E`, Background `#F2F2F7` (light) / `#000000` (dark).\n- **Typography**: San Francisco, 17 pt body, 28 pt titles.\n- **Glassmorphism**: `backdrop-filter: blur(10px)` on panels, 0.6 opacity.\n- **Touch Targets**: Minimum 44 × 44 dp.\n- **Iconography**: SF Symbols, weight `regular`.\n- **Accessibility**: Contrast ≥ 4.5:1, VoiceOver labels on every interactive element.\n\nAll UI docs must reference these tokens.",
+        "description": "Visual language, color palette, typography, and component guidelines."
+      },
+      {
+        "filename": "performance_constraints.md",
+        "content": "## Performance Constraints\n- **Frame Rate**: ≥ 60 fps on iPhone 12 (A14) for all screens.\n- **3‑D Model Size**: ≤ 5 MB per GLB; compress with Draco.\n- **Image Resolution**: Max 1080 px width; use `srcset`‑like logic.\n- **Memory Budget**: ≤ 150 MB total RAM usage; unload off‑screen textures.\n- **Network**: All remote fetches must be lazy‑loaded with progressive placeholders.\n\nViolations trigger the `performance_optimizer` skill.",
+        "description": "Hard limits for frame‑rate, memory, and asset size."
+      },
+      {
+        "filename": "gesture_handling_rules.md",
+        "content": "## Gesture Handling Rules\n- **Swipe**: Horizontal for carousels, vertical for list pagination.\n- **Pinch**: Zoom on images and 3‑D view; clamp scale 0.5‑3×.\n- **Drag**: Rotate 3‑D model (single‑finger) and pan (two‑finger).\n- **Tap**: Immediate feedback via Reanimated spring.\n- **Accessibility**: All gestures must have an equivalent button for VoiceOver users.\n\nAll gesture implementations must invoke `gesture_handling_expert`.",
+        "description": "Guidelines for gestures across the app."
+      },
+      {
+        "filename": "offline_sync_rules.md",
+        "content": "## Offline‑First Sync Rules\n- **Initial Bundle**: On first launch download a compressed JSON asset bundle (~30 MB) and cache all GLB models.\n- **Delta Updates**: `DataSyncButton` fetches only changed assets (ETag comparison).\n- **SQLite Cache**: All asset metadata stored in `assets` table; updates must be wrapped in a transaction.\n- **Graceful Degradation**: If network fails, UI shows cached data with a non‑intrusive toast.\n- **Integrity Check**: Verify bundle checksum before applying.\n\n`offline_sync_expert` validates each step.",
+        "description": "Rules governing offline‑first data flow and sync."
+      },
+      {
+        "filename": "state_management_rules.md",
+        "content": "## State Management Rules (Zustand)\n- **Slices**: `appState`, `onboarding`, `assets`, `favorites`, `comparison`, `filters`, `deviceCapabilities`.\n- **Immutable Updates**: Use immer‑style spread to avoid accidental mutation.\n- **Persistence**: `appState` persisted via AsyncStorage; `favorites` persisted via SQLite.\n- **Selectors**: Export memoized selectors for each slice to avoid re‑renders.\n- **Debugging**: Enable `devtools` only in development builds.\n\nAll workflows must reference `state_management_expert` for complex mutations.",
+        "description": "Zustand store architecture and best practices."
+      },
+      {
+        "filename": "ar_integration_rules.md",
+        "content": "## AR Integration Rules\n- **Capability Check**: Query `device_capabilities.supports_ar` before enabling AR toggle.\n- **Graceful Fallback**: If unsupported, hide AR button and show tooltip.\n- **Session Management**: Start AR session only when user taps AR toggle; release on exit.\n- **Privacy**: No camera data is stored; only used for live rendering.\n- **Performance**: Limit AR frame rate to 30 fps on older devices.\n\n`ar_integration_expert` audits compliance.",
+        "description": "ARKit/ARCore integration constraints and fallback strategy."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'AnimatedLogo' (ID: 'DS_APP_STATE') on 'SplashScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'AnimatedLogo' (ID: 'DS_APP_STATE') on 'SplashScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'OnboardingCarousel' (ID: 'DS_ONBOARDING_CONTENT') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'OnboardingCarousel' (ID: 'DS_ONBOARDING_CONTENT') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'NextButton' (ID: 'DS_ONBOARDING_STATE') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'NextButton' (ID: 'DS_ONBOARDING_STATE') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'SkipButton' (ID: 'DS_APP_STATE') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'SkipButton' (ID: 'DS_APP_STATE') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'GetStartedButton' (ID: 'DS_APP_STATE') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'GetStartedButton' (ID: 'DS_APP_STATE') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'HeaderBar' (ID: 'DS_APP_STATE') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'HeaderBar' (ID: 'DS_APP_STATE') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'QuickAccessCard' (ID: 'DS_FEATURED_ASSETS') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'QuickAccessCard' (ID: 'DS_FEATURED_ASSETS') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'CategoryGrid' (ID: 'DS_CATEGORIES') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'CategoryGrid' (ID: 'DS_CATEGORIES') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'SearchBar' (ID: 'DS_SEARCH_STATE') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'SearchBar' (ID: 'DS_SEARCH_STATE') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'CategoryHeader' (ID: 'DS_CATEGORY_META') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'CategoryHeader' (ID: 'DS_CATEGORY_META') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'FilterButton' (ID: 'DS_FILTER_STATE') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'FilterButton' (ID: 'DS_FILTER_STATE') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'AssetList' (ID: 'DS_ASSET_LIST') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'AssetList' (ID: 'DS_ASSET_LIST') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'LoadMoreButton' (ID: 'DS_ASSET_LIST') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'LoadMoreButton' (ID: 'DS_ASSET_LIST') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'AssetHeader' (ID: 'DS_ASSET_DETAIL') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'AssetHeader' (ID: 'DS_ASSET_DETAIL') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'ImageCarousel' (ID: 'DS_ASSET_IMAGES') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'ImageCarousel' (ID: 'DS_ASSET_IMAGES') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'SpecsSummary' (ID: 'DS_ASSET_SPECS') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'SpecsSummary' (ID: 'DS_ASSET_SPECS') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'View3DButton' (ID: 'DS_ASSET_3D_MODEL') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'View3DButton' (ID: 'DS_ASSET_3D_MODEL') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'CompareButton' (ID: 'DS_COMPARISON_QUEUE') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'CompareButton' (ID: 'DS_COMPARISON_QUEUE') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'ThreeDModelViewer' (ID: 'DS_ASSET_3D_MODEL') on 'ModelViewerScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'ThreeDModelViewer' (ID: 'DS_ASSET_3D_MODEL') on 'ModelViewerScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'ControlsOverlay' (ID: 'DS_DEVICE_CAPABILITIES') on 'ModelViewerScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'ControlsOverlay' (ID: 'DS_DEVICE_CAPABILITIES') on 'ModelViewerScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'SpecsTable' (ID: 'DS_ASSET_SPECS') on 'TechnicalSpecsScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'SpecsTable' (ID: 'DS_ASSET_SPECS') on 'TechnicalSpecsScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'ChartsPanel' (ID: 'DS_ASSET_CHART_DATA') on 'TechnicalSpecsScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'ChartsPanel' (ID: 'DS_ASSET_CHART_DATA') on 'TechnicalSpecsScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'ComparisonHeader' (ID: 'DS_COMPARISON_QUEUE') on 'ComparisonScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'ComparisonHeader' (ID: 'DS_COMPARISON_QUEUE') on 'ComparisonScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'AssetComparisonCard' (ID: 'DS_ASSET_DETAIL') on 'ComparisonScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'AssetComparisonCard' (ID: 'DS_ASSET_DETAIL') on 'ComparisonScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'FilterPanel' (ID: 'DS_FILTER_DEFINITIONS') on 'SearchFilterScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'FilterPanel' (ID: 'DS_FILTER_DEFINITIONS') on 'SearchFilterScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'ApplyFiltersButton' (ID: 'DS_FILTER_STATE') on 'SearchFilterScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'ApplyFiltersButton' (ID: 'DS_FILTER_STATE') on 'SearchFilterScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'ResetFiltersButton' (ID: 'DS_FILTER_STATE') on 'SearchFilterScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'ResetFiltersButton' (ID: 'DS_FILTER_STATE') on 'SearchFilterScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'FavoritesHeader' (ID: 'DS_FAVORITES') on 'FavoritesScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'FavoritesHeader' (ID: 'DS_FAVORITES') on 'FavoritesScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'FavoritesList' (ID: 'DS_FAVORITES') on 'FavoritesScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'FavoritesList' (ID: 'DS_FAVORITES') on 'FavoritesScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'ThemeToggle' (ID: 'DS_APP_STATE') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'ThemeToggle' (ID: 'DS_APP_STATE') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'DataSyncButton' (ID: 'DS_REMOTE_ASSET_BUNDLE') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'DataSyncButton' (ID: 'DS_REMOTE_ASSET_BUNDLE') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'ARToggle' (ID: 'DS_DEVICE_CAPABILITIES') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'ARToggle' (ID: 'DS_DEVICE_CAPABILITIES') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT\n\n**Severity:** critical\n\n**Reason:** UI Component 'OfflineStatusIndicator' (ID: 'DS_OFFLINE_STATUS') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'OfflineStatusIndicator' (ID: 'DS_OFFLINE_STATUS') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint_animatedlogo.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT_AnimatedLogo\n\n**Severity:** critical\n\n**Reason:** UI Component 'AnimatedLogo' (data_source_id: 'DS_APP_STATE') on SplashScreen has no matching API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'AnimatedLogo' (data_source_id: 'DS_APP_STATE') on SplashScreen has no matching API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint_onboardingcarousel.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT_OnboardingCarousel\n\n**Severity:** critical\n\n**Reason:** UI Component 'OnboardingCarousel' (data_source_id: 'DS_ONBOARDING_CONTENT') on OnboardingScreen has no matching API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'OnboardingCarousel' (data_source_id: 'DS_ONBOARDING_CONTENT') on OnboardingScreen has no matching API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint_nextbutton.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT_NextButton\n\n**Severity:** critical\n\n**Reason:** UI Component 'NextButton' (data_source_id: 'DS_ONBOARDING_STATE') on OnboardingScreen has no matching API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'NextButton' (data_source_id: 'DS_ONBOARDING_STATE') on OnboardingScreen has no matching API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint_headerbar.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT_HeaderBar\n\n**Severity:** critical\n\n**Reason:** UI Component 'HeaderBar' (data_source_id: 'DS_APP_STATE') on HomeScreen has no matching API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'HeaderBar' (data_source_id: 'DS_APP_STATE') on HomeScreen has no matching API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint_quickaccesscard.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT_QuickAccessCard\n\n**Severity:** critical\n\n**Reason:** UI Component 'QuickAccessCard' (data_source_id: 'DS_FEATURED_ASSETS') on HomeScreen has no matching API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'QuickAccessCard' (data_source_id: 'DS_FEATURED_ASSETS') on HomeScreen has no matching API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint_categorygrid.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT_CategoryGrid\n\n**Severity:** critical\n\n**Reason:** UI Component 'CategoryGrid' (data_source_id: 'DS_CATEGORIES') on HomeScreen has no matching API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'CategoryGrid' (data_source_id: 'DS_CATEGORIES') on HomeScreen has no matching API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint_assetlist.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT_AssetList\n\n**Severity:** critical\n\n**Reason:** UI Component 'AssetList' (data_source_id: 'DS_ASSET_LIST') on CategoryScreen has no matching API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'AssetList' (data_source_id: 'DS_ASSET_LIST') on CategoryScreen has no matching API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint_assetheader.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT_AssetHeader\n\n**Severity:** critical\n\n**Reason:** UI Component 'AssetHeader' (data_source_id: 'DS_ASSET_DETAIL') on AssetDetailScreen has no matching API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'AssetHeader' (data_source_id: 'DS_ASSET_DETAIL') on AssetDetailScreen has no matching API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_missing_endpoint_threedmodelviewer.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT_ThreeDModelViewer\n\n**Severity:** critical\n\n**Reason:** UI Component 'ThreeDModelViewer' (data_source_id: 'DS_ASSET_3D_MODEL') on ModelViewerScreen has no matching API endpoint in tech_specs.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: UI Component 'ThreeDModelViewer' (data_source_id: 'DS_ASSET_3D_MODEL') on ModelViewerScreen has no matching API endpoint in tech_specs."
+      },
+      {
+        "filename": "auto_tech_debt_duplicate_assets_endpoint.md",
+        "content": "# Preventative Rule: TECH_DEBT_DUPLICATE_ASSETS_ENDPOINT\n\n**Severity:** warning\n\n**Reason:** Duplicate API route definitions detected for '/api/v1/assets' (GET) – both list and pagination endpoints share the same ID, risking ambiguous routing.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: Duplicate API route definitions detected for '/api/v1/assets' (GET) – both list and pagination endpoints share the same ID, risking ambiguous routing."
+      },
+      {
+        "filename": "auto_security_risk_sql_injection.md",
+        "content": "# Preventative Rule: SECURITY_RISK_SQL_INJECTION\n\n**Severity:** warning\n\n**Reason:** SQLite queries are not explicitly shown to use parameterized statements; risk of SQL injection if any future endpoint accepts user‑provided values.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: SQLite queries are not explicitly shown to use parameterized statements; risk of SQL injection if any future endpoint accepts user‑provided values."
+      },
+      {
+        "filename": "auto_perf_risk_model_size.md",
+        "content": "# Preventative Rule: PERF_RISK_MODEL_SIZE\n\n**Severity:** warning\n\n**Reason:** 3‑D model size limit of 5 MB per GLB may be exceeded for high‑fidelity assets, potentially breaching the performance constraint of ≤ 30 MB memory per model.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: 3‑D model size limit of 5 MB per GLB may be exceeded for high‑fidelity assets, potentially breaching the performance constraint of ≤ 30 MB memory per model."
+      },
+      {
+        "filename": "auto_missing_endpoint_devicecapabilities.md",
+        "content": "# Preventative Rule: MISSING_ENDPOINT_DeviceCapabilities\n\n**Severity:** warning\n\n**Reason:** AR toggle UI components reference 'DS_DEVICE_CAPABILITIES' but the tech_specs only expose '/api/v1/device/capabilities' without a dedicated data source ID mapping, leading to possible runtime mismatches.\n\n**Action:** The execution agent must ensure this issue is actively prevented during implementation.",
+        "description": "Auto-generated rule preventing: AR toggle UI components reference 'DS_DEVICE_CAPABILITIES' but the tech_specs only expose '/api/v1/device/capabilities' without a dedicated data source ID mapping, leading to possible runtime mismatches."
+      }
+    ],
+    "workflows": [
+      {
+        "filename": "phase_1_setup.md",
+        "content": "## Phase 1 – Setup\n1. **Initialize Repo** – `expo init NewProject --template blank (TypeScript)`.\n2. **Add Core Packages** – `expo install react-native-reanimated zustand expo-sqlite expo-asset @react-navigation/native @react-navigation/stack @react-three/fiber three`.\n3. **Create Base Files** – `App.tsx` imports `ui/NavigationRoot.md` spec.\n4. **Configure Zustand Store** – Follow `skills/state_management_expert.md` for slice scaffolding.\n5. **Set Up SQLite** – Run `scripts/init-db.ts` per `docs/logic/DatabaseInitLogic.md`.\n6. **Add Design Tokens** – Populate `styles/theme.ts` using colors from `design_system.md`.\n7. **Run Linter & Prettier** – Enforce `code_quality` rule.\n\n### Success Criteria\n- Repo builds without errors on iOS simulator.\n- Initial navigation graph contains `SplashScreen` and `HomeScreen`.\n- SQLite tables exist and are empty.\n- Lint passes with 0 warnings.\n\n**Linked UI Docs:** `ui/SplashScreen.md`, `ui/HomeScreen.md`.\n**Linked Skills:** `skills/state_management_expert.md`, `skills/performance_optimizer.md`.",
+        "success_criteria": [
+          "Expo project launches to SplashScreen.",
+          "Zustand store initializes with default slices.",
+          "SQLite schema matches `database_schema`."
+        ]
+      },
+      {
+        "filename": "phase_2_onboarding.md",
+        "content": "## Phase 2 – Onboarding\n1. **Fetch Content** – Call `/api/v1/onboarding/content` → store in `onboarding_content` table (see `docs/logic/OnboardingLogic.md`).\n2. **Render Carousel** – Use `ui/OnboardingScreen.md` spec; each page pulls from `DS_ONBOARDING_CONTENT`.\n3. **Navigation Logic** – When animation ends on SplashScreen, read `DS_APP_STATE.firstLaunch`.\n   - `true` → navigate to `OnboardingScreen`.\n   - `false` → navigate to `HomeScreen`.\n4. **Buttons** – `NextButton`, `SkipButton`, `GetStartedButton` update `DS_ONBOARDING_STATE` and `DS_APP_STATE.firstLaunch` via `skills/state_management_expert.md`.\n5. **Persist First‑Launch Flag** – Write to SQLite `app_state` table.\n\n### Success Criteria\n- On first install, onboarding appears after splash.\n- Swiping updates page index and enables GetStarted on last page.\n- Skipping or completing sets `firstLaunch = false` and redirects to Home.\n- Subsequent launches bypass onboarding.\n\n**Linked UI Docs:** `ui/OnboardingScreen.md`.\n**Linked Skills:** `skills/state_management_expert.md`, `skills/gesture_handling_expert.md`.",
+        "success_criteria": [
+          "Onboarding content loads from remote API.",
+          "Page index persists across app restarts.",
+          "HomeScreen is the default after first launch."
+        ]
+      },
+      {
+        "filename": "phase_3_home_navigation.md",
+        "content": "## Phase 3 – Home Navigation\n1. **HeaderBar** – Implements theme toggle (updates `app_state.theme`) and Search icon (opens `SearchFilterScreen` modal). See `ui/HeaderBar.md`.\n2. **QuickAccessCard** – Pulls `DS_FEATURED_ASSETS`; on press dispatches navigation to `AssetDetailScreen` with `assetId`.\n3. **CategoryGrid** – Renders four‑column grid from `DS_CATEGORIES`; each tile navigates to `CategoryScreen` passing `categoryId`.\n4. **SearchBar** – Focus triggers modal; uses `skills/gesture_handling_expert.md` for tap‑to‑focus animation.\n5. **State Updates** – Theme toggle uses `state_management_expert` to persist via AsyncStorage.\n\n### Success Criteria\n- Theme toggles instantly across the app.\n- Quick‑access cards navigate correctly.\n- Category tiles open the correct CategoryScreen.\n- Search bar opens filter modal without flicker.\n\n**Linked UI Docs:** `ui/HomeScreen.md`, `ui/HeaderBar.md`, `ui/QuickAccessCard.md`, `ui/CategoryGrid.md`.\n**Linked Skills:** `skills/state_management_expert.md`, `skills/gesture_handling_expert.md`.",
+        "success_criteria": [
+          "Theme change reflects in UI within 100 ms.",
+          "Navigation to AssetDetailScreen passes correct assetId.",
+          "CategoryScreen receives matching categoryId."
+        ]
+      },
+      {
+        "filename": "phase_4_asset_detail.md",
+        "content": "## Phase 4 – Asset Detail\n1. **AssetHeader** – Shows name, back arrow, favorite toggle.\n   - Favorite action writes to `favorites` SQLite table via `skills/security_hardener.md` (SQL injection safe).\n2. **ImageCarousel** – Loads `DS_ASSET_IMAGES`; pinch‑zoom handled by `gesture_handling_expert`.\n3. **SpecsSummary** – Cards link to `TechnicalSpecsScreen` (see `ui/TechnicalSpecsScreen.md`).\n4. **View3DButton** – Navigates to `ModelViewerScreen` with `assetId`.\n5. **CompareButton** – Calls `/api/v1/comparison/add`; on success updates `comparison_queue` slice; shows toast if queue full.\n6. **Error Handling** – All API calls wrapped with `performance_optimizer` retry logic (max 2 retries, exponential back‑off).\n\n### Success Criteria\n- Asset data loads within 300 ms.\n- Favorite toggle persists across app restarts.\n- 3‑D button opens ModelViewerScreen.\n- Comparison queue respects max‑3 limit.\n\n**Linked UI Docs:** `ui/AssetDetailScreen.md`, `ui/TechnicalSpecsScreen.md`, `ui/ModelViewerScreen.md`.\n**Linked Skills:** `skills/state_management_expert.md`, `skills/gesture_handling_expert.md`, `skills/security_hardener.md`.",
+        "success_criteria": [
+          "All asset sections render without layout shift.",
+          "Favorites are stored in SQLite and reflected in UI.",
+          "Comparison toast appears when adding fourth asset."
+        ]
+      },
+      {
+        "filename": "phase_5_model_viewer.md",
+        "content": "## Phase 5 – Model Viewer\n1. **ThreeDModelViewer** – Loads GLB from `DS_ASSET_3D_MODEL`.\n   - If model not cached, fetch from CDN, store in `asset_3d_models` table, then render.\n   - Gestures (rotate, zoom, pan) delegated to `gesture_handling_expert`.\n2. **ControlsOverlay** – Buttons for Reset, AR toggle, Close.\n   - AR toggle checks `device_capabilities.supports_ar` (via `ar_integration_expert`).\n   - Reset restores default camera position.\n3. **Performance** – Use `useFrame` throttling to keep FPS ≥ 60; dispose of geometry on unmount.\n4. **Error Cases** – If model fails to load, show placeholder with retry button.\n\n### Success Criteria\n- Model loads ≤ 2 s on first view (cached) and ≤ 5 s when downloading.\n- Gestures feel fluid (no jitter) on iPhone 12.\n- AR toggle either launches ARViewerScreen or shows disabled toast.\n\n**Linked UI Docs:** `ui/ModelViewerScreen.md`.\n**Linked Skills:** `skills/gesture_handling_expert.md`, `skills/ar_integration_expert.md`, `skills/performance_optimizer.md`.",
+        "success_criteria": [
+          "GLB model renders without texture flicker.",
+          "AR toggle respects device capability.",
+          "Reset button returns to initial orientation."
+        ]
+      },
+      {
+        "filename": "phase_6_comparison.md",
+        "content": "## Phase 6 – Comparison\n1. **ComparisonHeader** – Add Asset button opens `AssetPicker` modal (filters out already‑queued assets).\n2. **AssetComparisonCard** – For each queued asset, display thumbnail, key specs, and mini 3‑D preview (uses same `ThreeDModelViewer` but with low‑poly placeholder).\n3. **Remove Icon** – Deletes asset from `comparison_queue` slice; updates UI instantly.\n4. **Clear All** – Empties queue with confirmation dialog.\n5. **Data Sync** – When assets are added/removed, `comparison_queue` table updates via `state_management_expert`.\n\n### Success Criteria\n- Max three assets displayed side‑by‑side.\n- Adding a fourth asset shows toast and prevents addition.\n- Mini‑preview opens full ModelViewerScreen on tap.\n- Clear All empties UI and SQLite queue.\n\n**Linked UI Docs:** `ui/ComparisonScreen.md`.\n**Linked Skills:** `skills/state_management_expert.md`, `skills/performance_optimizer.md`.",
+        "success_criteria": [
+          "Comparison layout remains responsive on portrait and landscape.",
+          "Queue state persists after app restart."
+        ]
+      },
+      {
+        "filename": "phase_7_settings_sync.md",
+        "content": "## Phase 7 – Settings & Sync\n1. **ThemeToggle** – Calls `/api/v1/settings/theme` (POST) and updates `app_state.theme`.\n2. **DataSyncButton** – Triggers `/api/v1/sync` (POST). Shows progress toast; on success updates `offline_status` table.\n3. **ARToggle** – Calls `/api/v1/settings/ar` (POST) after capability check.\n4. **OfflineStatusIndicator** – Reads from `offline_status` table; displays DB size and last sync timestamp.\n5. **Persistence** – All settings persisted via AsyncStorage (theme) or SQLite (AR flag, sync timestamp).\n\n### Success Criteria\n- Theme change reflects instantly across all screens.\n- Data sync completes with a success toast and updates offline indicator.\n- AR toggle disables on unsupported devices.\n- Offline indicator updates in real time after sync.\n\n**Linked UI Docs:** `ui/SettingsScreen.md`.\n**Linked Skills:** `skills/state_management_expert.md`, `skills/offline_sync_expert.md`, `skills/ar_integration_expert.md`.",
+        "success_criteria": [
+          "Theme persists after app restart.",
+          "Sync button shows progress bar and final success message.",
+          "Offline indicator shows correct DB size."
+        ]
+      }
+    ],
+    "docs": [
+      {
+        "filename": "ui/SplashScreen.md",
+        "content": "## SplashScreen\n- **Purpose:** First visual impression; decides navigation path.\n- **Visual Hierarchy:**\n  1. Full‑screen background (solid `secondary`).\n  2. Centered `AnimatedLogo` component (fills 60 % of height).\n- **Component Details:**\n  - **AnimatedLogo** – SVG animation: fade‑in (0‑0.5 s), scale (0.5‑1 s), rotate (1‑2 s). Uses `react-native-reanimated` for GPU‑accelerated timing.\n- **State Logic:**\n  - On animation end, read `DS_APP_STATE.firstLaunch`.\n  - `true` → `navigate('Onboarding')`.\n  - `false` → `navigate('Home')`.\n- **Empty State:** If `firstLaunch` flag missing (corrupt DB), default to onboarding.\n- **User Psychology:** Quick brand recall; minimal cognitive load; smooth transition to next flow.\n- **Accessibility:** `accessibilityLabel=\"Loading\"`, `accessible={true}`.\n- **Performance:** Animation runs on UI thread; no network calls.\n\n**Linked Skills:** `skills/performance_optimizer.md`."
+      },
+      {
+        "filename": "ui/OnboardingScreen.md",
+        "content": "## OnboardingScreen\n- **Purpose:** Educate first‑time users about core capabilities.\n- **Layout:** Full‑screen carousel with page indicator at bottom, navigation buttons overlay.\n- **Components:**\n  - **OnboardingCarousel** – Pulls pages from `DS_ONBOARDING_CONTENT`; each page shows illustration, title, subtitle.\n  - **NextButton** – Right‑aligned, disabled on last page.\n  - **SkipButton** – Top‑right, always enabled.\n  - **GetStartedButton** – Centered on final page, primary style.\n- **Logic:**\n  - Swiping updates `DS_ONBOARDING_STATE.current_page`.\n  - `NextButton` increments page index.\n  - `SkipButton` & `GetStartedButton` set `firstLaunch = false` in `app_state` and navigate to Home.\n- **Empty State:** If content fetch fails, show static fallback text with retry.\n- **Psychology:** Progressive disclosure; sense of achievement on final page.\n- **Accessibility:** Each page announced via `accessibilityLiveRegion=\"polite\"`.\n\n**Linked Skills:** `skills/state_management_expert.md`, `skills/gesture_handling_expert.md`."
+      },
+      {
+        "filename": "ui/HomeScreen.md",
+        "content": "## HomeScreen\n- **Purpose:** Central hub for exploration.\n- **Visual Hierarchy:**\n  1. **HeaderBar** (top) – app title, theme toggle, search icon.\n  2. **SearchBar** (inline) – opens filter modal.\n  3. **QuickAccessCard** (horizontal scroll) – featured assets.\n  4. **CategoryGrid** (4‑column) – categories.\n- **State Sources:**\n  - `DS_FEATURED_ASSETS` → QuickAccessCard.\n  - `DS_CATEGORIES` → CategoryGrid.\n  - `DS_APP_STATE` → HeaderBar theme.\n- **Interactions:**\n  - Tap a card → `navigate('AssetDetail', {assetId})`.\n  - Tap a category → `navigate('Category', {categoryId})`.\n  - SearchBar focus → open `SearchFilterScreen` modal.\n- **Empty States:**\n  - No featured assets → show placeholder “No featured assets yet”.\n  - No categories (unlikely) → show “Categories loading…”.\n- **Psychology:** Immediate access to popular content; clear pathways to deeper browsing.\n- **Accessibility:** All touch targets ≥ 44 dp; proper `accessibilityLabel`s.\n\n**Linked Skills:** `skills/state_management_expert.md`, `skills/gesture_handling_expert.md`."
+      },
+      {
+        "filename": "ui/CategoryScreen.md",
+        "content": "## CategoryScreen\n- **Purpose:** Browse assets filtered by a specific category.\n- **Header:** `CategoryHeader` with back arrow and category name.\n- **Main Area:** `AssetList` (paginated vertical list) + optional `LoadMoreButton`.\n- **State Sources:**\n  - `DS_CATEGORY_META` → header title.\n  - `DS_ASSET_LIST` (with `categoryId` param) → list items.\n- **Pagination Logic:**\n  - Infinite scroll triggers `fetchNextPage()` when reaching 80 % of list height.\n  - `LoadMoreButton` provides manual fallback.\n- **Empty State:** If no assets, show “No assets in this category.” with a “Refresh” button.\n- **Psychology:** Clear categorization reduces decision fatigue.\n- **Accessibility:** Each list item labeled with asset name and category.\n\n**Linked Skills:** `skills/state_management_expert.md`, `skills/performance_optimizer.md`."
+      },
+      {
+        "filename": "ui/AssetDetailScreen.md",
+        "content": "## AssetDetailScreen\n- **Purpose:** Deep dive into a single asset.\n- **Header:** `AssetHeader` – name, back arrow, favorite toggle.\n- **Body Sections (top‑down):**\n  1. **ImageCarousel** – high‑res photos, pinch‑zoom.\n  2. **SpecsSummary** – cards for range, speed, generation, country.\n  3. **Action Buttons** – `View3DButton`, `CompareButton`.\n- **State Sources:**\n  - `DS_ASSET_DETAIL` → header & specs.\n  - `DS_ASSET_IMAGES` → carousel.\n  - `DS_ASSET_3D_MODEL` → 3‑D button.\n- **Interactions:**\n  - Favorite toggle writes to `favorites` table.\n  - Specs cards navigate to `TechnicalSpecsScreen`.\n  - Compare button adds to queue via `/api/v1/comparison/add`.\n- **Empty States:**\n  - No images → show placeholder silhouette.\n  - No 3‑D model → disable View3DButton with tooltip.\n- **Psychology:** Layered information; primary CTA (3‑D) is prominent.\n- **Accessibility:** All buttons have `accessibilityHint`s describing outcome.\n\n**Linked Skills:** `skills/state_management_expert.md`, `skills/security_hardener.md`, `skills/gesture_handling_expert.md`."
+      },
+      {
+        "filename": "ui/ModelViewerScreen.md",
+        "content": "## ModelViewerScreen\n- **Purpose:** Interactive 3‑D visualization with optional AR.\n- **Canvas:** `ThreeDModelViewer` occupies full screen; background dark with subtle vignette.\n- **Overlay Controls:** `ControlsOverlay` – Reset, AR toggle, Close.\n- **State Sources:**\n  - `DS_ASSET_3D_MODEL` – GLB URL (cached locally).\n  - `DS_DEVICE_CAPABILITIES` – AR support flag.\n- **Gestures:**\n  - Single‑finger drag → rotate.\n  - Pinch → zoom (0.5‑3×).\n  - Two‑finger drag → pan.\n- **Performance:** Lazy‑load textures; dispose geometry on unmount.\n- **Empty State:** If model fails, show “Model unavailable” with retry.\n- **Psychology:** Immersive, tactile interaction; clear exit path.\n- **Accessibility:** Provide “Enter AR mode” button with voice‑over description.\n\n**Linked Skills:** `skills/gesture_handling_expert.md`, `skills/ar_integration_expert.md`, `skills/performance_optimizer.md`."
+      },
+      {
+        "filename": "ui/TechnicalSpecsScreen.md",
+        "content": "## TechnicalSpecsScreen\n- **Purpose:** Detailed spec tables and visual charts.\n- **Components:**\n  - **SpecsTable** – sortable columns; default sort by `range`.\n  - **ChartsPanel** – dropdown to select metric, renders bar/line chart via `react-native-svg`.\n- **State Sources:**\n  - `DS_ASSET_SPECS` → table data.\n  - `DS_ASSET_CHART_DATA` → chart data.\n- **Interactions:**\n  - Column header tap toggles asc/desc.\n  - Metric dropdown triggers API call `/api/v1/assets/{assetId}/charts`.\n- **Empty State:** No chart data → hide ChartsPanel.\n- **Psychology:** Data‑driven decision making; visual cues aid comprehension.\n- **Accessibility:** Table rows announced with spec name and value.\n\n**Linked Skills:** `skills/state_management_expert.md`, `skills/performance_optimizer.md`."
+      },
+      {
+        "filename": "ui/ComparisonScreen.md",
+        "content": "## ComparisonScreen\n- **Purpose:** Side‑by‑side comparison of up to three assets.\n- **Header:** `ComparisonHeader` – Add Asset button, Clear All action.\n- **Body:** Horizontal scroll of `AssetComparisonCard` (three columns).\n- **Component Details:**\n  - **AssetComparisonCard** – thumbnail, key specs, mini 3‑D preview (low‑poly).\n  - Remove icon per column.\n- **State Sources:**\n  - `DS_COMPARISON_QUEUE` → list of assets.\n- **Interactions:**\n  - Add Asset → opens `AssetPicker` modal (filters out already‑queued assets).\n  - Mini preview tap → navigate to full `ModelViewerScreen`.\n  - Clear All → confirmation dialog, then empties queue.\n- **Empty State:** No assets → show “Add assets to compare using the button above.”\n- **Psychology:** Direct visual comparison reduces cognitive load.\n- **Accessibility:** Each column labeled with asset name and spec summary.\n\n**Linked Skills:** `skills/state_management_expert.md`, `skills/performance_optimizer.md`."
+      },
+      {
+        "filename": "ui/SearchFilterScreen.md",
+        "content": "## SearchFilterScreen\n- **Purpose:** Advanced filtering of assets.\n- **Layout:** Modal with collapsible `FilterPanel` sections (Range, Speed, Generation, Country, Category).\n- **Components:**\n  - **FilterPanel** – sliders for numeric ranges, dropdowns for enums, toggles for boolean flags.\n  - **ApplyFiltersButton** – primary, triggers filter dispatch.\n  - **ResetFiltersButton** – secondary, clears all selections.\n- **State Sources:**\n  - `DS_FILTER_DEFINITIONS` → build UI controls.\n  - `DS_FILTER_STATE` → current selections.\n- **Logic:**\n  - Adjust controls → update local Zustand filter slice.\n  - Apply → persist to `DS_FILTER_STATE`, close modal, refresh `AssetList` in current screen.\n  - Reset → clear slice, close modal.\n- **Empty State:** No filters selected → Apply behaves as “clear all”.\n- **Psychology:** Empower user with precise control; progressive disclosure keeps UI clean.\n- **Accessibility:** Each control has a descriptive label; sliders announce current value.\n\n**Linked Skills:** `skills/state_management_expert.md`, `skills/gesture_handling_expert.md`."
+      },
+      {
+        "filename": "ui/FavoritesScreen.md",
+        "content": "## FavoritesScreen\n- **Purpose:** View and manage saved assets.\n- **Header:** `FavoritesHeader` – back button, Clear All action.\n- **List:** `FavoritesList` – similar to `AssetList` but sourced from `favorites` table.\n- **Interactions:**\n  - Tap item → navigate to `AssetDetailScreen`.\n  - Swipe left → reveal “Remove” action (deletes from SQLite).\n  - Clear All → confirmation dialog, then bulk delete.\n- **Empty State:** No favorites → show “You haven’t saved any assets yet.” with a link to Home.\n- **Psychology:** Encourages curation; quick access to frequently viewed assets.\n- **Accessibility:** List items announce “Favorite asset, {name}”.\n\n**Linked Skills:** `skills/state_management_expert.md`, `skills/security_hardener.md`."
+      },
+      {
+        "filename": "ui/SettingsScreen.md",
+        "content": "## SettingsScreen\n- **Purpose:** Global app configuration.\n- **Components:**\n  - **ThemeToggle** – switch light/dark; persists via AsyncStorage.\n  - **DataSyncButton** – manual sync; shows progress toast.\n  - **ARToggle** – enable/disable AR globally; respects device capability.\n  - **OfflineStatusIndicator** – shows offline‑ready flag, DB size, last sync timestamp.\n- **State Sources:**\n  - `DS_APP_STATE` → theme, AR flag.\n  - `DS_OFFLINE_STATUS` → indicator.\n- **Interactions:**\n  - Toggles update both local store and remote API.\n  - Sync button triggers `/api/v1/sync` and updates `offline_status` table.\n- **Empty State:** If sync fails, toast with retry option.\n- **Psychology:** Gives user control; transparent status builds trust.\n- **Accessibility:** Each toggle has `accessibilityHint` describing effect.\n\n**Linked Skills:** `skills/state_management_expert.md`, `skills/offline_sync_expert.md`, `skills/ar_integration_expert.md`."
+      },
+      {
+        "filename": "docs/logic/OnboardingLogic.md",
+        "content": "## Onboarding Logic Whitepaper\n### Overview\nThe onboarding flow is the first user‑experience gate. It must be **idempotent**, **fast**, and **recoverable**.\n### Data Flow\n1. App launch → `GET /api/v1/onboarding/content` → store in `onboarding_content` table.\n2. UI reads from `DS_ONBOARDING_CONTENT` via Zustand selector.\n3. Page navigation updates `onboarding_state.current_page`.\n4. Completion (`Skip` or `GetStarted`) writes `firstLaunch = false` to `app_state` table and clears `onboarding_state`.\n### Edge Cases\n- **Network Failure:** Fallback to bundled static JSON (included in assets folder). Show retry button.\n- **Corrupt DB:** Detect missing `firstLaunch` flag → treat as first launch.\n- **Interrupted Flow:** Persist `current_page` after each swipe; resume on next launch.\n### Guarantees\n- No duplicate API calls (cached after first fetch).\n- All writes are wrapped in SQLite transactions for atomicity.\n- UI updates are debounced (200 ms) to avoid rapid state churn.\n### Linked Skills\n- `state_management_expert.md`\n- `performance_optimizer.md`"
+      },
+      {
+        "filename": "docs/logic/DatabaseInitLogic.md",
+        "content": "## Database Initialization Logic\n### Purpose\nCreate a reliable SQLite schema that matches the `database_schema` definition and supports migrations.\n### Steps\n1. Open DB (`expo-sqlite`).\n2. Execute `CREATE TABLE IF NOT EXISTS` statements for each table in order respecting foreign keys.\n3. Run PRAGMA `foreign_keys = ON`.\n4. Insert default rows for `app_state` (firstLaunch = true, theme = 'light', arEnabled = false).\n5. Verify schema version via `PRAGMA user_version`; if mismatched, run migration scripts.\n### Migration Strategy\n- Increment `user_version` on each schema change.\n- Provide `up` and `down` SQL scripts.\n- Wrap migrations in a transaction; rollback on error.\n### Edge Cases\n- **Corrupt DB File:** Delete and recreate with a warning toast.\n- **Concurrent Access:** Use a single shared connection; queue writes.\n### Linked Skills\n- `security_hardener.md` (SQL injection prevention)\n- `performance_optimizer.md` (index creation for fast queries)"
+      },
+      {
+        "filename": "docs/logic/OfflineSyncLogic.md",
+        "content": "## Offline Sync Logic\n### Goal\nMaintain an up‑to‑date local asset bundle while allowing full offline operation.\n### Process\n1. **Initial Bundle Download** – On first launch or when user taps `DataSyncButton`, request `/api/v1/sync`.\n2. **Checksum Validation** – Compare server‑provided SHA‑256 with downloaded file.\n3. **Extraction** – Unzip JSON bundle; iterate assets:\n   - Insert/Update `assets` table.\n   - Insert/Update `asset_images` and `asset_3d_models` tables.\n4. **Cache Management** – Delete any local files not present in new bundle to stay under storage budget.\n5. **Progress Reporting** – Emit Zustand events (`syncProgress`) for UI toast.\n### Edge Cases\n- **Partial Download** – Abort and keep previous bundle; show error toast.\n- **Storage Exhaustion** – Prompt user to free space before proceeding.\n- **Version Conflict** – If server bundle version < local, ignore.\n### Guarantees\n- All DB writes are atomic per asset.\n- UI never shows stale data after successful sync.\n### Linked Skills\n- `offline_sync_expert.md`\n- `performance_optimizer.md`"
+      },
+      {
+        "filename": "docs/features/3DModelViewerFeature.md",
+        "content": "## 3‑D Model Viewer Feature Blueprint\n### Definition of Done (DoD)\n- ✅ GLB model loads from local cache; fallback to CDN if missing.\n- ✅ Gestures (rotate, zoom, pan) are smooth at 60 fps on iPhone 12.\n- ✅ AR toggle correctly detects device capability and either launches ARViewerScreen or shows disabled toast.\n- ✅ Reset button restores default camera position.\n- ✅ Memory cleanup on unmount (dispose geometries, textures).\n- ✅ Error UI for failed model load with retry.\n### Performance Metrics\n- **Load Time:** ≤ 2 s (cached) / ≤ 5 s (download).\n- **Memory Footprint:** ≤ 30 MB per model.\n- **CPU Usage:** ≤ 15 % on idle, ≤ 30 % during interaction.\n### Pitfalls & Mitigations\n- **Large Textures:** Use Draco compression; fallback to lower‑res textures on low‑memory devices.\n- **AR Lag:** Limit AR frame rate to 30 fps; disable heavy post‑processing.\n- **Network Flakiness:** Cache‑first strategy; show placeholder until download completes.\n### Linked Skills\n- `gesture_handling_expert.md`\n- `ar_integration_expert.md`\n- `performance_optimizer.md`"
+      },
+      {
+        "filename": "docs/features/ComparisonFeature.md",
+        "content": "## Comparison Feature Blueprint\n### Definition of Done\n- ✅ Queue holds up to three assets; attempts to add fourth show toast.\n- ✅ Side‑by‑side cards display thumbnail, key specs, and mini 3‑D preview.\n- ✅ Remove icon per column works instantly.\n- ✅ Clear All empties queue with confirmation.\n- ✅ Queue persists across app restarts.\n### Performance Metrics\n- **Render Time:** ≤ 200 ms for three cards.\n- **Interaction Latency:** ≤ 100 ms for add/remove actions.\n- **Memory:** ≤ 20 MB for mini‑preview models.\n### Edge Cases\n- **Duplicate Asset:** Prevent adding same asset twice.\n- **Missing Data:** If an asset lacks 3‑D model, hide mini preview.\n- **Offline:** Queue operations work offline; sync on next network availability.\n### Linked Skills\n- `state_management_expert.md`\n- `performance_optimizer.md`"
+      }
+    ],
+    "skills": [
+      {
+        "filename": "state_management_expert.md",
+        "content": "## State Management Expert (Behavioral Capability)\n**Core Reasoning Process**\n1. Identify slice boundaries (e.g., `appState`, `assets`, `favorites`).\n2. Define immutable update patterns using spread or immer.\n3. Persist slice data where required (AsyncStorage for lightweight settings, SQLite for heavy data).\n4. Create memoized selectors to avoid unnecessary re‑renders.\n5. Validate all actions against a TypeScript schema to catch runtime errors early.\n\n**Edge Cases**\n- **Concurrent Updates:** Queue actions using Zustand's `set` callback to guarantee order.\n- **Partial Persistence Failure:** Roll back in‑memory state and surface a toast.\n- **Schema Migration:** When adding new fields, provide default values in the selector.\n\n**Strategic Constraints**\n- Keep slice size ≤ 200 KB to stay within React Native's memory budget.\n- Avoid circular dependencies between slices.\n- All persisted data must be sanitized (no raw user input stored directly).\n\n**Never generate raw code** – instead, describe the algorithmic steps.\n"
+      },
+      {
+        "filename": "gesture_handling_expert.md",
+        "content": "## Gesture Handling Expert (Behavioral Capability)\n**Reasoning Workflow**\n1. Map each UI interaction to a Reanimated `gestureHandler`.\n2. Clamp values (e.g., zoom 0.5‑3×) to prevent runaway transforms.\n3. Debounce rapid gestures to avoid UI thread overload.\n4. Provide an accessible fallback button for each gesture.\n5. Test on low‑end devices (iPhone 11) to ensure 60 fps.\n\n**Edge Cases**\n- **Multi‑finger Conflict:** Prioritize two‑finger pan over pinch when both detected.\n- **Interrupted Gesture:** Reset animation state on `onEnd` to avoid stuck positions.\n- **Screen Rotation:** Preserve gesture state across orientation changes.\n\n**Strategic Constraints**\n- All gesture calculations must run on the UI thread via Reanimated worklets.\n- No heavy math (e.g., matrix inverses) inside the gesture; pre‑compute where possible.\n- Ensure VoiceOver can trigger the same actions via `accessibilityAction`.\n\n**Never output code snippets** – only describe the logical flow.\n"
+      },
+      {
+        "filename": "performance_optimizer.md",
+        "content": "## Performance Optimizer (Behavioral Capability)\n**Analytical Approach**\n1. Profile each screen with Flipper/React‑Native Performance Monitor.\n2. Identify long‑running JS tasks (> 16 ms) and off‑load to native modules or Web Workers.\n3. Apply `React.memo` and `useCallback` strategically to prevent re‑renders.\n4. Use `FlatList` with `windowSize` and `initialNumToRender` tuned for asset lists.\n5. For 3‑D, enable `frameloop='demand'` and dispose of unused geometries.\n\n**Edge Cases**\n- **Memory Leaks:** Ensure all listeners (`addListener`) are removed in `useEffect` cleanup.\n- **Network Throttling:** Implement exponential back‑off for retries.\n- **Low‑Battery Mode:** Detect via `expo-battery` and reduce animation intensity.\n\n**Strategic Constraints**\n- Keep JS bundle size < 2 MB (minify, tree‑shake).\n- All images must be served via CDN with `Cache‑Control: max‑age=31536000`.\n- 3‑D models must be Draco‑compressed; fallback to low‑poly when device memory < 150 MB.\n\n**No raw code** – only high‑level optimization tactics.\n"
+      },
+      {
+        "filename": "security_hardener.md",
+        "content": "## Security Hardener (Behavioral Capability)\n**Decision Process**\n1. Validate all external inputs (API responses, user‑generated data) against a JSON schema.\n2. Use parameterized queries for SQLite (`?` placeholders) to prevent injection.\n3. Store sensitive flags (e.g., `arEnabled`) in encrypted AsyncStorage (via `expo-secure-store`).\n4. Enforce HTTPS for all network calls; pin certificate if possible.\n5. Log security‑relevant events (failed auth, tampered bundle) to a local audit table.\n\n**Edge Cases**\n- **Corrupt JSON Bundle:** Verify checksum before applying; abort on mismatch.\n- **Replay Attacks:** Include timestamp in sync request and reject stale responses.\n- **Device Compromise:** Detect rooted/jailbroken devices via `expo-device` and warn user.\n\n**Strategic Constraints**\n- No plain‑text storage of API keys (none required, but keep future‑proof).\n- All error messages must be generic to avoid information leakage.\n- Follow OWASP Mobile Top 10 guidelines.\n\n**Never provide code** – outline security controls only.\n"
+      },
+      {
+        "filename": "ar_integration_expert.md",
+        "content": "## AR Integration Expert (Behavioral Capability)\n**Reasoning Steps**\n1. Query `/api/v1/device/capabilities` at app start; store `supports_ar` in `deviceCapabilities` slice.\n2. If `supports_ar` is false, hide AR toggle in Settings and disable AR button in ModelViewer.\n3. When user enables AR, initialize an ARKit session with `ARSession` configuration (plane detection disabled, world tracking enabled).\n4. Load the same GLB model into an `ARView` scene; map gestures to AR anchors.\n5. On session end, release all AR resources to avoid memory leaks.\n\n**Edge Cases**\n- **Permission Denial:** Prompt user with rationale; fallback to 3‑D viewer.\n- **Performance Drop:** Limit AR frame rate to 30 fps on devices with < 2 GB RAM.\n- **Model Too Large:** Show low‑poly placeholder in AR if size > 4 MB.\n\n**Strategic Constraints**\n- AR must not block the main UI thread; all heavy loading occurs in background.\n- Respect user privacy – no camera data is stored or transmitted.\n- Provide a clear exit path (Close button) that returns to AssetDetailScreen.\n\n**No code snippets** – describe the integration flow.\n"
+      },
+      {
+        "filename": "offline_sync_expert.md",
+        "content": "## Offline Sync Expert (Behavioral Capability)\n**Analytical Flow**\n1. Initiate sync via `DataSyncButton` → call `/api/v1/sync`.\n2. Receive JSON bundle containing assets, images, and 3‑D model metadata.\n3. Verify bundle checksum (SHA‑256) before processing.\n4. Begin SQLite transaction; upsert assets, images, and model entries.\n5. For each GLB URL, download asynchronously, store in app’s file system, and record path in `asset_3d_models`.\n6. Update `offline_status` table with `is_offline_ready = true`, `db_size_bytes`, and `last_sync` timestamp.\n7. Emit `syncProgress` events for UI toast updates.\n\n**Edge Cases**\n- **Partial Failure:** Roll back transaction; keep previous bundle intact; notify user.\n- **Insufficient Storage:** Prompt user to free space; abort sync.\n- **Network Interruption:** Retry up to 2 times with exponential back‑off; if still failing, keep existing data.\n\n**Strategic Constraints**\n- All writes must be atomic; use `BEGIN IMMEDIATE` to lock DB during sync.\n- Do not block the UI thread; perform all I/O in background workers.\n- Keep bundle size ≤ 50 MB to respect App Store limits.\n\n**Never output raw code** – only describe the synchronization strategy.\n"
+      }
+    ],
+    "provider_config": {}
+  },
+  "audit_log": [
+    {
+      "severity": "critical",
+      "message": "UI Component 'AnimatedLogo' (ID: 'DS_APP_STATE') on 'SplashScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'OnboardingCarousel' (ID: 'DS_ONBOARDING_CONTENT') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'NextButton' (ID: 'DS_ONBOARDING_STATE') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'SkipButton' (ID: 'DS_APP_STATE') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'GetStartedButton' (ID: 'DS_APP_STATE') on 'OnboardingScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'HeaderBar' (ID: 'DS_APP_STATE') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'QuickAccessCard' (ID: 'DS_FEATURED_ASSETS') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'CategoryGrid' (ID: 'DS_CATEGORIES') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'SearchBar' (ID: 'DS_SEARCH_STATE') on 'HomeScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'CategoryHeader' (ID: 'DS_CATEGORY_META') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'FilterButton' (ID: 'DS_FILTER_STATE') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'AssetList' (ID: 'DS_ASSET_LIST') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'LoadMoreButton' (ID: 'DS_ASSET_LIST') on 'CategoryScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'AssetHeader' (ID: 'DS_ASSET_DETAIL') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'ImageCarousel' (ID: 'DS_ASSET_IMAGES') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'SpecsSummary' (ID: 'DS_ASSET_SPECS') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'View3DButton' (ID: 'DS_ASSET_3D_MODEL') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'CompareButton' (ID: 'DS_COMPARISON_QUEUE') on 'AssetDetailScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'ThreeDModelViewer' (ID: 'DS_ASSET_3D_MODEL') on 'ModelViewerScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'ControlsOverlay' (ID: 'DS_DEVICE_CAPABILITIES') on 'ModelViewerScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'SpecsTable' (ID: 'DS_ASSET_SPECS') on 'TechnicalSpecsScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'ChartsPanel' (ID: 'DS_ASSET_CHART_DATA') on 'TechnicalSpecsScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'ComparisonHeader' (ID: 'DS_COMPARISON_QUEUE') on 'ComparisonScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'AssetComparisonCard' (ID: 'DS_ASSET_DETAIL') on 'ComparisonScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'FilterPanel' (ID: 'DS_FILTER_DEFINITIONS') on 'SearchFilterScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'ApplyFiltersButton' (ID: 'DS_FILTER_STATE') on 'SearchFilterScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'ResetFiltersButton' (ID: 'DS_FILTER_STATE') on 'SearchFilterScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'FavoritesHeader' (ID: 'DS_FAVORITES') on 'FavoritesScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'FavoritesList' (ID: 'DS_FAVORITES') on 'FavoritesScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'ThemeToggle' (ID: 'DS_APP_STATE') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'DataSyncButton' (ID: 'DS_REMOTE_ASSET_BUNDLE') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'ARToggle' (ID: 'DS_DEVICE_CAPABILITIES') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'OfflineStatusIndicator' (ID: 'DS_OFFLINE_STATUS') on 'SettingsScreen' lacks a corresponding API endpoint in tech_specs.",
+      "location": "ui_map -> tech_specs",
+      "check_id": "MISSING_ENDPOINT"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'AnimatedLogo' (data_source_id: 'DS_APP_STATE') on SplashScreen has no matching API endpoint in tech_specs.",
+      "location": "ui_map -> SplashScreen -> AnimatedLogo",
+      "check_id": "MISSING_ENDPOINT_AnimatedLogo"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'OnboardingCarousel' (data_source_id: 'DS_ONBOARDING_CONTENT') on OnboardingScreen has no matching API endpoint in tech_specs.",
+      "location": "ui_map -> OnboardingScreen -> OnboardingCarousel",
+      "check_id": "MISSING_ENDPOINT_OnboardingCarousel"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'NextButton' (data_source_id: 'DS_ONBOARDING_STATE') on OnboardingScreen has no matching API endpoint in tech_specs.",
+      "location": "ui_map -> OnboardingScreen -> NextButton",
+      "check_id": "MISSING_ENDPOINT_NextButton"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'HeaderBar' (data_source_id: 'DS_APP_STATE') on HomeScreen has no matching API endpoint in tech_specs.",
+      "location": "ui_map -> HomeScreen -> HeaderBar",
+      "check_id": "MISSING_ENDPOINT_HeaderBar"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'QuickAccessCard' (data_source_id: 'DS_FEATURED_ASSETS') on HomeScreen has no matching API endpoint in tech_specs.",
+      "location": "ui_map -> HomeScreen -> QuickAccessCard",
+      "check_id": "MISSING_ENDPOINT_QuickAccessCard"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'CategoryGrid' (data_source_id: 'DS_CATEGORIES') on HomeScreen has no matching API endpoint in tech_specs.",
+      "location": "ui_map -> HomeScreen -> CategoryGrid",
+      "check_id": "MISSING_ENDPOINT_CategoryGrid"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'AssetList' (data_source_id: 'DS_ASSET_LIST') on CategoryScreen has no matching API endpoint in tech_specs.",
+      "location": "ui_map -> CategoryScreen -> AssetList",
+      "check_id": "MISSING_ENDPOINT_AssetList"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'AssetHeader' (data_source_id: 'DS_ASSET_DETAIL') on AssetDetailScreen has no matching API endpoint in tech_specs.",
+      "location": "ui_map -> AssetDetailScreen -> AssetHeader",
+      "check_id": "MISSING_ENDPOINT_AssetHeader"
+    },
+    {
+      "severity": "critical",
+      "message": "UI Component 'ThreeDModelViewer' (data_source_id: 'DS_ASSET_3D_MODEL') on ModelViewerScreen has no matching API endpoint in tech_specs.",
+      "location": "ui_map -> ModelViewerScreen -> ThreeDModelViewer",
+      "check_id": "MISSING_ENDPOINT_ThreeDModelViewer"
+    },
+    {
+      "severity": "warning",
+      "message": "Duplicate API route definitions detected for '/api/v1/assets' (GET) – both list and pagination endpoints share the same ID, risking ambiguous routing.",
+      "location": "tech_specs -> api_routes",
+      "check_id": "TECH_DEBT_DUPLICATE_ASSETS_ENDPOINT"
+    },
+    {
+      "severity": "warning",
+      "message": "SQLite queries are not explicitly shown to use parameterized statements; risk of SQL injection if any future endpoint accepts user‑provided values.",
+      "location": "docs/logic/DatabaseInitLogic.md",
+      "check_id": "SECURITY_RISK_SQL_INJECTION"
+    },
+    {
+      "severity": "warning",
+      "message": "3‑D model size limit of 5 MB per GLB may be exceeded for high‑fidelity assets, potentially breaching the performance constraint of ≤ 30 MB memory per model.",
+      "location": "rules/performance_constraints.md",
+      "check_id": "PERF_RISK_MODEL_SIZE"
+    },
+    {
+      "severity": "warning",
+      "message": "AR toggle UI components reference 'DS_DEVICE_CAPABILITIES' but the tech_specs only expose '/api/v1/device/capabilities' without a dedicated data source ID mapping, leading to possible runtime mismatches.",
+      "location": "ui_map -> ModelViewerScreen -> ControlsOverlay",
+      "check_id": "MISSING_ENDPOINT_DeviceCapabilities"
+    },
+    {
+      "severity": "info",
+      "message": "Naming conventions are defined (e.g., screens end with 'Screen'), but several component IDs in ui_map do not follow the 'Component' suffix rule (e.g., 'HeaderBar', 'QuickAccessCard').",
+      "location": "rules/ui_naming_conventions.md",
+      "check_id": "NAMING_INCONSISTENCY"
+    },
+    {
+      "severity": "info",
+      "message": "All network calls are assumed to be HTTPS, but no certificate pinning strategy is documented, which could expose the app to man‑in‑the‑middle attacks.",
+      "location": "skills/security_hardener.md",
+      "check_id": "SECURITY_INFO_CERT_PINNING"
+    }
+  ],
+  "last_updated": "2026-03-06T16:32:30.239186",
+  "current_agent": null,
+  "user_feedback": null
+}
