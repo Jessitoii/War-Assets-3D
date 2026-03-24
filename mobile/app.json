@@ -30,7 +30,10 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-asset"
+      "expo-asset",
+      "expo-localization",
+      "expo-sqlite",
+      "expo-web-browser"
     ],
     "extra": {
       "eas": {

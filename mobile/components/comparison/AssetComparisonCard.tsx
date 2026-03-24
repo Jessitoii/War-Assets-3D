@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Asset } from '../../store/slices/assetSlice';
 import { theme } from '../../styles/theme';
 import { ThreeDModelViewer } from '../model-viewer/ThreeDModelViewer';
+import { CDN_CONFIG } from '../../config/cdnConfig';
 
 interface Props {
   asset: Asset;
@@ -14,14 +15,14 @@ interface Props {
 
 export const AssetComparisonCard: React.FC<Props> = ({ asset, onRemove, onPressMiniPreview, isDark }) => {
   return (
-    <View style={[styles.card, { 
+    <View style={[styles.card, {
       backgroundColor: isDark ? '#1C1C1E' : '#FFF',
-      borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' 
+      borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'
     }]}>
       <TouchableOpacity style={styles.removeButton} onPress={onRemove}>
         <Ionicons name="close-circle" size={24} color={theme.colors.error} />
       </TouchableOpacity>
-      
+
       {asset.images && asset.images.length > 0 ? (
         <Image source={{ uri: asset.images[0] }} style={styles.thumbnail} resizeMode="cover" />
       ) : asset.image ? (
@@ -31,12 +32,12 @@ export const AssetComparisonCard: React.FC<Props> = ({ asset, onRemove, onPressM
           <Ionicons name="camera-outline" size={32} color={isDark ? '#444' : '#CCC'} />
         </View>
       )}
-      
+
       <View style={styles.infoContainer}>
         <Text style={[styles.name, { color: isDark ? '#FFF' : '#000' }]} numberOfLines={1}>{asset.name}</Text>
-        
+
         <View style={[styles.divider, { backgroundColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' }]} />
-        
+
         {asset.specs && (
           <View style={styles.specsContainer}>
             <View style={styles.specRow}>
@@ -54,7 +55,7 @@ export const AssetComparisonCard: React.FC<Props> = ({ asset, onRemove, onPressM
           </View>
         )}
       </View>
-      
+
       <TouchableOpacity style={styles.miniPreviewContainer} onPress={onPressMiniPreview}>
         <ThreeDModelViewer assetId={asset.id} modelUrl={asset.model || ''} isMini={true} />
         <View style={styles.miniPreviewOverlay}>

@@ -7,8 +7,8 @@
     "featured": false,
     "full_dossier": {
       "endurance": "The UCAV can operate for up to 10 hours, enabling long-range missions.",
-      "payload": null,
-      "range": null,
+      "payload": "The Anka-3 can carry up to 1,200 kg of internal and external ordnance.",
+      "range": "Its operational combat range is estimated at 1,500 km.",
       "speed": "The Anka-3 is expected to have supersonic capabilities, allowing it to accompany the crewed KAAN combat aircraft."
     },
     "id": "tai-anka-3",
@@ -27,8 +27,8 @@
     "name": "TAI Anka-3",
     "short_specs": {
       "endurance": "10h",
-      "payload": null,
-      "range": null,
+      "payload": "1,200 kg",
+      "range": "1,500 km",
       "speed": "supersonic"
     },
     "specs": {
@@ -115,7 +115,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/TAI_Anka-3"
+    "wikiUrl": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -124,12 +125,12 @@
     "dangerLevel": 80,
     "featured": false,
     "full_dossier": {
-      "crew": null,
+      "crew": "The frigate is typically operated by a crew of 219 personnel.",
       "displacement": "The class of ship was one of the last to be constructed under post-war displacement limitations imposed by the WEU on West Germany.",
       "endurance": null,
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "The ship has a range of 4,000 nautical miles at 18 knots.",
+      "speed": "The Bremen-class frigates can reach a maximum speed of 30 knots."
     },
     "id": "bremen-class",
     "images": [
@@ -146,12 +147,12 @@
     "model": null,
     "name": "Bremen-class",
     "short_specs": {
-      "crew": null,
+      "crew": "219",
       "displacement": null,
       "endurance": null,
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "4,000 nmi",
+      "speed": "30 knots"
     },
     "specs": {
       "crew": null,
@@ -269,7 +270,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bremen-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bremen-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -425,14 +427,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Consolidated_B-32_Dominator"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Consolidated_B-32_Dominator",
+    "isFeatured": false
   },
   {
     "catId": "1",
     "country": "United Kingdom",
     "countryCode": "GBR",
     "dangerLevel": 95,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "armor": "The Chieftain has up to 195 mm of armor that is highly sloped to offer 388 mm thickness along the line of sight.",
       "crew": "The Chieftain has a crew of four.",
@@ -636,7 +639,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Chieftain_(tank)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Chieftain_(tank)",
+    "isFeatured": true
   },
   {
     "catId": "2",
@@ -809,14 +813,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Harbin_Z-9"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Harbin_Z-9",
+    "isFeatured": false
   },
   {
     "catId": "5",
     "country": "United States",
     "countryCode": "USA",
     "dangerLevel": 10,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "beam": "The ship was 30 feet 6 inches abeam.",
       "displacement": "The ship had a standard displacement of 1,090 long tons and displaced 1,205 long tons when fully loaded.",
@@ -1003,7 +1008,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Conyngham_(DD-58)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Conyngham_(DD-58)",
+    "isFeatured": true
   },
   {
     "catId": "3",
@@ -1108,7 +1114,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -1338,7 +1345,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/BTR-3"
+    "wikiUrl": "https://en.wikipedia.org/wiki/BTR-3",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -1475,7 +1483,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/TR-125"
+    "wikiUrl": "https://en.wikipedia.org/wiki/TR-125",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -1629,7 +1638,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Buk_missile_system#Buk-M1"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Buk_missile_system#Buk-M1",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -1748,7 +1758,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/STC_Orlan-10"
+    "wikiUrl": "https://en.wikipedia.org/wiki/STC_Orlan-10",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -1868,7 +1879,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_RQ-20_Puma"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_RQ-20_Puma",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -2022,7 +2034,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Palletized_Load_System"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Palletized_Load_System",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -2157,7 +2170,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M3_Bradley"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M3_Bradley",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -2254,7 +2268,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -2359,7 +2374,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -2371,8 +2387,8 @@
       "crew": "The Tornado is a two-crew aircraft",
       "engine": "The Tornado is powered by two engines",
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "The combat radius of the Tornado ECR is roughly 1,390 km.",
+      "speed": "The Panavia Tornado ECR can reach speeds up to Mach 2.2 at altitude."
     },
     "id": "panavia-tornado-ecr",
     "images": [
@@ -2392,8 +2408,8 @@
       "crew": "2",
       "engine": "twin",
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "1,390 km",
+      "speed": "Mach 2.2"
     },
     "specs": {
       "crew": "2",
@@ -2494,7 +2510,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Panavia_Tornado"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Panavia_Tornado",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -2599,7 +2616,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -2772,14 +2790,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_Martin_SR-72"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_Martin_SR-72",
+    "isFeatured": false
   },
   {
     "catId": "4",
     "country": "Russia",
     "countryCode": "RUS",
     "dangerLevel": 60,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "crew": "The Altius-U is an unmanned aerial vehicle, meaning it has a crew of 0.",
       "endurance": "The Altius-U has an endurance of 24 hours.",
@@ -2983,7 +3002,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sokol_Altius"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sokol_Altius",
+    "isFeatured": true
   },
   {
     "catId": "5",
@@ -3139,7 +3159,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Agema_Bagley"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Agema_Bagley",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -3266,14 +3287,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1126_ICV"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1126_ICV",
+    "isFeatured": false
   },
   {
     "catId": "4",
     "country": "United Kingdom",
     "countryCode": "GBR",
     "dangerLevel": 8,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "burners": "Six propane burners provided lift.",
       "crew": "The gondola carried a two‑person crew, Bertrand Piccard and Brian Jones.",
@@ -3418,7 +3440,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Orbiter_(UAV)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Orbiter_(UAV)",
+    "isFeatured": true
   },
   {
     "catId": "5",
@@ -3515,7 +3538,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Georgia_(SSGN-729)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Georgia_(SSGN-729)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -3612,7 +3636,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -3728,7 +3753,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/UAVision_Hero_120"
+    "wikiUrl": "https://en.wikipedia.org/wiki/UAVision_Hero_120",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -3844,7 +3870,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/SK-105_Kürassier"
+    "wikiUrl": "https://en.wikipedia.org/wiki/SK-105_Kürassier",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -3979,7 +4006,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M109_howitzer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M109_howitzer",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -4095,7 +4123,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-16"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-16",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -4192,7 +4221,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Kamov_Ka-52"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kamov_Ka-52",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -4289,7 +4319,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -4443,7 +4474,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1_Abrams"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1_Abrams",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -4540,7 +4572,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Zulfiquar-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Zulfiquar-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -4599,7 +4632,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Skylark_(drone)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Skylark_(drone)",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -4696,7 +4730,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-22"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-22",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -4831,7 +4866,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M46_Patton"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M46_Patton",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -4928,7 +4964,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AL-41"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AL-41",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -5044,7 +5081,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tor_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tor_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -5141,7 +5179,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1074_Joint_Assault_Bridge_System"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1074_Joint_Assault_Bridge_System",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -5183,7 +5222,8 @@
     },
     "threatType": "Low",
     "translations": null,
-    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_RQ-11_Raven"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_RQ-11_Raven",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -5318,7 +5358,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-24"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-24",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -5471,7 +5512,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-25"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-25",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -5590,7 +5632,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M88_Recovery_Vehicle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M88_Recovery_Vehicle",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -5706,7 +5749,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -5841,7 +5885,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/CH-3A"
+    "wikiUrl": "https://en.wikipedia.org/wiki/CH-3A",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -5928,7 +5973,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-34"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-34",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -6044,7 +6090,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-95"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-95",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -6141,7 +6188,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/HMMWV"
+    "wikiUrl": "https://en.wikipedia.org/wiki/HMMWV",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -6238,7 +6286,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -6358,7 +6407,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Kamorta-class_corvette"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kamorta-class_corvette",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -6455,7 +6505,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Variants_of_the_Stryker"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Variants_of_the_Stryker",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -6552,7 +6603,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Najin-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Najin-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -6668,7 +6720,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Delta-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Delta-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -6765,7 +6818,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Tennessee_(SSBN-734)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Tennessee_(SSBN-734)",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -6881,7 +6935,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/JH-7"
+    "wikiUrl": "https://en.wikipedia.org/wiki/JH-7",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -7073,7 +7128,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_Insitu_RQ-21_Blackjack"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_Insitu_RQ-21_Blackjack",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -7170,7 +7226,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M142_HIMARS"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M142_HIMARS",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -7245,7 +7302,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/CASC_CH-901"
+    "wikiUrl": "https://en.wikipedia.org/wiki/CASC_CH-901",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -7342,7 +7400,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/CH-803"
+    "wikiUrl": "https://en.wikipedia.org/wiki/CH-803",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -7439,7 +7498,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -7555,7 +7615,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mikoyan_MiG-31"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mikoyan_MiG-31",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -7690,7 +7751,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TWQ-1_Avenger"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TWQ-1_Avenger",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -7787,7 +7849,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Family_of_Medium_Tactical_Vehicles"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Family_of_Medium_Tactical_Vehicles",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -7879,7 +7942,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Akula-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Akula-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -8014,7 +8078,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/SSM-N-8_Regulus"
+    "wikiUrl": "https://en.wikipedia.org/wiki/SSM-N-8_Regulus",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -8054,7 +8119,8 @@
     },
     "threatType": "High",
     "translations": null,
-    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -8151,7 +8217,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1126_ICV#M1129_ICV"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1126_ICV#M1129_ICV",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -8289,7 +8356,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M577_Command_Post_Carrier"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M577_Command_Post_Carrier",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -8386,7 +8454,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Family_of_Medium_Tactical_Vehicles"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Family_of_Medium_Tactical_Vehicles",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -8525,7 +8594,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/CASC_Rainbow"
+    "wikiUrl": "https://en.wikipedia.org/wiki/CASC_Rainbow",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -8641,7 +8711,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_88_assault_rifle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_88_assault_rifle",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -8738,7 +8809,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sikorsky_UH-60_Black_Hawk"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sikorsky_UH-60_Black_Hawk",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -8987,7 +9059,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mahan-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mahan-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -9084,7 +9157,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Horizon-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Horizon-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -9200,7 +9274,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_Hudson"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_Hudson",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -9211,8 +9286,8 @@
     "full_dossier": {
       "crew": "The Apache is operated by a crew of two, consisting of a pilot and a co‑pilot/gunner.",
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "The operational range of the Apache is around 257 nmi (476 km) on internal fuel.",
+      "speed": "The AH-64A Apache has a maximum speed of approximately 150 knots (279 km/h)."
     },
     "id": "ah-64a-apache",
     "images": [
@@ -9231,8 +9306,8 @@
     "short_specs": {
       "crew": "2",
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "257 nmi",
+      "speed": "150 knots"
     },
     "specs": {
       "crew": "2",
@@ -9316,7 +9391,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_AH-64"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_AH-64",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -9373,7 +9449,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Paulding-class_sloop-of-war"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Paulding-class_sloop-of-war",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -9508,7 +9585,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Douglas_A-3_Skywarrior"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Douglas_A-3_Skywarrior",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -9624,7 +9702,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Ada-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Ada-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -9778,7 +9857,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/General_Atomics_MQ-20_Avenger"
+    "wikiUrl": "https://en.wikipedia.org/wiki/General_Atomics_MQ-20_Avenger",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -9916,7 +9996,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Xiyang_Dongfang%E5%88%B6%E4%BD%9C_/_Sharp_Sword"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Xiyang_Dongfang%E5%88%B6%E4%BD%9C_/_Sharp_Sword",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -10013,7 +10094,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/EE-T1_Osório"
+    "wikiUrl": "https://en.wikipedia.org/wiki/EE-T1_Osório",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -10110,7 +10192,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -10207,7 +10290,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -10342,7 +10426,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AMX-30"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AMX-30",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -10353,8 +10438,8 @@
     "full_dossier": {
       "engine": "The F-22 is powered by two jet engines.",
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "The operational range is approximately 1,600 nmi with two external drop tanks.",
+      "speed": "The F-22 Raptor is capable of supercruise up to Mach 1.82 and can reach speeds of Mach 2.25 with afterburners."
     },
     "id": "f-22-raptor",
     "images": [
@@ -10373,8 +10458,8 @@
     "short_specs": {
       "engine": "twin",
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "1,600 nmi",
+      "speed": "Mach 2.25"
     },
     "specs": {
       "engine": "twin-engine",
@@ -10458,7 +10543,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -10593,7 +10679,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Freedom-class_littoral_combat_ship"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Freedom-class_littoral_combat_ship",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -10673,7 +10760,8 @@
         "speed": null
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Nongo-class_warship"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Nongo-class_warship",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -10806,7 +10894,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Switchblade"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Switchblade",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -10903,7 +10992,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -11000,7 +11090,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -11097,7 +11188,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Nilgiri-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Nilgiri-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -11194,7 +11286,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -11255,7 +11348,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sikorsky_S-67_Blackhawk"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sikorsky_S-67_Blackhawk",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -11335,7 +11429,8 @@
         "speed": null
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ARCHER_Artillery_System"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ARCHER_Artillery_System",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -11432,7 +11527,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Wyoming_(SSBN-742)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Wyoming_(SSBN-742)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -11548,7 +11644,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Visby-class_corvette"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Visby-class_corvette",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -11645,7 +11742,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/CAIG_Wing_Loong"
+    "wikiUrl": "https://en.wikipedia.org/wiki/CAIG_Wing_Loong",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -11742,7 +11840,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -11800,7 +11899,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -11917,7 +12017,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Next_Generation_Air_Dominance"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Next_Generation_Air_Dominance",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -12052,7 +12153,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Saab_Gripen#Gripen_NG"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Saab_Gripen#Gripen_NG",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -12168,7 +12270,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-27"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-27",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -12265,7 +12368,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ROKS_Choe_Yeong"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ROKS_Choe_Yeong",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -12314,7 +12418,8 @@
     },
     "threatType": "Communication System",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tactical_Control_System"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tactical_Control_System",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -12449,7 +12554,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-30"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-30",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -12508,7 +12614,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/PlayStation_2_technical_specifications"
+    "wikiUrl": "https://en.wikipedia.org/wiki/PlayStation_2_technical_specifications",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -12548,7 +12655,8 @@
     },
     "threatType": "non-kinetic threat",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_military_electronics_of_the_United_States"
+    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_military_electronics_of_the_United_States",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -12620,7 +12728,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Oscar-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Oscar-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -12723,7 +12832,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Z-19_E"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Z-19_E",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -12788,7 +12898,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_AH-1_SuperCobra"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_AH-1_SuperCobra",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -12885,7 +12996,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Harbin_Z-10"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Harbin_Z-10",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -12985,7 +13097,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Xiannong_(fighter_aircraft)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Xiannong_(fighter_aircraft)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -13061,7 +13174,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-300_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-300_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -13158,7 +13272,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Horizon-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Horizon-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -13274,7 +13389,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-156_Standard"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-156_Standard",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -13409,7 +13525,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mitscher-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mitscher-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -13507,7 +13624,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPS-80_Ground/Air_Task_Oriented_Radar"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPS-80_Ground/Air_Task_Oriented_Radar",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -13645,7 +13763,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-7_Super_Vision"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-7_Super_Vision",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -13763,7 +13882,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Chengdu_J-10"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Chengdu_J-10",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -13848,7 +13968,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_Aircraft_of_the_People%27s_Liberation_Army_Air_Force"
+    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_Aircraft_of_the_People%27s_Liberation_Army_Air_Force",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -13924,7 +14045,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Martin/General_Dynamics_RB-57F_Canberra"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Martin/General_Dynamics_RB-57F_Canberra",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -14035,7 +14157,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Newport-class_tank_landing_ship"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Newport-class_tank_landing_ship",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -14132,7 +14255,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-22"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-22",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -14271,7 +14395,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ZBD-04"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ZBD-04",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -14369,7 +14494,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -14488,7 +14614,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Baden-Württemberg-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Baden-Württemberg-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -14642,7 +14769,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -14733,7 +14861,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_59_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_59_tank",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -14851,7 +14980,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_88_K1A1"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_88_K1A1",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -14948,7 +15078,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -14993,7 +15124,8 @@
     },
     "threatType": "Ground Target",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -15091,7 +15223,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -15163,7 +15296,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bradley_Fighting_Vehicle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bradley_Fighting_Vehicle",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -15228,7 +15362,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-23_Hawk"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-23_Hawk",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -15286,7 +15421,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_the_United_States_military_vehicles_by_model_number"
+    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_the_United_States_military_vehicles_by_model_number",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -15421,14 +15557,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-28"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-28",
+    "isFeatured": false
   },
   {
     "catId": "4",
     "country": "Russia",
     "countryCode": "RUS",
     "dangerLevel": 72,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "crew": "The Korsar has no crew.",
       "empty_weight": "The Korsar has an empty weight of 200 kg (441 lb).",
@@ -15651,7 +15788,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Luch_Korsar"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Luch_Korsar",
+    "isFeatured": true
   },
   {
     "catId": "1",
@@ -15748,7 +15886,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_United_States_Army_tactical_truck_models"
+    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_United_States_Army_tactical_truck_models",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -15883,7 +16022,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/CASA/IPTN_CN-235"
+    "wikiUrl": "https://en.wikipedia.org/wiki/CASA/IPTN_CN-235",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -15945,7 +16085,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Consolidated_B-24_Liberator"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Consolidated_B-24_Liberator",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -16003,7 +16144,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/General_Dynamics_F-111_Aardvark"
+    "wikiUrl": "https://en.wikipedia.org/wiki/General_Dynamics_F-111_Aardvark",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -16108,7 +16250,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -16213,7 +16356,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-80"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-80",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -16263,7 +16407,8 @@
     },
     "threatType": "Surface-to-Air Missile System",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -16338,7 +16483,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1132_ESV"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1132_ESV",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -16410,7 +16556,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_P-2_Neptune"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_P-2_Neptune",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -16486,7 +16633,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-34"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-34",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -16583,7 +16731,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_B-21_Raider"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_B-21_Raider",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -16682,7 +16831,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/UPG-49"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/UPG-49",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -16817,7 +16967,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Shenyang_J-31"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Shenyang_J-31",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -16914,7 +17065,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -17012,7 +17164,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Florida_(SSG(N)-728)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Florida_(SSG(N)-728)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -17051,7 +17204,8 @@
     },
     "threatType": "Surface-to-air missile",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Air_defense"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Air_defense",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -17148,7 +17302,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Buk_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Buk_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -17265,7 +17420,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Searcher"
+    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Searcher",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -17334,7 +17490,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Ryan_Firebee"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Ryan_Firebee",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -17374,7 +17531,8 @@
     },
     "threatType": "Main Battle Tank",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/FV4201_Chibret"
+    "wikiUrl": "https://en.wikipedia.org/wiki/FV4201_Chibret",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -17433,7 +17591,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -17472,7 +17631,8 @@
     },
     "threatType": "High",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/4th-generation_jet_fighter_bomber"
+    "wikiUrl": "https://en.wikipedia.org/wiki/4th-generation_jet_fighter_bomber",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -17584,7 +17744,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -17688,7 +17849,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Harbin_Z-19"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Harbin_Z-19",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -17750,7 +17912,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -17888,7 +18051,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/K9_Thunder"
+    "wikiUrl": "https://en.wikipedia.org/wiki/K9_Thunder",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -17949,7 +18113,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_AH-1Z_Viper"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_AH-1Z_Viper",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -17994,7 +18159,8 @@
     },
     "threatType": "High-Yield Nuclear Weapon",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Nuclear_weapon"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Nuclear_weapon",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -18079,7 +18245,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/VN1"
+    "wikiUrl": "https://en.wikipedia.org/wiki/VN1",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -18214,7 +18381,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mi-28"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mi-28",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -18256,7 +18424,8 @@
     },
     "threatType": "Tactical",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sina-class_fast_attack_craft"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sina-class_fast_attack_craft",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -18391,7 +18560,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-35"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-35",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -18488,7 +18658,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Saudi_corvette_Al_Jubail"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Saudi_corvette_Al_Jubail",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -18612,7 +18783,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1068_SICPS"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1068_SICPS",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -18702,7 +18874,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-8_Fire_Scout"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-8_Fire_Scout",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -18782,7 +18955,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Narwhal_(SSN-671)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Narwhal_(SSN-671)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -18872,7 +19046,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M88_Hercules"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M88_Hercules",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -19028,7 +19203,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/PP-19-01_Vityaz"
+    "wikiUrl": "https://en.wikipedia.org/wiki/PP-19-01_Vityaz",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -19182,7 +19358,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-160"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-160",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -19281,7 +19458,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Dassault_nEUROn"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Dassault_nEUROn",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -19402,7 +19580,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -19475,7 +19654,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/UTAP-22_Mako"
+    "wikiUrl": "https://en.wikipedia.org/wiki/UTAP-22_Mako",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -19554,7 +19734,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M48_Chaparral"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M48_Chaparral",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -19612,7 +19793,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/MSQ-104(V)2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/MSQ-104(V)2",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -19709,7 +19891,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Sampson_(DD-63)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Sampson_(DD-63)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -19869,7 +20052,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Allen_M._Sumner-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Allen_M._Sumner-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -19966,7 +20150,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bergamini-class_corvette"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bergamini-class_corvette",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -20063,7 +20248,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/HAL_Tejas"
+    "wikiUrl": "https://en.wikipedia.org/wiki/HAL_Tejas",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -20106,7 +20292,8 @@
     },
     "threatType": "Specification",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/National_Building_Specification"
+    "wikiUrl": "https://en.wikipedia.org/wiki/National_Building_Specification",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -20181,7 +20368,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Variants_of_the_Stryker"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Variants_of_the_Stryker",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -20316,7 +20504,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Saab_JAS_39_Gripen"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Saab_JAS_39_Gripen",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -20415,7 +20604,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Dassault_Rafale"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Dassault_Rafale",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -20531,7 +20721,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AMX_International_AMX"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AMX_International_AMX",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -20629,7 +20820,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -20705,7 +20897,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-300PMU"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-300PMU",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -20769,7 +20962,8 @@
     },
     "threatType": "Low",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/HMMWV"
+    "wikiUrl": "https://en.wikipedia.org/wiki/HMMWV",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -20869,7 +21063,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Khukri-class_corvette"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Khukri-class_corvette",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -20996,7 +21191,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T29_(tank)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T29_(tank)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -21058,7 +21254,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Delta_III-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Delta_III-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -21174,7 +21371,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -21230,7 +21428,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -21365,7 +21564,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Heavy_Expanded_Mobility_Tactical_Truck"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Heavy_Expanded_Mobility_Tactical_Truck",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -21434,7 +21634,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Xiamen_Hongyun_J-16"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Xiamen_Hongyun_J-16",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -21517,7 +21718,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M2_Bradley#Variants"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M2_Bradley#Variants",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -21562,7 +21764,8 @@
     },
     "threatType": "Surface-to-Air Missile defense",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPS-75"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPS-75",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -21620,7 +21823,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -21720,7 +21924,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Xian_JH-7"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Xian_JH-7",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -21817,7 +22022,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-24"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-24",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -21857,7 +22063,8 @@
     },
     "threatType": "Non-lethal",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Smoke_generator"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Smoke_generator",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -21901,7 +22108,8 @@
     },
     "threatType": "air-to-ground, air-to-air",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_A-12_(1959_aircraft)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_A-12_(1959_aircraft)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -21960,7 +22168,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -22000,7 +22209,8 @@
     },
     "threatType": "Low-altitude and high-altitude reconnaissance, strike, and air-to-air combat",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_unmanned_aerial_vehicles_of_China"
+    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_unmanned_aerial_vehicles_of_China",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -22098,7 +22308,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AV%26V_Switchblade"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AV%26V_Switchblade",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -22181,7 +22392,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/OF-40"
+    "wikiUrl": "https://en.wikipedia.org/wiki/OF-40",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -22228,7 +22440,8 @@
     },
     "threatType": "High-Tech/Advanced/Stealthy",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-90_Tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-90_Tank",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -22382,7 +22595,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Shenyang_J-11"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Shenyang_J-11",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -22479,7 +22693,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-66_Standard"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-66_Standard",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -22576,7 +22791,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Changhe_Z-10"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Changhe_Z-10",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -22679,7 +22895,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Asashio-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Asashio-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -22871,7 +23088,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/VT-4"
+    "wikiUrl": "https://en.wikipedia.org/wiki/VT-4",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -22990,7 +23208,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Pohang-class_corvette"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Pohang-class_corvette",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -23125,7 +23344,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M48_Patton"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M48_Patton",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -23222,7 +23442,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/KAI_KF-21_Boramae"
+    "wikiUrl": "https://en.wikipedia.org/wiki/KAI_KF-21_Boramae",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -23299,7 +23520,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Typhoon_RQ-16"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Typhoon_RQ-16",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -23378,7 +23600,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Conqueror_(tank)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Conqueror_(tank)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -23513,7 +23736,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Arleigh_Burke-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Arleigh_Burke-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -23705,7 +23929,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Steregushchiy-class_corvette"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Steregushchiy-class_corvette",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -23803,7 +24028,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/NASAMS"
+    "wikiUrl": "https://en.wikipedia.org/wiki/NASAMS",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -23859,7 +24085,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Hongqi-10"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Hongqi-10",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -23934,7 +24161,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1135_nuclear,_biological,_and_chemical_reconnaissance_vehicle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1135_nuclear,_biological,_and_chemical_reconnaissance_vehicle",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -24033,7 +24261,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -24091,7 +24320,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/UAV"
+    "wikiUrl": "https://en.wikipedia.org/wiki/UAV",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -24154,7 +24384,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/TAI_Anka-3"
+    "wikiUrl": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -24212,7 +24443,8 @@
     },
     "threatType": "Electronic and visual surveillance",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_Firebird"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_Firebird",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -24309,7 +24541,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/STC_Orlan-10"
+    "wikiUrl": "https://en.wikipedia.org/wiki/STC_Orlan-10",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -24371,7 +24604,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/B-25_Mitchell"
+    "wikiUrl": "https://en.wikipedia.org/wiki/B-25_Mitchell",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -24468,7 +24702,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/H-6"
+    "wikiUrl": "https://en.wikipedia.org/wiki/H-6",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -24526,7 +24761,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-66_Standard"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-66_Standard",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -24589,7 +24825,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Family_of_Medium_Tactical_Vehicles"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Family_of_Medium_Tactical_Vehicles",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -24651,7 +24888,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-161_Standard_Missile_3"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-161_Standard_Missile_3",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -24756,7 +24994,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-5_Hunter"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-5_Hunter",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -24834,7 +25073,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Japanese_destroyer_Tachibana_(1944)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Japanese_destroyer_Tachibana_(1944)",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -24861,7 +25101,8 @@
     "specs": {},
     "threatType": "Electronic Warfare",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Passive_electronic_scanning_and_doppler_pulse"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Passive_electronic_scanning_and_doppler_pulse",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -24958,7 +25199,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/HAL_Light_Combat_Helicopter"
+    "wikiUrl": "https://en.wikipedia.org/wiki/HAL_Light_Combat_Helicopter",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -25074,7 +25316,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/X-60_Viper"
+    "wikiUrl": "https://en.wikipedia.org/wiki/X-60_Viper",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -25140,7 +25383,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M113_armored_personnel_carrier"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M113_armored_personnel_carrier",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -25239,7 +25483,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Nautilus_(SSN-571)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Nautilus_(SSN-571)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -25279,7 +25524,8 @@
     },
     "threatType": "High",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1134_Azimuts"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1134_Azimuts",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -25417,7 +25663,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-90"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-90",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -25444,7 +25691,8 @@
     "specs": {},
     "threatType": "Aerial Threat",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Main_Page"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Main_Page",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -25521,7 +25769,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-64"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-64",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -25584,7 +25833,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/FL-3000"
+    "wikiUrl": "https://en.wikipedia.org/wiki/FL-3000",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -25681,7 +25931,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -25793,7 +26044,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-4_Global_Hawk"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-4_Global_Hawk",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -25891,7 +26143,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -25992,7 +26245,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -26106,7 +26360,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_96_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_96_tank",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -26176,7 +26431,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/DJI_Mavic_3"
+    "wikiUrl": "https://en.wikipedia.org/wiki/DJI_Mavic_3",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -26293,7 +26549,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -26337,7 +26594,8 @@
     },
     "threatType": "High-Risk",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Skipjack-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Skipjack-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -26423,7 +26681,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_054A_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_054A_frigate",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -26522,7 +26781,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Denel_Rooivalk"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Denel_Rooivalk",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -26627,7 +26887,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -26696,7 +26957,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/40CT_cannon"
+    "wikiUrl": "https://en.wikipedia.org/wiki/40CT_cannon",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -26798,7 +27060,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Cassin-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Cassin-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -26914,7 +27177,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-24"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-24",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -27011,7 +27275,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Cassin_(DD-43)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Cassin_(DD-43)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -27070,7 +27335,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -27109,7 +27375,8 @@
     },
     "threatType": "Medium-to-high threat, Unmanned Aerial Vehicle",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-35_Heidrun"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-35_Heidrun",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -27209,7 +27476,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-95"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-95",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -27314,7 +27582,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -27453,7 +27722,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Narwhal_(SSN-671)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Narwhal_(SSN-671)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -27570,7 +27840,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -27672,7 +27943,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/BTR-80"
+    "wikiUrl": "https://en.wikipedia.org/wiki/BTR-80",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -27749,7 +28021,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sachsen-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sachsen-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -27805,7 +28078,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AGM-88_HARM"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AGM-88_HARM",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -27902,7 +28176,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ThyssenKrupp_Braunschweig-class_corvette"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ThyssenKrupp_Braunschweig-class_corvette",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -28018,7 +28293,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -28173,7 +28449,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/FM-3000"
+    "wikiUrl": "https://en.wikipedia.org/wiki/FM-3000",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -28270,7 +28547,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Main_Battle_Tank_(disambiguation)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Main_Battle_Tank_(disambiguation)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -28375,7 +28653,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -28420,7 +28699,8 @@
     },
     "threatType": "Naval",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/United_States_Navy_Improved_Permit-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/United_States_Navy_Improved_Permit-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -28574,7 +28854,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mikoyan_MiG-35"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mikoyan_MiG-35",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -28625,7 +28906,8 @@
     },
     "threatType": "Low to Moderate",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Agras_T30"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Agras_T30",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -28760,7 +29042,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Yasen-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Yasen-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -28805,7 +29088,8 @@
     },
     "threatType": "Attack helicopter",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_AH-64_Apache"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_AH-64_Apache",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -28844,7 +29128,8 @@
     },
     "threatType": "Low-Medium Air Defense",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/TKG"
+    "wikiUrl": "https://en.wikipedia.org/wiki/TKG",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -28941,7 +29226,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_O%Brien_(DD-415)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_O%Brien_(DD-415)",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -28999,7 +29285,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-95"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-95",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -29077,7 +29364,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Matsu-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Matsu-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -29135,7 +29423,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -29232,7 +29521,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Farragut_(DD-300)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Farragut_(DD-300)",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -29278,7 +29568,8 @@
     },
     "threatType": "Loitering Munition and Anti-Radiation Drone",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Harpy_NG"
+    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Harpy_NG",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -29375,7 +29666,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-24_Tartar"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-24_Tartar",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -29419,7 +29711,8 @@
     },
     "threatType": "Airborne",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/AH-64_Delong_Guardian"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AH-64_Delong_Guardian",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -29482,7 +29775,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M106_mortar_carrier"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M106_mortar_carrier",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -29617,7 +29911,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_F/A-18E/F_Super_Hornet"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_F/A-18E/F_Super_Hornet",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -29715,7 +30010,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Family_of_Medium_Tactical_Vehicles"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Family_of_Medium_Tactical_Vehicles",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -29777,7 +30073,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/TAI_Anka"
+    "wikiUrl": "https://en.wikipedia.org/wiki/TAI_Anka",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -29879,7 +30176,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/New_Lawrence-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/New_Lawrence-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -29969,7 +30267,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ScanEagle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ScanEagle",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -30070,7 +30369,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Charles_F._Adams-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Charles_F._Adams-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -30206,7 +30506,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RG-31_Nyala"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RG-31_Nyala",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -30304,7 +30605,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -30343,7 +30645,8 @@
     },
     "threatType": "Surface-to-Air Missile System",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -30440,7 +30743,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ENICS_Eleron-10"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ENICS_Eleron-10",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -30517,7 +30821,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-64"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-64",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -30584,7 +30889,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Convair_B-36_Peacemaker"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Convair_B-36_Peacemaker",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -30656,7 +30962,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Gowind-class_design"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Gowind-class_design",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -30696,7 +31003,8 @@
     },
     "threatType": "Not Applicable",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/George_Washington"
+    "wikiUrl": "https://en.wikipedia.org/wiki/George_Washington",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -30741,7 +31049,8 @@
     },
     "threatType": "High-Tech, MBT",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -30858,7 +31167,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Douglas_B-66_Destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Douglas_B-66_Destroyer",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -30955,7 +31265,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Hyman_G._Rickover"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Hyman_G._Rickover",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -31011,7 +31322,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Aksungur"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Aksungur",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -31051,7 +31363,8 @@
     },
     "threatType": "high-speed, high-altitude target drone",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Target_drones_(United_States)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Target_drones_(United_States)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -31114,7 +31427,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Gearing-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Gearing-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -31247,7 +31561,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Turkish_Grand_National_Assembly"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Turkish_Grand_National_Assembly",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -31305,7 +31620,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_UH-1Y_Venom"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_UH-1Y_Venom",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -31402,7 +31718,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Patriot_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Patriot_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -31500,7 +31817,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/9K720_Iskander"
+    "wikiUrl": "https://en.wikipedia.org/wiki/9K720_Iskander",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -31643,7 +31961,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/French_cruiser_De_Grasse"
+    "wikiUrl": "https://en.wikipedia.org/wiki/French_cruiser_De_Grasse",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -31702,7 +32021,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -31751,7 +32071,8 @@
     },
     "threatType": "Medium threat",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Douglas_A-20_Havoc"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Douglas_A-20_Havoc",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -31803,7 +32124,8 @@
     },
     "threatType": "low",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-23_Tiger_Shark"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-23_Tiger_Shark",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -31864,7 +32186,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/TAI_Anka"
+    "wikiUrl": "https://en.wikipedia.org/wiki/TAI_Anka",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -31923,7 +32246,8 @@
     },
     "threatType": "Advanced Main Battle Tank",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Shivalik-class"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Shivalik-class",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -31999,7 +32323,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Raven"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Raven",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -32102,7 +32427,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Daegu-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Daegu-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -32178,7 +32504,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-34"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-34",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -32294,7 +32621,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_AH-6"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_AH-6",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -32400,7 +32728,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/FL-3000N"
+    "wikiUrl": "https://en.wikipedia.org/wiki/FL-3000N",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -32490,7 +32819,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/CAIC_Zingtuo"
+    "wikiUrl": "https://en.wikipedia.org/wiki/CAIC_Zingtuo",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -32587,7 +32917,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-24"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-24",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -32684,7 +33015,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Yasen-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Yasen-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -32756,7 +33088,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/CASC_Rainbow"
+    "wikiUrl": "https://en.wikipedia.org/wiki/CASC_Rainbow",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -32821,7 +33154,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Patriot_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Patriot_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -32938,7 +33272,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/UJ-25_Skyline"
+    "wikiUrl": "https://en.wikipedia.org/wiki/UJ-25_Skyline",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -33022,7 +33357,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/STM_Kargu"
+    "wikiUrl": "https://en.wikipedia.org/wiki/STM_Kargu",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -33157,7 +33493,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-30"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-30",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -33219,7 +33556,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -33261,7 +33599,8 @@
     },
     "threatType": "ballistic missile submarine",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Halibut_(SSGN-587)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Halibut_(SSGN-587)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -33330,7 +33669,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-80"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-80",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -33413,7 +33753,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-44"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-44",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -33518,7 +33859,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Joint_Light_Tactical_Vehicle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Joint_Light_Tactical_Vehicle",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -33614,7 +33956,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Davis_(DD-65)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Davis_(DD-65)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -33672,7 +34015,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -33742,7 +34086,8 @@
     },
     "threatType": "Ground",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Douglas_A2D_Skyshark"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Douglas_A2D_Skyshark",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -33861,7 +34206,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -33996,7 +34342,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MD_Helicopters_MH-6_Little_Bird"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MD_Helicopters_MH-6_Little_Bird",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -34132,7 +34479,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Nord_1500_Griffon"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Nord_1500_Griffon",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -34212,7 +34560,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_59_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_59_tank",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -34309,7 +34658,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Missile"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Missile",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -34378,7 +34728,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Aeronautics_Defense_Orbiter"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Aeronautics_Defense_Orbiter",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -34422,7 +34773,8 @@
     },
     "threatType": "Radar detection and tracking",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPS-78"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPS-78",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -34483,7 +34835,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Kentucky_(SSBN-737)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Kentucky_(SSBN-737)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -34581,7 +34934,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -34673,7 +35027,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_59_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_59_tank",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -34771,7 +35126,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Wing_Loong_I"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Wing_Loong_I",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -34868,7 +35224,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-7_Sea_Sparrow"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-7_Sea_Sparrow",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -34915,7 +35272,8 @@
     },
     "threatType": "High-altitude attack helicopter",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_AH-56_Cheyenne"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_AH-56_Cheyenne",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -35024,7 +35382,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Maine_(SSBN-741)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Maine_(SSBN-741)",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -35113,7 +35472,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Kub-BLA"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Kub-BLA",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -35218,7 +35578,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/MPQ-64_Sentinel"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/MPQ-64_Sentinel",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -35302,7 +35663,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -35385,7 +35747,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_59_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_59_tank",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -35491,7 +35854,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Enterprise_(CVN-65)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Enterprise_(CVN-65)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -35624,7 +35988,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/UGM-84_Harpoon"
+    "wikiUrl": "https://en.wikipedia.org/wiki/UGM-84_Harpoon",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -35669,7 +36034,8 @@
       "tr": {},
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1076_PLS"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1076_PLS",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -35783,7 +36149,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -35826,7 +36193,8 @@
     },
     "threatType": "Anti-Ballistic Missile",
     "translations": null,
-    "wikiUrl": "https://en.wikipedia.org/wiki/HQ-9"
+    "wikiUrl": "https://en.wikipedia.org/wiki/HQ-9",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -35923,7 +36291,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/NNS_Aradu"
+    "wikiUrl": "https://en.wikipedia.org/wiki/NNS_Aradu",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -36020,7 +36389,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Oshkosh_M1070"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Oshkosh_M1070",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -36174,7 +36544,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AMX-32"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AMX-32",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -36291,7 +36662,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_79_submachine_gun"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_79_submachine_gun",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -36395,7 +36767,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_YB-35"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_YB-35",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -36516,7 +36889,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sikorsky_MH-53E_Sea_Dragon"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sikorsky_MH-53E_Sea_Dragon",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -36611,7 +36985,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ST-1-class_mine_countermeasures_ship"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ST-1-class_mine_countermeasures_ship",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -36717,7 +37092,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T95_Medium_Tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T95_Medium_Tank",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -36814,7 +37190,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_YB-35"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_YB-35",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -36880,7 +37257,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_80/88_main_battle_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_80/88_main_battle_tank",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -36977,7 +37355,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Pennsylvania_(SSBN-735)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Pennsylvania_(SSBN-735)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -37080,7 +37459,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Al-Zarrar_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Al-Zarrar_tank",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -37160,7 +37540,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/SAGEM_Sperwer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/SAGEM_Sperwer",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -37288,7 +37669,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Elbit_Skylark"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Elbit_Skylark",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -37401,7 +37783,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Cushing_(DD-55)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Cushing_(DD-55)",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -37585,7 +37968,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-170_Sentinel"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-170_Sentinel",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -37682,7 +38066,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Virginia"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Virginia",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -37813,7 +38198,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Teledyne_FLIR_Black_Hornet_Nano"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Teledyne_FLIR_Black_Hornet_Nano",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -37927,7 +38313,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/North_American_AJ_Savage"
+    "wikiUrl": "https://en.wikipedia.org/wiki/North_American_AJ_Savage",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -38062,7 +38449,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/K130_(corvette)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/K130_(corvette)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -38159,7 +38547,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_69_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_69_tank",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -38273,7 +38662,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -38370,7 +38760,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_equipment_of_the_Armed_Forces_of_Ukraine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_equipment_of_the_Armed_Forces_of_Ukraine",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -38467,7 +38858,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Agusta_A129_Mangusta"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Agusta_A129_Mangusta",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -38590,7 +38982,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Brandenburg-class_corvette"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Brandenburg-class_corvette",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -38725,7 +39118,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_Martin_F-16V_Viper"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_Martin_F-16V_Viper",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -38823,7 +39217,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Piper_PA-20_Pacer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Piper_PA-20_Pacer",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -38921,7 +39316,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_80/88_main_battle_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_80/88_main_battle_tank",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -39026,7 +39422,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M41_Walker_Bulldog"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M41_Walker_Bulldog",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -39123,7 +39520,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPS"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPS",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -39157,7 +39555,8 @@
     },
     "threatType": "Airborne Bombardment",
     "translations": null,
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_B-17_Flying_Fortress"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_B-17_Flying_Fortress",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -39264,7 +39663,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -39377,7 +39777,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_B-2_Spirit"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_B-2_Spirit",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -39474,7 +39875,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_naval_ship_classes_in_service"
+    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_naval_ship_classes_in_service",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -39550,7 +39952,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_99_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_99_tank",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -39599,7 +40002,8 @@
     },
     "threatType": "High-Risk Targeting System",
     "translations": null,
-    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Rotem_L"
+    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Rotem_L",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -39697,7 +40101,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/XQ-58_Valkyrie"
+    "wikiUrl": "https://en.wikipedia.org/wiki/XQ-58_Valkyrie",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -39830,7 +40235,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/HQ-9"
+    "wikiUrl": "https://en.wikipedia.org/wiki/HQ-9",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -39946,7 +40352,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Nebraska_(SSBN-739)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Nebraska_(SSBN-739)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -40060,7 +40467,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Carabinieri"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Carabinieri",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -40166,7 +40574,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_99_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_99_tank",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -40263,7 +40672,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment#Shrike"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment#Shrike",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -40328,7 +40738,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Azmat-class_fast_attack_craft"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Azmat-class_fast_attack_craft",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -40425,7 +40836,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Rhode_Island_(SSBN-740)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Rhode_Island_(SSBN-740)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -40560,7 +40972,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -40674,7 +41087,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Dunlap"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Dunlap",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -40790,7 +41204,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Merkava"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Merkava",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -40871,7 +41286,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Rockwell_B-1_Lancer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Rockwell_B-1_Lancer",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -40976,7 +41392,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-67_Standard"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-67_Standard",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -41026,7 +41443,8 @@
     },
     "threatType": "Aerial Target",
     "translations": null,
-    "wikiUrl": "https://en.wikipedia.org/wiki/Composite_Engineering_BQM-167_Skeeter"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Composite_Engineering_BQM-167_Skeeter",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -41161,7 +41579,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -41266,7 +41685,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Langenfeld_Jouett"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Langenfeld_Jouett",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -41382,7 +41802,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-28"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-28",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -41479,7 +41900,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Kronshtadt_Orion"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kronshtadt_Orion",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -41563,7 +41985,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400#S-400_TDVE_/_EM"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400#S-400_TDVE_/_EM",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -41660,7 +42083,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sikorsky_CH-53E_Super_Stallion"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sikorsky_CH-53E_Super_Stallion",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -41728,7 +42152,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Merkava"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Merkava",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -41844,7 +42269,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Nevada_(SSBN-733)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Nevada_(SSBN-733)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -41912,7 +42338,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_096_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_096_submarine",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -41965,7 +42392,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Joint_Tactical_Ground_Station"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Joint_Tactical_Ground_Station",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -42062,7 +42490,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leonardo_Helicopters_AW249_Fenice"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leonardo_Helicopters_AW249_Fenice",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -42146,7 +42575,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -42188,7 +42618,8 @@
     },
     "threatType": "Ground Based Anti-Ship",
     "translations": null,
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sejong_the_Great-class"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sejong_the_Great-class",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -42285,7 +42716,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/HQ-16"
+    "wikiUrl": "https://en.wikipedia.org/wiki/HQ-16",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -42382,7 +42814,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Rowan_(DD-64)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Rowan_(DD-64)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -42479,7 +42912,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Reeves_AN/MPQ-68_Bomb_Directing_Central"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Reeves_AN/MPQ-68_Bomb_Directing_Central",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -42590,7 +43024,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPQ-36_Firefinder_radar"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPQ-36_Firefinder_radar",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -42706,7 +43141,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/TAI/AgustaWestland_T129_ATAK"
+    "wikiUrl": "https://en.wikipedia.org/wiki/TAI/AgustaWestland_T129_ATAK",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -42824,7 +43260,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_B-47_Stratojet"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_B-47_Stratojet",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -42921,7 +43358,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Merkava"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Merkava",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -43020,7 +43458,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Kora-class_corvette"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kora-class_corvette",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -43060,7 +43499,8 @@
     },
     "threatType": "Air Superiority/Multifunctional Fighter",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_F-15EX_Eagle_II"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_F-15EX_Eagle_II",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -43176,14 +43616,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bayraktar_TB2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bayraktar_TB2",
+    "isFeatured": false
   },
   {
     "catId": "5",
     "country": "United States",
     "countryCode": "USA",
     "dangerLevel": 8,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "beam": "Beam of 31 feet 2 inches (9.50 m).",
       "displacement": "Median displacement of 1,050 long tons (1,070 t).",
@@ -43311,14 +43752,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/O%27Brien-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/O%27Brien-class_destroyer",
+    "isFeatured": true
   },
   {
     "catId": "5",
     "country": "United States",
     "countryCode": "USA",
     "dangerLevel": 30,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "beam": "Beam of 30 feet 11 inches (9.4 meters).",
       "crew": "Crew complement of 133 officers and enlisted men.",
@@ -43475,7 +43917,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Mahan_(DD-102)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Mahan_(DD-102)",
+    "isFeatured": true
   },
   {
     "catId": "5",
@@ -43556,7 +43999,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Trishul_(missile)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Trishul_(missile)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -43710,7 +44154,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M-84AS"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M-84AS",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -43807,7 +44252,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_AH-1_SuperCobra"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_AH-1_SuperCobra",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -43904,7 +44350,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -44001,7 +44448,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -44012,8 +44460,8 @@
     "full_dossier": {
       "engine": "950-shaft-horsepower (712 kW) turboprop engine",
       "payload": null,
-      "range": null,
-      "speed": null,
+      "range": "The Reaper has an operational range of 1,852 km (1,000 nmi).",
+      "speed": "The MQ-9 Reaper has a cruise speed of around 313 km/h and a top speed of 482 km/h.",
       "weight": "Takeoff weight of approximately 7,000 pounds (3,200 kg)"
     },
     "id": "mq-9-reaper",
@@ -44033,8 +44481,8 @@
     "short_specs": {
       "engine": "950 hp",
       "payload": null,
-      "range": null,
-      "speed": null,
+      "range": "1,850 km",
+      "speed": "482 km/h",
       "weight": "7,000 lb"
     },
     "specs": {
@@ -44088,7 +44536,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/General_Atomics_MQ-9_Reaper"
+    "wikiUrl": "https://en.wikipedia.org/wiki/General_Atomics_MQ-9_Reaper",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -44204,7 +44653,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Kamov_Ka-50"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kamov_Ka-50",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -44276,14 +44726,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Kasturi-class_corvette"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kasturi-class_corvette",
+    "isFeatured": false
   },
   {
     "catId": "4",
     "country": "United States",
     "countryCode": "USA",
     "dangerLevel": 20,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "ceiling": "Operates at altitudes up to 300 m (1,000 ft) above ground level.",
       "endurance": "Has 45 minutes of operational endurance.",
@@ -44449,7 +44900,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Wasp_III"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Wasp_III",
+    "isFeatured": true
   },
   {
     "catId": "3",
@@ -44528,7 +44980,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Aegis_Combat_System"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Aegis_Combat_System",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -44625,7 +45078,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-90"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-90",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -44722,7 +45176,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Gridley_(DD-380)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Gridley_(DD-380)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -44819,7 +45274,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/PT-91_Twardy"
+    "wikiUrl": "https://en.wikipedia.org/wiki/PT-91_Twardy",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -44903,7 +45359,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -44979,7 +45436,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-24"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-24",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -45030,7 +45488,8 @@
       "tr": {},
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -45169,7 +45628,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Black_Hornet_2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Black_Hornet_2",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -45209,7 +45669,8 @@
     },
     "threatType": "Nuclear-Powered Ballistic Missile Submarine",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Ohio_(SSGN-726)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Ohio_(SSGN-726)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -45306,7 +45767,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Centurion_(tank)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Centurion_(tank)",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -45382,7 +45844,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-28"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-28",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -45466,7 +45929,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -45554,7 +46018,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/EMT_Luna_X-2000"
+    "wikiUrl": "https://en.wikipedia.org/wiki/EMT_Luna_X-2000",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -45689,7 +46154,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-23_Hawk"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-23_Hawk",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -45786,7 +46252,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Ulsan-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Ulsan-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -45902,7 +46369,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -45999,7 +46467,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -46121,7 +46590,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Stridsvagn_103"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Stridsvagn_103",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -46204,7 +46674,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/STC_Orlan-10"
+    "wikiUrl": "https://en.wikipedia.org/wiki/STC_Orlan-10",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -46301,7 +46772,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_77_submachine_gun"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_77_submachine_gun",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -46344,7 +46816,8 @@
     },
     "threatType": "high-altitude, high-velocity threats",
     "translations": null,
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -46441,7 +46914,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Agusta_A129_Mangusta"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Agusta_A129_Mangusta",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -46595,7 +47069,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -46717,7 +47192,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Shenyang_J-16"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Shenyang_J-16",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -46872,7 +47348,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_West_Virginia_(SSBN-736)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_West_Virginia_(SSBN-736)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -46988,7 +47465,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Cummings_(DD-44)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Cummings_(DD-44)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -47104,7 +47582,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/w/index.php?search=Sigma-class+Corvette&go=Go"
+    "wikiUrl": "https://en.wikipedia.org/w/index.php?search=Sigma-class+Corvette&go=Go",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -47239,7 +47718,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/CAIC_WZ-5"
+    "wikiUrl": "https://en.wikipedia.org/wiki/CAIC_WZ-5",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -47393,7 +47873,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Forrest_Sherman-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Forrest_Sherman-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -47547,7 +48028,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-62"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-62",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -47665,7 +48147,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_051C_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_051C_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -47781,7 +48264,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-24"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-24",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -47973,7 +48457,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Chieftain_(tank)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Chieftain_(tank)",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -48070,7 +48555,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Ghost"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Ghost",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -48187,7 +48673,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M109_howitzer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M109_howitzer",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -48360,7 +48847,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-55"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-55",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -48476,7 +48964,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1126_Infantry_Carrier_Vehicle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1126_Infantry_Carrier_Vehicle",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -48573,7 +49062,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/UVision_Air"
+    "wikiUrl": "https://en.wikipedia.org/wiki/UVision_Air",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -48670,7 +49160,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -48767,14 +49258,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/New_Generation_Fighter"
+    "wikiUrl": "https://en.wikipedia.org/wiki/New_Generation_Fighter",
+    "isFeatured": false
   },
   {
     "catId": "5",
     "country": "France",
     "countryCode": "FRA",
     "dangerLevel": 20,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "beam": "Beam is 14 metres, requiring fin stabilisers for stability.",
       "displacement": "Standard displacement is 2,642 tonnes, rising to 3,000 tonnes at full load.",
@@ -48922,7 +49414,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Floréal-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Floréal-class_frigate",
+    "isFeatured": true
   },
   {
     "catId": "1",
@@ -49071,7 +49564,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M41_Walker_Bulldog"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M41_Walker_Bulldog",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -49168,7 +49662,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sabre_(military)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sabre_(military)",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -49284,7 +49779,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Martin_B-57_Canberra"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Martin_B-57_Canberra",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -49437,7 +49933,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-9_Reaper"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RQ-9_Reaper",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -49534,7 +50031,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -49631,14 +50129,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Maryland_(SSBN-738)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Maryland_(SSBN-738)",
+    "isFeatured": false
   },
   {
     "catId": "1",
     "country": "France",
     "countryCode": "FRA",
     "dangerLevel": 80,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "ammunition_load": "The main gun ammunition load was 37 to 40 rounds depending on the prototype.",
       "aux_armament": "Auxiliary armament included a 20 mm M693 autocannon and a 7.62 mm AAN-F1 light machine gun.",
@@ -49831,7 +50330,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AMX-40"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AMX-40",
+    "isFeatured": true
   },
   {
     "catId": "2",
@@ -49966,7 +50466,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_F/A-18E/F_Super_Hornet"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_F/A-18E/F_Super_Hornet",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -50120,7 +50621,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/DJI_Matrice_300"
+    "wikiUrl": "https://en.wikipedia.org/wiki/DJI_Matrice_300",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -50274,7 +50776,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Chinese_stealth_fighter"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Chinese_stealth_fighter",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -50371,7 +50874,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -50520,7 +51024,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Convair_B-36_Peacemaker"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Convair_B-36_Peacemaker",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -50655,7 +51160,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/WZ-111_Heavy_Tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/WZ-111_Heavy_Tank",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -50828,7 +51334,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Challenger_1"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Challenger_1",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -51001,7 +51508,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Buk_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Buk_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -51174,7 +51682,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Harbin_Z-9"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Harbin_Z-9",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -51279,7 +51788,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -51471,7 +51981,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -51571,7 +52082,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Benson-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Benson-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -51728,7 +52240,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Jagdpanzer_IV"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Jagdpanzer_IV",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -51882,7 +52395,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sarg%C3%B6_(boat)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sarg%C3%B6_(boat)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -52017,7 +52531,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-72"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-72",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -52171,14 +52686,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Stryker"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Stryker",
+    "isFeatured": false
   },
   {
     "catId": "4",
     "country": "France",
     "countryCode": "FRA",
     "dangerLevel": 20,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "ceiling": "The Harfang can reach a height of 7,500 metres.",
       "endurance": "The Harfang has an endurance of 24 hours.",
@@ -52344,7 +52860,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/EADS_Harfang"
+    "wikiUrl": "https://en.wikipedia.org/wiki/EADS_Harfang",
+    "isFeatured": true
   },
   {
     "catId": "2",
@@ -52356,8 +52873,8 @@
       "crew": "The aircraft has a crew of 1.",
       "engine": "The Su-57 is a twin-engine stealth multirole fighter aircraft.",
       "payload": "The Su-57 incorporates large payload capacity.",
-      "range": null,
-      "speed": null
+      "range": "The aircraft has a maximum range of approximately 3,500 km at subsonic speeds.",
+      "speed": "The Su-57 can achieve speeds of up to Mach 2.0 at altitude."
     },
     "id": "sukhoi-su-57",
     "images": [
@@ -52376,8 +52893,8 @@
     "short_specs": {
       "crew": "1",
       "payload": "large",
-      "range": null,
-      "speed": null
+      "range": "3,500 km",
+      "speed": "Mach 2.0"
     },
     "specs": {
       "crew": "1",
@@ -52478,7 +52995,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-57"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-57",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -52590,7 +53108,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Georges_Leygues-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Georges_Leygues-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -52695,7 +53214,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -52814,14 +53334,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M-1101"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M-1101",
+    "isFeatured": false
   },
   {
     "catId": "3",
     "country": "United States",
     "countryCode": "USA",
     "dangerLevel": 70,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "antennas": "The system uses four complementary antennas to provide 360-degree coverage.",
       "auxiliary_elements": "There are 128 auxiliary elements on each antenna array.",
@@ -53073,7 +53594,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN%2FSPY-1"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN%2FSPY-1",
+    "isFeatured": true
   },
   {
     "catId": "1",
@@ -53246,14 +53768,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-64"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-64",
+    "isFeatured": false
   },
   {
     "catId": "1",
     "country": "West Germany",
     "countryCode": "DEU",
     "dangerLevel": 50,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "NBC_protection": "The Kanonenjagdpanzer had NBC protection.",
       "armor": "The hull of the Kanonenjagdpanzer consisted of welded steel with a maximum thickness of 50 mm.",
@@ -53457,7 +53980,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Kanonenjagdpanzer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kanonenjagdpanzer",
+    "isFeatured": true
   },
   {
     "catId": "3",
@@ -53629,14 +54153,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mark_50_Caption_Round"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mark_50_Caption_Round",
+    "isFeatured": false
   },
   {
     "catId": "4",
     "country": "United States",
     "countryCode": "USA",
     "dangerLevel": "2",
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "cruise_speed": "The cruise speed of the Dragon Eye is 64 km/h.",
       "endurance": "The endurance of the Dragon Eye is 45-60 minutes.",
@@ -53859,7 +54384,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_RQ-14_Dragon_Eye"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_RQ-14_Dragon_Eye",
+    "isFeatured": true
   },
   {
     "catId": "4",
@@ -54013,7 +54539,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Yakovlev_Pchela"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Yakovlev_Pchela",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -54186,14 +54713,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Sealion_(SS-315)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Sealion_(SS-315)",
+    "isFeatured": false
   },
   {
     "catId": "5",
     "country": "India",
     "countryCode": "IND",
     "dangerLevel": 5,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "armament": "The primary armament of the class includes Barak 8 / MRSAM air defence missiles, BrahMos anti-ship and land-attack missiles, a 76 mm naval gun, and Four AK-630 CIWSs.",
       "beam": "The class has a beam of 17.4 m.",
@@ -54397,7 +54925,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Kolkata-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kolkata-class_destroyer",
+    "isFeatured": true
   },
   {
     "catId": "5",
@@ -54570,7 +55099,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Delta_II"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Delta_II",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -54706,7 +55236,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Kamov_Ka-50"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kamov_Ka-50",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -54823,14 +55354,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Yakovlev_Yak-130"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Yakovlev_Yak-130",
+    "isFeatured": false
   },
   {
     "catId": "1",
     "country": "United Kingdom",
     "countryCode": "GBR",
     "dangerLevel": 95,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "armor": "The turret and hull are protected with second generation Chobham armour, also known as Dorchester.",
       "crew": "The Challenger 2 has four crew members consisting of a commander, gunner, loader, and driver.",
@@ -54978,7 +55510,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Challenger_2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Challenger_2",
+    "isFeatured": true
   },
   {
     "catId": "1",
@@ -55187,7 +55720,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Panzer_38(t)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Panzer_38(t)",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -55322,7 +55856,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Xi%27an_H-6"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Xi%27an_H-6",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -55476,7 +56011,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Tingey_(DD-539)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Tingey_(DD-539)",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -55611,7 +56147,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_TB3"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_TB3",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -55732,7 +56269,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/County_(unmanned_aircraft_system)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/County_(unmanned_aircraft_system)",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -55904,7 +56442,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_CH-47_Chinook"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_CH-47_Chinook",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -56039,7 +56578,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon_variants"
+    "wikiUrl": "https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon_variants",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -56147,7 +56687,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Harpy"
+    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Harpy",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -56320,7 +56861,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Jagdpanther"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Jagdpanther",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -56417,7 +56959,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -56571,14 +57114,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-72_operators_and_variants"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-72_operators_and_variants",
+    "isFeatured": false
   },
   {
     "catId": "4",
     "country": "China",
     "countryCode": "CHN",
     "dangerLevel": 80,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "ceiling": "The drone has a ceiling of 15 km.",
       "endurance": "The drone has an endurance of 6 hours.",
@@ -56744,7 +57288,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Chengdu_WZ-10"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Chengdu_WZ-10",
+    "isFeatured": true
   },
   {
     "catId": "2",
@@ -56841,7 +57386,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_AH-1_SuperCobra"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_AH-1_SuperCobra",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -56995,7 +57541,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/HQ-9"
+    "wikiUrl": "https://en.wikipedia.org/wiki/HQ-9",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -57092,7 +57639,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-72"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-72",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -57208,7 +57756,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/SU-100"
+    "wikiUrl": "https://en.wikipedia.org/wiki/SU-100",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -57343,7 +57892,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/HAL_Rudra"
+    "wikiUrl": "https://en.wikipedia.org/wiki/HAL_Rudra",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -57448,7 +57998,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MEKO_class"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MEKO_class",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -57545,7 +58096,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -57661,7 +58213,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/HAL_Prachand"
+    "wikiUrl": "https://en.wikipedia.org/wiki/HAL_Prachand",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -57777,7 +58330,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Obiekt_140"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Obiekt_140",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -57874,7 +58428,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-72"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-72",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -57971,7 +58526,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/North_American_A-5_Vigilante"
+    "wikiUrl": "https://en.wikipedia.org/wiki/North_American_A-5_Vigilante",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -58080,7 +58636,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ENICS_Eleron-3"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -58177,7 +58734,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Family_of_Medium_Tactical_Vehicles"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Family_of_Medium_Tactical_Vehicles",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -58274,7 +58832,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Parche_(SSN-683)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Parche_(SSN-683)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -58371,7 +58930,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Alps-class_long-range_surveillance_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Alps-class_long-range_surveillance_system",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -58468,7 +59028,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Main_Page"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Main_Page",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -58565,7 +59126,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-72"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-72",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -58719,7 +59281,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Heavy_Expanded_Mobility_Tactical_Truck"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Heavy_Expanded_Mobility_Tactical_Truck",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -58798,7 +59361,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_99_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_99_tank",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -58895,7 +59459,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-72"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-72",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -58992,7 +59557,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -59089,7 +59655,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Kamov_Ka-52"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kamov_Ka-52",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -59187,7 +59754,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-72"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-72",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -59340,7 +59908,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-30MKI"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-30MKI",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -59456,7 +60025,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-10_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-10_tank",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -59610,7 +60180,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/WZ-122_Main_Battle_Tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/WZ-122_Main_Battle_Tank",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -59707,7 +60278,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Akizuki-class_destroyer_(1942)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Akizuki-class_destroyer_(1942)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -59804,7 +60376,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -59901,7 +60474,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Dassault_Mirage_2000"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Dassault_Mirage_2000",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -60036,7 +60610,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Littoral_combat_ship"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Littoral_combat_ship",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -60152,7 +60727,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Ethan_Allen-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Ethan_Allen-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -60249,7 +60825,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/PZL_W-3_Sok%C3%B3%C5%82"
+    "wikiUrl": "https://en.wikipedia.org/wiki/PZL_W-3_Sok%C3%B3%C5%82",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -60346,7 +60923,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-72"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-72",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -60470,7 +61048,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-85"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-85",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -60586,7 +61165,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-62"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-62",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -60683,7 +61263,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -60780,7 +61361,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Xian_H-20"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Xian_H-20",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -60877,7 +61459,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-80"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-80",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -60974,7 +61557,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M47_Patton"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M47_Patton",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -61146,7 +61730,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/DJI_Inspire_2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/DJI_Inspire_2",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -61235,7 +61820,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sindhughosh-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sindhughosh-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -61351,7 +61937,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/PT-76"
+    "wikiUrl": "https://en.wikipedia.org/wiki/PT-76",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -61535,7 +62122,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Tullibee_(SSN-597)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Tullibee_(SSN-597)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -61632,7 +62220,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Trident"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Trident",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -61881,7 +62470,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sagem_Patroller"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sagem_Patroller",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -61997,7 +62587,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-80"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-80",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -62113,7 +62704,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MiG-25"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MiG-25",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -62210,14 +62802,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Benham_(DD-397)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Benham_(DD-397)",
+    "isFeatured": false
   },
   {
     "catId": "4",
     "country": "Israel",
     "countryCode": "ISR",
     "dangerLevel": "5",
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "ceiling": "Its maximum operational altitude is about 30,000 ft (9,100 m).",
       "endurance": "It provides an endurance of roughly 45 hours at its maximum altitude.",
@@ -62364,7 +62957,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Heron"
+    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Heron",
+    "isFeatured": true
   },
   {
     "catId": "1",
@@ -62517,7 +63111,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1302_Mobile_Protected_Firepower"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1302_Mobile_Protected_Firepower",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -62652,7 +63247,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -62768,7 +63364,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-16"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-16",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -62859,7 +63456,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_B-50_Superfortress"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_B-50_Superfortress",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -62956,7 +63554,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-14_Armata"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-14_Armata",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -63088,7 +63687,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_AH-1_SuperCobra"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_AH-1_SuperCobra",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -63185,7 +63785,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M3_Lee"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M3_Lee",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -63301,7 +63902,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_63_(tank)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_63_(tank)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -63398,7 +64000,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -63612,7 +64215,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Harop"
+    "wikiUrl": "https://en.wikipedia.org/wiki/IAI_Harop",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -63728,7 +64332,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_Ventura"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_Ventura",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -63920,7 +64525,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Ak%C4%B1nc%C4%B1_(drone)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Ak%C4%B1nc%C4%B1_(drone)",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -63931,8 +64537,8 @@
     "full_dossier": {
       "engine": "The Bayraktar TB2 is powered by a Rotax 912 engine, an Austrian‑manufactured piston engine originally certified for civil aircraft.",
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "The TB2 has a communication range of 150 km and an endurance of up to 27 hours.",
+      "speed": "The Bayraktar TB2 has a maximum speed of 220 km/h (120 knots)."
     },
     "id": "bayraktar-tb2",
     "images": [
@@ -63951,8 +64557,8 @@
     "short_specs": {
       "engine": "Rotax 912",
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "150 km",
+      "speed": "220 km/h"
     },
     "specs": {
       "engine": "Rotax 912",
@@ -64036,7 +64642,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bayraktar_TB2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bayraktar_TB2",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -64170,7 +64777,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M26_Pershing"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M26_Pershing",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -64267,7 +64875,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Rajput-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Rajput-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -64364,7 +64973,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-90"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-90",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -64461,7 +65071,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/MPQ-65"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/MPQ-65",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -64526,7 +65137,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Eurofighter_Typhoon"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Eurofighter_Typhoon",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -64661,7 +65273,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_YB-49"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_YB-49",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -64777,7 +65390,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_69_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_69_tank",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -64893,7 +65507,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -65047,7 +65662,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M24_Chaffee"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M24_Chaffee",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -65197,7 +65813,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPY-2_transportable_radar"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPY-2_transportable_radar",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -65313,7 +65930,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -65410,7 +66028,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -65526,7 +66145,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/PZL_W-3_Sok%C3%B3%C4%85l"
+    "wikiUrl": "https://en.wikipedia.org/wiki/PZL_W-3_Sok%C3%B3%C4%85l",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -65642,7 +66262,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Shenyang_J-11"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Shenyang_J-11",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -65739,7 +66360,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -65836,7 +66458,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/FREMM_frégate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/FREMM_frégate",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -65933,7 +66556,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_45_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_45_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -66030,7 +66654,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -66127,7 +66752,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -66224,7 +66850,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Switchblade"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Switchblade",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -66340,7 +66967,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bayraktar_K%C4%B1z%C4%B1lelma"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bayraktar_K%C4%B1z%C4%B1lelma",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -66353,8 +66981,8 @@
       "crew": "The M1 Abrams has a crew of 3.",
       "engine": "The M1 Abrams features a multifuel turbine engine.",
       "payload": null,
-      "range": null,
-      "speed": null,
+      "range": "The operational range of the initial M1 model is approximately 265 miles.",
+      "speed": "The M1 Abrams has a governed top speed of 42 mph (67 km/h) on road.",
       "weight": "The M1 Abrams weighs nearly 73.6 short tons (66.8 metric tons)."
     },
     "id": "m1-abrams",
@@ -66375,8 +67003,8 @@
       "crew": "3",
       "engine": "turbine",
       "payload": null,
-      "range": null,
-      "speed": null,
+      "range": "265 mi",
+      "speed": "42 mph",
       "weight": "73.6 t"
     },
     "specs": {
@@ -66422,7 +67050,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1_Abrams"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1_Abrams",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -66489,7 +67118,8 @@
     },
     "threatType": "Radar",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPS-43"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/TPS-43",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -66555,7 +67185,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M60_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M60_tank",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -66646,7 +67277,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/German_cruiser_Admiral_Scheer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/German_cruiser_Admiral_Scheer",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -66781,7 +67413,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mikoyan_MiG-29K"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mikoyan_MiG-29K",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -66827,7 +67460,8 @@
     },
     "threatType": "High",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Challenger_1_(tank)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Challenger_1_(tank)",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -66943,7 +67577,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Xian_H-6"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Xian_H-6",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -67097,7 +67732,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leclerc_(tank)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leclerc_(tank)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -67167,7 +67803,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Fubuki-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Fubuki-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -67269,7 +67906,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M4_Sherman"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M4_Sherman",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -67374,7 +68012,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_309_KingCobra"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bell_309_KingCobra",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -67499,7 +68138,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Stryker_(vehicle)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Stryker_(vehicle)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -67557,14 +68197,15 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-66_Standard"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-66_Standard",
+    "isFeatured": false
   },
   {
     "catId": "5",
     "country": "Israel",
     "countryCode": "ISR",
     "dangerLevel": 8,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "anti_ship_missiles": "The ship is armed with 16 anti-ship missiles Gabriel V.",
       "barak_8_missiles": "The ship has 32 vertical launch cells for Barak-8 surface-to-air missiles.",
@@ -67824,7 +68465,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sa%27ar_6-class_corvette"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sa%27ar_6-class_corvette",
+    "isFeatured": true
   },
   {
     "catId": "5",
@@ -67959,7 +68601,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Borei-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Borei-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -68011,7 +68654,8 @@
     },
     "threatType": "Surface-to-air warfare",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/SPG-62"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/SPG-62",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -68147,7 +68791,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/TR-85"
+    "wikiUrl": "https://en.wikipedia.org/wiki/TR-85",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -68224,7 +68869,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-500_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-500_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -68270,7 +68916,8 @@
     },
     "threatType": "Surface Combatant",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Constellation-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Constellation-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -68427,7 +69074,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -68478,7 +69126,8 @@
     },
     "threatType": "ground",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/90_mm_Gun_M1/M2/M3"
+    "wikiUrl": "https://en.wikipedia.org/wiki/90_mm_Gun_M1/M2/M3",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -68577,7 +69226,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-174_Standard_ERAM"
+    "wikiUrl": "https://en.wikipedia.org/wiki/RIM-174_Standard_ERAM",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -68682,7 +69332,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ZALA_Lancet",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -68798,7 +69449,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/SEPECAT_Jaguar"
+    "wikiUrl": "https://en.wikipedia.org/wiki/SEPECAT_Jaguar",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -68888,7 +69540,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/FH-901"
+    "wikiUrl": "https://en.wikipedia.org/wiki/FH-901",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -68940,7 +69593,8 @@
     },
     "threatType": "Highly Mobile Anti-Tank Guided Missile Unit",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Stryker"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Stryker",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -69022,7 +69676,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/T-54/T-55"
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-54/T-55",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -69073,7 +69728,8 @@
     },
     "threatType": "Non-ballistic",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/FV4202"
+    "wikiUrl": "https://en.wikipedia.org/wiki/FV4202",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -69189,7 +69845,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Xi%27an_H-6"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Xi%27an_H-6",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -69274,7 +69931,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -69333,7 +69991,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-6"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mil_Mi-6",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -69397,7 +70056,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Spruance-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Spruance-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -69476,7 +70136,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M48_Chaparral"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M48_Chaparral",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -69574,7 +70235,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Eurocopter_Tiger"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Eurocopter_Tiger",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -69671,7 +70333,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mitsubishi_F-2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mitsubishi_F-2",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -69746,7 +70409,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M777_howitzer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M777_howitzer",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -69845,7 +70509,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_B-52_Stratofortress"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_B-52_Stratofortress",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -69908,7 +70573,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M551_Sheridan"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M551_Sheridan",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -70083,7 +70749,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -70180,7 +70847,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Bozdoğan_(air-to-air_missile)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bozdoğan_(air-to-air_missile)",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -70277,7 +70945,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Shahed_drones"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Shahed_drones",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -70436,7 +71105,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/PP-19-01_Vityaz"
+    "wikiUrl": "https://en.wikipedia.org/wiki/PP-19-01_Vityaz",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -70500,7 +71170,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/DJI_Phantom"
+    "wikiUrl": "https://en.wikipedia.org/wiki/DJI_Phantom",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -70654,7 +71325,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-22M"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-22M",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -70759,7 +71431,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Humvee",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -70914,7 +71587,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_62_light_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_62_light_tank",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -70927,8 +71601,8 @@
       "crew": "The M1 Abrams has a crew of 3.",
       "engine": "The M1 Abrams features a multifuel turbine engine.",
       "payload": null,
-      "range": null,
-      "speed": null,
+      "range": "The operational range varies by variant but sits around 265 miles (426 km) for M1A2.",
+      "speed": "The M1A2 Abrams has a top speed of 42 mph (67 km/h) on road and 30 mph off-road.",
       "weight": "The M1 Abrams weighs nearly 73.6 short tons (66.8 metric tons)."
     },
     "id": "m1a2-abrams",
@@ -70949,8 +71623,8 @@
       "crew": "3",
       "engine": "turbine",
       "payload": null,
-      "range": null,
-      "speed": null,
+      "range": "265 mi",
+      "speed": "42 mph",
       "weight": "73.6t"
     },
     "specs": {
@@ -70996,7 +71670,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1_Abrams"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1_Abrams",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -71055,7 +71730,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Babur_(cruise_missile)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Babur_(cruise_missile)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -71153,7 +71829,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -71202,7 +71879,8 @@
     },
     "threatType": "Ground Attack",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Douglas_A-20_Havoc"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Douglas_A-20_Havoc",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -71245,7 +71923,8 @@
     },
     "threatType": "Nuclear deterrent",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Ohio-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Ohio-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -71316,7 +71995,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Norfolk-class_monitor"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Norfolk-class_monitor",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -71382,7 +72062,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M60_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M60_tank",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -71445,7 +72126,8 @@
     },
     "threatType": "Conventional",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/M103_heavy_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M103_heavy_tank",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -71544,7 +72226,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-33"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-33",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -71682,7 +72365,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1126_Infantry_Carrier_Vehicle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1126_Infantry_Carrier_Vehicle",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -71857,7 +72541,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -71920,7 +72605,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_RF-90_Scorpion#Specifications"
+    "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_RF-90_Scorpion#Specifications",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -72074,7 +72760,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Alabama_(SSBN-731)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Alabama_(SSBN-731)",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -72117,7 +72804,8 @@
     },
     "threatType": "Ground",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/M1064_mortar_carrier"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1064_mortar_carrier",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -72290,7 +72978,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Ise-class_destroyer_(1944)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Ise-class_destroyer_(1944)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -72387,7 +73076,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AN/PRC-113"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AN/PRC-113",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -72503,7 +73193,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_OK-18"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_OK-18",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -72575,7 +73266,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/CAIG_Wing_Loong_II"
+    "wikiUrl": "https://en.wikipedia.org/wiki/CAIG_Wing_Loong_II",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -72650,7 +73342,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/M60_tank"
+    "wikiUrl": "https://en.wikipedia.org/wiki/M60_tank",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -72708,7 +73401,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/S-300_missile_system"
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-300_missile_system",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -72843,7 +73537,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_F-15SE_Silent_Eagle"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_F-15SE_Silent_Eagle",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -72978,7 +73673,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-35"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-35",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -73082,7 +73778,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/ANMPQ-64+Sentinel"
+    "wikiUrl": "https://en.wikipedia.org/wiki/ANMPQ-64+Sentinel",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -73182,7 +73879,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -73269,7 +73967,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Wasp_III"
+    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Wasp_III",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -73405,7 +74104,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Winslow_(DD-53)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Winslow_(DD-53)",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -73463,7 +74163,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -73598,7 +74299,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/SAGEM_Sperwer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/SAGEM_Sperwer",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -73702,7 +74404,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/FV101_Scorpion"
+    "wikiUrl": "https://en.wikipedia.org/wiki/FV101_Scorpion",
+    "isFeatured": false
   },
   {
     "catId": "3",
@@ -73762,7 +74465,8 @@
       },
       "zh": {}
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -73774,8 +74478,8 @@
       "engine": "The tank is powered by a V12 twin-turbo diesel engine made by MTU Friedrichshafen.",
       "main_armament": "The main armament of all Leopard 2 tanks is a smoothbore 120 mm cannon made by Rheinmetall.",
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "The operational range of the Leopard 2A4 is 550 km on road.",
+      "speed": "The Leopard 2A4 can reach a maximum road speed of 68 km/h."
     },
     "id": "leopard-2a4",
     "images": [
@@ -73793,8 +74497,8 @@
     "name": "Leopard 2A4",
     "short_specs": {
       "payload": null,
-      "range": null,
-      "speed": null
+      "range": "550 km",
+      "speed": "68 km/h"
     },
     "specs": {
       "crew": null,
@@ -73807,7 +74511,8 @@
     },
     "threatType": "Armored",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -73923,7 +74628,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Sealion_(SS-195)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Sealion_(SS-195)",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -74039,7 +74745,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Bagley_(DD-386)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Bagley_(DD-386)",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -74101,7 +74808,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-142"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-142",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -74160,7 +74868,8 @@
     },
     "threatType": "Low",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-2_Pioneer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-2_Pioneer",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -74269,7 +74978,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mikoyan_Skat"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mikoyan_Skat",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -74338,7 +75048,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Mikoyan_MiG-31"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mikoyan_MiG-31",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -74429,7 +75140,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Obiekt_187"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Obiekt_187",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -74473,7 +75185,8 @@
     },
     "threatType": "High",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_B-47_Stratojet"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_B-47_Stratojet",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -74591,7 +75304,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Chengdu_J-10"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Chengdu_J-10",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -74667,7 +75381,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Victor-class_submarine"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Victor-class_submarine",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -74842,7 +75557,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -74894,7 +75610,8 @@
     },
     "threatType": "High",
     "translations": {},
-    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_naval_ship_classes_in_service"
+    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_naval_ship_classes_in_service",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -74995,7 +75712,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-75_Checkmate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Su-75_Checkmate",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -75149,7 +75867,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Zumwalt-class_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Zumwalt-class_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -75256,7 +75975,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Type_052D_destroyer"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Type_052D_destroyer",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -75353,7 +76073,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Moudge-class_frigate"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Moudge-class_frigate",
+    "isFeatured": false
   },
   {
     "catId": "4",
@@ -75443,7 +76164,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/TY-90"
+    "wikiUrl": "https://en.wikipedia.org/wiki/TY-90",
+    "isFeatured": false
   },
   {
     "catId": "1",
@@ -75526,7 +76248,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/PT-76"
+    "wikiUrl": "https://en.wikipedia.org/wiki/PT-76",
+    "isFeatured": false
   },
   {
     "catId": "2",
@@ -75624,7 +76347,8 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/Eurocopter_Tiger"
+    "wikiUrl": "https://en.wikipedia.org/wiki/Eurocopter_Tiger",
+    "isFeatured": false
   },
   {
     "catId": "5",
@@ -75721,14 +76445,15 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Alaska_(SSBN-732)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Alaska_(SSBN-732)",
+    "isFeatured": false
   },
   {
     "catId": "5",
     "country": "United States",
     "countryCode": "USA",
     "dangerLevel": 80,
-    "featured": false,
+    "featured": true,
     "full_dossier": {
       "beam": "The ship's beam was 35 feet 6 inches.",
       "displacement": "The ship displaced 1,500 long tons at standard load and 1,725 long tons at deep load.",
@@ -75894,6 +76619,7 @@
         }
       }
     },
-    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Tucker_(DD-374)"
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Tucker_(DD-374)",
+    "isFeatured": true
   }
 ]

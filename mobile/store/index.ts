@@ -10,7 +10,7 @@ export type StoreState = AppState & { onboarding: OnboardingState } & AssetState
 
 export const useStore = create<StoreState>()((set, get, api) => ({
   ...createAppSlice(set),
-  ...createAssetSlice(set),
+  ...createAssetSlice(set, get),
   ...createFilterSlice(set),
   onboarding: createOnboardingSlice((fn: any) => set((state: any) => ({ onboarding: fn(state.onboarding) }))),
 }));
@@ -34,6 +34,10 @@ export const selectFeaturedAssets = (state: StoreState) => {
 };
 
 export const selectTrendingAssets = (state: StoreState) => {
+  if (state.trendingAssets && state.trendingAssets.length > 0) {
+    return state.trendingAssets;
+  }
+  // Fallback if sync not done or failed
   return [...state.assets]
     .sort((a, b) => (b.dangerLevel || 0) - (a.dangerLevel || 0))
     .slice(0, 5);

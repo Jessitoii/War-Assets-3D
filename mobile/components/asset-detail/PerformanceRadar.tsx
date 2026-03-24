@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Dimensions } from 'react-native';
 import Svg, { Polygon, Line, Circle, G, Text as SvgText } from 'react-native-svg';
 import { theme } from '../../styles/theme';
+import { useTranslation } from 'react-i18next';
 
 interface PerformanceRadarProps {
   metrics?: {
@@ -19,13 +20,18 @@ const CENTER = CHART_SIZE / 2;
 const RADIUS = (CHART_SIZE / 2) * 0.7;
 
 export const PerformanceRadar: React.FC<PerformanceRadarProps> = ({ metrics, isDark }) => {
-  if (!metrics) return null;
+  const { t } = useTranslation();
+
+  if (!metrics) {
+    console.log("[PerformanceRadar] metrics is null");
+    return null;
+  }
 
   const data = [
-    { label: 'FIREPOWER', value: metrics.firepower },
-    { label: 'MOBILITY', value: metrics.mobility },
-    { label: 'STEALTH', value: metrics.stealth },
-    { label: 'DURABILITY', value: metrics.durability },
+    { label: t('asset.firepower'), value: metrics.firepower },
+    { label: t('asset.mobility'), value: metrics.mobility },
+    { label: t('asset.stealth'), value: metrics.stealth },
+    { label: t('asset.durability'), value: metrics.durability },
   ];
 
   const angleStep = (Math.PI * 2) / data.length;
@@ -61,8 +67,8 @@ export const PerformanceRadar: React.FC<PerformanceRadarProps> = ({ metrics, isD
 
   return (
     <View style={styles.container}>
-      <Text style={[styles.title, { color: isDark ? '#FFF' : '#000' }]}>PERFORMANCE MATRIX</Text>
-      
+      <Text style={[styles.title, { color: isDark ? '#FFF' : '#000' }]}>{t('asset.performance_matrix')}</Text>
+
       <View style={styles.chartWrapper}>
         <Svg width={CHART_SIZE} height={CHART_SIZE}>
           <G>

@@ -1,5 +1,7 @@
 import * as SQLite from 'expo-sqlite';
 
+export type LanguageCode = 'en' | 'tr' | 'ru' | 'ar' | 'zh';
+
 // Defines the boundary for app state slice
 export interface AppState {
   firstLaunch: boolean;
@@ -7,10 +9,10 @@ export interface AppState {
   arEnabled: boolean;
   onboardingProgress: number;
   supportsAR: boolean;
-  language: 'en' | 'tr';
+  language: LanguageCode;
   setFirstLaunch: (value: boolean) => void;
   setTheme: (theme: 'light' | 'dark') => void;
-  setLanguage: (lang: 'en' | 'tr') => void;
+  setLanguage: (lang: LanguageCode) => void;
   setArEnabled: (enabled: boolean) => void;
   setSupportsAR: (supported: boolean) => void;
   setOnboardingProgress: (page: number) => void;
@@ -27,10 +29,9 @@ export const createAppSlice = (set: any): AppState => ({
     set((state: any) => ({ ...state, firstLaunch: value })),
   setTheme: (theme) => {
     set((state: any) => ({ ...state, theme }));
-    // Persist to SQLite
-    SQLite.openDatabaseAsync('war-assets.db').then(db => {
-      db.runAsync('UPDATE app_state SET theme = ? WHERE id = 1', [theme])
-        .catch(e => console.error('Failed to persist theme:', e));
+    // Persist to SQLite using dbHelper for safety
+    import('../../scripts/init-db').then(({ dbHelper }) => {
+      dbHelper.updateTheme(theme).catch(e => console.error('Failed to persist theme:', e));
     });
   },
   setLanguage: (lang) => {

@@ -1,0 +1,91 @@
+{
+  "common": {
+    "search": "寻找资产",
+    "technical_summary": "技术总结",
+    "view_3d": "3D 展示",
+    "comparison": "对比",
+    "settings": "设置",
+    "appearance": "外观",
+    "dark_mode": "深色模式",
+    "toggle_theme": "切换应用主题",
+    "data_sync": "数据与同步",
+    "offline_ready": "支持离线",
+    "online_only": "只在线",
+    "db_size": "数据库大小",
+    "last_sync": "最近同步",
+    "sync_now": "立即同步",
+    "syncing": "同步中...",
+    "features": "功能",
+    "enable_ar": "启用 AR 功能",
+    "ar_not_supported": "此设备不支持 AR",
+    "allow_ar": "允许在 AR 中放置模型",
+    "data_unavailable": "数据不可用",
+    "geometry_unavailable": "该资产的 3D 几何结构属于机密，或无法在开放存储库中获取。",
+    "featured_assets": "精选资产",
+    "no_featured": "尚无精选资产",
+    "categories": "分类",
+    "categories_loading": "分类加载中...",
+    "history_background": "历史与背景",
+    "fetching_wiki": "正在咨询情报档案馆...",
+    "wiki_error": "没有关于该资产的技术情报。",
+    "view_on_wiki_fallback": "查看维基百科原页",
+    "read_full_wiki": "阅读维基百科上的完整情报",
+    "share_asset": "分享资产情报",
+    "global_hotspots": "全球热点",
+    "view_asset_intel": "查看资产情报",
+    "tactical_map_loading": "正在建立安全卫星连接..."
+  },
+  "home": {
+    "scanning_battlespace": "正在扫描战场",
+    "syncing_assets": "正在同步战术资产数据库...",
+    "live_tactical_map": "实时战术情报地图",
+    "recon_target": "侦察目标",
+    "daily_target": "每日目标",
+    "trending_intel": "趋势情报",
+    "osint_live": "实时开源情报",
+    "analyzing_metrics": "正在分析威胁指标..."
+  },
+  "settings": {
+    "language_selection": "更改应用语言",
+    "select_language": "选择语言"
+  },
+  "specs": {
+    "classified": "机密",
+    "na": "不适用",
+    "title": "技术规格",
+    "label": "规格",
+    "value": "数值"
+  },
+  "asset": {
+    "range": "航程/射程",
+    "speed": "高度/速度",
+    "generation": "世代",
+    "origin": "来源国",
+    "not_found": "未找到资产",
+    "osint_trend_alert": "开源情报趋势预警",
+    "view_intel_source": "查看情报来源",
+    "danger": "危险指数",
+    "nuclear": "核能",
+    "performance_matrix": "性能矩阵",
+    "firepower": "火力",
+    "mobility": "机动性",
+    "stealth": "隐身",
+    "durability": "耐久性"
+  },
+  "comparison": {
+    "empty_queue": "您的对比队列为空。",
+    "empty_subtext": "添加最多三个资产，以并排对比它们的技术规格。",
+    "add_asset": "添加资产",
+    "initiate_simulation": "启动模拟"
+  },
+  "browse": {
+    "title": "浏览资产",
+    "no_assets": "未找到资产"
+  },
+  "search": {
+    "placeholder": "搜索资产...",
+    "reset": "重置",
+    "results": "结果",
+    "no_match": "未找到匹配您标准的资产"
+  }
+}

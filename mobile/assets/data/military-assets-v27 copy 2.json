@@ -1,0 +1,3642 @@
+[
+  {
+    "id": "tai-anka-3",
+    "catId": "4",
+    "name": "TAI Anka-3",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tai-anka-3/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tai-anka-3/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tai-anka-3/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 90,
+    "threatType": "High-Tech Threat",
+    "country": "Turkey",
+    "countryCode": "TUR",
+    "specs": {
+      "role": "Unmanned Combat Aerial Vehicle (UCAV)",
+      "range": null,
+      "speed": "supersonic",
+      "payload": "air-to-ground and air-to-air missiles, internal munitions such as the TOLUN bomb"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": "supersonic",
+      "payload": "air-to-air/ground"
+    },
+    "full_dossier": {
+      "range": "The Anka-3 has endurance of up to 10 hours and high altitude capabilities enable long-range missions.",
+      "speed": "The Anka-3 is expected to have supersonic capabilities with two TEI-TF10000 turbofan engines.",
+      "payload": "The Anka-3 can carry air-to-ground and air-to-air missiles, as well as internal munitions such as the TOLUN bomb."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "Anka-3 10 saate kadar dayanıklılığa ve yüksek irtifa kabiliyetine sahiptir."
+        },
+        "speed": {
+          "short_specs": "süpersonik",
+          "full_dossier": "Anka-3, iki TEI-TF10000 turbofan motoruyla süpersonik hızlara ulaşması beklenmektedir."
+        },
+        "payload": {
+          "short_specs": "hava-hava/hava-yer",
+          "full_dossier": "Anka-3, hava-yer ve hava-hava füzeleri ile birlikte TOLUN bombası gibi dahili mühimmat taşıyabilir."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "Анка-3 имеет продолжительность полета до 10 часов и высокие высотные возможности для дальних миссий."
+        },
+        "speed": {
+          "short_specs": "сверхзвуковой",
+          "full_dossier": "Анка-3, как ожидается, будет иметь сверхзвуковые возможности с двумя двигателями TEI-TF10000."
+        },
+        "payload": {
+          "short_specs": "воздух-земля/воздух-воздух",
+          "full_dossier": "Анка-3 может нести воздух-земля и воздух-воздух ракеты, а также внутренние боеприпасы, такие как бомба TOLUN."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "الأنكا-3 لها استمرارية لمدة تصل إلى 10 ساعات وقدرات ارتفاع عالية لعمليات النطاق الطويل."
+        },
+        "speed": {
+          "short_specs": "فوق صوتي",
+          "full_dossier": "الأنكا-3 من المتوقع أن يكون لها قدرات فوق صوتية مع محركين TEI-TF10000."
+        },
+        "payload": {
+          "short_specs": "جو-أرض/جو-جو",
+          "full_dossier": "الأنكا-3 يمكنها حمل صواريخ جو-أرض و جو-جو، بالإضافة إلى الذخائر الداخلية مثل قنبلة TOLUN."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "安卡-3具有长达10小时的续航能力和高空作战能力，能够执行远程任务。"
+        },
+        "speed": {
+          "short_specs": "超音速",
+          "full_dossier": "安卡-3预计将配备两台TEI-TF10000涡轮风扇发动机，具有超音速能力。"
+        },
+        "payload": {
+          "short_specs": "空对地/空对空",
+          "full_dossier": "安卡-3能够携带空对地和空对空导弹，以及内部弹药，如TOLUN炸弹。"
+        }
+      }
+    }
+  },
+  {
+    "id": "bqm-34-firebee",
+    "catId": "4",
+    "name": "BQM-34 Firebee",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Ryan_Firebee",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/bqm-34-firebee/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/bqm-34-firebee/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/bqm-34-firebee/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 30,
+    "threatType": "Non-Lethal",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "target drone",
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "m109a7-paladin",
+    "catId": "1",
+    "name": "M109A7 Paladin",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/M109_howitzer",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m109a7-paladin/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m109a7-paladin/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m109a7-paladin/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/m109a7-paladin.glb",
+    "dangerLevel": 80,
+    "threatType": "Artillery",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "self-propelled howitzer",
+      "range": "14,600 meters",
+      "speed": null,
+      "payload": "155 mm Howitzer"
+    },
+    "short_specs": {
+      "range": "14.6km",
+      "speed": null,
+      "payload": "155mm Howitzer"
+    },
+    "full_dossier": {
+      "range": "The M109 has a maximum range of 14,600 meters.",
+      "speed": null,
+      "payload": "The M109 is armed with a 155 mm Howitzer, and can also be equipped with various machine guns and grenade launchers."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "14.6km",
+          "full_dossier": "M109'un maksimum menzili 14.600 metredir."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "155mm Howitzer",
+          "full_dossier": "M109, 155 mm'lik bir howitzer ile donatılmıştır ve çeşitli makineli tüfekler ve bombaatarlar ile de donatılabilir."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "14.6км",
+          "full_dossier": "Максимальная дальность М109 составляет 14,6 километров."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "155мм гаубица",
+          "full_dossier": "М109 оснащен 155-мм гаубицей, и может быть оснащен различными пулеметами и гранатометами."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "14.6км",
+          "full_dossier": "مدى الم109 يبلغ 14.6 كيلوميتر."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "155مم مدفع",
+          "full_dossier": "مدفع الم109 مسلح بمدفع 155مم, ويمكن تجهيزه بأسلحة مناصب ومقلع الرشاش."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "14.6八里",
+          "full_dossier": "版体的最大远究是14,600米尺個都。"
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "155米尺龙弹宿",
+          "full_dossier": "版体被适为155米尺龙弹宿。"
+        }
+      }
+    }
+  },
+  {
+    "id": "s-400",
+    "catId": "3",
+    "name": "S-400",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-400/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-400/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-400/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 9,
+    "threatType": "Surface-to-Air",
+    "country": "Russia",
+    "countryCode": "RUS",
+    "specs": {
+      "role": "surface-to-air missile system",
+      "range": "400 km",
+      "speed": null,
+      "payload": "40N6 long-range missile"
+    },
+    "short_specs": {
+      "range": "400km",
+      "speed": null,
+      "payload": "40N6 missile"
+    },
+    "full_dossier": {
+      "range": "The S-400 has a longest-ranged interceptor missile, the 40N6, with a purported range of 400 km.",
+      "speed": null,
+      "payload": "The S-400 can be integrated with the shorter-ranged Pantsir missile system."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "400km",
+          "full_dossier": "S-400ün en uzun menzilli füzesi 40N6, 400 km menzile sahiptir."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "40N6 füzesi",
+          "full_dossier": "S-400, Pantsir füze sistemi ile entegre edilebilir."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "400км",
+          "full_dossier": "С-400 имеет самый дальнобойный перехватчик 40Н6 с заявленной дальностью 400 км."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "40Н6 ракета",
+          "full_dossier": "С-400 может быть интегрирован с системой Pantsir с более коротким диапазоном."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "400كم",
+          "full_dossier": "يتمتع نظام S-400 بأطول صاروخ اعتراضي، وهو 40N6، بمسافة زعمها 400 كم."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "صاروخ 40N6",
+          "full_dossier": "يمكن دمج نظام S-400 مع نظام Pantsir ذو المدى الأقصر."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "400公里",
+          "full_dossier": "S-400拥有最远程的拦截导弹40N6，宣称射程400公里。"
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "40N6导弹",
+          "full_dossier": "S-400可以与更短射程的 Pantsir导弹系统集成。"
+        }
+      }
+    }
+  },
+  {
+    "id": "s-400advm",
+    "catId": "3",
+    "name": "S-400ADVM",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-400advm/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-400advm/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-400advm/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 80,
+    "threatType": "high-ceiling threat",
+    "country": "Russia",
+    "countryCode": "RUS",
+    "specs": {
+      "role": "mobile surface-to-air missile (SAM) system",
+      "range": "400 km",
+      "speed": null,
+      "payload": "40N6 long-range missile"
+    },
+    "short_specs": {
+      "range": "400km",
+      "speed": null,
+      "payload": "40N6 missile"
+    },
+    "full_dossier": {
+      "range": "The S-400 has a longest-ranged interceptor missile, the 40N6, with a purported range of 400 km.",
+      "speed": null,
+      "payload": "The S-400 can be integrated with the shorter-ranged Pantsir missile system, and potentially airborne radars such as of the Beriev A-50U and Sukhoi Su-35S."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "400km",
+          "full_dossier": "S-400ün en uzun menzilli füzesi 40N6, iddia edilen menzili 400 km"
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "40N6 füzesi",
+          "full_dossier": "S-400, daha kısa menzilli Pantsir füze sistemi ile entegre edilebilir ve potansiyel olarak Beriev A-50U ve Sukhoi Su-35S gibi hava radarları ile entegre edilebilir"
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "400км",
+          "full_dossier": "С-400 имеет самый длинный перехватывающий ракету 40Н6, с предполагаемой дальностью 400 км"
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "40Н6 ракета",
+          "full_dossier": "С-400 может быть интегрирован с более коротким диапазоном Pantsir ракетной системы, и потенциально воздушных радаров, таких как Берев А-50У и Сухой Су-35С"
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "400كم",
+          "full_dossier": "س 400 لديها صاروخ اعتراضي أطول مدى ، 40N6 ، مع مدى محتمل يبلغ 400 كم"
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "صاروخ 40N6",
+          "full_dossier": "يمكن دمج نظام س 400 مع نظام صواريخ بنتسر أقل مدى ، ويمكن دمجه مع رادارات جوية مثل بيريف أ -50 يو وسوخوي سو -35 إس"
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "400公里",
+          "full_dossier": "S-400具有最长射程的拦截导弹40N6，据称射程400公里"
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "40N6导弹",
+          "full_dossier": "S-400可以与更短射程的 Pantsir导弹系统集成，并可以与 Beriev A-50U和苏霍伊 Su-35S等空中雷达集成"
+        }
+      }
+    }
+  },
+  {
+    "id": "leopard-2",
+    "catId": "1",
+    "name": "Leopard 2",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/leopard-2.glb",
+    "dangerLevel": 90,
+    "threatType": "Main Battle Tank",
+    "country": "Germany",
+    "countryCode": "DEU",
+    "specs": {
+      "role": "Main Battle Tank",
+      "range": null,
+      "speed": null,
+      "payload": "120 mm cannon"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "120mm cannon"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": "The main armament of all Leopard 2 tanks is a smoothbore 120 mm cannon made by Rheinmetall."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm top",
+          "full_dossier": "Tüm Leopard 2 tanklarının ana silahı Rheinmetall tarafından yapılan 120 mm lik düz namlulu top"
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm пушка",
+          "full_dossier": "Главным оружием всех танков Leopard 2 является гладкоствольная 120-мм пушка, изготовленная компанией Rheinmetall"
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm مدفع",
+          "full_dossier": "المدفع الرئيسي لجميع دبابات ليوبارد 2 هو مدفع 120 ملم بدون صواميل مصنوع من قبل رينميتال"
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm ",
+          "full_dossier": "豹二型坦克的主要武器是莱茵金属公司生产的120毫米滑膛炮"
+        }
+      }
+    }
+  },
+  {
+    "id": "scaneagle",
+    "catId": "4",
+    "name": "ScanEagle",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/ScanEagle",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/scaneagle/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/scaneagle/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/scaneagle/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 3,
+    "threatType": "Low-altitude ground target acquisition, scouting",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "Unmanned Aerial System (UAS) for autonomous surveillance",
+      "range": "over 62 miles (100 km)",
+      "speed": "up to 80 knots (92 mph; 150 km/h)",
+      "payload": "stabilized electro-optical and/or infrared camera"
+    },
+    "short_specs": {
+      "range": "100km",
+      "speed": "150 km/h",
+      "payload": "EO/IR camera"
+    },
+    "full_dossier": {
+      "range": "The ScanEagle has an integrated communications system with a range of over 62 miles (100 km).",
+      "speed": "The ScanEagle can operate up to 80 knots (92 mph; 150 km/h), with an average cruising speed of 48 knots (55 mph; 89 km/h).",
+      "payload": "The ScanEagle carries a stabilized electro-optical and/or infrared camera on a lightweight inertial stabilized turret system."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "100km",
+          "full_dossier": "ScanEagle entegre bir haberleşme sistemine sahiptir ve menzili 62 milden (100 km) fazladır."
+        },
+        "speed": {
+          "short_specs": "150 km/h",
+          "full_dossier": "ScanEagle 80 düğüme (92 mph; 150 km/h) kadar çalışabilir ve ortalama seyir hızı 48 düğümdür (55 mph; 89 km/h)."
+        },
+        "payload": {
+          "short_specs": "EO/IR kamera",
+          "full_dossier": "ScanEagle, bir hafif yersel stabilize turret sistemi üzerinde stabilize bir elektro-optik ve/veya kızılötesi kamera taşır."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "100км",
+          "full_dossier": "ScanEagle имеет интегрированную систему связи с дальностью более 62 миль (100 км)."
+        },
+        "speed": {
+          "short_specs": "150 км/ч",
+          "full_dossier": "ScanEagle может работать со скоростью до 80 узлов (92 миль в час; 150 км/ч), со средней крейсерской скоростью 48 узлов (55 миль в час; 89 км/ч)."
+        },
+        "payload": {
+          "short_specs": "ЭО/ИК камера",
+          "full_dossier": "ScanEagle несет стабилизированную электро-оптическую и/или инфракрасную камеру на легкой инерциальной стабилизированной системе турели."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "100كم",
+          "full_dossier": "السكانهيبل لديه نظام اتصالات متكامل مع مدى أكثر من 62 ميل (100 كم)."
+        },
+        "speed": {
+          "short_specs": "150 كم/س",
+          "full_dossier": "يمكن للسكانهيبل العمل بسرعة تصل إلى 80 عقدة (92 ميل في الساعة؛ 150 كم/س)، بسرعة طيران متوسطة تبلغ 48 عقدة (55 ميل في الساعة؛ 89 كم/س)."
+        },
+        "payload": {
+          "short_specs": "كاميرا كهروبصرية / تحت الحمراء",
+          "full_dossier": "السكانهيبل يحمل كاميرا كهروبصريية و / أو تحت الحمراء مستقرّة على نظام برجي خفيف المستوى."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "100公里",
+          "full_dossier": "ScanEagle具有集成的通信系统，范围超过62英里（100公里）。"
+        },
+        "speed": {
+          "short_specs": "150公里/小时",
+          "full_dossier": "ScanEagle可以以每小时80节（92英里/小时；150公里/小时）的速度运行，平均巡航速度为48节（55英里/小时；89公里/小时）。"
+        },
+        "payload": {
+          "short_specs": "EO/IR相机",
+          "full_dossier": "ScanEagle携带一个稳定的电光/红外相机，安装在一个轻型惯性稳定化的炮塔系统上。"
+        }
+      }
+    }
+  },
+  {
+    "id": "patriot-msq-104e2",
+    "catId": "3",
+    "name": "Patriot MSQ-104E2",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/patriot-msq-104e2/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/patriot-msq-104e2/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/patriot-msq-104e2/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 90,
+    "threatType": "Anti-Aircraft Missile Defense",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "surface-to-air missile (SAM) system",
+      "range": null,
+      "speed": null,
+      "payload": "advanced aerial interceptor missile"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "interceptor missile"
+    },
+    "full_dossier": {
+      "range": "The Patriot system has a range but the exact value is not specified in the provided text.",
+      "speed": "The speed of the Patriot system is not specified in the provided text.",
+      "payload": "The Patriot system uses an advanced aerial interceptor missile and high-performance radar systems."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "Patriot sisteminin menzili metin içinde belirtilmemiştir."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "Patriot sisteminin hızı metin içinde belirtilmemiştir."
+        },
+        "payload": {
+          "short_specs": "ihraç füzesi",
+          "full_dossier": "Patriot sistemi, gelişmiş bir havasavunma füzesi ve yüksek performanslı radar sistemleri kullanır."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "Дальность системы Patriot не указана в предоставленном тексте."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "Скорость системы Patriot не указана в предоставленном тексте."
+        },
+        "payload": {
+          "short_specs": "перехватчик ракета",
+          "full_dossier": "Система Patriot использует передовую перехватчик ракету и высокопроизводительные радарные системы."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "لم يتم تحديد مدى نظام باتريوت في النص المحدد."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "لم يتم تحديد سرعة نظام باتريوت في النص المحدد."
+        },
+        "payload": {
+          "short_specs": "صاروخ اعتراضي",
+          "full_dossier": "نظام باتريوت يستخدم صاروخ اعتراضي متقدم وأنظمة رادار عالية الأداء."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "爱国者系统的射程在提供的文本中没有指定"
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "爱国者系统的速度在提供的文本中没有指定"
+        },
+        "payload": {
+          "short_specs": "拦截导弹",
+          "full_dossier": "爱国者系统使用先进的拦截导弹和高性能的雷达系统"
+        }
+      }
+    }
+  },
+  {
+    "id": "uss-rowan-dd-64",
+    "catId": "5",
+    "name": "USS Rowan (DD-64)",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Rowan_(DD-64)",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/uss-rowan-dd-64/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/uss-rowan-dd-64/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/uss-rowan-dd-64/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 20,
+    "threatType": "surface combatant",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "destroyer",
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "f-22-raptor",
+    "catId": "2",
+    "name": "F-22 Raptor",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/f-22-raptor/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/f-22-raptor/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/f-22-raptor/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 90,
+    "threatType": "Air-to-air, air-to-ground",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "air superiority fighter",
+      "range": null,
+      "speed": "supersonic",
+      "payload": null
+    },
+    "short_specs": {
+      "range": null,
+      "speed": "supersonic",
+      "payload": null
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": "The F-22 is capable of supersonic cruise around Mach 1.5.",
+      "payload": null
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "süpersonik",
+          "full_dossier": "F-22, Mach 1.5 hızında süpersonik seyir yapabilir."
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "сверхзвуковой",
+          "full_dossier": "F-22 способен летать на сверхзвуковой крейсерской скорости около Мах 1,5."
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "فوق صوتي",
+          "full_dossier": "يمكن للطائرة F-22 الطيران بسرعة فوق صوتية حول ماخ 1.5."
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "超音速",
+          "full_dossier": "F-22能够以马赫1.5的速度进行超音速巡航."
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "egpe",
+    "catId": "3",
+    "name": "EGPE",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Nuclear_weapon",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/egpe/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/egpe/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/egpe/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 99,
+    "threatType": "High-Yield Nuclear Weapon",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "Nuclear weapon",
+      "range": null,
+      "speed": null,
+      "payload": "Up to 50 megatons"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "Up to 50Mt"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": "Nuclear weapons can release energy equal to more than 1.2 megatons of TNT, with yields between 10 tons and 50 megatons."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "50Mt'ye kadar",
+          "full_dossier": "Nükleer silahlar 1.2 megaton TNT'ye eşit enerji salabilir, 10 ton ile 50 megaton arasında verimlere sahiptir."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "До 50 Мт",
+          "full_dossier": "Ядерные вооружения могут выпускать энергию, равную более 1,2 мегатонн тротилового эквивалента, с выходами от 10 тонн до 50 мегатонн."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "حتى 50 ميجاطن",
+          "full_dossier": "الأسلحة النووية يمكن أن تطلق طاقة تعادل أكثر من 1.2 ميجاطن من TNT، مع عائدات بين 10 أطنان و50 ميجاطن."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "最高50Mt",
+          "full_dossier": "核武器可以释放出超过1.2百万吨TNT当量的能量，产量在10吨至50Mt之间。"
+        }
+      }
+    }
+  },
+  {
+    "id": "h-6",
+    "catId": "2",
+    "name": "H-6",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/H-6",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/h-6/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/h-6/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/h-6/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/h-6.glb",
+    "dangerLevel": "95",
+    "threatType": "Strategic Bomber",
+    "country": "China",
+    "countryCode": "CHN",
+    "specs": {
+      "role": "bomber aircraft",
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "leopard-2a4",
+    "catId": "1",
+    "name": "Leopard 2A4",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2a4/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2a4/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2a4/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/leopard-2a4.glb",
+    "dangerLevel": 80,
+    "threatType": "Armored",
+    "country": "Germany",
+    "countryCode": "DEU",
+    "specs": {
+      "role": "Main Battle Tank",
+      "range": null,
+      "speed": null,
+      "payload": "smoothbore 120 mm cannon"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "120mm cannon"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": "The main armament of all Leopard 2 tanks is a smoothbore 120 mm cannon made by Rheinmetall."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm top",
+          "full_dossier": "Tüm Leopard 2 tanklarının ana silahı Rheinmetall tarafından yapılan bir 120 mm düz namlulu topudur."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm пушка",
+          "full_dossier": "Основным вооружением всех танков Leopard 2 является гладкоствольная 120-мм пушка, изготовленная компанией Rheinmetall."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm مدفع",
+          "full_dossier": "المدفع الرئيسي لجميع دبابات ليوبارد 2 هو مدفع 120 ملم بدون صواميل مصنوع من قبل رينميتال."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm",
+          "full_dossier": "豹2型坦克的主要武器是莱茵金属公司生产的120毫米滑膛炮。"
+        }
+      }
+    }
+  },
+  {
+    "id": "eleron-10",
+    "catId": "4",
+    "name": "Eleron-10",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/ENICS_Eleron-10",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/eleron-10/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/eleron-10/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/eleron-10/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 3,
+    "threatType": "Low-to-moderate",
+    "country": "Russia",
+    "countryCode": "RUS",
+    "specs": {
+      "role": "medium-range reconnaissance UAV",
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "nilgiri-class",
+    "catId": "5",
+    "name": "Nilgiri-class",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Nilgiri-class_frigate",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/nilgiri-class/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/nilgiri-class/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/nilgiri-class/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 9,
+    "threatType": "High",
+    "country": "India",
+    "countryCode": "IND",
+    "specs": {
+      "role": "frigate",
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "m1074-joint-assault-bridge",
+    "catId": "1",
+    "name": "M1074 Joint Assault Bridge",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1074_Joint_Assault_Bridge_System",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m1074-joint-assault-bridge/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m1074-joint-assault-bridge/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m1074-joint-assault-bridge/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 0,
+    "threatType": "None",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "armored military engineering vehicle",
+      "range": null,
+      "speed": null,
+      "payload": "Military Load Class 95 Scissor Bridge (MLC95) or Heavy Assault Scissor Bridge (HASB) MLC 115"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "MLC95/MLC115 bridge"
+    },
+    "full_dossier": {
+      "range": "The M1074 can cross over, pick up the bridge on the far bank and continue along in support of assault forces, but the actual range is not specified.",
+      "speed": "The speed of the M1074 is not specified in the provided text.",
+      "payload": "The M1074 can deploy a Military Load Class 95 Scissor Bridge (MLC95) or a Heavy Assault Scissor Bridge (HASB) MLC 115, allowing assault force vehicles to cross over."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "b-36-peacemaker",
+    "catId": "2",
+    "name": "B-36 Peacemaker",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Convair_B-36_Peacemaker",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/b-36-peacemaker/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/b-36-peacemaker/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/b-36-peacemaker/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 8,
+    "threatType": "Heavy bomber",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "strategic bomber",
+      "range": "intercontinental flight without refueling",
+      "speed": "cruising speed between 240 and 300 mph",
+      "payload": "Mark 14, Mark 17, Mark 24, Mark 6, Mark 18 and T-12 Cloudmaker earthquake bomb"
+    },
+    "short_specs": {
+      "range": "intercontinental",
+      "speed": "240-300 mph",
+      "payload": "nuclear/thermonuclear bombs"
+    },
+    "full_dossier": {
+      "range": "The B-36 was capable of intercontinental flight without refueling, with a maximum range of 10,000 mi and an effective combat radius of 4,000 mi with a 10,000 lb bomb-load.",
+      "speed": "The B-36 had a cruising speed between 240 and 300 mph, with a top speed of 450 mph.",
+      "payload": "The B-36 was assigned various nuclear and conventional bombs, including the Mark 14, Mark 17, Mark 24, Mark 6, Mark 18 and the T-12 Cloudmaker earthquake bomb."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "kara denizler",
+          "full_dossier": "B-36, yakıt ikmali yapmadan kıtalar arası uçuş yapabilirdi, 10.000 mil maksimum menzili ve 10.000 lb bomba yükü ile 4.000 mil etkili muharebe yarıçapı vardı."
+        },
+        "speed": {
+          "short_specs": "240-300 mph",
+          "full_dossier": "B-36'nın seyir hızı 240-300 mph arasında, maksimum hızı 450 mph idi."
+        },
+        "payload": {
+          "short_specs": "nükleer/termonükleer bombalar",
+          "full_dossier": "B-36, Mark 14, Mark 17, Mark 24, Mark 6, Mark 18 ve T-12 Cloudmaker deprem bombası gibi çeşitli nükleer ve konvansiyonel bombalar ile donatıldı."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "межконтинентальная",
+          "full_dossier": "B-36 был способен летать между континентами без дозаправки, с максимальной дальностью 10 000 миль и эффективным боевым радиусом 4000 миль с бомбовой нагрузкой 10 000 фунтов."
+        },
+        "speed": {
+          "short_specs": "240-300 mph",
+          "full_dossier": "У B-36 была крейсерская скорость между 240 и 300 mph, с максимальной скоростью 450 mph."
+        },
+        "payload": {
+          "short_specs": "ядерные/термоядерные бомбы",
+          "full_dossier": "B-36 был оснащен различными ядерными и конвенциональными бомбами, включая Mark 14, Mark 17, Mark 24, Mark 6, Mark 18 и T-12 Cloudmaker землетрясение бомбу."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "مابين القارات",
+          "full_dossier": "كان B-36 قادرًا على الطيران بين القارات بدون إعادة التزود بالوقود، مع مدى أقصى يبلغ 10،000 ميل وبمعدل قتالي فعال يبلغ 4،000 ميل مع حمولة قنبلة تبلغ 10،000 رطل."
+        },
+        "speed": {
+          "short_specs": "240-300 mph",
+          "full_dossier": "كان للB-36 سرعة رحلات تبلغ بين 240 و300 mph، مع سرعة قصوى تبلغ 450 mph."
+        },
+        "payload": {
+          "short_specs": "قنابل نووية/thermonuclear",
+          "full_dossier": "تم تزويد B-36 ب各种 قنابل نووية وتقليدية، بما في ذلك Mark 14 وMark 17 وMark 24 وMark 6 وMark 18 وقنبلة زلزال T-12 Cloudmaker."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "洲际",
+          "full_dossier": "B-36能够不加油进行洲际飞行，最大航程为10,000英里，有效作战半径为4,000英里，载弹量为10,000磅。"
+        },
+        "speed": {
+          "short_specs": "240-300 mph",
+          "full_dossier": "B-36的巡航速度在240-300 mph之间，最高速度为450 mph。"
+        },
+        "payload": {
+          "short_specs": "核/热核弹",
+          "full_dossier": "B-36配备了各种核弹和常规弹，包括Mark 14、Mark 17、Mark 24、Mark 6、Mark 18和T-12 Cloudmaker地震弹。"
+        }
+      }
+    }
+  },
+  {
+    "id": "leopard-1a3",
+    "catId": "1",
+    "name": "Leopard 1A3",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1a3/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1a3/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1a3/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/leopard-1a3.glb",
+    "dangerLevel": 80,
+    "threatType": "conventional",
+    "country": "West Germany",
+    "countryCode": "DEU",
+    "specs": {
+      "role": "Main Battle Tank",
+      "range": null,
+      "speed": null,
+      "payload": "105 mm L7A3 rifled gun"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "105mm L7A3"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": "The main armament of the Leopard consists of a German license-built version of the British Royal Ordnance L7 105 mm rifled gun, one of the most effective and widespread tank guns of the era."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "105mm L7A3",
+          "full_dossier": "Leopard'in ana silahı, etkili ve yaygın tank toplarından biri olan İngiliz Kraliyet Silahhanesi L7 105 mm rifled topunun Alman yapımı bir versiyonudur."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "105mm L7A3",
+          "full_dossier": "Главным оружием «Леопарда» является лицензионная версия британской королевской орденской L7 105-мм орудия, одно из самых эффективных и распространенных танковых орудий того времени."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "105mm L7A3",
+          "full_dossier": "الأساسي سلاح النمر هو نسخة ترخيصية من البريطانية الملكية الأوامر L7 105 ملم بندقية، واحدة من أكثر الفعالة والموسعة دبابات البنادق في ذلك العصر."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "105mm L7A3",
+          "full_dossier": "豹式的主要武器是英国皇家兵工厂L7 105毫米线膛炮的德国制造版本，是当时最有效和最广泛使用的坦克炮之一。"
+        }
+      }
+    }
+  },
+  {
+    "id": "mq-8-fire-scout",
+    "catId": "4",
+    "name": "MQ-8 Fire Scout",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-8_Fire_Scout",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/mq-8-fire-scout/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/mq-8-fire-scout/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/mq-8-fire-scout/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/mq-8-fire-scout.glb",
+    "dangerLevel": 6,
+    "threatType": "UAV",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "Unmanned autonomous helicopter",
+      "range": "125 miles (200 km)",
+      "speed": null,
+      "payload": "up to 700 pounds (320 kg)"
+    },
+    "short_specs": {
+      "range": "125mi/200km",
+      "speed": null,
+      "payload": "up to 700lb"
+    },
+    "full_dossier": {
+      "range": "The MQ-8 Fire Scout has a range of 125 miles (200 km), allowing it to operate at a distance from its base.",
+      "speed": "The speed of the MQ-8 Fire Scout is not specified in the provided text.",
+      "payload": "The MQ-8 Fire Scout can carry a payload of up to 700 pounds (320 kg), including Hellfire missiles, Viper Strike laser-guided glide weapons, and pods carrying the Advanced Precision Kill Weapon System (APKWS)."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "125mi/200km",
+          "full_dossier": "The MQ-8 Fire Scout has a range of 125 miles (200 km), allowing it to operate at a distance from its base."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "The speed of the MQ-8 Fire Scout is not specified in the provided text."
+        },
+        "payload": {
+          "short_specs": "up to 700lb",
+          "full_dossier": "The MQ-8 Fire Scout can carry a payload of up to 700 pounds (320 kg), including Hellfire missiles, Viper Strike laser-guided glide weapons, and pods carrying the Advanced Precision Kill Weapon System (APKWS)."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "125ми/200км",
+          "full_dossier": "The MQ-8 Fire Scout has a range of 125 miles (200 km), allowing it to operate at a distance from its base."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "The speed of the MQ-8 Fire Scout is not specified in the provided text."
+        },
+        "payload": {
+          "short_specs": "до 700фунтов",
+          "full_dossier": "The MQ-8 Fire Scout can carry a payload of up to 700 pounds (320 kg), including Hellfire missiles, Viper Strike laser-guided glide weapons, and pods carrying the Advanced Precision Kill Weapon System (APKWS)."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "125 ميل/200 كم",
+          "full_dossier": "The MQ-8 Fire Scout has a range of 125 miles (200 km), allowing it to operate at a distance from its base."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "The speed of the MQ-8 Fire Scout is not specified in the provided text."
+        },
+        "payload": {
+          "short_specs": "حتى 700 رطل",
+          "full_dossier": "The MQ-8 Fire Scout can carry a payload of up to 700 pounds (320 kg), including Hellfire missiles, Viper Strike laser-guided glide weapons, and pods carrying the Advanced Precision Kill Weapon System (APKWS)."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "125英里/200公里",
+          "full_dossier": "The MQ-8 Fire Scout has a range of 125 miles (200 km), allowing it to operate at a distance from its base."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "The speed of the MQ-8 Fire Scout is not specified in the provided text."
+        },
+        "payload": {
+          "short_specs": "最多700磅",
+          "full_dossier": "The MQ-8 Fire Scout can carry a payload of up to 700 pounds (320 kg), including Hellfire missiles, Viper Strike laser-guided glide weapons, and pods carrying the Advanced Precision Kill Weapon System (APKWS)."
+        }
+      }
+    }
+  },
+  {
+    "id": "tachibana-class",
+    "catId": "5",
+    "name": "Tachibana-class",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Japanese_destroyer_Tachibana_(1944)",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tachibana-class/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tachibana-class/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tachibana-class/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 8,
+    "threatType": "Coastal Defense",
+    "country": "Japan",
+    "countryCode": "JPN",
+    "specs": {
+      "role": "Escort destroyer",
+      "range": "4,680 nautical miles (8,670 km; 5,390 mi) at 16 knots",
+      "speed": "27.8 knots (51.5 km/h; 32.0 mph)",
+      "payload": "Three Type 89 127-millimeter (5 in) dual-purpose guns"
+    },
+    "short_specs": {
+      "range": "4,680nm/8,670km",
+      "speed": "27.8kn",
+      "payload": "3×127mm guns"
+    },
+    "full_dossier": {
+      "range": "The Tachibana sub-class had a range of 4,680 nautical miles at 16 knots. The ships were designed for convoy escort duties in home waters.",
+      "speed": "The Tachibanas were powered by two Kampon geared steam turbines, each driving one propeller shaft, using steam provided by two Kampon water-tube boilers, for a speed of 27.8 knots.",
+      "payload": "The main armament of the Tachibana sub-class consisted of three Type 89 127-millimeter (5 in) dual-purpose guns in one twin-gun mount aft and one single mount forward of the superstructure."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "4,680 deniz mili/8,670 km",
+          "full_dossier": "Tachibana sınıfı 16 knot hızda 4,680 deniz mili menzile sahipti. Gemiler ev sularındaki konvoy eskort görevleri için tasarlandı."
+        },
+        "speed": {
+          "short_specs": "27.8 knot",
+          "full_dossier": "Tachibanas iki Kampon dişli buhar türbini ile çalışıyordu, her biri bir pervane milini çalıştırıyordu, iki Kampon su borulu kazandan buhar kullanıyordu, 27.8 knot hız için."
+        },
+        "payload": {
+          "short_specs": "3×127mm top",
+          "full_dossier": "Tachibana sınıfının ana silahı, süperstruct'un önünde ve arkasında bir çift namlulu montaj ve bir tek namlulu montajda üç Type 89 127-millimeter (5 in) çok amaçlı topdan oluşuyordu."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "4680 морских миль/8670 км",
+          "full_dossier": "Подкласс Тачибана имел дальность 4680 морских миль при 16 узлах. Корабли были предназначены для конвойных эскортных служб в домашних водах."
+        },
+        "speed": {
+          "short_specs": "27,8 узлов",
+          "full_dossier": "Тачибаны были оснащены двумя турбинами Кампон, каждая из которых приводила в действие один вал, используя пар от двух водотрубных котлов Кампон, для скорости 27,8 узлов."
+        },
+        "payload": {
+          "short_specs": "3×127мм орудия",
+          "full_dossier": "Основное вооружение подкласса Тачибана состояло из трех 127-миллиметровых (5 дюймов) универсальных орудий типа 89 в одном спаренном орудии сзади и одном одиночном орудии спереди надстройки."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "4680 ميل بحري/8670 كم",
+          "full_dossier": "كان للفئة تاتشيبана مدى 4680 ميل بحري عند 16 عقدة. تم تصميم السفن للخدمات المرافقة للمواكب في المياه المحلية."
+        },
+        "speed": {
+          "short_specs": "27.8 عقدة",
+          "full_dossier": "كانت تاتشيبانا تعمل ب两 توربين بخاري من نوع كامبون، كل منهما يعمل على محرك واحد، باستخدام البخار من غلايتين أنابيب مائية من كامبون، لسرعة 27.8 عقدة."
+        },
+        "payload": {
+          "short_specs": "3×127ملم مدفع",
+          "full_dossier": "تكونت التسليح الرئيسي لفئة تاتشيبانا من ثلاثة مدافع من نوع 89 بطول 127 ملم (5 بوصات) متعددة الأغراض في برج مدفع مزدوج في الخلف وبرج مدفع منفرد في الأمام من الهيكل العلوية."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "4680海里/8670公里",
+          "full_dossier": "橘子级有16节的4680海里航程。这些船只是为本土海域的护航任务而设计的。"
+        },
+        "speed": {
+          "short_specs": "27.8节",
+          "full_dossier": "橘子级使用两台カンポん齿轮蒸汽涡轮机，每台涡轮机驱动一个螺旋桨轴，使用两台カンポん水管锅炉的蒸汽，速度可达27.8节。"
+        },
+        "payload": {
+          "short_specs": "3×127毫米炮",
+          "full_dossier": "橘子级的主要武器是三门89式127毫米（5英寸）多用途炮，一门双管炮安装在后部，一门单管炮安装在上层建筑前部。"
+        }
+      }
+    }
+  },
+  {
+    "id": "9k330-tor-m1",
+    "catId": "3",
+    "name": "9K330 Tor-M1",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tor_missile_system",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/9k330-tor-m1/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/9k330-tor-m1/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/9k330-tor-m1/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 9,
+    "threatType": "High-Altitude, High-Speed, Low-To-Medium Altitude Threats",
+    "country": "Russia",
+    "countryCode": "RUS",
+    "specs": {
+      "role": "surface-to-air missile system",
+      "range": "25 km",
+      "speed": null,
+      "payload": "8 ready to fire missiles"
+    },
+    "short_specs": {
+      "range": "25km",
+      "speed": null,
+      "payload": "8 missiles"
+    },
+    "full_dossier": {
+      "range": "The target acquisition radar has a maximum detection range of 25 kilometres.",
+      "speed": null,
+      "payload": "The system is equipped with 8 ready to fire missiles stored vertically between the two radars."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "25km",
+          "full_dossier": "Hedef edinme radarının maksimum tespit menzili 25 kilometredir."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "8 füze",
+          "full_dossier": "Sistem, iki radar arasında dikey olarak yerleştirilmiş 8 hazır füze ile donatılmıştır."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "25км",
+          "full_dossier": "Радиолокационная станция обнаружения цели имеет максимальную дальность обнаружения 25 километров."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "8 ракет",
+          "full_dossier": "Система оснащена 8 готовыми к запуску ракетами, размещенными вертикально между двумя радиолокационными станциями."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "25كم",
+          "full_dossier": "معدات الكشف عن الأهداف لها مدى كشف أقصى يبلغ 25 كيلومترا."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "8 صواريخ",
+          "full_dossier": "النظام مجهز ب 8 صواريخ جاهزة للإطلاق موضوعة رأسيًا بين الرادارين."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "25公里",
+          "full_dossier": "目标探测雷达的最大探测范围为25公里."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "8枚导弹",
+          "full_dossier": "系统配备了8枚垂直放置在两个雷达之间的导弹."
+        }
+      }
+    }
+  },
+  {
+    "id": "aksungur-kamikaze-payload",
+    "catId": "4",
+    "name": "Aksungur (kamikaze payload)",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Aksungur",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/aksungur-kamikaze-payload/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/aksungur-kamikaze-payload/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/aksungur-kamikaze-payload/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 8,
+    "threatType": "Hypersonic",
+    "country": "Turkey",
+    "countryCode": "TUR",
+    "specs": {
+      "role": null,
+      "range": null,
+      "speed": null,
+      "payload": "kamikaze payload"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "kamikaze"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": "equipped with a kamikaze payload"
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "intihar payloadi",
+          "full_dossier": "intihar payloadi ile donatildi"
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "камикадзе полезная нагрузка",
+          "full_dossier": "оснащен камикадзе полезной нагрузкой"
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "حمولة كاميكازي",
+          "full_dossier": "مجهزة بحمولة كاميكازي"
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "神风弹载荷",
+          "full_dossier": "配备神风弹载荷"
+        }
+      }
+    }
+  },
+  {
+    "id": "m88a2-hercules",
+    "catId": "1",
+    "name": "M88A2 Hercules",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/M88_Recovery_Vehicle",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m88a2-hercules/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m88a2-hercules/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m88a2-hercules/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 80,
+    "threatType": "Ground Threat",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "Armored Recovery Vehicle",
+      "range": null,
+      "speed": "40 km/h",
+      "payload": "70-ton, single line recovery, 140-ton 2:1 recovery"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": "40 km/h",
+      "payload": "70t/140t"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": "The M88A2 has a lower top speed of 40 km/h compared to its predecessors.",
+      "payload": "The main winch on the M88A2 is capable of a 70-ton, single line recovery, and a 140-ton 2:1 recovery when used with the 140 ton pulley."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "40 km/h",
+          "full_dossier": "M88A2 öncellerine göre daha düşük bir üst hızda 40 km/h sahiptir."
+        },
+        "payload": {
+          "short_specs": "70t/140t",
+          "full_dossier": "M88A2'nin ana vinç tek hatlı 70 ton ve 140 ton 2:1 kurtarma yapabilme kabiliyetine sahiptir."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "40 км/ч",
+          "full_dossier": "M88A2 имеет более низкую максимальную скорость 40 км/ч по сравнению с его предшественниками."
+        },
+        "payload": {
+          "short_specs": "70т/140т",
+          "full_dossier": "Главный трос M88A2 способен на одиночную линию восстановления 70 тонн и восстановление 2:1 140 тонн при использовании с блоком 140 тонн."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "40 كم/س",
+          "full_dossier": "يتمتع M88A2 بسرعة قصوى أقل من 40 كم/س مقارنة بسابقيها."
+        },
+        "payload": {
+          "short_specs": "70 طن / 140 طن",
+          "full_dossier": "يمكن للوينش الرئيسي M88A2 التعافي بخط واحد 70 طنًا ، والتعافي 2: 1 140 طنًا عند استخدامها مع بكرة 140 طن."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "40 公里/小时",
+          "full_dossier": "M88A2 的最高速度比其前身低，仅为 40 公里/小时。"
+        },
+        "payload": {
+          "short_specs": "70吨/140吨",
+          "full_dossier": "M88A2 的主绞车可以进行单线 70 吨恢复和 2:1 140 吨恢复，当使用 140 吨滑轮时。"
+        }
+      }
+    }
+  },
+  {
+    "id": "mim-104d-pac-2-gem",
+    "catId": "3",
+    "name": "MIM-104D/PAC-2/GEM",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/mim-104d-pac-2-gem/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/mim-104d-pac-2-gem/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/mim-104d-pac-2-gem/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 90,
+    "threatType": "Air Defense, Ballistic Missile Defense",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "surface-to-air missile (SAM) system",
+      "range": null,
+      "speed": null,
+      "payload": "advanced aerial interceptor missile"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "interceptor missile"
+    },
+    "full_dossier": {
+      "range": "The Patriot system has a range but the exact value is not specified in the text.",
+      "speed": "The speed of the Patriot system is not specified in the text.",
+      "payload": "The Patriot system uses an advanced aerial interceptor missile."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "Patriot sisteminin menzili metinlerde belirtilen değildir."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "Patriot sisteminin hızı metinlerde belirtilmemiştir."
+        },
+        "payload": {
+          "short_specs": "ihlalin füzesi",
+          "full_dossier": "Patriot sistemi, gelişmiş bir havasavunma füzesi kullanır."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "Дальность системы Patriot не указана в тексте."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "Скорость системы Patriot не указана в тексте."
+        },
+        "payload": {
+          "short_specs": "перехватчик ракета",
+          "full_dossier": "Система Patriot использует передовую перехватчик ракету."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "لم يتم تحديد مدى نظام باتريوت في النص."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "لم يتم تحديد سرعة نظام باتريوت في النص."
+        },
+        "payload": {
+          "short_specs": "صاروخ اعتراضي",
+          "full_dossier": "نظام باتريوت يستخدم صاروخ اعتراضي متقدم."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "爱国者系统的射程在文中没有指定"
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": "爱国者系统的速度在文中没有指定"
+        },
+        "payload": {
+          "short_specs": "拦截导弹",
+          "full_dossier": "爱国者系统使用先进的拦截导弹"
+        }
+      }
+    }
+  },
+  {
+    "id": "m60a3",
+    "catId": "1",
+    "name": "M60A3",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/M60_tank",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m60a3/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m60a3/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m60a3/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 45,
+    "threatType": "Conventional Ground",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "Main Battle Tank",
+      "range": null,
+      "speed": null,
+      "payload": "105-mm Gun"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "105mm"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": "The M60 is equipped with a 105-mm gun."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "105mm",
+          "full_dossier": "M60, 105-mm top ile donatilmistir."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "105mm",
+          "full_dossier": "M60 osnaщen 105-mm pushkoy."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "105mm",
+          "full_dossier": "M60 mahtawaa 105-mm madfa."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "105mm",
+          "full_dossier": "M60 zhuangbei you 105-mm paohao."
+        }
+      }
+    }
+  },
+  {
+    "id": "sealion",
+    "catId": "5",
+    "name": "Sealion",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Sealion_(SS-195)",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/sealion/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/sealion/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/sealion/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/sealion.glb",
+    "dangerLevel": 5,
+    "threatType": "Medium-to-high threat environments",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "submarine",
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "challenger-1",
+    "catId": "1",
+    "name": "Challenger 1",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Challenger_1",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/challenger-1/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/challenger-1/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/challenger-1/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/challenger-1.glb",
+    "dangerLevel": 80,
+    "threatType": "armoured",
+    "country": "United Kingdom",
+    "countryCode": "GBR",
+    "specs": {
+      "role": "Main Battle Tank",
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "trishul-class",
+    "catId": "5",
+    "name": "Trishul-class",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Trishul_(missile)",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/trishul-class/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/trishul-class/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/trishul-class/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 70,
+    "threatType": "Short-range air defense",
+    "country": "India",
+    "countryCode": "IND",
+    "specs": {
+      "role": "surface-to-air missile",
+      "range": null,
+      "speed": "Mach 2",
+      "payload": null
+    },
+    "short_specs": {
+      "range": null,
+      "speed": "Mach 2",
+      "payload": null
+    },
+    "full_dossier": {
+      "range": "The Trishul missile has an unknown range, but was designed to be used as a short range surface-to-air missile.",
+      "speed": "The Trishul missile is capable of reaching Mach 2 speed.",
+      "payload": "The Trishul missile was designed to be used against low flying missiles, attack helicopters, and aircraft."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "Trishul füzesinin menzili bilinmiyor, ancak kısa menzilli bir yüzey havası füzesi olarak tasarlandı."
+        },
+        "speed": {
+          "short_specs": "Mach 2",
+          "full_dossier": "Trishul füzesi Mach 2 hıza ulaşabilir."
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": "Trishul füzesi, alçak uçan füzeler, saldırı helikopterleri ve uçaklara karşı kullanılmak üzere tasarlandı."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "Дальность действия ракеты Trishul неизвестна, но она была разработана как ракета класса «земля-воздух» с коротким радиусом действия."
+        },
+        "speed": {
+          "short_specs": "Mach 2",
+          "full_dossier": "Ракета Trishul способна достигать скорости Mach 2."
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": "Ракета Trishul была разработана для использования против низколетящих ракет, ударных вертолетов и самолетов."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "مدى صاروخ تريشول غير معروف، ولكن تم تصميمه كصاروخ أرض-جو قصير المدى."
+        },
+        "speed": {
+          "short_specs": "Mach 2",
+          "full_dossier": "يمكن لصاروخ تريشول الوصول إلى سرعة ماخ 2."
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": "تم تصميم صاروخ تريشول للاستخدام ضد الصواريخ والطائرات والمروحيات التي تحلق على ارتفاع منخفض."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": "Trishul导弹的射程未知，但它被设计为短程地对空导弹."
+        },
+        "speed": {
+          "short_specs": "Mach 2",
+          "full_dossier": "Trishul导弹可以达到2马赫的速度."
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": "Trishul导弹被设计用来对付低空飞行的导弹、攻击直升机和飞机."
+        }
+      }
+    }
+  },
+  {
+    "id": "bzk-005",
+    "catId": "4",
+    "name": "BZK-005",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Harbin_BZK-005",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/bzk-005/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/bzk-005/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/bzk-005/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/bzk-005.glb",
+    "dangerLevel": 40,
+    "threatType": "Low-to-Moderate",
+    "country": "China",
+    "countryCode": "CHN",
+    "specs": {
+      "role": "reconnaissance aircraft",
+      "range": "null",
+      "speed": "150–180 km/h",
+      "payload": "150 kg"
+    },
+    "short_specs": {
+      "range": "null",
+      "speed": "150-180 km/h",
+      "payload": "150kg"
+    },
+    "full_dossier": {
+      "range": "No range information available",
+      "speed": "The BZK-005 has a cruising speed of around 150–180 km/h",
+      "payload": "The BZK-005 has a payload capacity of 150 kg"
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "null",
+          "full_dossier": "Hizmet alanı bilgisi mevcut değil"
+        },
+        "speed": {
+          "short_specs": "150-180 km/h",
+          "full_dossier": "BZK-005'in seyir hızı yaklaşık 150–180 km/h"
+        },
+        "payload": {
+          "short_specs": "150kg",
+          "full_dossier": "BZK-005'in payload kapasitesi 150 kg"
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "null",
+          "full_dossier": "Информация о диапазоне недоступна"
+        },
+        "speed": {
+          "short_specs": "150-180 км/ч",
+          "full_dossier": "Крейсерская скорость BZK-005 составляет около 150–180 км/ч"
+        },
+        "payload": {
+          "short_specs": "150кг",
+          "full_dossier": "Пayload-емкость BZK-005 составляет 150 кг"
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "null",
+          "full_dossier": "لا تتوفر معلومات عن النطاق"
+        },
+        "speed": {
+          "short_specs": "150-180 كم/س",
+          "full_dossier": "سرعة الطيران المستقرة للطائرة BZK-005 حوالي 150–180 كم/س"
+        },
+        "payload": {
+          "short_specs": "150كغ",
+          "full_dossier": "سعة الحمولة للطائرة BZK-005 تبلغ 150 كغ"
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "null",
+          "full_dossier": "无范围信息"
+        },
+        "speed": {
+          "short_specs": "150-180 公里/小时",
+          "full_dossier": "BZK-005 的巡航速度约为 150–180 公里/小时"
+        },
+        "payload": {
+          "short_specs": "150公斤",
+          "full_dossier": "BZK-005 的有效载荷容量为 150 公斤"
+        }
+      }
+    }
+  },
+  {
+    "id": "m1064-mortar-carrier",
+    "catId": "1",
+    "name": "M1064 Mortar Carrier",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/M1064_mortar_carrier",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m1064-mortar-carrier/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m1064-mortar-carrier/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m1064-mortar-carrier/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 5,
+    "threatType": "Ground",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "Mortar Carrier",
+      "range": null,
+      "speed": null,
+      "payload": "M121 mortar"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "120mm M121"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": "The M1064 mortar carrier is equipped with the M121 mortar, a version of the M120 mortar."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm M121",
+          "full_dossier": "M1064 mortar taşıyıcı, M121 mortar ile donatılmıştır."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm M121",
+          "full_dossier": "М1064 mortar carrier оснащен M121 mortar."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm M121",
+          "full_dossier": "حامل القناصة M1064 مجهز بمدفع M121."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "120mm M121",
+          "full_dossier": "M1064 mortar carrier 配备 M121 mortar."
+        }
+      }
+    }
+  },
+  {
+    "id": "tcs-lite",
+    "catId": "3",
+    "name": "TCS-Lite",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tactical_Control_System",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tcs-lite/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tcs-lite/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tcs-lite/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 10,
+    "threatType": "Communication System",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "Tactical Control System for unmanned aerial vehicles",
+      "range": null,
+      "speed": null,
+      "payload": "Integration of plug and play payloads"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "plug and play"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": "The system features integration of plug and play payloads and weaponization of the Fire Scout"
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "tak ve oynat",
+          "full_dossier": "sistem, tak ve oynat yüklerini ve Fire Scout silahlanmasını içerir"
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "подключи и играй",
+          "full_dossier": "система включает в себя интеграцию подключи и играй полезной нагрузки и вооружение Fire Scout"
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "وصل ولعب",
+          "full_dossier": "النظام يحتوي على دمج حملات لعب وتركيب سلاح سكاوت النار"
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "",
+          "full_dossier": "系统包含插入和播放有效载荷和火蝠侦察兵武器化"
+        }
+      }
+    }
+  },
+  {
+    "id": "nbs",
+    "catId": "3",
+    "name": "NBS",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/National_Building_Specification",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/nbs/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/nbs/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/nbs/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/nbs.glb",
+    "dangerLevel": 0,
+    "threatType": "Specification",
+    "country": "United Kingdom",
+    "countryCode": "GBR",
+    "specs": {
+      "role": null,
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "m1134-anti-tank-guided-missile-vehicle",
+    "catId": "1",
+    "name": "M1134 Anti-Tank Guided Missile Vehicle",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Variants_of_the_Stryker",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m1134-anti-tank-guided-missile-vehicle/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m1134-anti-tank-guided-missile-vehicle/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m1134-anti-tank-guided-missile-vehicle/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 60,
+    "threatType": "armored vehicle",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "Armored fighting vehicle",
+      "range": null,
+      "speed": "100 km/h",
+      "payload": ".50 caliber M2 Browning machine gun, 40mm MK19 grenade launcher or 7.62×51mm NATO M240 machine gun"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": "100 km/h",
+      "payload": ".50cal M2 + 40mm MK19"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": "The vehicle can attain speeds of 100 km/h without a governor and 56 km/h with a governor on paved roads.",
+      "payload": "The vehicle is armed with a Protector remote weapon station with a universal soft mount cradle, which can mount either a .50 caliber M2 Browning machine gun, a 40mm MK19 grenade launcher or a 7.62×51mm NATO M240 machine gun. It is also armed with four M6 smoke grenade launchers."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "100 km/h",
+          "full_dossier": "Araç, valfli olmadan 100 km/h ve valfli olarak 56 km/h hıza ulaşabilir."
+        },
+        "payload": {
+          "short_specs": ".50cal M2 + 40mm MK19",
+          "full_dossier": "Araç, .50 kalibre M2 Browning makineli tüfek, 40mm MK19 grenade launcher veya 7.62×51mm NATO M240 makineli tüfek ile donatılmıştır. Ayrıca dört M6 duman bombası fırlatıcısı ile silahlandırılmıştır."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "100 км/ч",
+          "full_dossier": "Транспортное средство может достигать скорости 100 км/ч без ограничителя и 56 км/ч с ограничителем на асфальтированных дорогах."
+        },
+        "payload": {
+          "short_specs": ".50cal M2 + 40mm MK19",
+          "full_dossier": "Транспортное средство оснащено дистанционно управляемой боевой станцией Protector с универсальным мягким кронштейном, который может устанавливать либо 12,7-мм пулемет M2 Browning, либо 40-мм гранатомет MK19, либо 7,62×51 мм пулемет M240. Кроме того, оно оснащено четырьмя дымовыми гранатометами M6."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "100 كم/س",
+          "full_dossier": "يمكن للvehicle الوصول إلى سرعة 100 كم/س بدون حاكم و 56 كم/س مع حاكم على الطرق المعبدة."
+        },
+        "payload": {
+          "short_specs": ".50cal M2 + 40mm MK19",
+          "full_dossier": "يتم تسليح المركبة بنقطة سلاح عن بعد محمية، مع حامل عالمي لتركيب 12.7 ملم M2 Browning أو 40 ملم MK19 أو 7.62×51 ملم M240. كما أنها مسلحة بأربعة قاذفات قنابل دخانية M6."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": "100 公里/小时",
+          "full_dossier": "车辆可以在铺装道路上达到100公里/小时的速度，没有限制器和56公里/小时的速度，限制器"
+        },
+        "payload": {
+          "short_specs": ".50cal M2 + 40mm MK19",
+          "full_dossier": "车辆配备了遥控武器站，具有通用软安装支架，可以安装12.7毫米M2布朗宁机枪、40毫米MK19榴弹发射器或7.62×51毫米NATO M240机枪。它还配备了四个M6烟雾弹发射器。"
+        }
+      }
+    }
+  },
+  {
+    "id": "t-72a",
+    "catId": "1",
+    "name": "T-72A",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-72",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/t-72a/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/t-72a/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/t-72a/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/t-72a.glb",
+    "dangerLevel": 70,
+    "threatType": "Land-Based Ground Vehicle",
+    "country": "Soviet Union",
+    "countryCode": "SUN",
+    "specs": {
+      "role": "Main Battle Tank",
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": null
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "patriot-an-frc-119",
+    "catId": "3",
+    "name": "Patriot AN/FRC-119",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/patriot-an-frc-119/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/patriot-an-frc-119/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/patriot-an-frc-119/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 75,
+    "threatType": "Surface-to-Air Missile Defense",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "surface-to-air missile system",
+      "range": null,
+      "speed": null,
+      "payload": "advanced aerial interceptor missile"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "interceptor missile"
+    },
+    "full_dossier": {
+      "range": "The Patriot system has a modular and highly mobile design, with a battery-sized element that can be installed in less than an hour.",
+      "speed": "The system is truck- or trailer-mounted, with the radar set and launchers towed by Oshkosh M983 HEMTTs.",
+      "payload": "The Patriot system uses an advanced aerial interceptor missile, with the capability to engage and destroy tactical ballistic missiles."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  },
+  {
+    "id": "rq-12a-wasp",
+    "catId": "4",
+    "name": "RQ-12A Wasp",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/AeroVironment_Wasp_III",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/rq-12a-wasp/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/rq-12a-wasp/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/rq-12a-wasp/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 10,
+    "threatType": "Very Low",
+    "country": "United States",
+    "countryCode": "USA",
+    "specs": {
+      "role": "Small Unmanned Aircraft System",
+      "range": "5 km road / 3.1 mi",
+      "speed": "40-65 km/h",
+      "payload": "forward and side-looking infrared and color cameras"
+    },
+    "short_specs": {
+      "range": "5km/3.1mi",
+      "speed": "40-65 km/h",
+      "payload": "infrared and color cameras"
+    },
+    "full_dossier": {
+      "range": "The Wasp III can fly for 45 minutes out to 5 km at an altitude of 1,000 ft. It has a range of 3.1 mi and can be controlled manually or programmed for GPS-based autonomous navigation.",
+      "speed": "The aircraft can fly at a top speed of 40–65 km/h. It has a cruise speed of 25–40 mph.",
+      "payload": "The Wasp III can carry interchangeable targeting payload modules, including forward and side-looking infrared and color cameras that transmit streaming video directly to the hand-held ground controller."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "5km/3.1mil",
+          "full_dossier": "Wasp III 45 dakika boyunca 5 km uzağa 1000 ft irtifaya kadar uçabilir. 3.1 mil menzili vardır ve manuel olarak kontrol edilebilir veya GPS tabanlı otonom navigasyon için programlanabilir."
+        },
+        "speed": {
+          "short_specs": "40-65 km/s",
+          "full_dossier": "Uçak 40–65 km/s hızında uçabilir. Seyir hızı 25–40 mph'dir."
+        },
+        "payload": {
+          "short_specs": "ileri ve yan bakış kızılötesi ve renkli kameralar",
+          "full_dossier": "Wasp III, ileri ve yan bakış kızılötesi ve renkli kameraları içeren değiştirilebilir hedefleme yük modüllerini taşıyabilir ve bunlar el tipi zemine kontrol cihazına doğrudan yayın yapar."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "5км/3.1мили",
+          "full_dossier": "Wasp III может летать в течение 45 минут на расстояние 5 км на высоте 1000 футов. Его дальность полета составляет 3,1 мили, и он может быть управляем вручную или запрограммирован для автономной навигации с помощью GPS."
+        },
+        "speed": {
+          "short_specs": "40-65 км/ч",
+          "full_dossier": "Самолет может летать на максимальной скорости 40–65 км/ч. Его крейсерская скорость составляет 25–40 миль в час."
+        },
+        "payload": {
+          "short_specs": "передние и боковые инфракрасные и цветные камеры",
+          "full_dossier": "Wasp III может нести сменные модули полезной нагрузки, включая передние и боковые инфракрасные и цветные камеры, которые передают видеопоток напрямую на ручной наземный контроллер."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "5كم/3.1ميل",
+          "full_dossier": "يمكن للواسب الثالث الطيران لمدة 45 دقيقة على بعد 5 كم وارتفاع 1000 قدم. ويبلغ مداه 3.1 ميل ويمكن التحكم فيه يدويا أو برمجة للتنقل الذاتي باستخدام نظام التموضع العالمي."
+        },
+        "speed": {
+          "short_specs": "40-65 كم/س",
+          "full_dossier": "يمكن للطائرة الطيران بسرعة قصوى تبلغ 40-65 كم/س. وتبلغ سرعته العادية 25-40 ميل في الساعة."
+        },
+        "payload": {
+          "short_specs": "الكاميرات الأمامية والجانبية الحمراء والملونة",
+          "full_dossier": "يمكن للواسب الثالث حمل وحدات حمولة استهداف قابلة للتبديل، بما في ذلك الكاميرات الأمامية والجانبية الحمراء والملونة التي تنقل الفيديو مباشرة إلى جهاز التحكم اليدوي للأرض."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "5公里/3.1英里",
+          "full_dossier": "Wasp III 可以飞行 45 分钟，距离 5 公里，海拔 1000 英尺。它的航程为 3.1 英里，可以手动控制或使用 GPS 编程进行自主导航。"
+        },
+        "speed": {
+          "short_specs": "40-65 公里/小时",
+          "full_dossier": "飞机可以以 40-65 公里/小时的最大速度飞行。其巡航速度为 25-40 英里/小时。"
+        },
+        "payload": {
+          "short_specs": "前向和侧向红外和彩色摄像机",
+          "full_dossier": "Wasp III 可以携带可互换的目标负载模块，包括前向和侧向红外和彩色摄像机，这些摄像机可以直接将视频传输到手持地面控制器。"
+        }
+      }
+    }
+  },
+  {
+    "id": "t-90",
+    "catId": "1",
+    "name": "T-90",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/T-90",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/t-90/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/t-90/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/t-90/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/t-90.glb",
+    "dangerLevel": 90,
+    "threatType": "Tank",
+    "country": "Russia",
+    "countryCode": "RUS",
+    "specs": {
+      "role": "Main Battle Tank",
+      "range": null,
+      "speed": null,
+      "payload": "125 mm 2A46 smoothbore main gun"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "125mm 2A46"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": "The T-90 uses a 125 mm 2A46 smoothbore main gun."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "125mm 2A46",
+          "full_dossier": "T-90, 125 mm 2A46 düz namlulu ana top kullanır."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "125мм 2А46",
+          "full_dossier": "Т-90 использует 125-мм гладкоствольную пушку 2А46."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "125مم 2أ46",
+          "full_dossier": "يستخدم تي-90 مدفعًا رئيسيًا أملسًا من عيار 125 ملم 2أ46."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "125毫米2A46",
+          "full_dossier": "T-90使用125毫米2A46滑膛主炮。"
+        }
+      }
+    }
+  },
+  {
+    "id": "dji-mavic-3t",
+    "catId": "4",
+    "name": "DJI Mavic 3T",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/DJI_Mavic_3",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/dji-mavic-3t/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/dji-mavic-3t/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/dji-mavic-3t/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/dji-mavic-3t.glb",
+    "dangerLevel": 50,
+    "threatType": "Thermal reconnaissance",
+    "country": "China",
+    "countryCode": "CHN",
+    "specs": {
+      "role": "Teleoperated compact quadcopter drone",
+      "range": "15 km (9.3 mi)",
+      "speed": "65 km/h (40 mph)",
+      "payload": "20MP 4/3\" CMOS Hasselblad L2D-20c camera and 12MP 1/2\" CMOS telephoto camera"
+    },
+    "short_specs": {
+      "range": "15km",
+      "speed": "65 km/h",
+      "payload": "20MP+12MP cameras"
+    },
+    "full_dossier": {
+      "range": "The Mavic 3 has a maximum control range of 15 km (9.3 mi) using the O3+ transmission system.",
+      "speed": "The drone has a top speed of 65 km/h (40 mph) in sport mode.",
+      "payload": "The Mavic 3 is equipped with a 20MP 4/3\" CMOS Hasselblad L2D-20c camera and a 12MP 1/2\" CMOS telephoto camera with 28× zoom."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "15km",
+          "full_dossier": "Mavic 3, O3+ iletim sistemi kullanarak 15 km (9.3 mi) maksimum kontrol menziline sahiptir."
+        },
+        "speed": {
+          "short_specs": "65 km/h",
+          "full_dossier": "Drone, spor modunda 65 km/h (40 mph) hıza sahiptir."
+        },
+        "payload": {
+          "short_specs": "20MP+12MP kameralar",
+          "full_dossier": "Mavic 3, 20MP 4/3\" CMOS Hasselblad L2D-20c kamera ve 28× zum ile 12MP 1/2\" CMOS telefoto kamerayla donatılmıştır."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "15км",
+          "full_dossier": "Mavic 3 имеет максимальный контрольный диапазон 15 км (9,3 ми) с помощью системы передачи O3+."
+        },
+        "speed": {
+          "short_specs": "65 км/ч",
+          "full_dossier": "Дрон имеет максимальную скорость 65 км/ч (40 миль/ч) в спортивном режиме."
+        },
+        "payload": {
+          "short_specs": "20МП+12МП камеры",
+          "full_dossier": "Mavic 3 оснащен 20МП 4/3\" CMOS камерой Hasselblad L2D-20c и 12МП 1/2\" CMOS телекамерой с 28-кратным зумом."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "15كم",
+          "full_dossier": "يتمتع Mavic 3 بمدى تحكم أقصى يبلغ 15 كم (9.3 ميل) باستخدام نظام النقل O3+."
+        },
+        "speed": {
+          "short_specs": "65 كم/س",
+          "full_dossier": "الطائرة بدون طيار تصل إلى سرعة قصوى تبلغ 65 كم/س (40 ميل/س) في وضع الرياضة."
+        },
+        "payload": {
+          "short_specs": "20ميجابيكسل+12ميجابيكسل كاميرات",
+          "full_dossier": "تم تزويد Mavic 3 بكاميرا 20 ميجابيكسل 4/3\" CMOS Hasselblad L2D-20c وكاميرا تليفوتوغرافية 12 ميجابيكسل 1/2\" CMOS مع زوم 28×."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "15公里",
+          "full_dossier": "Mavic 3 使用 O3+ 传输系统，最大控制范围为 15 公里 (9.3 英里)。"
+        },
+        "speed": {
+          "short_specs": "65 公里/小时",
+          "full_dossier": "该无人机在运动模式下的最高速度为 65 公里/小时 (40 英里/小时)。"
+        },
+        "payload": {
+          "short_specs": "20百万像素+12百万像素相机",
+          "full_dossier": "Mavic 3 配备 20 百万像素 4/3\" CMOS Hasselblad L2D-20c 相机和 12 百万像素 1/2\" CMOS 望远相机，具有 28 倍变焦功能。"
+        }
+      }
+    }
+  },
+  {
+    "id": "tu-95ms",
+    "catId": "2",
+    "name": "Tu-95MS",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-95",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tu-95ms/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tu-95ms/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/tu-95ms/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/tu-95ms.glb",
+    "dangerLevel": 85,
+    "threatType": "Threat: Cruise missiles and strategic enemy targets",
+    "country": "Russia",
+    "countryCode": "RUS",
+    "specs": {
+      "role": "strategic bomber and missile platform",
+      "range": "8,000 km",
+      "speed": null,
+      "payload": "11,000 kg load"
+    },
+    "short_specs": {
+      "range": "8,000km",
+      "speed": null,
+      "payload": "11,000kg"
+    },
+    "full_dossier": {
+      "range": "The Tu-95 has an un-refueled range of 8,000 km, far enough to threaten key targets in the United States.",
+      "speed": null,
+      "payload": "The Tu-95 is capable of carrying an 11,000 kg load over the target."
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "8.000km",
+          "full_dossier": "Tu-95, ABD'deki kritik hedeflere ulaşabilecek 8.000 km menzile sahiptir."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "11.000kg",
+          "full_dossier": "Tu-95, hedef üzerinde 11.000 kg yük taşıyabilir."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "8 000км",
+          "full_dossier": "Ту-95 имеет дальность полета 8 000 км, достаточную для угрозы ключевым целям в США."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "11 000кг",
+          "full_dossier": "Ту-95 способен нести нагрузку 11 000 кг над целью."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "8000كم",
+          "full_dossier": "يبلغ مدى طائرة تي يو-95 8000 كم، وهو ما يكفي لتهديد الأهداف الرئيسية في الولايات المتحدة."
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "11000كجم",
+          "full_dossier": "يمكن لطائرة تي يو-95 أن تحمل حمولة 11000 كجم فوق الهدف."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "8000公里",
+          "full_dossier": "图-95的航程为8000公里，足以威胁美国的关键目标。"
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": "11000公斤",
+          "full_dossier": "图-95能够携带11000公斤的有效载荷到达目标上空。"
+        }
+      }
+    }
+  },
+  {
+    "id": "oscar-i",
+    "catId": "5",
+    "name": "Oscar I",
+    "featured": false,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Oscar-class_submarine",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/oscar-i/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/oscar-i/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/oscar-i/3.jpg"
+    ],
+    "model": null,
+    "dangerLevel": 85,
+    "threatType": "Nuclear-Powered Ballistic Missile Submarine",
+    "country": "Russia",
+    "countryCode": "RUS",
+    "specs": {
+      "role": "cruise missile submarine",
+      "range": null,
+      "speed": null,
+      "payload": "P-700 Granit (SS-N-19 Shipwreck) anti-ship missiles"
+    },
+    "short_specs": {
+      "range": null,
+      "speed": null,
+      "payload": "P-700 Granit"
+    },
+    "full_dossier": {
+      "range": null,
+      "speed": null,
+      "payload": "The Oscar class was designed to attack NATO carrier battle groups using long-range P-700 Granit (SS-N-19 Shipwreck) anti-ship missiles"
+    },
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "speed": {
+          "short_specs": null,
+          "full_dossier": null
+        },
+        "payload": {
+          "short_specs": null,
+          "full_dossier": null
+        }
+      }
+    }
+  }
+]

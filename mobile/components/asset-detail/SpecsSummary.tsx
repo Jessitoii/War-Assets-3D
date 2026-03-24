@@ -13,41 +13,41 @@ interface SpecsSummaryProps {
 }
 
 export const SpecsSummary: React.FC<SpecsSummaryProps> = ({ asset, isDark, onPress }) => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const currentLang = i18n.language || 'en';
-  
+
   // Tactical Intelligence Selector: Priority (Current Lang -> EN)
   const langSpecs = asset.translations?.[currentLang]?.short_specs || asset.translations?.[currentLang]?.specs;
-  const enFallback = asset.translations?.['en']?.short_specs || asset.translations?.['en']?.specs;
-  
+  const enFallback = asset.short_specs || asset.specs;
+
   const displaySpecs = langSpecs || enFallback || {};
-  const countryCode = asset.translations?.[currentLang]?.countryCode || asset.translations?.['en']?.countryCode || asset.countryCode;
-  const countryName = asset.translations?.[currentLang]?.country || asset.translations?.['en']?.country || asset.country;
+  const countryCode = asset.translations?.[currentLang]?.countryCode || asset.specs?.countryCode || asset.countryCode;
+  const countryName = asset.translations?.[currentLang]?.country || asset.specs?.country || asset.country;
 
   const cardBg = isDark ? theme.colors.secondary : '#FFF';
   const textColor = isDark ? '#FFF' : '#000';
   const subTextColor = isDark ? '#AAA' : '#666';
 
   const items = [
-    { label: 'Range', value: displaySpecs.range || 'N/A', icon: 'navigate-outline' },
-    { label: 'Speed', value: displaySpecs.speed || 'N/A', icon: 'speedometer-outline' },
-    { label: 'Generation', value: displaySpecs.generation || 'N/A', icon: 'git-network-outline' },
-    { 
-      label: 'Origin', 
-      value: `${getFlagEmoji(countryCode || '')} ${countryName || 'Global'}`.trim(), 
-      icon: 'earth-outline' 
+    { label: t('asset.range'), value: displaySpecs.range || 'N/A', icon: 'navigate-outline' },
+    { label: t('asset.speed'), value: displaySpecs.speed || 'N/A', icon: 'speedometer-outline' },
+    { label: t('asset.generation'), value: displaySpecs.generation || 'N/A', icon: 'git-network-outline' },
+    {
+      label: t('asset.origin'),
+      value: `${getFlagEmoji(countryCode || '')} ${countryName || 'Global'}`.trim(),
+      icon: 'earth-outline'
     },
   ];
 
   return (
-    <TouchableOpacity 
-      onPress={onPress} 
+    <TouchableOpacity
+      onPress={onPress}
       style={[styles.container, { backgroundColor: cardBg }]}
       accessibilityLabel="View technical specifications"
       accessibilityRole="button"
     >
       <View style={styles.header}>
-        <Text style={[styles.title, { color: textColor }]}>Technical Summary</Text>
+        <Text style={[styles.title, { color: textColor }]}>{t('common.technical_summary')}</Text>
         <Ionicons name="chevron-forward" size={18} color={subTextColor} />
       </View>
       <View style={styles.grid}>

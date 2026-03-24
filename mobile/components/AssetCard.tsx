@@ -11,7 +11,7 @@ interface Props {
   onPress: () => void;
 }
 
-export const QuickAccessCard: React.FC<Props> = ({ asset, onPress }) => {
+export const AssetCard: React.FC<Props> = ({ asset, onPress }) => {
   const currentTheme = useStore((state) => state.theme);
   const isDark = currentTheme === 'dark';
 
@@ -51,24 +51,14 @@ export const QuickAccessCard: React.FC<Props> = ({ asset, onPress }) => {
           </Text>
         </View>
 
-        {/* LIVE INTEL Badge */}
-        {!!asset.trendingReason && (
-          <View style={styles.liveIntelBadge}>
-            <View style={styles.pulseDot} />
-            <Text style={styles.liveIntelText}>LIVE INTEL</Text>
-          </View>
-        )}
-
       </View>
       <View style={styles.info}>
         <Text numberOfLines={1} style={[styles.name, { color: isDark ? '#FFF' : '#000' }]}>
           {asset.name}
         </Text>
-        {!!asset.trendingReason && (
-          <Text numberOfLines={2} style={[styles.trendingReason, { color: isDark ? '#AAA' : '#666' }]}>
-            {asset.trendingReason}
-          </Text>
-        )}
+        <Text numberOfLines={1} style={[styles.category, { color: isDark ? '#888' : '#666' }]}>
+          {asset.threatType || 'Tactical Asset'}
+        </Text>
       </View>
     </TouchableOpacity>
   );
@@ -76,20 +66,25 @@ export const QuickAccessCard: React.FC<Props> = ({ asset, onPress }) => {
 
 const styles = StyleSheet.create({
   container: {
-    width: 160,
     borderRadius: 12,
-    marginRight: 12,
+    marginVertical: 8,
     overflow: 'hidden',
     borderWidth: 1,
     borderColor: 'rgba(128,128,128,0.1)',
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
   },
   imageContainer: {
     width: '100%',
-    height: 100,
+    height: 120,
   },
   image: {
     width: '100%',
     height: '100%',
+    resizeMode: 'cover',
   },
   placeholder: {
     width: '100%',
@@ -98,11 +93,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   info: {
-    padding: 10,
+    padding: 12,
   },
   name: {
-    fontSize: 14,
-    fontWeight: '600',
+    fontSize: 15,
+    fontWeight: '700',
+    marginBottom: 4,
+  },
+  category: {
+    fontSize: 12,
+    fontWeight: '500',
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
   },
   placeholderText: {
     fontSize: 10,
@@ -121,11 +123,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 3,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 2,
-    elevation: 4,
+    zIndex: 1,
   },
   modelBadgeText: {
     color: '#000',
@@ -134,8 +132,8 @@ const styles = StyleSheet.create({
   },
   countryBadge: {
     position: 'absolute',
-    top: 8,
-    left: 8,
+    bottom: 8,
+    right: 8,
     backgroundColor: 'rgba(0,0,0,0.5)',
     paddingHorizontal: 4,
     paddingVertical: 2,
@@ -143,35 +141,5 @@ const styles = StyleSheet.create({
   },
   countryBadgeText: {
     fontSize: 12,
-  },
-  liveIntelBadge: {
-    position: 'absolute',
-    bottom: 8,
-    left: 8,
-    backgroundColor: '#FF3B30',
-    paddingHorizontal: 6,
-    paddingVertical: 2,
-    borderRadius: 4,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-  },
-  pulseDot: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-    backgroundColor: '#FFF',
-  },
-  liveIntelText: {
-    color: '#FFF',
-    fontSize: 8,
-    fontWeight: '900',
-    letterSpacing: 0.5,
-  },
-  trendingReason: {
-    fontSize: 10,
-    fontStyle: 'italic',
-    marginTop: 4,
-    lineHeight: 12,
   }
 });

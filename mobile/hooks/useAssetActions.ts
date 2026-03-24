@@ -8,21 +8,8 @@ export const useAssetActions = () => {
   const comparisonQueue = useStore(state => state.comparisonQueue);
 
   const toggleFavorite = async (assetId: string) => {
-    try {
-      const db = await initDB();
-      const exists = await db.getFirstAsync('SELECT assetId FROM favorites WHERE assetId = ?', [assetId]);
-      
-      if (exists) {
-        await db.runAsync('DELETE FROM favorites WHERE assetId = ?', [assetId]);
-      } else {
-        await db.runAsync('INSERT INTO favorites (assetId) VALUES (?)', [assetId]);
-      }
-      
-      toggleFavoriteStore(assetId);
-    } catch (error) {
-      console.error('Failed to toggle favorite:', error);
-      Alert.alert('Error', 'Could not update favorites.');
-    }
+    // Both state and SQLite are now handled atomically within the store action
+    toggleFavoriteStore(assetId);
   };
 
   const handleCompare = async (assetId: string) => {

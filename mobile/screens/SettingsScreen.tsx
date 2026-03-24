@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Switch, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, StyleSheet, Switch, TouchableOpacity, Alert, Modal, FlatList } from 'react-native';
 import { useStore } from '../store';
 import * as SQLite from 'expo-sqlite';
 import * as FileSystem from 'expo-file-system/legacy';
@@ -7,6 +7,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 import i18n from '../locales';
+import { LanguageCode } from '../store/slices/appSlice';
 
 export const SettingsScreen = () => {
   const theme = useStore((state) => state.theme);
@@ -16,6 +17,7 @@ export const SettingsScreen = () => {
   const supportsAR = useStore((state) => state.supportsAR);
   const language = useStore((state) => state.language);
   const setLanguage = useStore((state) => state.setLanguage);
+  const [showLanguageModal, setShowLanguageModal] = useState(false);
 
   const { t } = useTranslation();
 
@@ -69,11 +71,21 @@ export const SettingsScreen = () => {
     setArEnabled(!arEnabled);
   };
   
-  const handleToggleLanguage = () => {
-    const newLang = language === 'en' ? 'tr' : 'en';
-    setLanguage(newLang);
-    i18n.changeLanguage(newLang);
+  const handleLanguageSelect = (lang: LanguageCode) => {
+    setLanguage(lang);
+    i18n.changeLanguage(lang);
+    setShowLanguageModal(false);
   };
+
+  const languages: { code: LanguageCode; label: string; native: string }[] = [
+    { code: 'en', label: 'English', native: 'English' },
+    { code: 'tr', label: 'Turkish', native: 'Türkçe' },
+    { code: 'ru', label: 'Russian', native: 'Русский' },
+    { code: 'ar', label: 'Arabic', native: 'العربية' },
+    { code: 'zh', label: 'Chinese', native: '中文' },
+  ];
+
+  const currentLanguageLabel = languages.find(l => l.code === language)?.native || 'English';
 
   const handleDataSync = async () => {
     setIsSyncing(true);
@@ -125,19 +137,55 @@ export const SettingsScreen = () => {
 
         <View style={[styles.divider, { backgroundColor: colors.border }]} />
 
-        <View style={styles.row}>
+        <TouchableOpacity 
+          style={styles.row}
+          onPress={() => setShowLanguageModal(true)}
+        >
           <View style={styles.rowText}>
-            <Text style={[styles.rowTitle, { color: colors.text }]}>{language === 'en' ? 'English' : 'Türkçe'}</Text>
-            <Text style={[styles.rowSubtitle, { color: colors.subtext }]}>Change application language</Text>
+            <Text style={[styles.rowTitle, { color: colors.text }]}>{currentLanguageLabel}</Text>
+            <Text style={[styles.rowSubtitle, { color: colors.subtext }]}>{t('settings.language_selection') || 'Change application language'}</Text>
           </View>
-          <Switch 
-            value={language === 'tr'} 
-            onValueChange={handleToggleLanguage}
-            trackColor={{ true: colors.primary, false: colors.border }}
-            accessibilityHint="Toggles application language between English and Turkish"
-          />
-        </View>
+          <Ionicons name="chevron-forward" size={20} color={colors.subtext} />
+        </TouchableOpacity>
       </View>
+
+      <Modal
+        visible={showLanguageModal}
+        transparent={true}
+        animationType="slide"
+        onRequestClose={() => setShowLanguageModal(false)}
+      >
+        <TouchableOpacity 
+          style={styles.modalOverlay}
+          activeOpacity={1}
+          onPress={() => setShowLanguageModal(false)}
+        >
+          <View style={[styles.modalContent, { backgroundColor: colors.card, borderColor: colors.border }]}>
+            <Text style={[styles.modalTitle, { color: colors.text }]}>{t('settings.select_language') || 'Select Language'}</Text>
+            <FlatList
+              data={languages}
+              keyExtractor={(item) => item.code}
+              renderItem={({ item }) => (
+                <TouchableOpacity
+                  style={[
+                    styles.languageItem,
+                    language === item.code && { backgroundColor: `${colors.primary}20` }
+                  ]}
+                  onPress={() => handleLanguageSelect(item.code)}
+                >
+                  <View>
+                    <Text style={[styles.languageNative, { color: colors.text }]}>{item.native}</Text>
+                    <Text style={[styles.languageLabel, { color: colors.subtext }]}>{item.label}</Text>
+                  </View>
+                  {language === item.code && (
+                    <Ionicons name="checkmark-circle" size={24} color={colors.primary} />
+                  )}
+                </TouchableOpacity>
+              )}
+            />
+          </View>
+        </TouchableOpacity>
+      </Modal>
 
       <View style={[styles.section, { backgroundColor: colors.card, borderColor: colors.border }]}>
         <Text style={[styles.sectionTitle, { color: colors.subtext }]}>{t('common.data_sync')}</Text>
@@ -265,5 +313,38 @@ const styles = StyleSheet.create({
     height: 1,
     marginVertical: 16,
     opacity: 0.1,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    justifyContent: 'flex-end',
+  },
+  modalContent: {
+    borderTopLeftRadius: 24,
+    borderTopRightRadius: 24,
+    padding: 24,
+    maxHeight: '60%',
+    borderWidth: 1,
+  },
+  modalTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  languageItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: 16,
+    borderRadius: 12,
+    marginBottom: 8,
+  },
+  languageNative: {
+    fontSize: 18,
+    fontWeight: '600',
+  },
+  languageLabel: {
+    fontSize: 14,
   },
 });

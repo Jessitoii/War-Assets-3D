@@ -1,0 +1,91 @@
+{
+  "common": {
+    "search": "بحث الأصول",
+    "technical_summary": "ملخص فني",
+    "view_3d": "عرض في 3D",
+    "comparison": "مقارنة",
+    "settings": "الإعدادات",
+    "appearance": "المظهر",
+    "dark_mode": "الوضع الداكن",
+    "toggle_theme": "تبديل مظهر التطبيق",
+    "data_sync": "البيانات والمزامنة",
+    "offline_ready": "جاهز للعمل دون اتصال",
+    "online_only": "متصل بالإنترنت فقط",
+    "db_size": "حجم القاعدة",
+    "last_sync": "آخر مزامنة",
+    "sync_now": "مزامنة الآن",
+    "syncing": "مزامنة...",
+    "features": "المميزات",
+    "enable_ar": "تمكين ميزات AR",
+    "ar_not_supported": "AR غير مدعوم على هذا الجهاز",
+    "allow_ar": "السماح بوضع النماذج في AR",
+    "data_unavailable": "البيانات غير متوفرة",
+    "geometry_unavailable": "هندسة 3D لهذا الأصل مصنفة أو غير متوفرة في المستودعات المفتوحة.",
+    "featured_assets": "الأصول المميزة",
+    "no_featured": "لا توجد أصول مميزة بعد",
+    "categories": "الفئات",
+    "categories_loading": "جاري تحميل الفئات...",
+    "history_background": "التاريخ والخلفية",
+    "fetching_wiki": "استشارة أرشيف المخابرات...",
+    "wiki_error": "لا توجد معلومات تقنية متاحة لهذا الأصل.",
+    "view_on_wiki_fallback": "عرض صفحة ويكيبيديا الخام",
+    "read_full_wiki": "قراءة كامل المعلومات على ويكيبيديا",
+    "share_asset": "مشاركة معلومات الأصل",
+    "global_hotspots": "بؤر الصراع العالمية",
+    "view_asset_intel": "عرض معلومات الأصل",
+    "tactical_map_loading": "إنشاء اتصال آمن بالقمر الصناعي..."
+  },
+  "home": {
+    "scanning_battlespace": "مسح ساحة المعركة",
+    "syncing_assets": "مزامنة قاعدة بيانات الأصول التكتيكية...",
+    "live_tactical_map": "خريطة المخابرات التكتيكية الحية",
+    "recon_target": "هدف الاستطلاع",
+    "daily_target": "الهدف اليومي",
+    "trending_intel": "المعلومات المتداولة",
+    "osint_live": "OSINT مباشر",
+    "analyzing_metrics": "تحليل مقاييس التهديد..."
+  },
+  "settings": {
+    "language_selection": "تغيير لغة التطبيق",
+    "select_language": "اختر اللغة"
+  },
+  "specs": {
+    "classified": "سري للغاية",
+    "na": "غير متاح",
+    "title": "المواصفات الفنية",
+    "label": "المواصفات",
+    "value": "القيمة"
+  },
+  "asset": {
+    "range": "المدى",
+    "speed": "السرعة",
+    "generation": "الجيل",
+    "origin": "المنشأ",
+    "not_found": "الأصل غير موجود",
+    "osint_trend_alert": "تنبيه اتجاه OSINT",
+    "view_intel_source": "عرض مصدر المعلومات",
+    "danger": "خطر",
+    "nuclear": "نووي",
+    "performance_matrix": "مصفوفة الأداء",
+    "firepower": "القوة النارية",
+    "mobility": "الحركية",
+    "stealth": "التخفي",
+    "durability": "المتانة"
+  },
+  "comparison": {
+    "empty_queue": "قائمة المقارنة الخاصة بك فارغة.",
+    "empty_subtext": "أضف ما يصل إلى ثلاثة أصول لمقارنة مواصفاتها الفنية جنباً إلى جنب.",
+    "add_asset": "إضافة أصل",
+    "initiate_simulation": "بدء المحاكاة"
+  },
+  "browse": {
+    "title": "تصفح الأصول",
+    "no_assets": "لم يتم العثور على أصول"
+  },
+  "search": {
+    "placeholder": "بحث عن الأصول...",
+    "reset": "إعادة تعيين",
+    "results": "النتائج",
+    "no_match": "لم يتم العثور على أصول تطابق معاييرك"
+  }
+}

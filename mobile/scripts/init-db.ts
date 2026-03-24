@@ -9,8 +9,9 @@ const { documentDirectory } = FileSystem as any;
 
 let dbInstance: SQLite.SQLiteDatabase | null = null;
 let initializationPromise: Promise<SQLite.SQLiteDatabase> | null = null;
+let isDbReady = false;
 
-const DB_NAME = 'war-assets-v24.db';
+const DB_NAME = 'war-assets-v28.db';
 
 export async function initDB(): Promise<SQLite.SQLiteDatabase> {
   // Return existing instance if available
@@ -20,11 +21,11 @@ export async function initDB(): Promise<SQLite.SQLiteDatabase> {
       return dbInstance;
     } catch (e) {
       console.warn('[DB] Existing instance check failed, resetting handle...', e);
-      try { await dbInstance.closeAsync(); } catch (err) {}
+      try { await dbInstance.closeAsync(); } catch (err) { }
       dbInstance = null;
     }
   }
-  
+
   if (initializationPromise) return initializationPromise;
 
   initializationPromise = (async () => {
@@ -39,10 +40,10 @@ export async function initDB(): Promise<SQLite.SQLiteDatabase> {
 
       console.log(`[DB] Connecting to ${DB_NAME}...`);
       const db = await SQLite.openDatabaseAsync(DB_NAME);
-      
+
       // Verification
       await db.getFirstAsync('PRAGMA user_version;');
-      
+
       try {
         await db.execAsync('PRAGMA foreign_keys = ON;');
         await db.execAsync('PRAGMA journal_mode = WAL;');
@@ -50,12 +51,18 @@ export async function initDB(): Promise<SQLite.SQLiteDatabase> {
         console.warn('[DB] PRAGMA config warning:', e);
       }
 
-      await applyMigrations(db);
+      try {
+        await applyMigrations(db);
+      } catch (migrationError: any) {
+        console.error('MIGRATION RECOVERY: Initialization continued despite migration error:', migrationError);
+        // We catch here to prevent bricking the app startup (Null Activity Fix)
+      }
 
       dbInstance = db;
+      isDbReady = true;
       return db;
     } catch (error: any) {
-      console.error('CRITICAL DB FAILURE:', error);
+      console.error('CRITICAL DB CONNECTION FAILURE:', error);
       dbInstance = null;
       initializationPromise = null;
       throw new Error(`DB_INIT_FAILED: ${error.message || 'Unknown error'}`);
@@ -75,16 +82,17 @@ export async function runQuery<T>(queryFn: (db: SQLite.SQLiteDatabase) => Promis
     return await queryFn(db);
   } catch (e: any) {
     console.error(`[DB] Query failed (Attempt ${2 - retries}/2):`, e);
-    
+
     // If it's a native error (like NPE), wipe the cached instance and retry once
     if (e.message?.includes('NullPointerException') || e.message?.includes('Database is closed') || retries > 0) {
       console.warn('[DB] Troubleshooting native failure, clearing instance and retrying...');
-      if (dbInstance) { 
-        try { await dbInstance.closeAsync(); } catch (err) {}
+      if (dbInstance) {
+        try { await dbInstance.closeAsync(); } catch (err) { }
       }
       dbInstance = null;
       initializationPromise = null;
-      
+      isDbReady = false;
+
       if (retries > 0) {
         return runQuery(queryFn, retries - 1);
       }
@@ -113,9 +121,9 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
     }
 
     console.log('[DB] v20 RE-SEED: Nuking for data integrity...');
-    
+
     await db.execAsync('PRAGMA foreign_keys = OFF;');
-    
+
     try {
       await db.withExclusiveTransactionAsync(async () => {
         const tables = ['assets', 'categories', 'asset_3d_models', 'comparison_queue', 'onboarding_content', 'favorites', 'app_state', 'offline_status'];
@@ -208,47 +216,80 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
           { id: '5', name: 'Navy' }
         ];
         console.log(`[DB] Seeding ${cats.length} categories...`);
-        for (const c of cats) {
-          await db.runAsync('INSERT OR REPLACE INTO categories (id, name) VALUES (?, ?)', [c.id, c.name]);
+        const catStmt = await db.prepareAsync('INSERT OR REPLACE INTO categories (id, name) VALUES (?, ?)');
+        try {
+          for (const c of cats) {
+            await catStmt.executeAsync([c.id, c.name]);
+          }
+        } catch (e: any) {
+          console.error('[DB] Category seeding failed:', e);
+        } finally {
+          await catStmt.finalizeAsync();
         }
 
-        const MILITARY_ASSETS = require('../assets/data/military-assets.json');
+        const MILITARY_ASSETS = require('../assets/data/military-assets-v28-optimized.json');
         console.log(`[DB] Seeding ${MILITARY_ASSETS.length} assets...`);
-        for (const a of MILITARY_ASSETS) {
-          const dLevel = typeof a.dangerLevel === 'number' ? a.dangerLevel : 0;
-          const isFeaturedAsset = a.featured ? 1 : 0;
-          
-          await db.runAsync(
-            `INSERT OR REPLACE INTO assets (id, name, catId, img, model, dangerLevel, threatType, featured, specs, translations, wikiUrl, images, country, countryCode) 
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-            [
-              a.id, 
-              a.name, 
-              a.catId, 
-              a.img, 
-              a.model, 
-              dLevel, 
-              a.threatType || '', 
-              isFeaturedAsset, 
+
+        const assetStmt = await db.prepareAsync(
+          `INSERT OR REPLACE INTO assets (id, name, catId, img, model, dangerLevel, threatType, featured, specs, translations, wikiUrl, images, country, countryCode) 
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+        );
+
+        try {
+          for (let i = 0; i < MILITARY_ASSETS.length; i++) {
+            const a = MILITARY_ASSETS[i];
+
+            // Full Integrity Guard: Skip if missing name OR catId (Paranoid Validation)
+            if (!a || !a.name || !a.catId) {
+              console.error(`[DB] CRITICAL: Skipping malformed asset at index ${i} (Data: ${JSON.stringify(a)?.slice(0, 100)}...)`);
+              continue;
+            }
+
+            // Schema Enforcement: Ensure id, name, catId, dangerLevel are valid
+            const assetId = a.id || `gen-${i}`;
+            const dLevel = typeof a.dangerLevel === 'number' ? a.dangerLevel : 0;
+            const isFeaturedAsset = a.featured ? 1 : 0;
+
+            await assetStmt.executeAsync([
+              assetId,
+              String(a.name),
+              String(a.catId),
+              a.img || null,
+              a.model || null,
+              dLevel,
+              a.threatType || '',
+              isFeaturedAsset,
               a.specs ? JSON.stringify(a.specs) : null,
               a.translations ? JSON.stringify(a.translations) : null,
               a.wikiUrl || null,
               a.images ? JSON.stringify(a.images) : null,
               a.country || null,
               a.countryCode || null
-            ]
-          );
-          console.log(`[DB] Inserted asset: ${a.name}`);
+            ]);
+          }
+          console.log('[DB] Asset seeding loop complete.');
+        } catch (e: any) {
+          console.error('[DB] Asset seeding failed:', e);
+          throw e; // Bubble up for transaction rollback
+        } finally {
+          await assetStmt.finalizeAsync();
         }
 
         const ONBOARDING_DATA = require('../assets/onboarding.json');
         console.log(`[DB] Seeding ${ONBOARDING_DATA.length} onboarding slides...`);
-        for (const slide of ONBOARDING_DATA) {
-          await db.runAsync(
-            `INSERT OR REPLACE INTO onboarding_content (id, title, subtitle, image, orderIndex) 
-             VALUES (?, ?, ?, ?, ?)`,
-            [slide.id, slide.title, slide.subtitle, slide.image, slide.orderIndex]
-          );
+        const onboardingStmt = await db.prepareAsync(
+          `INSERT OR REPLACE INTO onboarding_content (id, title, subtitle, image, orderIndex) 
+           VALUES (?, ?, ?, ?, ?)`
+        );
+
+        try {
+          for (const slide of ONBOARDING_DATA) {
+            await onboardingStmt.executeAsync([slide.id, slide.title, slide.subtitle, slide.image, slide.orderIndex]);
+          }
+        } catch (e: any) {
+          console.error('[DB] Onboarding seeding failed:', e);
+        } finally {
+          await onboardingStmt.finalizeAsync();
         }
 
         await db.execAsync('PRAGMA user_version = 20;');
@@ -268,19 +309,19 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
         await db.execAsync(`
           DELETE FROM assets 
           WHERE name LIKE '%Harley%' 
-          OR name LIKE '%Classified%' 
+          OR name LIKE '%Classified%'   
           OR name LIKE '%Placeholder%'
           OR catId IS NULL;
         `);
 
         // URL Standardization: Ensure all image/model paths follow the secure R2 pattern
         const R2_BASE = 'https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev';
-        
+
         // We can't easily iterate and update with direct SQL if we need logic, 
         // but we can use REPLACE if they already have parts of it.
         // Actually, the requirement says "Ensure all follow... structure".
         // Let's force update the paths if they don't start with the R2_BASE
-        
+
         await db.execAsync(`
           UPDATE assets 
           SET img = '${R2_BASE}/images/' || id || '.jpg'
@@ -308,7 +349,7 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
       await db.withExclusiveTransactionAsync(async () => {
         // Scrubbing logic: Remove domain prefixes and leave only relative paths
         // This allows cdnConfig.ts to dynamically append the Proxy or Local domain.
-        
+
         await db.execAsync(`
           UPDATE assets 
           SET img = REPLACE(REPLACE(REPLACE(img, 'https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/', ''), 'http://localhost:3000/public/images/', ''), 'images/', '')
@@ -346,18 +387,29 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
         // 1. ADD COLUMNS
         try {
           await db.execAsync("ALTER TABLE assets ADD COLUMN country TEXT;");
-        } catch (e) {} // Ignore if already exists
+        } catch (e) { } // Ignore if already exists
         try {
           await db.execAsync("ALTER TABLE assets ADD COLUMN countryCode TEXT;");
-        } catch (e) {} // Ignore if already exists
+        } catch (e) { } // Ignore if already exists
 
         // 2. FORCE RE-SEED TO INJECT NEW DATA FROM JSON
-        const MILITARY_ASSETS = require('../assets/data/military-assets.json');
-        for (const a of MILITARY_ASSETS) {
-          await db.runAsync(
-            'UPDATE assets SET country = ?, countryCode = ? WHERE id = ?',
-            [a.country || null, a.countryCode || null, a.id]
-          );
+        const MILITARY_ASSETS = require('../assets/data/military-assets-v27.json');
+        const updateStmt = await db.prepareAsync('UPDATE assets SET country = ?, countryCode = ? WHERE id = ?');
+
+        try {
+          for (let i = 0; i < MILITARY_ASSETS.length; i++) {
+            const a = MILITARY_ASSETS[i];
+            // Integrity Guard for Update
+            if (!a || !a.name || !a.catId) {
+              console.error(`[DB] CRITICAL: Skipping malformed update at index ${i}`);
+              continue;
+            }
+            await updateStmt.executeAsync([a.country || null, a.countryCode || null, a.id]);
+          }
+        } catch (e: any) {
+          console.error('[DB] Migration v25 re-seed failed:', e);
+        } finally {
+          await updateStmt.finalizeAsync();
         }
 
         await db.execAsync('PRAGMA user_version = 25;');
@@ -373,9 +425,16 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
  * Exported helper for common database operations
  */
 export const dbHelper = {
+  isReady: () => isDbReady,
   getAppState: () => runQuery(db => db.getFirstAsync('SELECT * FROM app_state WHERE id = 1')),
-  updateTheme: (theme: string) => runQuery(db => db.runAsync('UPDATE app_state SET theme = ? WHERE id = 1', [theme])),
-  
+  updateTheme: (theme: string) => {
+    if (!isDbReady) {
+      console.log('[DB] Database not ready, skipping theme persistence.');
+      return Promise.resolve();
+    }
+    return runQuery(db => db.runAsync('UPDATE app_state SET theme = ? WHERE id = 1', [theme]));
+  },
+
   // Reset Function for debugging
   resetDatabase: async () => {
     try {
@@ -383,6 +442,7 @@ export const dbHelper = {
         await dbInstance.closeAsync();
         dbInstance = null;
         initializationPromise = null;
+        isDbReady = false;
       }
       const dbPath = `${documentDirectory}SQLite/${DB_NAME}`;
       const info = await FileSystem.getInfoAsync(dbPath);
@@ -409,4 +469,9 @@ export const dbHelper = {
   addToComparison: (assetId: string) => runQuery(db => db.runAsync('INSERT OR IGNORE INTO comparison_queue (assetId) VALUES (?)', [assetId])),
   removeFromComparison: (assetId: string) => runQuery(db => db.runAsync('DELETE FROM comparison_queue WHERE assetId = ?', [assetId])),
   clearComparison: () => runQuery(db => db.runAsync('DELETE FROM comparison_queue')),
+
+  // Favorites (Tactical Collection)
+  getFavorites: () => runQuery(db => db.getAllAsync('SELECT assetId FROM favorites')),
+  addToFavorites: (assetId: string) => runQuery(db => db.runAsync('INSERT OR IGNORE INTO favorites (id, assetId) VALUES (?, ?)', [assetId, assetId])),
+  removeFromFavorites: (assetId: string) => runQuery(db => db.runAsync('DELETE FROM favorites WHERE assetId = ?', [assetId])),
 };

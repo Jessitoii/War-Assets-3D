@@ -13,6 +13,8 @@ import { TechnicalSpecsScreen } from '../screens/TechnicalSpecsScreen';
 import { ModelViewerScreen } from '../screens/ModelViewerScreen';
 import { ComparisonScreen } from '../screens/ComparisonScreen';
 import { SettingsScreen } from '../screens/SettingsScreen';
+import { FavoritesScreen } from '../screens/FavoritesScreen';
+import { GlobalMapScreen } from '../screens/GlobalMapScreen';
 import i18n from '../locales';
 import * as Localization from 'expo-localization';
 
@@ -27,6 +29,8 @@ export type RootStackParamList = {
   ModelViewer: { assetId: string };
   Comparison: undefined;
   Settings: undefined;
+  Favorites: undefined;
+  GlobalMap: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -54,8 +58,10 @@ export const NavigationRoot = () => {
           
           let lang = result.language;
           if (isFirstLaunch && !lang) {
-            const systemLanguage = Localization.getLocales()[0].languageCode;
-            lang = systemLanguage === 'tr' ? 'tr' : 'en';
+            const systemLocales = Localization.getLocales();
+            const systemLanguage = systemLocales.length > 0 ? systemLocales[0].languageCode : 'en';
+            const supported = ['en', 'tr', 'ru', 'ar', 'zh'];
+            lang = (systemLanguage && supported.includes(systemLanguage)) ? systemLanguage : 'en';
           } else if (!lang) {
             lang = 'en';
           }
@@ -100,6 +106,8 @@ export const NavigationRoot = () => {
         <Stack.Screen name="ModelViewer" component={ModelViewerScreen} />
         <Stack.Screen name="Comparison" component={ComparisonScreen} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
+        <Stack.Screen name="Favorites" component={FavoritesScreen} />
+        <Stack.Screen name="GlobalMap" component={GlobalMapScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, FlatList, ScrollView } from '
 import { StackScreenProps } from '@react-navigation/stack';
 import { RootStackParamList } from '../navigation/NavigationRoot';
 import { theme } from '../styles/theme';
+import { useTranslation } from 'react-i18next';
 import { useStore } from '../store';
 import { useShallow } from 'zustand/react/shallow';
 import { BeautifulMention } from '../components/BeautifulMention';
@@ -14,6 +15,7 @@ type Props = StackScreenProps<RootStackParamList, 'Category'>;
 
 export const CategoryScreen: React.FC<Props> = ({ route, navigation }) => {
   const { categoryId: initialCategoryId } = route.params;
+  const { t } = useTranslation();
 
   const currentTheme = useStore((state) => state.theme);
   const isDark = currentTheme === 'dark';
@@ -57,7 +59,7 @@ export const CategoryScreen: React.FC<Props> = ({ route, navigation }) => {
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
           <Ionicons name="arrow-back" size={24} color={isDark ? '#FFF' : '#000'} />
         </TouchableOpacity>
-        <Text style={[styles.title, { color: isDark ? '#FFF' : '#000' }]}>Browse Assets</Text>
+        <Text style={[styles.title, { color: isDark ? '#FFF' : '#000' }]}>{t('browse.title')}</Text>
         <TouchableOpacity onPress={() => navigation.navigate('SearchFilter')} style={styles.filterButton}>
           <Ionicons name="filter" size={24} color={isDark ? '#FFF' : '#000'} />
         </TouchableOpacity>
@@ -97,7 +99,7 @@ export const CategoryScreen: React.FC<Props> = ({ route, navigation }) => {
         )}
         ListEmptyComponent={
           <View style={styles.emptyContainer}>
-            <Text style={{ color: isDark ? '#FFF' : '#000' }}>No assets found</Text>
+            <Text style={{ color: isDark ? '#FFF' : '#000' }}>{t('browse.no_assets')}</Text>
           </View>
         }
       />

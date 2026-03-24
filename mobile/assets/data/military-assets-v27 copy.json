@@ -1,0 +1,423 @@
+[
+  {
+    "catId": "1",
+    "name": "Leopard 1",
+    "featured": false,
+    "id": "leopard-1",
+    "country": "Germany",
+    "countryCode": "DEU",
+    "specs": {
+      "range": "15-30 km (9-19 mi), 0.25-0.30 m\u00159",
+      "speed": "65 km/h",
+      "payload": "",
+      "role": "Main Battle Tank",
+      "dangerLevel": 60,
+      "threatType": "Main Battle Tank",
+      "metrics": {
+        "firepower": 40,
+        "mobility": 50,
+        "stealth": 20,
+        "durability": 80
+      }
+    },
+    "dangerLevel": 60,
+    "threatType": "Main Battle Tank",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/leopard-1.glb",
+    "translations": {
+      "tr": {
+        "range": {
+          "short_specs": "450 km/600 km",
+          "full_dossier": "Arazi çapında menzil yaklaşık 450 km, karayolu menzili ise yaklaşık 600 km."
+        },
+        "speed": {
+          "short_specs": "65 km/s",
+          "full_dossier": "Maksimum yol hızı 65 km/s (≈ 40 mph) ve yüksek hareket kabiliyeti sağlar."
+        },
+        "payload": {
+          "short_specs": "105 mm top",
+          "full_dossier": "Ana silahı, Britanya menşeli 105 mm L7A3 rifli tank topudur; iki adet 7.62 mm makineli tüfekle desteklenir."
+        }
+      },
+      "ru": {
+        "range": {
+          "short_specs": "450 км/600 км",
+          "full_dossier": "Дальность передвижения по бездорожью ≈ 450 км, максимальная дорожная дальность ≈ 600 км."
+        },
+        "speed": {
+          "short_specs": "65 км/ч",
+          "full_dossier": "Максимальная скорость на дороге 65 км/ч (≈ 40 миль/ч), обеспечивая высокую мобильность."
+        },
+        "payload": {
+          "short_specs": "105 мм пушка",
+          "full_dossier": "Основное вооружение – британская 105‑мм пушка L7A3, дополнительно два 7,62‑мм пулемёта."
+        }
+      },
+      "ar": {
+        "range": {
+          "short_specs": "450 كم/600 كم",
+          "full_dossier": "مدى عبور الأراضي ≈ 450 كم، والحد الأقصى على الطرق ≈ 600 كم."
+        },
+        "speed": {
+          "short_specs": "65 كم/س",
+          "full_dossier": "السرعة القصوى على الطريق 65 كم/س (≈ 40 ميل/س) مع قدرة عالية على الحركة."
+        },
+        "payload": {
+          "short_specs": "مدفع 105 مم",
+          "full_dossier": "السلاح الرئيسي هو مدفع بريطاني عيار 105 مم من طراز L7A3، مع مدفعين رشاشين 7.62 مم."
+        }
+      },
+      "zh": {
+        "range": {
+          "short_specs": "450 km/600 km",
+          "full_dossier": "越野续航约450公里，公路最大续航约600公里。"
+        },
+        "speed": {
+          "short_specs": "65 km/h",
+          "full_dossier": "最高道路行驶速度为65公里/小时（约40英里/小时），具备高机动性。"
+        },
+        "payload": {
+          "short_specs": "105 mm炮",
+          "full_dossier": "主要武器为英国制造的105毫米L7A3线膛坦克炮，配备两挺7.62毫米机枪。"
+        }
+      }
+    },
+    "short_specs": null,
+    "full_dossier": null
+  },
+  {
+    "catId": "1",
+    "name": "Leopard 1A2",
+    "featured": false,
+    "id": "leopard-1a2",
+    "country": null,
+    "countryCode": null,
+    "specs": {
+      "type": "object",
+      "name": "Leopard 1A2",
+      "range": "300km (Road) / 250km (Off-road)",
+      "speed": "60km/h",
+      "rcs": "2.2-3.0 m^2",
+      "payload": "Classified",
+      "generation": "First Generation",
+      "role": "Main Battle Tank",
+      "dangerLevel": 70,
+      "threatType": "Armored",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1",
+      "metrics": {
+        "firepower": 60,
+        "mobility": 80,
+        "stealth": 30,
+        "durability": 90
+      }
+    },
+    "dangerLevel": 70,
+    "threatType": "Armored",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1a2/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1a2/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1a2/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/leopard-1a2.glb",
+    "translations": {
+      "tr": {
+        "country": "Almanya",
+        "countryCode": "DEU",
+        "range": "600 km",
+        "speed": "65 km/h"
+      },
+      "ru": {
+        "country": "Германия",
+        "countryCode": "DEU",
+        "range": "600 км",
+        "speed": "65 км/ч"
+      },
+      "ar": {
+        "country": "ألمانيا",
+        "countryCode": "DEU",
+        "range": "600 كم",
+        "speed": "65 كم/س"
+      },
+      "zh": {
+        "country": "德国",
+        "countryCode": "DEU",
+        "range": "600 公里",
+        "speed": "65 公里/小时"
+      }
+    },
+    "short_specs": {
+      "range": "600 km",
+      "speed": "65 km/h"
+    },
+    "full_dossier": {
+      "range": "600 km (Operational range)",
+      "speed": "65 km/h (Max speed)",
+      "country": "Germany",
+      "countryCode": "DEU",
+      "payload": "Classified"
+    }
+  },
+  {
+    "type": "object",
+    "country": "Germany",
+    "countryCode": "DEU",
+    "catId": "1",
+    "name": "Leopard 1A4",
+    "featured": false,
+    "id": "leopard-1a4",
+    "specs": {
+      "range": "450 km",
+      "speed": "65 km/h",
+      "rcs": "6.5 m²",
+      "payload": "Classified",
+      "role": "Main battle tank",
+      "generation": "1st gen MBT",
+      "dangerLevel": 85,
+      "threatType": "MBT",
+      "metrics": {
+        "durability": 80,
+        "firepower": 80,
+        "mobility": 70,
+        "stealth": 20
+      }
+    },
+    "dangerLevel": 85,
+    "threatType": "MBT",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_1",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1a4/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1a4/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-1a4/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/leopard-1a4.glb",
+    "translations": null,
+    "metrics": {
+      "durability": 80,
+      "firepower": 80,
+      "mobility": 70,
+      "stealth": 20
+    },
+    "short_specs": "600 km, 65 km/h",
+    "full_dossier": "Range: 600 km (372 miles) / Speed: 65 km/h (40 mph)"
+  },
+  {
+    "catId": "1",
+    "name": "Leopard 2A4",
+    "featured": false,
+    "id": "leopard-2a4",
+    "country": "Germany",
+    "countryCode": "DEU",
+    "specs": {
+      "type": "object",
+      "name": "Leopard 2A4",
+      "range": "Up to 480km (Road) / 470km (Off-road)",
+      "speed": "Up to 70km/h",
+      "rcs": "1.1-1.5m²",
+      "payload": " Classified",
+      "generation": "Third generation",
+      "role": "Main battle tank",
+      "dangerLevel": 80,
+      "threatType": "Armored",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2",
+      "metrics": {
+        "firepower": 90,
+        "mobility": 85,
+        "stealth": 60,
+        "durability": 95
+      }
+    },
+    "dangerLevel": 80,
+    "threatType": "Armored",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2a4/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2a4/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2a4/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/leopard-2a4.glb",
+    "translations": {
+      "tr": {
+        "range": "450 km",
+        "speed": "68 km/s"
+      },
+      "ru": {
+        "range": "450 км",
+        "speed": "68 км/ч"
+      },
+      "ar": {
+        "range": "450 كم",
+        "speed": "68 كم/س"
+      },
+      "zh": {
+        "range": "450公里",
+        "speed": "68公里/小时"
+      }
+    },
+    "short_specs": {
+      "range": "450 km",
+      "speed": "68 km/h"
+    },
+    "full_dossier": {
+      "range": "Operational range approx. 450 km (road); up to 480 km on road / 470 km off‑road per manufacturer data.",
+      "speed": "Maximum road speed 68–70 km/h (≈ 43 mph).",
+      "payload": "Classified; primary armament 120 mm Rheinmetall L/44 smooth‑bore gun with internal ammunition storage."
+    }
+  },
+  {
+    "catId": "1",
+    "name": "Challenger 1",
+    "featured": false,
+    "id": "challenger-1",
+    "specs": {
+      "type": "object",
+      "name": "Challenger 1",
+      "range": "500 m",
+      "speed": "56 km/h",
+      "rcs": "0.18–0.36 m²",
+      "payload": "Classified",
+      "generation": "1st",
+      "role": "Main Battle Tank",
+      "dangerLevel": 80,
+      "threatType": "armoured",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Challenger_1",
+      "metrics": {
+        "firepower": 70,
+        "mobility": 60,
+        "stealth": 30,
+        "durability": 80
+      }
+    },
+    "dangerLevel": 80,
+    "threatType": "armoured",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Challenger_1",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/challenger-1/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/challenger-1/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/challenger-1/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/challenger-1.glb",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "translations": {
+      "tr": {
+        "short_specs": "450 km, 56 km/s, 64 mrm",
+        "full_dossier": "Menzil: 450 km (280 mil) karayolu; Hız: 56 km/s (35 mil/s); Yük: 120 mm topundan 64 mermi; Zırh: Chobham kompozit; Motor: Perkins CV12 1.200 hp; Mürettebat: 4; Boyutlar: uzunluk 11,56 m, genişlik 3,51 m, yükseklik 2,95 m."
+      },
+      "ru": {
+        "short_specs": "450 км, 56 км/ч, 64 патр",
+        "full_dossier": "Дальность: 450 км (280 миль) по дороге; Скорость: 56 км/ч (35 мил/ч); Нагрузка: 64 патрона калибра 120 мм; Броня: композит Чобхэм; Двигатель: Perkins CV12 1200 л.с.; Экипаж: 4; Размеры: длина 11,56 м, ширина 3,51 м, высота 2,95 м."
+      },
+      "ar": {
+        "short_specs": "450 كم, 56 كم/س, 64 طلقة",
+        "full_dossier": "المدى: 450 كم (280 ميل) على الطريق؛ السرعة: 56 كم/س (35 ميل/س)؛ الحمولة: 64 طلقة من مدفع 120 مم؛ الدرع: تشوبهم مركب؛ المحرك: بيركنز CV12 1200 حصان؛ الطاقم: 4؛ الأبعاد: الطول 11.56 م، العرض 3.51 م، الارتفاع 2.95 م."
+      },
+      "zh": {
+        "short_specs": "450公里,56公里/小时,64发",
+        "full_dossier": "航程：450公里（280英里）公路；速度：56公里/小时（35英里/小时）；弹药：120毫米主炮64发弹药；装甲：Chobham复合装甲；发动机：Perkins CV12 1200马力；乘员：4人；尺寸：长11.56米，宽3.51米，高2.95米。"
+      }
+    },
+    "short_specs": "450 km, 56 km/h, 64 rds",
+    "full_dossier": "Range: 450 km (280 miles) on road; Speed: 56 km/h (35 mph); Payload: Typically 64 rounds of 120 mm ammunition; Armor: Chobham composite ceramic armor; Engine: Perkins CV12 26‑L diesel, 1,200 hp (895 kW); Crew: 4 (commander, gunner, loader, driver); Dimensions: length 11.56 m (gun forward), width 3.51 m, height 2.95 m."
+  },
+  {
+    "catId": "1",
+    "name": "Leopard 2AV",
+    "featured": false,
+    "id": "leopard-2av",
+    "specs": {
+      "name": "Leopard 2AV",
+      "role": "Main Battle Tank",
+      "range": "800 km",
+      "speed": "65 km/h",
+      "rcs": "0.2 m²",
+      "payload": "42 t",
+      "generation": "3rd generation",
+      "dangerLevel": 85,
+      "threatType": "Main battle tank",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2",
+      "metrics": {
+        "firepower": 90,
+        "mobility": 80,
+        "stealth": 50,
+        "durability": 95
+      }
+    },
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "range": "",
+          "speed": "70 km/s",
+          "payload": "55 t"
+        },
+        "full_dossier": {
+          "range": "",
+          "speed": "70 km/s (maksimum)",
+          "payload": "55.000 kg (55 t)"
+        }
+      },
+      "ru": {
+        "short_specs": {
+          "range": "",
+          "speed": "70 км/ч",
+          "payload": "55 т"
+        },
+        "full_dossier": {
+          "range": "",
+          "speed": "70 км/ч (макс.)",
+          "payload": "55 000 кг (55 т)"
+        }
+      },
+      "ar": {
+        "short_specs": {
+          "range": "",
+          "speed": "70 كم/س",
+          "payload": "55 طن"
+        },
+        "full_dossier": {
+          "range": "",
+          "speed": "70 كم/س (أقصى)",
+          "payload": "55 000 كغ (55 طن)"
+        }
+      },
+      "zh": {
+        "short_specs": {
+          "range": "",
+          "speed": "70 km/h",
+          "payload": "55 吨"
+        },
+        "full_dossier": {
+          "range": "",
+          "speed": "70 km/h（最高）",
+          "payload": "55,000 kg（55 吨）"
+        }
+      }
+    },
+    "dangerLevel": 85,
+    "threatType": "Main battle tank",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Leopard_2",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2av/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2av/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/leopard-2av/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/leopard-2av.glb",
+    "country": "Germany",
+    "countryCode": "DE",
+    "short_specs": {
+      "range": "",
+      "speed": "70 km/h",
+      "payload": "55 t"
+    },
+    "full_dossier": {
+      "range": "",
+      "speed": "70 km/h (max)",
+      "payload": "55,000 kg (55 t)"
+    }
+  }
+]

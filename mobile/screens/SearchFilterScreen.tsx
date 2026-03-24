@@ -11,6 +11,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useAssets } from '../hooks/useAssets';
 import { QuickAccessCard } from '../components/QuickAccessCard';
 import { SortModal } from '../components/SortModal';
+import { useTranslation } from 'react-i18next';
 
 type SearchFilterScreenNavigationProp = StackNavigationProp<RootStackParamList, 'SearchFilter'>;
 
@@ -24,6 +25,7 @@ const GENERATIONS = ['WW2', 'Cold War', '3rd Gen', '4th Gen', '5th Gen'];
 export const SearchFilterScreen: React.FC<Props> = ({ navigation }) => {
   const currentTheme = useStore((state) => state.theme);
   const isDark = currentTheme === 'dark';
+  const { t } = useTranslation();
 
   const categories = useStore(useShallow(state => state.categories));
   
@@ -68,7 +70,7 @@ export const SearchFilterScreen: React.FC<Props> = ({ navigation }) => {
           <Ionicons name="search" size={18} color={isDark ? '#888' : '#AAA'} style={styles.searchIcon} />
           <TextInput
             style={[styles.searchInput, { color: isDark ? '#FFF' : '#000', backgroundColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.05)' }]}
-            placeholder="Search assets..."
+            placeholder={t('search.placeholder')}
             placeholderTextColor={isDark ? '#666' : '#999'}
             value={localSearch}
             onChangeText={setLocalSearch}
@@ -89,7 +91,7 @@ export const SearchFilterScreen: React.FC<Props> = ({ navigation }) => {
       <View style={styles.filterBar}>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.filterScroll}>
           <TouchableOpacity onPress={() => resetFilters()} style={styles.resetButton}>
-            <Text style={styles.resetText}>Reset</Text>
+            <Text style={styles.resetText}>{t('search.reset')}</Text>
           </TouchableOpacity>
           
           {categories.map(cat => (
@@ -138,13 +140,13 @@ export const SearchFilterScreen: React.FC<Props> = ({ navigation }) => {
         )}
         ListHeaderComponent={
           <Text style={[styles.resultsCount, { color: isDark ? '#888' : '#666' }]}>
-            {displayedAssets.length} results found
+            {displayedAssets.length} {t('search.results').toLowerCase()}
           </Text>
         }
         ListEmptyComponent={
           <View style={styles.emptyState}>
             <Ionicons name="search-outline" size={64} color="#888" style={{ marginBottom: 16 }} />
-            <Text style={{ color: isDark ? '#888' : '#666' }}>No assets found matching your criteria</Text>
+            <Text style={{ color: isDark ? '#888' : '#666' }}>{t('search.no_match')}</Text>
           </View>
         }
       />

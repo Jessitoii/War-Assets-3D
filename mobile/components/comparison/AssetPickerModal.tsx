@@ -5,6 +5,7 @@ import { useStore } from '../../store';
 import { theme } from '../../styles/theme';
 import { filterAssets } from '../../utils/assetFilters';
 import { useTranslation } from 'react-i18next';
+import { CDN_CONFIG } from '../../config/cdnConfig';
 
 interface Props {
   visible: boolean;
@@ -58,11 +59,12 @@ export const AssetPickerModal: React.FC<Props> = ({ visible, onClose }) => {
           keyExtractor={(item) => item.id}
           contentContainerStyle={styles.listContent}
           renderItem={({ item }) => (
-            <TouchableOpacity 
+            <TouchableOpacity
               style={[styles.assetItem, { backgroundColor: isDark ? '#1C1C1E' : '#FFF' }]}
               onPress={() => handleSelect(item.id)}
             >
-              <Image source={{ uri: item.image }} style={styles.assetThumb} />
+              {/* @ts-ignore */}
+              <Image source={{ uri: CDN_CONFIG.resolveImage(item.images[0]) }} style={styles.assetThumb} />
               <View style={styles.assetInfo}>
                 <Text style={[styles.assetName, { color: isDark ? '#FFF' : '#000' }]}>{item.name}</Text>
                 <Text style={styles.assetCategory}>{item.categoryId}</Text>

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "kyiv-region",
+    "name": "Kyiv & Northern Ukraine",
+    "lat": 50.4501,
+    "lng": 30.5234,
+    "keywords": ["Kyiv", "Kiev", "Oblast", "Hostomel", "Bucha", "Northern Ukraine"]
+  },
+  {
+    "id": "donbas-bakhmut",
+    "name": "Bakhmut / Donbas",
+    "lat": 48.595,
+    "lng": 38.001,
+    "keywords": ["Bakhmut", "Donetsk", "Donbas", "Wagner", "Artillery", "Avdiivka"]
+  },
+  {
+    "id": "red-sea-strait",
+    "name": "Red Sea / Bab al-Mandab",
+    "lat": 12.58,
+    "lng": 43.33,
+    "keywords": ["Houthi", "Suez", "Bab al-Mandab", "Yemen", "Red Sea", "Cargo ship"]
+  },
+  {
+    "id": "gaza-strip",
+    "name": "Gaza Strip",
+    "lat": 31.35,
+    "lng": 34.30,
+    "keywords": ["Gaza", "Hamas", "IDF", "Rafah", "Khan Younis", "Israel-Hamas"]
+  },
+  {
+    "id": "taiwan-strait",
+    "name": "Taiwan Strait",
+    "lat": 24.47,
+    "lng": 119.34,
+    "keywords": ["Taiwan", "PLA", "Strait", "Taipei", "South China Sea", "Drills"]
+  },
+  {
+    "id": "zaporizhzhia",
+    "name": "Zaporizhzhia",
+    "lat": 47.838,
+    "lng": 35.139,
+    "keywords": ["Zaporizhzhia", "Nuclear Plant", "ZNPP", "Dnieper", "Counteroffensive"]
+  },
+  {
+    "id": "kerala-border",
+    "name": "Line of Actual Control (India-China)",
+    "lat": 34.0,
+    "lng": 78.0,
+    "keywords": ["LAC", "Ladakh", "Galwan", "Border", "India-China", "Himalayas"]
+  },
+  {
+    "id": "nagorno-karabakh",
+    "name": "Nagorno-Karabakh",
+    "lat": 39.8,
+    "lng": 46.7,
+    "keywords": ["Karabakh", "Artsakh", "Azerbaijan", "Armenia", "Lachin"]
+  },
+  {
+    "id": "tigray-region",
+    "name": "Tigray, Ethiopia",
+    "lat": 13.5,
+    "lng": 39.0,
+    "keywords": ["Tigray", "Ethiopia", "Amhara", "TDF", "Mekelle"]
+  },
+  {
+    "id": "sahel-belt",
+    "name": "Sahel Region",
+    "lat": 15.0,
+    "lng": 0.0,
+    "keywords": ["Sahel", "Mali", "Burkina Faso", "Niger", "Jihadist", "Wagner Group"]
+  },
+  {
+    "id": "kashmir",
+    "name": "Kashmir",
+    "lat": 34.08,
+    "lng": 74.79,
+    "keywords": ["Kashmir", "Line of Control", "Srinagar", "India-Pakistan"]
+  },
+  {
+    "id": "korean-dmz",
+    "name": "Korean Peninsula / DMZ",
+    "lat": 37.9,
+    "lng": 126.7,
+    "keywords": ["DMZ", "North Korea", "Pyongyang", "Missile test", "ICBM", "South Korea"]
+  },
+  {
+    "id": "sudan-khartoum",
+    "name": "Sudan (Khartoum)",
+    "lat": 15.5,
+    "lng": 32.5,
+    "keywords": ["Sudan", "Khartoum", "RSF", "SAF", "Darfur"]
+  },
+  {
+    "id": "black-sea",
+    "name": "Black Sea Fleet",
+    "lat": 44.6,
+    "lng": 33.5,
+    "keywords": ["Sevastopol", "Crimea", "Black Sea", "Drone boat", "Naval", "Fleet"]
+  },
+  {
+    "id": "western-guyana",
+    "name": "Essequibo (Guyana-Venezuela)",
+    "lat": 6.8,
+    "lng": -58.2,
+    "keywords": ["Essequibo", "Guyana", "Venezuela", "Maduro", "Territorial"]
+  },
+  {
+    "id": "myanmar-civil-war",
+    "name": "Myanmar / Sagaing",
+    "lat": 22.0,
+    "lng": 95.0,
+    "keywords": ["Myanmar", "Junta", "PDF", "Rebels", "Tatmadaw"]
+  },
+  {
+    "id": "somali-coast",
+    "name": "Gulf of Aden / Somalia",
+    "lat": 11.0,
+    "lng": 50.0,
+    "keywords": ["Piracy", "Somalia", "Al-Shabaab", "Mogadishu", "Gulf of Aden"]
+  },
+  {
+    "id": "serbia-kosovo",
+    "name": "Kosovo / Serbia Border",
+    "lat": 42.6,
+    "lng": 21.1,
+    "keywords": ["Kosovo", "Pristina", "Serbia", "KFOR", "Balkans"]
+  },
+  {
+    "id": "south-china-sea",
+    "name": "Second Thomas Shoal",
+    "lat": 9.7,
+    "lng": 115.8,
+    "keywords": ["Philippines", "China Sea", "Shoal", "Coast Guard", "Manila"]
+  },
+  {
+    "id": "syria-idlib",
+    "name": "Northern Syria",
+    "lat": 35.9,
+    "lng": 36.6,
+    "keywords": ["Idlib", "Aleppo", "Rojava", "SDF", "Turkish military", "Airstrike"]
+  }
+]

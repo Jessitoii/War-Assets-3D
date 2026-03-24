@@ -30,7 +30,24 @@
     "wiki_error": "No technical intelligence available for this asset signature.",
     "view_on_wiki_fallback": "View raw Wikipedia page",
     "read_full_wiki": "Read Full Intel on Wikipedia",
-    "share_asset": "Share Asset Intelligence"
+    "share_asset": "Share Asset Intelligence",
+    "global_hotspots": "Global Hotspots",
+    "view_asset_intel": "VIEW ASSET INTEL",
+    "tactical_map_loading": "Establishing Secure Satellite Link..."
+  },
+  "home": {
+    "scanning_battlespace": "SCANNING BATTLESPACE",
+    "syncing_assets": "Synchronizing tactical asset database...",
+    "live_tactical_map": "LIVE TACTICAL INTELLIGENCE MAP",
+    "recon_target": "RECONNAISSANCE TARGET",
+    "daily_target": "DAILY TARGET",
+    "trending_intel": "TRENDING INTELLIGENCE",
+    "osint_live": "OSINT LIVE",
+    "analyzing_metrics": "Analyzing threat metrics..."
+  },
+  "settings": {
+    "language_selection": "Change application language",
+    "select_language": "Select Language"
   },
   "specs": {
     "classified": "CLASSIFIED",
@@ -38,5 +55,37 @@
     "title": "Technical Specifications",
     "label": "Specification",
     "value": "Value"
+  },
+  "asset": {
+    "range": "Range",
+    "speed": "Speed",
+    "generation": "Generation",
+    "origin": "Origin",
+    "not_found": "Asset not found",
+    "osint_trend_alert": "OSINT TREND ALERT",
+    "view_intel_source": "VIEW INTELLIGENCE SOURCE",
+    "danger": "DANGER",
+    "nuclear": "NUCLEAR",
+    "performance_matrix": "PERFORMANCE MATRIX",
+    "firepower": "FIREPOWER",
+    "mobility": "MOBILITY",
+    "stealth": "STEALTH",
+    "durability": "DURABILITY"
+  },
+  "comparison": {
+    "empty_queue": "Your comparison queue is empty.",
+    "empty_subtext": "Add up to three assets to compare their technical specifications side-by-side.",
+    "add_asset": "Add Asset",
+    "initiate_simulation": "INITIATE SIMULATION"
+  },
+  "browse": {
+    "title": "Browse Assets",
+    "no_assets": "No assets found"
+  },
+  "search": {
+    "placeholder": "Search assets...",
+    "reset": "Reset",
+    "results": "Results",
+    "no_match": "No assets found matching your criteria"
   }
 }

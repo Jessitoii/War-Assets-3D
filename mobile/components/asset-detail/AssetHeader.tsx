@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { theme } from '../../styles/theme';
+import Animated, { 
+  useSharedValue, 
+  useAnimatedStyle, 
+  withRepeat, 
+  withTiming,
+  withSequence
+} from 'react-native-reanimated';
 
 interface AssetHeaderProps {
   name: string;
   isFavorite: boolean;
   isDark: boolean;
+  isTrending?: boolean;
   onBack: () => void;
   onToggleFavorite: () => void;
 }
@@ -15,11 +23,33 @@ export const AssetHeader: React.FC<AssetHeaderProps> = ({
   name,
   isFavorite,
   isDark,
+  isTrending,
   onBack,
   onToggleFavorite,
 }) => {
   const textColor = isDark ? '#FFF' : '#000';
   const iconColor = isDark ? '#FFF' : '#000';
+
+  const opacity = useSharedValue(1);
+
+  useEffect(() => {
+    if (isTrending) {
+      opacity.value = withRepeat(
+        withSequence(
+          withTiming(0.4, { duration: 800 }),
+          withTiming(1, { duration: 800 })
+        ),
+        -1,
+        true
+      );
+    } else {
+      opacity.value = 1;
+    }
+  }, [isTrending]);
+
+  const animatedStyle = useAnimatedStyle(() => ({
+    opacity: opacity.value,
+  }));
 
   return (
     <View style={styles.container}>
@@ -32,9 +62,16 @@ export const AssetHeader: React.FC<AssetHeaderProps> = ({
         <Ionicons name="arrow-back" size={24} color={iconColor} />
       </TouchableOpacity>
       
-      <Text style={[styles.title, { color: textColor }]} numberOfLines={1}>
-        {name}
-      </Text>
+      <View style={styles.titleContainer}>
+        <Text style={[styles.title, { color: textColor }]} numberOfLines={1}>
+          {name}
+        </Text>
+        {isTrending && (
+          <Animated.View style={[styles.liveIndicator, animatedStyle]}>
+            <Text style={styles.liveText}>LIVE</Text>
+          </Animated.View>
+        )}
+      </View>
 
       <TouchableOpacity 
         onPress={onToggleFavorite} 
@@ -69,11 +106,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  titleContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+  },
   title: {
     ...theme.typography.title,
     fontSize: 20,
-    flex: 1,
-    textAlign: 'center',
+    maxWidth: '70%',
   },
   favoriteButton: {
     padding: 8,
@@ -81,5 +124,16 @@ const styles = StyleSheet.create({
     height: theme.spacing.touchTarget,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  liveIndicator: {
+    backgroundColor: '#FF3B30',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+  },
+  liveText: {
+    color: '#FFF',
+    fontSize: 10,
+    fontWeight: '900',
   },
 });

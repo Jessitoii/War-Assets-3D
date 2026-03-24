@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView, StatusBar } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, StatusBar, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 import { StackNavigationProp } from '@react-navigation/stack';
@@ -32,6 +32,8 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
   const categories = useStore(useShallow(selectCategories));
   const setAssets = useStore((state) => state.setAssets);
   const setCategories = useStore((state) => state.setCategories);
+  const syncTrendingAssets = useStore((state) => state.syncTrendingAssets);
+  const isTrendingSyncDone = useStore((state) => state.isTrendingSyncDone);
   const [loading, setLoading] = React.useState(true);
 
   useEffect(() => {
@@ -100,14 +102,20 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
     loadData();
   }, [setAssets, setCategories]);
 
+  useEffect(() => {
+    if (!loading && allAssets.length > 0 && !isTrendingSyncDone) {
+      syncTrendingAssets();
+    }
+  }, [loading, allAssets.length, isTrendingSyncDone, syncTrendingAssets]);
+
   if (loading) {
     return (
       <SafeAreaView style={[styles.loadingContainer, { backgroundColor: isDark ? theme.colors.backgroundDark : theme.colors.backgroundLight }]}>
         <StatusBar barStyle={isDark ? 'light-content' : 'dark-content'} />
         <View style={styles.loaderContent}>
           <Ionicons name="locate-outline" size={80} color={theme.colors.primary} style={styles.radarIcon} />
-          <Text style={[styles.loadingTextPrimary, { color: isDark ? '#FFF' : '#333' }]}>SCANNING BATTLESPACE</Text>
-          <Text style={[styles.loadingTextSecondary, { color: isDark ? '#888' : '#666' }]}>Synchronizing tactical asset database...</Text>
+          <Text style={[styles.loadingTextPrimary, { color: isDark ? '#FFF' : '#333' }]}>{t('home.scanning_battlespace')}</Text>
+          <Text style={[styles.loadingTextSecondary, { color: isDark ? '#888' : '#666' }]}>{t('home.syncing_assets')}</Text>
         </View>
       </SafeAreaView>
     );
@@ -120,11 +128,27 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
         <HeaderBar 
           onSearchPress={() => navigation.navigate('SearchFilter')} 
           onComparePress={() => navigation.navigate('Comparison')}
+          onFavoritesPress={() => navigation.navigate('Favorites')}
           onSettingsPress={() => navigation.navigate('Settings')}
+          onMapPress={() => navigation.navigate('GlobalMap')}
         />
         
         <ScrollView showsVerticalScrollIndicator={false}>
           <SearchBar onPress={() => navigation.navigate('SearchFilter')} />
+
+          <TouchableOpacity 
+            style={styles.hotspotsBanner} 
+            onPress={() => navigation.navigate('GlobalMap')}
+          >
+            <View style={styles.hotspotsContent}>
+              <Ionicons name="earth" size={24} color={theme.colors.primary} />
+              <View style={styles.hotspotsTextContainer}>
+                <Text style={styles.hotspotsTitle}>{t('common.global_hotspots').toUpperCase()}</Text>
+                <Text style={styles.hotspotsSubtitle}>{t('home.live_tactical_map')}</Text>
+              </View>
+            </View>
+            <Ionicons name="chevron-forward" size={20} color={theme.colors.primary} />
+          </TouchableOpacity>
 
           <View style={styles.section}>
             <Text style={[styles.sectionTitle, { color: isDark ? '#FFF' : '#000' }]}>{t('common.featured_assets')}</Text>
@@ -150,9 +174,9 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
           {allAssets.length > 0 && (
             <View style={styles.section}>
               <View style={styles.sectionHeader}>
-                <Text style={[styles.sectionTitle, { color: isDark ? '#FFF' : '#000', marginBottom: 0 }]}>RECONNAISSANCE TARGET</Text>
+                <Text style={[styles.sectionTitle, { color: isDark ? '#FFF' : '#000', marginBottom: 0 }]}>{t('home.recon_target')}</Text>
                 <View style={styles.tag}>
-                  <Text style={styles.tagText}>DAILY TARGET</Text>
+                  <Text style={styles.tagText}>{t('home.daily_target')}</Text>
                 </View>
               </View>
               {(() => {
@@ -171,9 +195,9 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
 
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
-              <Text style={[styles.sectionTitle, { color: isDark ? '#FFF' : '#000', marginBottom: 0 }]}>TRENDING INTELLIGENCE</Text>
+              <Text style={[styles.sectionTitle, { color: isDark ? '#FFF' : '#000', marginBottom: 0 }]}>{t('home.trending_intel')}</Text>
               <View style={[styles.tag, { backgroundColor: '#FF3B30' }]}>
-                <Text style={[styles.tagText, { color: '#FFF' }]}>OSINT LIVE</Text>
+                <Text style={[styles.tagText, { color: '#FFF' }]}>{t('home.osint_live')}</Text>
               </View>
             </View>
             {trendingAssets.length > 0 ? (
@@ -189,7 +213,7 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
             ) : (
               <View style={styles.emptyState}>
                 <Ionicons name="stats-chart-outline" size={24} color={isDark ? '#444' : '#CCC'} />
-                <Text style={[styles.emptyText, { color: isDark ? '#666' : '#AAA' }]}>Analyzing threat metrics...</Text>
+                <Text style={[styles.emptyText, { color: isDark ? '#666' : '#AAA' }]}>{t('home.analyzing_metrics')}</Text>
               </View>
             )}
           </View>
@@ -290,5 +314,37 @@ const styles = StyleSheet.create({
     color: '#000',
     fontSize: 10,
     fontWeight: '900',
+  },
+  hotspotsBanner: {
+    marginTop: 16,
+    backgroundColor: 'rgba(10, 132, 255, 0.1)',
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: 'rgba(10, 132, 255, 0.2)',
+    padding: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  hotspotsContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  hotspotsTextContainer: {
+    flexDirection: 'column',
+  },
+  hotspotsTitle: {
+    color: '#FFF',
+    fontSize: 16,
+    fontWeight: '900',
+    letterSpacing: 1,
+  },
+  hotspotsSubtitle: {
+    color: theme.colors.primary,
+    fontSize: 10,
+    fontWeight: 'bold',
+    marginTop: 2,
+    letterSpacing: 0.5,
   }
 });

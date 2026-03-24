@@ -30,7 +30,24 @@
     "wiki_error": "Bu varlık imzası için teknik istihbarat mevcut değil.",
     "view_on_wiki_fallback": "Ham Wikipedia sayfasını görüntüle",
     "read_full_wiki": "Wikipedia'daki Tüm İstihbaratı Oku",
-    "share_asset": "Varlık İstihbaratını Paylaş"
+    "share_asset": "Varlık İstihbaratını Paylaş",
+    "global_hotspots": "Küresel Sıcak Noktalar",
+    "view_asset_intel": "VARLIK İSTİHBARATINI GÖRÜNTÜLE",
+    "tactical_map_loading": "Güvenli Uydu Bağlantısı Kuruluyor..."
+  },
+  "home": {
+    "scanning_battlespace": "MUHAREBE ALANI TARANIYOR",
+    "syncing_assets": "Taktik varlık veritabanı senkronize ediliyor...",
+    "live_tactical_map": "CANLI TAKTİK İSTİHBARAT HARİTASI",
+    "recon_target": "KEŞİF HEDEFİ",
+    "daily_target": "GÜNLÜK HEDEF",
+    "trending_intel": "TREND İSTİHBARAT",
+    "osint_live": "CANLI OSINT",
+    "analyzing_metrics": "Tehdit metrikleri analiz ediliyor..."
+  },
+  "settings": {
+    "language_selection": "Uygulama dilini değiştir",
+    "select_language": "Dil Seçin"
   },
   "specs": {
     "classified": "GİZLİ",
@@ -38,5 +55,37 @@
     "title": "Teknik Özellikler",
     "label": "Özellik",
     "value": "Değer"
+  },
+  "asset": {
+    "range": "Menzil",
+    "speed": "Hız",
+    "generation": "Nesil",
+    "origin": "Köken",
+    "not_found": "Varlık bulunamadı",
+    "osint_trend_alert": "OSINT TREND ALARMI",
+    "view_intel_source": "İSTİHBARAT KAYNAĞINI GÖRÜNTÜLE",
+    "danger": "TEHLİKE",
+    "nuclear": "NÜKLEER",
+    "performance_matrix": "PERFORMANS MATRİSİ",
+    "firepower": "ATEŞ GÜCÜ",
+    "mobility": "HAREKET KABİLİYETİ",
+    "stealth": "GİZLİLİK",
+    "durability": "DAYANIKLILIK"
+  },
+  "comparison": {
+    "empty_queue": "Karşılaştırma kuyruğunuz boş.",
+    "empty_subtext": "Teknik özelliklerini yan yana karşılaştırmak için en fazla üç varlık ekleyin.",
+    "add_asset": "Varlık Ekle",
+    "initiate_simulation": "SİMÜLASYONU BAŞLAT"
+  },
+  "browse": {
+    "title": "Varlıklara Göz At",
+    "no_assets": "Varlık bulunamadı"
+  },
+  "search": {
+    "placeholder": "Varlık ara...",
+    "reset": "Sıfırla",
+    "results": "Sonuç",
+    "no_match": "Kriterlerinize uygun varlık bulunamadı"
   }
 }

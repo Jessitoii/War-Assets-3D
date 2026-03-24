@@ -56,7 +56,7 @@ const Model: React.FC<ModelProps> = ({ url, onLoad, onError }) => {
 
 const FallbackBox: React.FC = () => {
   const meshRef = useRef<THREE.Mesh>(null);
-  
+
   useFrame(() => {
     if (meshRef.current) {
       meshRef.current.rotation.x += 0.01;
@@ -67,10 +67,10 @@ const FallbackBox: React.FC = () => {
   return (
     <mesh ref={meshRef}>
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial 
-        color="#4A4A4A" 
-        wireframe 
-        emissive="#00FF00" 
+      <meshStandardMaterial
+        color="#4A4A4A"
+        wireframe
+        emissive="#00FF00"
         emissiveIntensity={0.5}
       />
     </mesh>
@@ -85,12 +85,12 @@ interface Props {
   isMini?: boolean;
 }
 
-export const ThreeDModelViewer: React.FC<Props> = ({ 
-  assetId, 
-  modelUrl, 
-  assetVersion, 
-  expectedChecksum, 
-  isMini = false 
+export const ThreeDModelViewer: React.FC<Props> = ({
+  assetId,
+  modelUrl,
+  assetVersion,
+  expectedChecksum,
+  isMini = false
 }) => {
   const [localUrl, setLocalUrl] = useState<string | null>(null);
   const [error, setError] = useState<boolean>(false);
@@ -105,9 +105,9 @@ export const ThreeDModelViewer: React.FC<Props> = ({
 
         const absoluteModelUrl = CDN_CONFIG.resolveModel(modelUrl);
         if (!absoluteModelUrl) {
-           setError(true);
-           setLoading(false);
-           return;
+          setError(true);
+          setLoading(false);
+          return;
         }
 
         const version = assetVersion || '1.0.0';
@@ -182,7 +182,7 @@ export const ThreeDModelViewer: React.FC<Props> = ({
         <Ionicons name="shield-outline" size={64} color={theme.colors.primary} style={styles.tacticalIcon} />
         <Text style={styles.noModelTitle}>TACTICAL INTEL UNAVAILABLE</Text>
         <Text style={styles.noModelDesc}>
-          3D visualization for {assetId} is currently restricted or geometry stream failed. 
+          3D visualization for {assetId} is currently restricted or geometry stream failed.
           Check satellite link or R2 storage status.
         </Text>
         <TouchableOpacity style={styles.retryBtn} onPress={() => { setError(false); setLoading(true); }}>
@@ -193,30 +193,35 @@ export const ThreeDModelViewer: React.FC<Props> = ({
   }
 
   return (
-    <View 
+    <View
       style={[styles.container, { backgroundColor: isMini ? 'transparent' : '#000' }]}
       pointerEvents={isMini ? 'none' : 'auto'}
     >
       <Canvas
-        camera={{ position: [0, 0, 3], fov: 45 }}
+        camera={{ position: [5, 5, 5], fov: 45 }}
         gl={{ antialias: true, alpha: true }}
       >
-        <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} intensity={1} />
+        <ambientLight intensity={0.4} />
+        <directionalLight position={[10, 10, 10]} intensity={1.5} />
+        
         <Suspense fallback={null}>
-          {isMini ? (
-            <Model url={localUrl!} />
-          ) : (
-            <Stage environment="city" intensity={0.5} adjustCamera={true}>
-              <Model url={localUrl!} onLoad={handleModelLoad} />
-            </Stage>
-          )}
+          <Stage 
+            environment="city" 
+            intensity={isMini ? 0.2 : 0.5} 
+            adjustCamera={true}
+          >
+            <Model 
+              url={localUrl!} 
+              onLoad={handleModelLoad} 
+            />
+          </Stage>
         </Suspense>
+
         {!isMini && (
-          <OrbitControls 
-            makeDefault 
-            minDistance={1} 
-            maxDistance={10} 
+          <OrbitControls
+            makeDefault
+            minDistance={1}
+            maxDistance={10}
             autoRotate={true}
             autoRotateSpeed={1.5}
             enableDamping={true}
@@ -227,9 +232,9 @@ export const ThreeDModelViewer: React.FC<Props> = ({
       </Canvas>
 
       {showGuide && (
-        <Animated.View 
-          entering={FadeIn} 
-          exiting={FadeOut} 
+        <Animated.View
+          entering={FadeIn}
+          exiting={FadeOut}
           style={styles.guideOverlay}
         >
           <Ionicons name="finger-print-outline" size={40} color={theme.colors.primary} />

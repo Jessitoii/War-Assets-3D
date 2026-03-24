@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { View, StyleSheet, ScrollView, StatusBar, ActivityIndicator, Text, Share } from 'react-native';
+import { View, StyleSheet, ScrollView, StatusBar, ActivityIndicator, Text, Share, Linking, TouchableOpacity } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StackScreenProps } from '@react-navigation/stack';
 import { RootStackParamList } from '../navigation/NavigationRoot';
@@ -22,10 +23,13 @@ export const AssetDetailScreen: React.FC<Props> = ({ route, navigation }) => {
   const { t } = useTranslation();
   const currentTheme = useStore((state) => state.theme);
   const isDark = currentTheme === 'dark';
-  
+
   const asset = useStore((state) => state.assets.find(a => a.id === assetId));
+  const trendingAssets = useStore((state) => state.trendingAssets);
+  const trendingAsset = trendingAssets.find(a => a.id === assetId);
+  const isTrending = !!trendingAsset;
   const isFavorite = useStore((state) => state.favorites.includes(assetId));
-  
+
   const { toggleFavorite, handleCompare } = useAssetActions();
   const [loading, setLoading] = useState(!asset);
 
@@ -50,7 +54,7 @@ export const AssetDetailScreen: React.FC<Props> = ({ route, navigation }) => {
   if (!asset) {
     return (
       <SafeAreaView style={[styles.loadingContainer, { backgroundColor: isDark ? theme.colors.backgroundDark : theme.colors.backgroundLight }]}>
-        <Text style={{ color: isDark ? '#FFF' : '#000' }}>Asset not found</Text>
+        <Text style={{ color: isDark ? '#FFF' : '#000' }}>{t('asset.not_found')}</Text>
       </SafeAreaView>
     );
   }
@@ -59,7 +63,7 @@ export const AssetDetailScreen: React.FC<Props> = ({ route, navigation }) => {
   const displayImages = (asset.images && asset.images.length > 0)
     ? asset.images.map(img => CDN_CONFIG.resolveImage(img)!)
     : (asset.image ? [CDN_CONFIG.resolveImage(asset.image)!] : []);
-    
+
   // Ensure specs is an object (it might be a double-serialized string from SQLite)
   const getParsedSpecs = (specs: any) => {
     if (!specs) return null;
@@ -91,7 +95,7 @@ export const AssetDetailScreen: React.FC<Props> = ({ route, navigation }) => {
     try {
       const mainImage = displayImages[0] || '';
       await Share.share({
-        message: `[TACTICAL BRIEFING: ${asset.name}]\n\nVisual Recon: ${mainImage}\n\nFull analysis available in War Assets 3D Command Center.`,
+        message: `[${t('common.view_asset_intel')}: ${asset.name}]\n\nVisual Recon: ${mainImage}\n\nFull analysis available in War Assets 3D Command Center.`,
         title: asset.name,
       });
     } catch (error: any) {
@@ -102,29 +106,52 @@ export const AssetDetailScreen: React.FC<Props> = ({ route, navigation }) => {
   return (
     <SafeAreaView style={[styles.safeArea, { backgroundColor: isDark ? theme.colors.backgroundDark : theme.colors.backgroundLight }]} edges={['top', 'bottom']}>
       <StatusBar barStyle={isDark ? 'light-content' : 'dark-content'} />
-      <AssetHeader 
-        name={asset.name} 
-        isFavorite={isFavorite} 
+      <AssetHeader
+        name={asset.name}
+        isFavorite={isFavorite}
         isDark={isDark}
+        isTrending={isTrending}
         onBack={() => navigation.goBack()}
         onToggleFavorite={() => toggleFavorite(assetId)}
       />
       <ScrollView showsVerticalScrollIndicator={false}>
+        {/* OSINT TREND ALERT */}
+        {isTrending && (
+          <View style={styles.trendAlertBox}>
+            <View style={styles.trendAlertHeader}>
+              <Ionicons name="warning" size={16} color={theme.colors.primary} />
+              <Text style={styles.trendAlertTitle}>{t('asset.osint_trend_alert')}</Text>
+            </View>
+            <Text style={[styles.trendReason, { color: isDark ? '#EEE' : '#333' }]}>
+              {trendingAsset.trendingReason}
+            </Text>
+            {trendingAsset.newsUrl && (
+              <TouchableOpacity
+                onPress={() => Linking.openURL(trendingAsset.newsUrl!)}
+                style={styles.newsLink}
+              >
+                <Text style={styles.newsLinkText}>{t('asset.view_intel_source')}</Text>
+                <Ionicons name="open-outline" size={12} color={theme.colors.primary} />
+              </TouchableOpacity>
+            )}
+          </View>
+        )}
+
         {/* Tactical Badges & Danger Level */}
         <View style={styles.tacticalContainer}>
           <View style={styles.badgeRow}>
-             <View style={[styles.badge, { backgroundColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.05)' }]}>
-               <Text style={[styles.badgeText, { color: isDark ? '#EEE' : '#333' }]}>{asset.threatType || 'Tactical Asset'}</Text>
-             </View>
-             {isNuclear && (
-               <View style={[styles.badge, { backgroundColor: '#FF3B30', borderColor: '#FF3B30' }]}>
-                 <Text style={[styles.badgeText, { color: '#FFF' }]}>☢ NUCLEAR</Text>
-               </View>
-             )}
-             <Text style={[styles.dangerValue, { color: dangerColor }]}>DANGER: {normalizedDanger.toFixed(1)}/10</Text>
+            <View style={[styles.badge, { backgroundColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.05)' }]}>
+              <Text style={[styles.badgeText, { color: isDark ? '#EEE' : '#333' }]}>{asset.threatType || 'Tactical Asset'}</Text>
+            </View>
+            {isNuclear && (
+              <View style={[styles.badge, { backgroundColor: '#FF3B30', borderColor: '#FF3B30' }]}>
+                <Text style={[styles.badgeText, { color: '#FFF' }]}>☢ {t('asset.nuclear')}</Text>
+              </View>
+            )}
+            <Text style={[styles.dangerValue, { color: dangerColor }]}>{t('asset.danger')}: {normalizedDanger.toFixed(1)}/10</Text>
 
           </View>
-          
+
           <View style={styles.progressBackground}>
             <View style={[styles.progressBar, { width: `${normalizedDanger * 10}%`, backgroundColor: dangerColor }]} />
           </View>
@@ -132,32 +159,32 @@ export const AssetDetailScreen: React.FC<Props> = ({ route, navigation }) => {
         </View>
 
         <ImageCarousel images={displayImages} />
-        
-        <SpecsSummary 
+
+        <SpecsSummary
           asset={asset}
           isDark={isDark}
           onPress={() => navigation.navigate('TechnicalSpecs', { assetId })}
         />
 
-        
-        <ActionButtons 
+
+        <ActionButtons
           hasModel={!!asset.model}
           isDark={isDark}
           onView3D={() => navigation.navigate('ModelViewer', { assetId })}
           onCompare={() => handleCompare(assetId)}
           onShare={handleShare}
         />
-        
-        <PerformanceRadar 
-          metrics={displaySpecs.metrics} 
-          isDark={isDark} 
+
+        <PerformanceRadar
+          metrics={asset.metrics}
+          isDark={isDark}
         />
-        
-        <WikiSection 
-          wikiUrl={asset.wikiUrl} 
-          isDark={isDark} 
+
+        <WikiSection
+          wikiUrl={asset.wikiUrl}
+          isDark={isDark}
         />
-        
+
         <View style={styles.footerPadding} />
       </ScrollView>
     </SafeAreaView>
@@ -212,5 +239,51 @@ const styles = StyleSheet.create({
   },
   footerPadding: {
     height: 40,
+  },
+  trendAlertBox: {
+    margin: 16,
+    padding: 16,
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: theme.colors.primary,
+    borderLeftWidth: 4,
+    shadowColor: theme.colors.primary,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  trendAlertHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 8,
+  },
+  trendAlertTitle: {
+    color: theme.colors.primary,
+    fontSize: 12,
+    fontWeight: '900',
+    letterSpacing: 2,
+  },
+  trendReason: {
+    fontSize: 14,
+    fontStyle: 'italic',
+    lineHeight: 20,
+    marginBottom: 12,
+  },
+  newsLink: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    borderTopWidth: 1,
+    borderTopColor: 'rgba(255, 255, 255, 0.1)',
+    paddingTop: 12,
+  },
+  newsLinkText: {
+    color: theme.colors.primary,
+    fontSize: 10,
+    fontWeight: 'bold',
+    letterSpacing: 1,
   },
 });
