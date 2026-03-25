@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { View, StyleSheet, Text, TouchableOpacity, ActivityIndicator, StatusBar, Platform } from 'react-native';
-import MapView, { Marker, Callout, UrlTile } from 'react-native-maps';
+import MapView, { Marker, UrlTile, PROVIDER_GOOGLE } from 'react-native-maps';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
@@ -22,6 +22,7 @@ export const GlobalMapScreen: React.FC<Props> = ({ navigation }) => {
   const assets = useStore((state) => state.assets);
   const [rssItems, setRssItems] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedPoint, setSelectedPoint] = useState<TacticalPoint | null>(null);
   const [showMap, setShowMap] = useState(false);
 
   useEffect(() => {
@@ -58,7 +59,7 @@ export const GlobalMapScreen: React.FC<Props> = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
       <StatusBar barStyle="light-content" />
-      
+
       <View style={styles.header}>
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
           <Ionicons name="arrow-back" size={24} color={theme.colors.primary} />
@@ -76,56 +77,70 @@ export const GlobalMapScreen: React.FC<Props> = ({ navigation }) => {
           <Text style={styles.loadingText}>{t('common.tactical_map_loading')}</Text>
         </View>
       ) : showMap ? (
-        <MapView
-          // @ts-ignore
-          provider={null}
-          mapType="standard"
-          style={{ flex: 1 }}
-          initialRegion={{
-            latitude: 20,
-            longitude: 0,
-            latitudeDelta: 100,
-            longitudeDelta: 100,
-          }}
-          maxZoomLevel={19}
-        >
-          <UrlTile 
-            urlTemplate={OSM_TILE_URL}
-            zIndex={-1}
-            shouldReplaceMapContent={true}
-            doubleTileSize={true}
-          />
-          {tacticalPoints.map((point) => (
-            <Marker
-              key={point.id}
-              coordinate={{ latitude: point.lat, longitude: point.lng }}
-              pinColor={theme.colors.primary}
-            >
-              <View style={styles.markerContainer}>
-                <Ionicons name="scan-outline" size={28} color={theme.colors.primary} />
-              </View>
-              <Callout
-                tooltip
-                onPress={() => {
-                  if (point.relatedAssetId) {
-                    navigation.navigate('AssetDetail', { assetId: point.relatedAssetId });
-                  }
+        <View style={{ flex: 1 }}>
+          <MapView
+            provider={Platform.OS === 'android' ? PROVIDER_GOOGLE : undefined}
+            style={{ flex: 1 }}
+            onPress={() => setSelectedPoint(null)}
+            onMapReady={() => console.log('MAP_READY')}
+            onMapLoaded={() => console.log('MAP_LOADED')}
+            initialRegion={{
+              latitude: 20,
+              longitude: 0,
+              latitudeDelta: 100,
+              longitudeDelta: 100,
+            }}
+          >
+            <UrlTile 
+              urlTemplate="https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
+              zIndex={1}
+              shouldReplaceMapContent={false}
+            />
+
+            {tacticalPoints.map((point) => (
+              <Marker
+                key={point.id}
+                coordinate={{ latitude: point.lat, longitude: point.lng }}
+                onPress={(e) => {
+                  e.stopPropagation();
+                  setSelectedPoint(point);
                 }}
               >
-                <View style={styles.calloutContainer}>
-                  <Text style={styles.calloutLocation}>{point.locationName.toUpperCase()}</Text>
-                  <Text style={styles.calloutTitle}>{point.newsTitle}</Text>
-                  {point.relatedAssetId && (
-                    <View style={styles.intelButton}>
-                      <Text style={styles.intelButtonText}>{t('common.view_asset_intel')}</Text>
-                      <Ionicons name="chevron-forward" size={12} color="#000" />
-                    </View>
-                  )}
+                <View style={styles.markerContainer}>
+                  <Ionicons name="scan-outline" size={28} color={theme.colors.primary} />
                 </View>
-              </Callout>
-            </Marker>
-          ))}
-        </MapView>
+              </Marker>
+            ))}
+          </MapView>
+
+          {/* Custom Callout Overlay */}
+          {selectedPoint && (
+            <View style={styles.calloutOverlay}>
+              <View style={styles.calloutContainer}>
+                <TouchableOpacity
+                  style={styles.closeCallout}
+                  onPress={() => setSelectedPoint(null)}
+                >
+                  <Ionicons name="close" size={18} color={theme.colors.primary} />
+                </TouchableOpacity>
+                <Text style={styles.calloutLocation}>{selectedPoint.locationName.toUpperCase()}</Text>
+                <Text style={styles.calloutTitle}>{selectedPoint.newsTitle}</Text>
+                {selectedPoint.relatedAssetId && (
+                  <TouchableOpacity
+                    style={styles.intelButton}
+                    onPress={() => {
+                      navigation.navigate('AssetDetail', { assetId: selectedPoint.relatedAssetId! });
+                      setSelectedPoint(null);
+                    }}
+                  >
+                    <Text style={styles.intelButtonText}>{t('common.view_asset_intel')}</Text>
+                    <Ionicons name="chevron-forward" size={12} color="#000" />
+                  </TouchableOpacity>
+                )}
+              </View>
+            </View>
+          )}
+        </View>
       ) : (
         <View style={styles.mapPlaceholder} />
       )}
@@ -201,13 +216,31 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  calloutOverlay: {
+    position: 'absolute',
+    top: 20,
+    left: 16,
+    right: 16,
+    alignItems: 'center',
+    zIndex: 1000,
+  },
   calloutContainer: {
-    width: 250,
-    padding: 12,
-    backgroundColor: 'rgba(0,0,0,0.9)',
-    borderRadius: 8,
+    width: '100%',
+    padding: 16,
+    backgroundColor: 'rgba(0,0,0,0.95)',
+    borderRadius: 12,
     borderWidth: 1,
     borderColor: theme.colors.primary,
+    shadowColor: theme.colors.primary,
+    shadowRadius: 10,
+    shadowOpacity: 0.3,
+  },
+  closeCallout: {
+    position: 'absolute',
+    top: 8,
+    right: 8,
+    padding: 4,
+    zIndex: 10,
   },
   calloutLocation: {
     color: theme.colors.primary,

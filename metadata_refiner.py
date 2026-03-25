@@ -10,6 +10,8 @@ from groq import Groq
 import orjson
 import sys
 import mwparserfromhell
+from cerebras.cloud.sdk import Cerebras
+import ollama 
 
 load_dotenv()
 
@@ -18,14 +20,35 @@ JSON_PATH = "./mobile/assets/data/military-assets.json"
 OUTPUT_PATH = "./mobile/assets/data/military-assets-v29.json"
 LOG_FILE = "processed_assets.log"
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+CEREBRAS_API_KEY = os.getenv("CEREBRAS_API_KEY")
+MODE = "GROQ"
 
-if not GROQ_API_KEY:
-    print("ERROR: GROQ_API_KEY missing.")
-    exit(1)
+if MODE == "GROQ":
+    print("Using Groq")
+    if not GROQ_API_KEY:
+        print("ERROR: GROQ_API_KEY missing.")
+        exit(1)
 
-client = Groq(api_key=GROQ_API_KEY)
-MODEL_QUEUE = ["llama-3.3-70b-versatile", "qwen-qwq-32b", "llama-3.1-70b-versatile"]
-current_model_idx = 0
+    client = Groq(api_key=GROQ_API_KEY)
+elif MODE == "CEREBRAS":
+    print("Using Cerebras")
+    if not CEREBRAS_API_KEY:
+        print("ERROR: CEREBRAS_API_KEY missing.")
+        exit(1)
+    client = Cerebras(api_key=CEREBRAS_API_KEY)
+elif MODE == "OLLAMA":
+    print("Using Ollama")
+    client = ollama.Client()
+
+if MODE == "GROQ":
+    MODEL_QUEUE = ["llama-3.3-70b-versatile", "qwen-qwq-32b", "llama-3.1-70b-versatile"]
+    current_model_idx = 0
+elif MODE == "CEREBRAS":
+    MODEL_QUEUE = ["qwen-3-235b-a22b-instruct-2507"]
+    current_model_idx = 0
+elif MODE == "OLLAMA":
+    MODEL_QUEUE = ["gemma3:12b"]
+    current_model_idx = 0
 
 # Rate Limit Ayarları
 REQUESTS_PER_MINUTE = 15  # Güvenli sınır
@@ -109,54 +132,54 @@ async def fetch_wiki(session, asset, semaphore):
         return asset
 
 
-SYSTEM_PROMPT = """You are a Technical Intelligence Analyst specialized in military hardware. 
-Your only task is to parse raw Wikipedia Wikitext (infobox templates, specifications sections, etc.) and output **strictly valid JSON** according to the schema below. Never add explanations, never add extra text outside the JSON.
+SYSTEM_PROMPT = """
+You are a Senior Technical Intelligence Analyst. Your mission is to synthesize raw Wikipedia data (Summary + Wikitext) into a high-fidelity, Metric-only JSON.
 
-### STRICT EXTRACTION RULES:
-1. Extract ONLY information that exists in the provided Wikitext. Never guess, estimate, or use prior knowledge (Zero-Guess Policy).
-2. Prioritize template parameters: |length m=, |span=, |wingspan m=, |range km=, |max speed km/h=, |max takeoff weight=, |engine=, |crew=, |armament= etc.
-3. Units:
-   - For "specs" (English): Keep original units as they appear (e.g. "200 mi (320 km)", "20,000 ft").
-   - For translations (tr, ru, ar, zh): Convert EVERYTHING to pure metric (km, m, kg, km/h). Use reasonable rounding. Example: 20,000 ft → 6,096 m or approx 6.1 km.
+### I. EXTRACTION PROTOCOL:
+1. **PARAMETER HARVESTING:** Scour the 'TECHNICAL DATA BLOCKS' for: |span=, |length=, |range=, |max speed=, |empty weight=, |max takeoff weight=, |engine=. If these exist in wikitext, you MUST include them in 'specs'.
+2. **METRIC SUPREMACY:** - Root 'specs': Can include dual units (e.g., '20,000 ft (6,100 m)').
+   - ALL 'translations': Use ONLY pure metric (km, m, kg, km/h). Convert 20,000 ft to 6,100 m. No Miles/Feet/Lbs allowed.
+3. **COUNTRY CODES:** Use strictly ISO 3166-1 alpha-3 (e.g., DEU, ESP, USA, TUR). If multiple, separate with a slash (DEU/ESP).
 
-### OUTPUT SCHEMA (EXACT STRUCTURE - NO DEVIATION):
+### II. NARRATIVE SYNTHESIS (full_dossier):
+The 'full_dossier' must be a professional 2-3 sentence technical narrative. 
+- Blend the hard numbers (specs) with the context from the 'SUMMARY' (history, manufacturer, strategic role).
+- Example: "Jointly developed by Germany and Spain, the Barracuda is a stealth UAV..."
+
+### III. LANGUAGE PURITY (CRITICAL):
+- Each translation block must contain ONLY its target language. 
+- DO NOT leak characters from other languages (e.g., No Chinese characters in Turkish text). 
+- If you don't know the technical term in the target language, use the phonetic localization or the standard international term, but never switch alphabets.
+
+### IV. JSON SCHEMA (STRICT TEMPLATE - EXTENDABLE):
 {
-  "country": "Full English country name or null",
-  "countryCode": "ISO 3166-1 alpha-3 code (e.g. RUS, USA, TUR, CHN) or null",
-  "specs": {
-    "length": "value with unit if available",
-    "wingspan": "...",
-    "range": "...",
-    "max_speed": "...",
-    "empty_weight": "...",
-    "engine": "...",
-    // any other technical parameters found
+  "country": "...",
+  "countryCode": "...",
+  "specs": { 
+    "role": "...", 
+    "range": "...", 
+    "speed": "...", 
+    "//": "IMPORTANT: The keys below are EXAMPLES. Add ANY other technical parameters found (e.g., 'crew', 'armament', 'weight', 'wingspan', 'ceiling', 'climb_rate', 'radar_type'). Use snake_case for keys."
   },
-  "short_specs": {
-    "range": "max 12 chars, e.g. '1.2k km', 'M0.85'",
-    "speed": "...",
-    "payload": "..."
-    // keep only the most important 3-5 keys
+  "short_specs": { 
+    "range": "...", "speed": "...", "payload": "...",
+    "//": "Include the 3-5 most critical tactical specs only."
   },
-  "full_dossier": "Exactly 2-3 dense, technical sentences in English.",
+  "full_dossier": "...",
   "translations": {
-    "tr": {
-      "full_dossier": "Tamamen Türkçe, doğal teknik açıklama (2-3 cümle)",
-      "short_specs": { "range": "...", "speed": "...", "payload": "..." }
+    "tr": { 
+      "full_dossier": "...", 
+      "short_specs": { "//": "Must match the keys in root 'short_specs'" } 
     },
-    "ru": { ... same structure ... },
+    "ru": { ... },
     "ar": { ... },
     "zh": { ... }
   }
 }
 
-NARRATIVE SYNTHESIS: The 'full_dossier' must not be a dry list of specs. You must blend the technical data (e.g., engine model, wingspan) with the context from the Summary (e.g., project history, strategic role). Create a professional military-grade description that explains WHY these specs matter for this specific asset.
-
-### ADDITIONAL RULES:
-- If a value does not exist in the wikitext → put null (do not invent).
-- In translations, do NOT leave any English words/sentences. Make it sound natural in the target language.
-- Do not output any key whose value is null in ALL languages/sections to keep the JSON clean.
-- Return ONLY the JSON object. No markdown, no ```json, no extra text.
+### V. CONSTRAINTS:
+- Do not output null keys. If data is missing for a field, omit that key entirely.
+- Output ONLY raw JSON. No markdown, no commentary.
 """
 
 
@@ -167,6 +190,17 @@ def call_groq(asset_name, wiki_text):
 
     for _ in range(3):  # Retry logic
         try:
+            if MODE == "OLLAMA":
+                response = client.chat(
+                    model=MODEL_QUEUE[current_model_idx],
+                    messages=[
+                        {"role": "system", "content": SYSTEM_PROMPT},
+                        {"role": "user", "content": user_prompt},
+                    ],
+                    format="json",
+                    options={"temperature": 0.1},
+                )
+                return json.loads(response["message"]["content"])
             response = client.chat.completions.create(
                 model=MODEL_QUEUE[current_model_idx],
                 messages=[
@@ -196,8 +230,10 @@ async def main():
 
     with open(JSON_PATH, "r", encoding="utf-8") as f:
         all_assets = json.load(f)
+        #all assets for debugging will be only EADS_Barracuda asset
+        all_assets = [a for a in all_assets if a["name"] == "EADS Barracuda"]
 
-    processed_ids = get_processed_ids()
+    processed_ids = set()#get_processed_ids()
     v27_map = {}
     if os.path.exists(OUTPUT_PATH):
         try:

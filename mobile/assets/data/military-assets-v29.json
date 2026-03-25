@@ -1,9 +1,56 @@
 [
   {
-    "id": "eads-barracuda",
     "catId": "4",
     "name": "EADS Barracuda",
     "featured": false,
+    "id": "eads-barracuda",
+    "specs": {
+      "role": "Reconnaissance and UCAV",
+      "length": "8.25 m",
+      "span": "7.22 m",
+      "empty_weight": "2300 kg",
+      "max_takeoff_weight": "3250 kg",
+      "engine": "Pratt & Whitney JT15D turbofan engine",
+      "max_speed": "1041 km/h",
+      "range": "200 km",
+      "ceiling": "6100 m"
+    },
+    "translations": {
+      "tr": {
+        "full_dossier": "Almanya ve İspanya tarafından ortak geliştirilen EADS Barracuda, havadan keşif ve savaş için kullanılan bir gizli jet motorlu insansız hava aracıydı ve yaklaşık Mach 0.85'lik bir azami hava hızı ve yaklaşık 6100 m'lik bir işletme tavanına sahipti.",
+        "short_specs": {
+          "range": "200 km",
+          "speed": "1041 km/h",
+          "payload": "300 kg"
+        }
+      },
+      "ru": {
+        "full_dossier": "Разработанный Германией и Испанией, EADS Barracuda был скрытным беспилотным летательным аппаратом с реактивным двигателем, используемым для воздушной разведки и боя, с максимальной воздушной скоростью около Мах 0,85 и эксплуатационным потолком около 6100 м.",
+        "short_specs": {
+          "range": "200 км",
+          "speed": "1041 км/ч",
+          "payload": "300 кг"
+        }
+      },
+      "ar": {
+        "full_dossier": "تم تطويره بشكل مشترك من قبل ألمانيا وإسبانيا، كان EADS Barracuda طائرة بدون طيار تعمل بالطاقة النفاثة خفية، تستخدم للطيران التكتيكي والاستطلاع، مع سرعة هوائية قصوى تبلغ حوالي ماخ 0.85 وسقف تشغيلي يبلغ حوالي 6100 متر.",
+        "short_specs": {
+          "range": "200 كم",
+          "speed": "1041 كم/س",
+          "payload": "300 كجم"
+        }
+      },
+      "zh": {
+        "full_dossier": "由德国和西班牙联合开发的EADS Barracuda是一种用于空中侦察和战斗的隐形喷气式无人机，最高空速约为马赫0.85，最高飞行高度约为6100米。",
+        "short_specs": {
+          "range": "200 公里",
+          "speed": "1041 公里/小时",
+          "payload": "300 公斤"
+        }
+      }
+    },
+    "dangerLevel": 50,
+    "threatType": "UAV",
     "wikiUrl": "https://en.wikipedia.org/wiki/EADS_Barracuda",
     "images": [
       "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/eads-barracuda/1.jpg",
@@ -11,475 +58,13 @@
       "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/eads-barracuda/3.jpg"
     ],
     "model": null,
-    "dangerLevel": 50,
-    "threatType": "UAV",
-    "metrics": null,
     "country": "Germany and Spain",
     "countryCode": "DEU/ESP",
-    "specs": {
-      "role": "Reconnaissance and UCAV",
-      "range": null,
-      "speed": "Mach 0.85",
-      "payload": "300 kg",
-      "ceiling": "20,000 ft (6,096 m)"
-    },
     "short_specs": {
-      "range": null,
-      "speed": "M0.85",
-      "payload": "300kg",
-      "ceiling": "20kft"
+      "range": "200 km",
+      "speed": "1041 km/h",
+      "payload": "300 kg"
     },
-    "full_dossier": {
-      "range": null,
-      "speed": "The Barracuda had a maximum air speed of around Mach 0.85.",
-      "payload": "The Barracuda carried a maximum payload of 300 kg.",
-      "ceiling": "The Barracuda had an operating ceiling of around 20,000 ft (6,096 m)."
-    },
-    "translations": {
-      "tr": {
-        "range": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "speed": {
-          "short_specs": "M0.85",
-          "full_dossier": "Maksimum hava hızı Mach 0.85 civarındaydı."
-        },
-        "payload": {
-          "short_specs": "300kg",
-          "full_dossier": "Maksimum 300 kg yük taşıyordu."
-        },
-        "ceiling": {
-          "short_specs": "20kft",
-          "full_dossier": "Çalışma tavanı yaklaşık 20,000 ft (6,096 m) idi."
-        }
-      },
-      "ru": {
-        "range": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "speed": {
-          "short_specs": "M0.85",
-          "full_dossier": "Максимальная воздушная скорость составляла около Мах 0,85."
-        },
-        "payload": {
-          "short_specs": "300kg",
-          "full_dossier": "Максимальная нагрузка составляла 300 кг."
-        },
-        "ceiling": {
-          "short_specs": "20kft",
-          "full_dossier": "Рабочий потолок составлял около 20 000 футов (6096 м)."
-        }
-      },
-      "ar": {
-        "range": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "speed": {
-          "short_specs": "M0.85",
-          "full_dossier": "كانت السرعة القصوى في الهواء حول ماخ 0.85."
-        },
-        "payload": {
-          "short_specs": "300kg",
-          "full_dossier": "كان الحمل الأقصى 300 كجم."
-        },
-        "ceiling": {
-          "short_specs": "20kft",
-          "full_dossier": "كان السقف التشغيلي حول 20,000 قدم (6,096 م)."
-        }
-      },
-      "zh": {
-        "range": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "speed": {
-          "short_specs": "M0.85",
-          "full_dossier": "最大空速约为马赫0.85。"
-        },
-        "payload": {
-          "short_specs": "300kg",
-          "full_dossier": "最大载荷为300公斤。"
-        },
-        "ceiling": {
-          "short_specs": "20kft",
-          "full_dossier": "工作天花板约为20,000英尺（6,096米）。"
-        }
-      }
-    }
-  },
-  {
-    "id": "phoenix-ghost",
-    "catId": "4",
-    "name": "Phoenix Ghost",
-    "featured": false,
-    "wikiUrl": "https://en.wikipedia.org/wiki/Phoenix_Ghost",
-    "images": [
-      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/phoenix-ghost/1.jpg",
-      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/phoenix-ghost/2.jpg",
-      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/phoenix-ghost/3.jpg"
-    ],
-    "model": null,
-    "dangerLevel": 50,
-    "threatType": "Unmanned Aerial System (UAS)",
-    "metrics": null,
-    "country": "United States",
-    "countryCode": "USA",
-    "specs": {
-      "role": "Loitering munition",
-      "range": "up to 372 mi",
-      "speed": null,
-      "payload": "up to 50 lb",
-      "endurance": "up to 6 hours",
-      "guidance": "Autonomous; manual",
-      "crew": null,
-      "weight": "up to 205 lb",
-      "engine": null,
-      "ceiling": null,
-      "altitude": null,
-      "armour": null,
-      "primary_armament": null,
-      "secondary_armament": null,
-      "launch_platform": null,
-      "transport": null
-    },
-    "short_specs": {
-      "range": "372mi",
-      "speed": null,
-      "payload": "50lb",
-      "endurance": "6hr",
-      "guidance": null,
-      "crew": null,
-      "weight": "205lb",
-      "engine": null,
-      "ceiling": null,
-      "altitude": null,
-      "armour": null,
-      "primary_armament": null,
-      "secondary_armament": null,
-      "launch_platform": null,
-      "transport": null
-    },
-    "full_dossier": {
-      "range": "The Phoenix Ghost has a range of up to 372 miles, with some variants having a range of 74 miles or 293 miles.",
-      "speed": null,
-      "payload": "The payload capacity of the Phoenix Ghost varies by variant, with some carrying up to 50 pounds or 8.1 pounds.",
-      "endurance": "The Phoenix Ghost can loiter for up to six hours, with some variants having an endurance of 1-2 hours, 4.5 hours, or 4.6 hours.",
-      "guidance": "The Phoenix Ghost has autonomous and manual guidance capabilities.",
-      "crew": null,
-      "weight": "The weight of the Phoenix Ghost varies by variant, with some weighing up to 205 pounds or 185 pounds.",
-      "engine": null,
-      "ceiling": null,
-      "altitude": null,
-      "armour": null,
-      "primary_armament": null,
-      "secondary_armament": null,
-      "launch_platform": null,
-      "transport": null
-    },
-    "translations": {
-      "tr": {
-        "range": {
-          "short_specs": "372mi",
-          "full_dossier": "The Phoenix Ghost has a range of up to 372 miles, with some variants having a range of 74 miles or 293 miles."
-        },
-        "speed": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "payload": {
-          "short_specs": "50lb",
-          "full_dossier": "The payload capacity of the Phoenix Ghost varies by variant, with some carrying up to 50 pounds or 8.1 pounds."
-        },
-        "endurance": {
-          "short_specs": "6hr",
-          "full_dossier": "The Phoenix Ghost can loiter for up to six hours, with some variants having an endurance of 1-2 hours, 4.5 hours, or 4.6 hours."
-        },
-        "guidance": {
-          "short_specs": null,
-          "full_dossier": "The Phoenix Ghost has autonomous and manual guidance capabilities."
-        },
-        "crew": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "weight": {
-          "short_specs": "205lb",
-          "full_dossier": "The weight of the Phoenix Ghost varies by variant, with some weighing up to 205 pounds or 185 pounds."
-        },
-        "engine": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "ceiling": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "altitude": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "armour": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "primary_armament": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "secondary_armament": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "launch_platform": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "transport": {
-          "short_specs": null,
-          "full_dossier": null
-        }
-      },
-      "ru": {
-        "range": {
-          "short_specs": "372ми",
-          "full_dossier": "The Phoenix Ghost has a range of up to 372 miles, with some variants having a range of 74 miles or 293 miles."
-        },
-        "speed": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "payload": {
-          "short_specs": "50фунт",
-          "full_dossier": "The payload capacity of the Phoenix Ghost varies by variant, with some carrying up to 50 pounds or 8.1 pounds."
-        },
-        "endurance": {
-          "short_specs": "6ч",
-          "full_dossier": "The Phoenix Ghost can loiter for up to six hours, with some variants having an endurance of 1-2 hours, 4.5 hours, or 4.6 hours."
-        },
-        "guidance": {
-          "short_specs": null,
-          "full_dossier": "The Phoenix Ghost has autonomous and manual guidance capabilities."
-        },
-        "crew": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "weight": {
-          "short_specs": "205фунт",
-          "full_dossier": "The weight of the Phoenix Ghost varies by variant, with some weighing up to 205 pounds or 185 pounds."
-        },
-        "engine": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "ceiling": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "altitude": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "armour": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "primary_armament": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "secondary_armament": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "launch_platform": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "transport": {
-          "short_specs": null,
-          "full_dossier": null
-        }
-      },
-      "ar": {
-        "range": {
-          "short_specs": "372 ميل",
-          "full_dossier": "The Phoenix Ghost has a range of up to 372 miles, with some variants having a range of 74 miles or 293 miles."
-        },
-        "speed": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "payload": {
-          "short_specs": "50 رطل",
-          "full_dossier": "The payload capacity of the Phoenix Ghost varies by variant, with some carrying up to 50 pounds or 8.1 pounds."
-        },
-        "endurance": {
-          "short_specs": "6 ساعة",
-          "full_dossier": "The Phoenix Ghost can loiter for up to six hours, with some variants having an endurance of 1-2 hours, 4.5 hours, or 4.6 hours."
-        },
-        "guidance": {
-          "short_specs": null,
-          "full_dossier": "The Phoenix Ghost has autonomous and manual guidance capabilities."
-        },
-        "crew": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "weight": {
-          "short_specs": "205 رطل",
-          "full_dossier": "The weight of the Phoenix Ghost varies by variant, with some weighing up to 205 pounds or 185 pounds."
-        },
-        "engine": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "ceiling": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "altitude": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "armour": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "primary_armament": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "secondary_armament": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "launch_platform": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "transport": {
-          "short_specs": null,
-          "full_dossier": null
-        }
-      },
-      "zh": {
-        "range": {
-          "short_specs": "372英里",
-          "full_dossier": "The Phoenix Ghost has a range of up to 372 miles, with some variants having a range of 74 miles or 293 miles."
-        },
-        "speed": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "payload": {
-          "short_specs": "50磅",
-          "full_dossier": "The payload capacity of the Phoenix Ghost varies by variant, with some carrying up to 50 pounds or 8.1 pounds."
-        },
-        "endurance": {
-          "short_specs": "6小时",
-          "full_dossier": "The Phoenix Ghost can loiter for up to six hours, with some variants having an endurance of 1-2 hours, 4.5 hours, or 4.6 hours."
-        },
-        "guidance": {
-          "short_specs": null,
-          "full_dossier": "The Phoenix Ghost has autonomous and manual guidance capabilities."
-        },
-        "crew": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "weight": {
-          "short_specs": "205磅",
-          "full_dossier": "The weight of the Phoenix Ghost varies by variant, with some weighing up to 205 pounds or 185 pounds."
-        },
-        "engine": {
-          "short_specs": null,
-          "full_dossier": null
-        },
-        "ceiling": {
-          "short_specs": null,
-          "full_dossier": null
-        }
-      }
-    }
-  },
-  {
-    "catId": "1",
-    "name": "IS-7",
-    "featured": false,
-    "id": "is-7",
-    "specs": null,
-    "dangerLevel": 99,
-    "threatType": "Heavy",
-    "wikiUrl": "https://en.wikipedia.org/wiki/IS-7",
-    "images": [
-      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/is-7/1.jpg",
-      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/is-7/2.jpg",
-      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/is-7/3.jpg"
-    ],
-    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/is-7.glb",
-    "translations": {
-      "ru": {
-        "short_specs": "68т, 130мм",
-        "full_dossier": "Тяжелый танк IS-7 весит 68 тонн, имеет 130-мм длинноствольную пушку S-70 и максимальную скорость 60 км/ч. Он имеет мощность к весу 15,4 л.с./т и бронирован 150-мм брони под углом 65° на верхней лобовой детали."
-      },
-      "tr": {
-        "short_specs": "68t, 130mm",
-        "full_dossier": "IS-7 ağır tankı 68 ton ağırlığa sahiptir, 130 mm uzun namlulu S-70 topuna sahiptir ve maksimum hızı 60 km/saattir. Güç-ağırlık oranı 15,4 bg/ton ve üst ön levhada 65° açıyla 150 mm zırhı vardır."
-      },
-      "ar": {
-        "short_specs": "68 طن، 130 ملم",
-        "full_dossier": "يتوفر دبابة IS-7 الثقيلة على وزن 68 طنا، وبمدفع 130 ملم S-70 ذو فوهة طويلة، وسرعة قصوى تبلغ 60 كم/ساعة. لديها نسبة قدرة إلى وزن تبلغ 15.4 حصان/طن، ودرع 150 ملم بزاوية 65° على اللوحة الأمامية العلوية."
-      },
-      "zh": {
-        "short_specs": "68吨, 130毫米",
-        "full_dossier": "IS-7重型坦克重68吨，配备130毫米长管S-70炮，最高速度60公里/小时。其动力重量比为15.4马力/吨，且上部车体前板装甲厚150毫米，倾斜角度65°。"
-      }
-    },
-    "country": null,
-    "countryCode": null,
-    "short_specs": "68t, 130mm",
-    "full_dossier": "The IS-7 heavy tank weighs 68 tonnes, has a 130 mm S-70 long-barrelled gun, and a top speed of 60 km/h. It has a power-to-weight ratio of 15.4 hp/tonne and is armoured with 150 mm of armor sloped at 65° on the upper glacis."
-  },
-  {
-    "catId": "4",
-    "name": "ZALA Gyrfalcon",
-    "featured": false,
-    "id": "zala-gyrfalcon",
-    "specs": {},
-    "translations": {
-      "tr": {
-        "full_dossier": "",
-        "short_specs": {}
-      },
-      "ru": {
-        "full_dossier": "",
-        "short_specs": {}
-      },
-      "ar": {
-        "full_dossier": "",
-        "short_specs": {}
-      },
-      "zh": {
-        "full_dossier": "",
-        "short_specs": {}
-      }
-    },
-    "dangerLevel": 60,
-    "threatType": "Electronic Warfare",
-    "wikiUrl": "https://en.wikipedia.org/wiki/Main_Page",
-    "images": [
-      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/zala-gyrfalcon/1.jpg",
-      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/zala-gyrfalcon/2.jpg",
-      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/zala-gyrfalcon/3.jpg"
-    ],
-    "model": null,
-    "country": null,
-    "countryCode": null,
-    "short_specs": {},
-    "full_dossier": ""
+    "full_dossier": "Jointly developed by Germany and Spain, the EADS Barracuda was a stealth jet-powered unmanned aerial vehicle used for aerial reconnaissance and combat, with a maximum air speed of around Mach 0.85 and an operating ceiling of around 6100 m."
   }
 ]

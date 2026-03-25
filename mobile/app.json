@@ -13,11 +13,21 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.alper.warassets"
+      "bundleIdentifier": "com.alper.warassets",
+      "config": {
+        "googleMaps": {
+          "apiKey": "[GCP_API_KEY]"
+        }
+      }
     },
     "android": {
       "package": "com.alper.warassets",
       "versionCode": 1,
+      "config": {
+        "googleMaps": {
+          "apiKey": "[GCP_API_KEY]"
+        }
+      },
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
