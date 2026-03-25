@@ -28,10 +28,10 @@ export const PerformanceRadar: React.FC<PerformanceRadarProps> = ({ metrics, isD
   }
 
   const data = [
-    { label: t('asset.firepower'), value: metrics.firepower },
-    { label: t('asset.mobility'), value: metrics.mobility },
-    { label: t('asset.stealth'), value: metrics.stealth },
-    { label: t('asset.durability'), value: metrics.durability },
+    { label: t('asset.firepower'), value: Number(metrics.firepower || 0) },
+    { label: t('asset.mobility'), value: Number(metrics.mobility || 0) },
+    { label: t('asset.stealth'), value: Number(metrics.stealth || 0) },
+    { label: t('asset.durability'), value: Number(metrics.durability || 0) },
   ];
 
   const angleStep = (Math.PI * 2) / data.length;

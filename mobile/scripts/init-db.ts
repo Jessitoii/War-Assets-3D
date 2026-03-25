@@ -147,6 +147,7 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
             images TEXT,
             country TEXT,
             countryCode TEXT,
+            metrics TEXT,
             FOREIGN KEY (catId) REFERENCES categories(id) ON DELETE CASCADE
           );
         `);
@@ -231,8 +232,8 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
         console.log(`[DB] Seeding ${MILITARY_ASSETS.length} assets...`);
 
         const assetStmt = await db.prepareAsync(
-          `INSERT OR REPLACE INTO assets (id, name, catId, img, model, dangerLevel, threatType, featured, specs, translations, wikiUrl, images, country, countryCode) 
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+          `INSERT OR REPLACE INTO assets (id, name, catId, img, model, dangerLevel, threatType, featured, specs, translations, wikiUrl, images, country, countryCode, metrics) 
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
         );
 
         try {
@@ -264,7 +265,8 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
               a.wikiUrl || null,
               a.images ? JSON.stringify(a.images) : null,
               a.country || null,
-              a.countryCode || null
+              a.countryCode || null,
+              a.metrics ? JSON.stringify(a.metrics) : null
             ]);
           }
           console.log('[DB] Asset seeding loop complete.');
@@ -417,6 +419,37 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
       });
     } catch (e) {
       console.error('[DB] Migration v25 FAILED:', e);
+    }
+  }
+
+  // v26 PROTOCOL: Performance Radar Data (Metrics)
+  if (currentVersion < 26) {
+    console.log('[DB] v26 Migration: Adding military metrics column...');
+    try {
+      await db.withExclusiveTransactionAsync(async () => {
+        try {
+          await db.execAsync("ALTER TABLE assets ADD COLUMN metrics TEXT;");
+        } catch (e) { } // Ignore if already exists
+
+        // Update existing assets with metrics from JSON
+        const MILITARY_ASSETS = require('../assets/data/military-assets-v28-optimized.json');
+        const updateStmt = await db.prepareAsync('UPDATE assets SET metrics = ? WHERE id = ?');
+
+        try {
+          for (const a of MILITARY_ASSETS) {
+            if (a.metrics) {
+              await updateStmt.executeAsync([JSON.stringify(a.metrics), a.id]);
+            }
+          }
+        } finally {
+          await updateStmt.finalizeAsync();
+        }
+
+        await db.execAsync('PRAGMA user_version = 26;');
+        console.log('[DB] Migration v26 complete.');
+      });
+    } catch (e) {
+      console.error('[DB] Migration v26 FAILED:', e);
     }
   }
 }

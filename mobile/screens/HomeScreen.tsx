@@ -25,7 +25,7 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
   const currentTheme = useStore((state) => state.theme);
   const isDark = currentTheme === 'dark';
   const { t } = useTranslation();
-  
+
   const featuredAssets = useStore(useShallow(selectFeaturedAssets));
   const trendingAssets = useStore(useShallow(selectTrendingAssets));
   const allAssets = useStore((state) => state.assets);
@@ -43,7 +43,7 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
     async function loadData() {
       try {
         const db = await initDB();
-        
+
         // --- TACTICAL SYNC HEALTH CHECK ---
         try {
           const syncResponse = await fetch(`${CDN_CONFIG.BASE_URL}/sync-check`, { signal: AbortSignal.timeout(3000) });
@@ -59,7 +59,7 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
           // Satellite link weak. Operating with local cached intel.
         }
 
-        
+
         // Fetch Categories
         const cats: any[] = await db.getAllAsync('SELECT * FROM categories');
         if (cats.length > 0) {
@@ -83,8 +83,8 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
             country: a.country,
             countryCode: a.countryCode,
             specs: a.specs ? JSON.parse(a.specs) : undefined,
-            translations: a.translations ? JSON.parse(a.translations) : undefined
-
+            translations: a.translations ? JSON.parse(a.translations) : undefined,
+            metrics: a.metrics ? JSON.parse(a.metrics) : undefined
           }));
           setAssets(mappedAssets);
         }
@@ -125,19 +125,19 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
     <SafeAreaView style={[styles.safeArea, { backgroundColor: isDark ? theme.colors.backgroundDark : theme.colors.backgroundLight }]}>
       <StatusBar barStyle={isDark ? 'light-content' : 'dark-content'} />
       <View style={styles.container}>
-        <HeaderBar 
-          onSearchPress={() => navigation.navigate('SearchFilter')} 
+        <HeaderBar
+          onSearchPress={() => navigation.navigate('SearchFilter')}
           onComparePress={() => navigation.navigate('Comparison')}
           onFavoritesPress={() => navigation.navigate('Favorites')}
           onSettingsPress={() => navigation.navigate('Settings')}
           onMapPress={() => navigation.navigate('GlobalMap')}
         />
-        
+
         <ScrollView showsVerticalScrollIndicator={false}>
           <SearchBar onPress={() => navigation.navigate('SearchFilter')} />
 
-          <TouchableOpacity 
-            style={styles.hotspotsBanner} 
+          <TouchableOpacity
+            style={styles.hotspotsBanner}
             onPress={() => navigation.navigate('GlobalMap')}
           >
             <View style={styles.hotspotsContent}>

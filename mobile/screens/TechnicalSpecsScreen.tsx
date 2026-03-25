@@ -183,7 +183,7 @@ export const TechnicalSpecsScreen: React.FC<Props> = ({ route, navigation }) => 
         </View>
 
         <View style={styles.chartSection}>
-          <PerformanceRadar metrics={(displaySpecs as any)?.metrics || (asset as any)?.specs?.metrics || (asset as any)?.metrics} isDark={isDark} />
+          <PerformanceRadar metrics={(asset as any)?.metrics || (asset as any)?.specs?.metrics} isDark={isDark} />
         </View>
 
         {/* --- TACTICAL DOSSIER SECTION --- */}
