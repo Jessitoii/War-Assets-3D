@@ -65,7 +65,6 @@ export const TechnicalSpecsScreen: React.FC<Props> = ({ route, navigation }) => 
         </View>
 
         <View style={styles.chartSection}>
-          <Text style={[styles.chartTitle, { color: textColor }]}>{t('asset.performance_metrics')}</Text>
           <PerformanceRadar metrics={asset.metrics} isDark={isDark} />
         </View>
       </ScrollView>

@@ -7,7 +7,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     },
@@ -46,7 +46,8 @@
       "expo-localization",
       "expo-sqlite",
       "expo-web-browser",
-      "@react-native-firebase/app"
+      "@react-native-firebase/app",
+      "expo-font"
     ],
     "extra": {
       "eas": {

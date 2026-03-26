@@ -17,12 +17,12 @@ export const SpecsSummary: React.FC<SpecsSummaryProps> = ({ asset, isDark, onPre
   const currentLang = i18n.language || 'en';
 
   // Tactical Intelligence Selector: Priority (Current Lang -> EN)
-  const langSpecs = asset.translations?.[currentLang]?.short_specs || asset.translations?.[currentLang]?.specs;
-  const enFallback = asset.short_specs || asset.specs;
+  const langSpecs = asset.translations?.[currentLang]?.short_specs;
+  const enFallback = asset.short_specs;
 
   const displaySpecs = langSpecs || enFallback || {};
-  const countryCode = asset.translations?.[currentLang]?.countryCode || asset.specs?.countryCode || asset.countryCode;
-  const countryName = asset.translations?.[currentLang]?.country || asset.specs?.country || asset.country;
+  const countryCode = asset.countryCode;
+  const countryName = asset.country;
 
   const cardBg = isDark ? theme.colors.secondary : '#FFF';
   const textColor = isDark ? '#FFF' : '#000';

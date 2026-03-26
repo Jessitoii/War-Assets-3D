@@ -11,6 +11,7 @@ const { documentDirectory } = FileSystem as any;
 let dbInstance: SQLite.SQLiteDatabase | null = null;
 let initializationPromise: Promise<SQLite.SQLiteDatabase> | null = null;
 let isDbReady = false;
+let migrationLock: Promise<void> | null = null;
 
 const DB_NAME = 'war-assets-v29.db';
 
@@ -103,9 +104,16 @@ export async function runQuery<T>(queryFn: (db: SQLite.SQLiteDatabase) => Promis
 }
 
 async function applyMigrations(db: SQLite.SQLiteDatabase) {
-  const versionResult: any = await db.getFirstAsync('PRAGMA user_version;');
-  const currentVersion = versionResult?.user_version || 0;
-  console.log(`[DB] Engine. Version: ${currentVersion}`);
+  if (migrationLock) {
+    console.log('[DB] Migration in progress, waiting...');
+    return migrationLock;
+  }
+
+  migrationLock = (async () => {
+    try {
+      const versionResult: any = await db.getFirstAsync('PRAGMA user_version;');
+      const currentVersion = versionResult?.user_version || 0;
+      console.log(`[DB] Engine. Version: ${currentVersion}`);
 
   // v20 PROTOCOL: Multi-image support
   if (currentVersion < 20) {
@@ -397,7 +405,7 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
         } catch (e) { } // Ignore if already exists
 
         // 2. FORCE RE-SEED TO INJECT NEW DATA FROM JSON
-        const MILITARY_ASSETS = require('../assets/data/military-assets-v27.json');
+        const MILITARY_ASSETS = require('../assets/data/military-assets-v29.json');
         const updateStmt = await db.prepareAsync('UPDATE assets SET country = ?, countryCode = ? WHERE id = ?');
 
         try {
@@ -538,12 +546,25 @@ async function applyMigrations(db: SQLite.SQLiteDatabase) {
     console.log('[DB] v30 Migration: Adding notificationsEnabled column...');
     try {
       await db.execAsync("ALTER TABLE app_state ADD COLUMN notificationsEnabled BOOLEAN NOT NULL DEFAULT 1;");
-      await db.execAsync('PRAGMA user_version = 30;');
       console.log('[DB] Migration v30 complete.');
     } catch (e: any) {
-      console.error('[DB] Migration v30 FAILED:', e);
+      if (e.message?.includes('duplicate column name')) {
+        console.log('[DB] Migration v30: notificationsEnabled already exists, skipping ADD COLUMN.');
+      } else {
+        console.error('[DB] Migration v30 FAILED:', e);
+      }
     }
+    await db.execAsync('PRAGMA user_version = 30;');
   }
+} catch (error) {
+  console.error('[DB] Migration error in applyMigrations:', error);
+  throw error;
+} finally {
+  migrationLock = null;
+}
+})();
+
+  return migrationLock;
 }
 
 /**
@@ -562,6 +583,14 @@ export const dbHelper = {
   updateNotificationsEnabled: (enabled: boolean) => {
     if (!isDbReady) return Promise.resolve();
     return runQuery(db => db.runAsync('UPDATE app_state SET notificationsEnabled = ? WHERE id = 1', [enabled ? 1 : 0]));
+  },
+  updateLanguage: (lang: string) => {
+    if (!isDbReady) return Promise.resolve();
+    return runQuery(db => db.runAsync('UPDATE app_state SET language = ? WHERE id = 1', [lang]));
+  },
+  updateSupportsAR: (supported: boolean) => {
+    if (!isDbReady) return Promise.resolve();
+    return runQuery(db => db.runAsync('UPDATE app_state SET supportsAR = ? WHERE id = 1', [supported ? 1 : 0]));
   },
 
   // Reset Function for debugging

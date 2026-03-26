@@ -2,6 +2,16 @@ import React, { useEffect, useState, useRef } from 'react';
 import analytics from '@react-native-firebase/analytics';
 import messaging from '@react-native-firebase/messaging';
 import { Alert } from 'react-native';
+import Constants from 'expo-constants';
+
+// Helper to check for native firebase availability
+const isFirebaseAvailable = () => {
+  try {
+    return !!(analytics && analytics());
+  } catch (e) {
+    return false;
+  }
+};
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { LoadingScreen } from '../screens/LoadingScreen';
@@ -125,19 +135,23 @@ export const NavigationRoot = () => {
     setupDb();
   }, [setFirstLaunch, setOnboardingProgress, setFavorites, setComparisonQueue, setTheme]);
 
-  if (!dbReady) {
-    return null; // or a simple loading indicator
-  }
-
   useEffect(() => {
     // Log app boot/open for 'Active Users' verification
-    analytics().logAppOpen().catch(e => console.warn('App open log failed:', e));
+    if (isFirebaseAvailable()) {
+      analytics().logAppOpen().catch(e => console.warn('App open log failed:', e));
+    } else {
+      console.warn('[Firebase] Analytics not available (probably Expo Go)');
+    }
   }, []);
 
   useEffect(() => {
     if (!notificationsEnabled) return;
 
     const setupMessaging = async () => {
+      if (!isFirebaseAvailable()) {
+        console.warn('[Firebase] Messaging not available');
+        return;
+      }
       try {
         const authStatus = await messaging().requestPermission();
         const enabled =
@@ -152,6 +166,8 @@ export const NavigationRoot = () => {
         console.warn('[FCM] Setup error:', e);
       }
     };
+
+    if (!isFirebaseAvailable()) return;
 
     setupMessaging();
 
@@ -181,6 +197,10 @@ export const NavigationRoot = () => {
     };
   }, [notificationsEnabled]);
 
+  if (!dbReady) {
+    return null; // or a simple loading indicator
+  }
+
   return (
     <NavigationContainer
       ref={navigationRef}
@@ -194,13 +214,15 @@ export const NavigationRoot = () => {
         if (previousRouteName !== currentRouteName && currentRouteName) {
           // Log screen_view using the specific method requested/legacy if available, 
           // or logScreenView for modern SDKs
-          try {
-            await analytics().logScreenView({
-              screen_name: currentRouteName,
-              screen_class: currentRouteName,
-            });
-          } catch (e) {
-            console.warn('Analytics error:', e);
+          if (isFirebaseAvailable()) {
+            try {
+              await analytics().logScreenView({
+                screen_name: currentRouteName,
+                screen_class: currentRouteName,
+              });
+            } catch (e) {
+              console.warn('Analytics error:', e);
+            }
           }
         }
         routeNameRef.current = currentRouteName;

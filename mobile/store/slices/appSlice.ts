@@ -39,18 +39,16 @@ export const createAppSlice = (set: any): AppState => ({
   },
   setLanguage: (lang) => {
     set((state: any) => ({ ...state, language: lang }));
-    SQLite.openDatabaseAsync('war-assets.db').then(db => {
-      db.runAsync('UPDATE app_state SET language = ? WHERE id = 1', [lang])
-        .catch(e => console.error('Failed to persist language:', e));
+    import('../../scripts/init-db').then(({ dbHelper }) => {
+      dbHelper.updateLanguage(lang).catch(e => console.error('Failed to persist language:', e));
     });
   },
   setArEnabled: (enabled) =>
     set((state: any) => ({ ...state, arEnabled: enabled })),
   setSupportsAR: (supported) => {
     set((state: any) => ({ ...state, supportsAR: supported }));
-    SQLite.openDatabaseAsync('war-assets.db').then(db => {
-      db.runAsync('UPDATE app_state SET supportsAR = ? WHERE id = 1', [supported ? 1 : 0])
-        .catch(e => console.error('Failed to persist supportsAR:', e));
+    import('../../scripts/init-db').then(({ dbHelper }) => {
+      dbHelper.updateSupportsAR(supported).catch(e => console.error('Failed to persist supportsAR:', e));
     });
   },
   setOnboardingProgress: (page) =>
