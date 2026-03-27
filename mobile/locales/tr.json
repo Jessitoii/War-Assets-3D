@@ -64,7 +64,9 @@
     "toggle_theme": "Uygulama temasını değiştir",
     "view_3d": "3 Boyutlu Görüntüle",
     "view_asset_intel": "VARLIK İSTİHBARATINI GÖRÜNTÜLE",
-    "view_on_wiki_fallback": "Ham Wikipedia sayfasını görüntüle"
+    "view_on_wiki_fallback": "Ham Wikipedia sayfasını görüntüle",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Varlık Ekle",

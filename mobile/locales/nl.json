@@ -64,7 +64,9 @@
     "toggle_theme": "Thema wisselen",
     "view_3d": "Toon in 3-D",
     "view_asset_intel": "TOON OBJECTINFORMATIE",
-    "view_on_wiki_fallback": "Toon ruwe Wikipedia-pagina"
+    "view_on_wiki_fallback": "Toon ruwe Wikipedia-pagina",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Object Toevoegen",

@@ -64,7 +64,9 @@
     "toggle_theme": "Przełącz motyw aplikacji",
     "view_3d": "Widok w 3-D",
     "view_asset_intel": "ZOBACZ DANE WYWIADU",
-    "view_on_wiki_fallback": "Zobacz surową stronę Wikipedii"
+    "view_on_wiki_fallback": "Zobacz surową stronę Wikipedii",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Dodaj Obiekt",

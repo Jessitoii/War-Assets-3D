@@ -64,7 +64,9 @@
     "toggle_theme": "החלף ערכת נושא",
     "view_3d": "הצג בתלת-מימד",
     "view_asset_intel": "הצג מודיעין נכס",
-    "view_on_wiki_fallback": "הצג דף ויקיפדיה מקורי"
+    "view_on_wiki_fallback": "הצג דף ויקיפדיה מקורי",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "הוסף נכס",

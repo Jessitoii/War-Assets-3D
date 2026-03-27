@@ -64,7 +64,9 @@
     "toggle_theme": "تبديل سمة التطبيق",
     "view_3d": "عرض ثلاثي الأبعاد",
     "view_asset_intel": "عرض استخبارات الأصل",
-    "view_on_wiki_fallback": "عرض صفحة ويكيبيديا الخام"
+    "view_on_wiki_fallback": "عرض صفحة ويكيبيديا الخام",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "إضافة أصل",

@@ -64,7 +64,9 @@
     "toggle_theme": "تغییر پوسته برنامه",
     "view_3d": "مشاهده سه بعدی",
     "view_asset_intel": "مشاهده اطلاعات تاکتیکی",
-    "view_on_wiki_fallback": "مشاهده صفحه خام ویکی‌پدیا"
+    "view_on_wiki_fallback": "مشاهده صفحه خام ویکی‌پدیا",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "افزودن دارایی",

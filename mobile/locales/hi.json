@@ -64,7 +64,9 @@
     "toggle_theme": "थीम बदलें",
     "view_3d": "3-D में देखें",
     "view_asset_intel": "परिसंपत्ति खुफिया जानकारी देखें",
-    "view_on_wiki_fallback": "विकिपीडια पृष्ठ देखें"
+    "view_on_wiki_fallback": "विकिपीडια पृष्ठ देखें",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "परिसंपत्ति जोड़ें",

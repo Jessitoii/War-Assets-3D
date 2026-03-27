@@ -50361,5 +50361,1399 @@
       "origin": "Developed by Israel in response to denial of Chieftain tank sales and heavy armor losses during the 1973 Yom Kippur War, emphasizing indigenous design and battlefield survivability.",
       "designer": "Initiated by Israel Tal, leveraging combat lessons from the Yom Kippur War to create a uniquely Israeli main battle tank focused on crew protection and rapid field maintenance."
     }
+  },
+  {
+    "catId": "1",
+    "name": "BTR-3E 90",
+    "featured": false,
+    "id": "btr-3e-90",
+    "dangerLevel": 80,
+    "threatType": "cruise",
+    "wikiUrl": "https://en.wikipedia.org/wiki/BTR-3",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/btr-3e-90/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/btr-3e-90/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/btr-3e-90/3.jpg"
+    ],
+    "model": null,
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "type": "Zırhlı Personel Taşıyıcı",
+          "origin": "Ukrayna",
+          "service": "2000–ğğüğüm",
+          "used_by": "Ukrayna Kara Kuvvetleri, Ukrayna Ulusal Muhafızları, Nijerya, Tayland Kraliyet Ordusu, Myanmar Ordusu",
+          "wars": "Donbas Savaşı, Myanmar İç Savaşı, 2020 Dağık Karabağ Savaşı, Myanmar İç Savaşı (2021–ğğüğüm), Ukrayna’ya Rus istilası, 2025 Kamboğya–Tayland Çatışması",
+          "designer": "",
+          "design_date": "2000",
+          "manufacturer": "Harkiv Morozov Makine İmalat Tasarım Bürosu",
+          "production_date": "2001",
+          "weight": "16.4 ton",
+          "length": "7.65 m",
+          "crew": "",
+          "speed": ""
+        },
+        "full_dossier": {}
+      },
+      "ru": {
+        "short_specs": {
+          "type": "Автомобильный пехотный танк",
+          "origin": "Украина",
+          "service": "2000–настоящее время",
+          "used_by": "Сухопутные войска Украины, Национальная гвардия Украины, Нигерия, Тайландская королевская армия, Мянмарская армия",
+          "wars": "Война в Донбассе, Внутренний конфликт в Мянмаре, Война в Нагорном Карабахе (2020), Гражданская война в Мянмаре (2021 — настоящее время), Российское вторжение Украину, Камбоджьо-Тайландский конфликт (2025)",
+          "designer": "",
+          "design_date": "2000",
+          "manufacturer": "Харьковское конструкторское бюро Машиностроения Морозова",
+          "production_date": "2001",
+          "weight": "16.4 тонны",
+          "length": "7.65 м"
+        },
+        "full_dossier": {}
+      },
+      "ar": {
+        "short_specs": {
+          "type": "مركبة مدفعة لنقل المركبات",
+          "origin": "أوكرانيا",
+          "service": "2000–اليوم",
+          "used_by": "القوات الأرضية الأوكرانية, حرس الوطن الأوكراني, نيجيريا, جيش المملكة الثائلاندي, جيش ميانمار",
+          "wars": "حرب دونباس, الصراع الداخلي في ميانمار, الصراع في ناغورنو كاراباخ (2020), حرب الموطنين في ميانمار (2021 – اليوم), الشروط الروسي لأوكرانيا, الصراع بين كمبوديا و تايلاند (2025)",
+          "designer": "",
+          "design_date": "2000",
+          "manufacturer": "مكتب تصميم المسين الخاركوف موروزوف",
+          "production_date": "2001",
+          "weight": "16.4 تون",
+          "length": "7.65 م"
+        },
+        "full_dossier": {}
+      },
+      "zh": {
+        "short_specs": {
+          "type": "境防人都车",
+          "origin": "八共国",
+          "service": "2000–现",
+          "used_by": "八共国地是飞庆,八共国国家保防飞庆,尼邦利亚,天津亚国庆,駕明国庆",
+          "wars": "杰巴汗地战造,駕明国内部战造,—2020年长汗海亚国之都战造,駕明国内部战造(2021年–现),使国八为八共国之都战造,―2025年卡波那–天津亚国之都战造",
+          "designer": "",
+          "design_date": "2000",
+          "manufacturer": "哈尔林汗海民为机械工业计划部",
+          "production_date": "2001",
+          "weight": "16.4 個",
+          "length": "7.65 米"
+        },
+        "full_dossier": {}
+      }
+    },
+    "country": "Ukraine",
+    "countryCode": "UA",
+    "short_specs": {
+      "type": "Armored personnel carrier",
+      "origin": "Ukraine",
+      "service": "2000–present",
+      "used_by": "Ukrainian Ground Forces, National Guard of Ukraine, Nigeria, Royal Thai Army, Myanmar Army",
+      "wars": "War in Donbas, Internal conflict in Myanmar, 2020 Nagorno-Karabakh conflict, Myanmar civil war (2021-present), Russian invasion of Ukraine, 2025 Cambodia–Thailand conflict",
+      "designer": "",
+      "design_date": "2000",
+      "manufacturer": "Kharkiv Morozov Machine Building Design Bureau",
+      "production_date": "2001",
+      "weight": "16.4 tonnes",
+      "length": "7.65 m"
+    },
+    "full_dossier": {}
+  },
+  {
+    "catId": "3",
+    "name": "S-300PMU1",
+    "featured": false,
+    "id": "s-300pmu1",
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "origin": "Sovyetler Birliği",
+          "type": "Uzun menzilli yüzeyden-havaya ve balistik füze karşıtı sistem",
+          "service": "1978–günümüz",
+          "range": "Üs istasyonundan 30-40 km",
+          "ground target range": "120 km",
+          "ballistic trajectory range": "400 km",
+          "targets": "100 hedefe kadar",
+          "missiles per target": "her hedef için 12 füze",
+          "targets engaged simultaneously": "6 farklı hedefe kadar aynı anda"
+        },
+        "full_dossier": {
+          "interoperability": "Farklı varyantlar arasındaki operasyonel uyum sınırlıdır",
+          "automatic capabilities": "Sistem, hedeflerin tamamen otomatik olarak başlatılmasına ve etkili bir şekilde yönetilmesine izin verir",
+          "manual intervention": "Karmaşık bir ortamda manuel müdahale mümkündür",
+          "target engagement": "Sistem, balistik füzeleri ve uçakları hedef alabilir",
+          "ground target capability": "Sistem, yer hedeflerini imha edebilir",
+          "launcher capability": "Dikey olarak fırlatılan füzeleri, fırlatma platformunu döndürmeden her yöndeki uçan hedeflerle savaşma kabiliyetine sahiptir"
+        }
+      },
+      "ru": {
+        "short_specs": {
+          "origin": "Советский Союз",
+          "type": "Система дальнего радиолокационного обнаружения и противоракетной обороны",
+          "service": "1978–настоящее время",
+          "range": "30-40 км от базовой станции",
+          "ground target range": "120 км",
+          "ballistic trajectory range": "400 км",
+          "targets": "до 100 целей",
+          "missiles per target": "до 12 ракет на цель",
+          "targets engaged simultaneously": "до 6 разных целей одновременно"
+        },
+        "full_dossier": {
+          "interoperability": "Взаимодействие между разными вариантами ограничено",
+          "automatic capabilities": "Система позволяет полностью автоматически инициировать и эффективно управлять целями",
+          "manual intervention": "Возможна ручная интервенция в сложной среде",
+          "target engagement": "Система может поражать баллистические ракеты, а также самолеты",
+          "ground target capability": "Система может уничтожать наземные цели",
+          "launcher capability": "Ее вертикально запускаемые ракеты позволяют поражать воздушные цели в любом направлении без поворота пусковой установки"
+        }
+      },
+      "ar": {
+        "short_specs": {
+          "origin": "الاتحاد السوفيتي",
+          "type": "نظام صواريخ أرض-جو بعيد المدى ومكافحة الصواريخ البالستية",
+          "service": "1978–حتى الآن",
+          "range": "30-40 كم من المحطة الأساسية",
+          "ground target range": "120 كم",
+          "ballistic trajectory range": "400 كم",
+          "targets": "حتى 100 هدف",
+          "missiles per target": "حتى 12 صاروخ لكل هدف",
+          "targets engaged simultaneously": "حتى 6 أهداف مختلفة في نفس الوقت"
+        },
+        "full_dossier": {
+          "interoperability": "التآزر بين الإصدارات المختلفة محدود",
+          "automatic capabilities": "النظام يسمح ببدء وتشغيل أهداف آلي بالكامل",
+          "manual intervention": "يمكن التدخل اليدوي في بيئة معقدة",
+          "target engagement": "النظام يمكن أن يتعامل مع الصواريخ البالستية وكذلك الطائرات",
+          "ground target capability": "النظام يمكن أن يدمر الأهداف الأرضية",
+          "launcher capability": "صواريخه المطلقة رأسيًا تسمح بمهاجمة الأهداف الجوية في أي اتجاه دون دوران منصة الإطلاق"
+        }
+      },
+      "zh": {
+        "short_specs": {
+          "origin": "苏联",
+          "type": "远程地对空和反弹道导弹系统",
+          "service": "1978年至今",
+          "range": "基站30-40公里",
+          "ground target range": "120公里",
+          "ballistic trajectory range": "400公里",
+          "targets": "最多100个目标",
+          "missiles per target": "每个目标最多12枚导弹",
+          "targets engaged simultaneously": "同时最多6个不同的目标"
+        },
+        "full_dossier": {
+          "interoperability": "不同版本之间的互操作性有限",
+          "automatic capabilities": "系统允许完全自动地启动和有效地管理目标",
+          "manual intervention": "在复杂环境中可以进行手动干预",
+          "target engagement": "系统可以攻击弹道导弹和飞机",
+          "ground target capability": "系统可以摧毁地面目标",
+          "launcher capability": "其垂直发射的导弹可以在任何方向上攻击空中目标，而无需转动发射器"
+        }
+      }
+    },
+    "dangerLevel": 9,
+    "threatType": "High-altitude, high-speed airborne threats",
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-300_missile_system",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-300pmu1/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-300pmu1/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-300pmu1/3.jpg"
+    ],
+    "model": null,
+    "country": "Russia",
+    "countryCode": "RU",
+    "short_specs": {
+      "origin": "Soviet Union",
+      "type": "Long-range surface-to-air and anti-ballistic missile system",
+      "service": "1978–present",
+      "range": "30-40 km from the base station",
+      "ground target range": "120 km",
+      "ballistic trajectory range": "400 km",
+      "targets": "up to 100 targets",
+      "missiles per target": "up to 12 missiles",
+      "targets engaged simultaneously": "up to 6 different targets"
+    },
+    "full_dossier": {
+      "interoperability": "Interoperability between different variants is limited",
+      "automatic capabilities": "The system allows for fully automatic initiation and effective management of targets",
+      "manual intervention": "Manual intervention is possible in a complex environment",
+      "target engagement": "The system can engage ballistic missiles as well as aircraft",
+      "ground target capability": "The system can destroy ground targets",
+      "launcher capability": "Its vertically-launched missiles allow for the engagement of flying targets in any direction without traversing the launcher"
+    }
+  },
+  {
+    "catId": "5",
+    "name": "USS Maine",
+    "featured": false,
+    "id": "uss-maine",
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "country": "Birleşik Devletler",
+          "namesake": "Amerika Birleşik Devletleri'ndeki Maine eyaleti",
+          "ordered": "5 Ekim 1988",
+          "builder": "General Dynamics Electric Boat",
+          "laid_down": "3 Temmuz 1990",
+          "launched": "16 Temmuz 1994",
+          "commissioned": "29 Temmuz 1995",
+          "homeport": "Bangor, Washington",
+          "motto": "Liderlik, Barış, Uyanıklık",
+          "class": "Ohio sınıfı balistik füze denizaltısı",
+          "displacement": "deplasman",
+          "length": "uzunluk",
+          "beam": "genişlik",
+          "draft": "su çekimi",
+          "propulsion": "itme",
+          "speed": "hız",
+          "test_depth": "test derinliği",
+          "complement": "Mürettebat",
+          "armament": "silahlar"
+        },
+        "full_dossier": {}
+      },
+      "ru": {
+        "short_specs": {
+          "country": "Соединенные Штаты",
+          "namesake": "штат Мэн в США",
+          "ordered": "5 октября 1988",
+          "builder": "General Dynamics Electric Boat",
+          "laid_down": "3 июля 1990",
+          "launched": "16 июля 1994",
+          "commissioned": "29 июля 1995",
+          "homeport": "Бэнгор, Вашингтон",
+          "motto": "Лидерство, Мир, Бдительность",
+          "class": "подводная лодка класса Огайо",
+          "displacement": "водоизмещение",
+          "length": "длина",
+          "beam": "ширина",
+          "draft": "осадка",
+          "propulsion": "движитель",
+          "speed": "скорость",
+          "test_depth": "тестовая глубина",
+          "complement": "экипаж",
+          "armament": "вооружение"
+        },
+        "full_dossier": {}
+      },
+      "ar": {
+        "short_specs": {
+          "country": "الولايات المتحدة",
+          "namesake": "ولاية مين في الولايات المتحدة",
+          "ordered": "5 أكتوبر 1988",
+          "builder": "جنرال دايناميكس إلكتريك بوت",
+          "laid_down": "3 يوليو 1990",
+          "launched": "16 يوليو 1994",
+          "commissioned": "29 يوليو 1995",
+          "homeport": "بانغور، واشنطن",
+          "motto": "القيادة، السلام، اليقظة",
+          "class": "غواصة من فئة أوهايو",
+          "displacement": "الإزاحة",
+          "length": "الطول",
+          "beam": "العرض",
+          "draft": "الغاطس",
+          "propulsion": "الدفع",
+          "speed": "السرعة",
+          "test_depth": "عمق الاختبار",
+          "complement": "الطاقم",
+          "armament": "التسليح"
+        },
+        "full_dossier": {}
+      },
+      "zh": {
+        "short_specs": {
+          "country": "美国",
+          "namesake": "美国缅因州",
+          "ordered": "1988年10月5日",
+          "builder": "通用动力电船公司",
+          "laid_down": "1990年7月3日",
+          "launched": "1994年7月16日",
+          "commissioned": "1995年7月29日",
+          "homeport": "华盛顿州班戈尔",
+          "motto": "领导、和平、警惕",
+          "class": "俄亥俄级弹道导弹潜艇",
+          "displacement": "排水量",
+          "length": "长度",
+          "beam": "宽度",
+          "draft": "吃水深度",
+          "propulsion": "推进系统",
+          "speed": "速度",
+          "test_depth": "测试深度",
+          "complement": "船员",
+          "armament": "武器"
+        },
+        "full_dossier": {}
+      }
+    },
+    "dangerLevel": 90,
+    "threatType": "Nuclear-powered Ballistic Missile Submarine",
+    "wikiUrl": "https://en.wikipedia.org/wiki/USS_Maine_(SSBN-741)",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/uss-maine/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/uss-maine/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/uss-maine/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/uss-maine.glb",
+    "short_specs": {
+      "country": "United States",
+      "namesake": "The U.S. state of Maine",
+      "ordered": "5 October 1988",
+      "builder": "General Dynamics Electric Boat",
+      "laid_down": "3 July 1990",
+      "launched": "16 July 1994",
+      "commissioned": "29 July 1995",
+      "homeport": "Bangor, Washington",
+      "motto": "Leadership, Peace, Vigilance",
+      "class": "Ohio-class ballistic missile submarine",
+      "displacement": "displacement",
+      "length": "length",
+      "beam": "beam",
+      "draft": "draft",
+      "propulsion": "propulsion",
+      "speed": "speed",
+      "test_depth": "test_depth",
+      "complement": "complement",
+      "armament": "armament"
+    },
+    "full_dossier": {}
+  },
+  {
+    "id": "hongqi-16fe",
+    "name": "Hongqi-16FE",
+    "categoryIds": [
+      "3"
+    ],
+    "featured": false,
+    "type": "object",
+    "specifications": {
+      "dangerLevel": 8,
+      "role": "Main Battle Tank",
+      "range": "3,800 km road / 2,362 mi road",
+      "speed": "65 km/h on-road / 40 mph on-road",
+      "rcs": "0.25 (Low)",
+      "payload": "44,800 kg",
+      "threatType": "Advanced Main Battle Tank",
+      "generation": "5th Generation",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Hongqi-10",
+      "metrics": {
+        "firepower": 82,
+        "mobility": 78,
+        "stealth": 32,
+        "durability": 98
+      }
+    },
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/hongqi-16fe/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/hongqi-16fe/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/hongqi-16fe/3.jpg"
+    ],
+    "model": null,
+    "modelUrl": null,
+    "countries": {
+      "en": {
+        "country": "China",
+        "countryCode": "CN"
+      },
+      "ru": {
+        "country": "\u000307\t55\u00117\u001107\u00117\u001087\u0000\u001101\u001148\u001114",
+        "countryCode": "CN"
+      }
+    },
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "origin": "Sovyetler Birliği",
+          "type": "Uzun menzilli yüzeyden havaya ve balistik füze karşıtı sistem",
+          "service": "1978–günümüz",
+          "range": "Taban istasyonundan 30-40 km",
+          "target range": "yer hedefleri için 120 km'ye kadar",
+          "ballistic trajectory range": "400 km'ye kadar",
+          "missiles per target": "6 farklı hedefe kadar 12 füze"
+        },
+        "full_dossier": {
+          "interoperability": "Farklı varyantlar arasındaki operasyonel uyumluluk sınırlıdır",
+          "automatic capabilities": "Tamamen otomatik başlatma ve bir hundred hedefin etkili yönetimi sağlar",
+          "manual intervention": "Karmaşık bir ortamda manuel müdahale mümkündür",
+          "target engagement": "Balistik füzeler, uçaklar ve yer hedeflerini vurabilir",
+          "launcher capabilities": "Dikey fırlatılan füzeler, fırlatıcının dönmesine gerek kalmadan her yöndeki uçan hedeflerle savaşma olanağı sağlar"
+        }
+      },
+      "ru": {
+        "short_specs": {
+          "origin": "Советский Союз",
+          "type": "Система дальнего радиолокационного обнаружения и противовоздушной обороны",
+          "service": "1978–настоящее время",
+          "range": "30-40 км от базовой станции",
+          "target range": "до 120 км для наземных целей",
+          "ballistic trajectory range": "до 400 км",
+          "missiles per target": "до 12 ракет на до 6 разных целей"
+        },
+        "full_dossier": {
+          "interoperability": "Взаимодействие между разными вариантами ограничено",
+          "automatic capabilities": "Позволяет полностью автоматически инициировать и эффективно управлять до ста целями",
+          "manual intervention": "Возможен ручной вмешательство в сложной среде",
+          "target engagement": "Может поражать баллистические ракеты, самолеты и наземные цели",
+          "launcher capabilities": "Вертикально запускаемые ракеты позволяют поражать воздушные цели в любом направлении без поворота пусковой установки"
+        }
+      },
+      "ar": {
+        "short_specs": {
+          "origin": "الاتحاد السوفيتي",
+          "type": "نظام صاروخي أرض-جو بعيد المدى ومضاد للصواريخ البالستية",
+          "service": "1978–حتى الآن",
+          "range": "30-40 كم من المحطة الأساسية",
+          "target range": "تصل إلى 120 كم للأهداف البرية",
+          "ballistic trajectory range": "تصل إلى 400 كم",
+          "missiles per target": "تصل إلى 12 صاروخاً على تصل إلى 6 أهداف مختلفة"
+        },
+        "full_dossier": {
+          "interoperability": "التفاعل بين الإصدارات المختلفة محدود",
+          "automatic capabilities": "يسمح بالتشغيل التلقائي الكامل وإدارة فعالة تصل إلى مائة هدف",
+          "manual intervention": "يمكن التدخل اليدوي في بيئة معقدة",
+          "target engagement": "يمكنه مهاجمة الصواريخ البالستية والطائرات والأهداف البرية",
+          "launcher capabilities": "الصواريخ المطروقة رأسياً تسمح بمهاجمة الأهداف الجوية في أي اتجاه دون دوران منصة الإطلاق"
+        }
+      },
+      "zh": {
+        "short_specs": {
+          "origin": "苏联",
+          "type": "远程地对空和反弹道导弹系统",
+          "service": "1978年至今",
+          "range": "基站30-40公里",
+          "target range": "地面目标最远120公里",
+          "ballistic trajectory range": "最远400公里",
+          "missiles per target": "最多12枚导弹针对最多6个不同目标"
+        },
+        "full_dossier": {
+          "interoperability": "不同版本之间的互操作性有限",
+          "automatic capabilities": "允许完全自动化的启动和最多100个目标的有效管理",
+          "manual intervention": "在复杂环境中可以进行手动干预",
+          "target engagement": "可以攻击弹道导弹、飞机和地面目标",
+          "launcher capabilities": "垂直发射的导弹可以在任何方向上攻击空中目标，而无需发射器转动"
+        }
+      }
+    },
+    "dangerLevel": 8,
+    "threatType": "Advanced Main Battle Tank",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Hongqi-10",
+    "catId": "1",
+    "short_specs": {
+      "origin": "Soviet Union",
+      "type": "Long-range surface-to-air and anti-ballistic missile system",
+      "service": "1978–present",
+      "range": "30-40 km from the base station",
+      "target range": "up to 120 km for ground targets",
+      "ballistic trajectory range": "up to 400 km",
+      "missiles per target": "up to 12 missiles to up to 6 different targets"
+    },
+    "full_dossier": {
+      "interoperability": "Interoperability between different variants is limited",
+      "automatic capabilities": "Allows for fully automatic initiation and effective management of up to one hundred targets",
+      "manual intervention": "Manual intervention is possible in a complex environment",
+      "target engagement": "Can engage ballistic missiles as well as aircraft and ground targets",
+      "launcher capabilities": "Vertically-launched missiles allow for engagement of flying targets in any direction without traversing the launcher"
+    }
+  },
+  {
+    "catId": "1",
+    "name": "M3 Bradley CFV",
+    "featured": false,
+    "id": "m3-bradley-cfv",
+    "dangerLevel": 60,
+    "threatType": "tracked armored vehicle",
+    "wikiUrl": "https://en.wikipedia.org/wiki/M3_Bradley",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m3-bradley-cfv/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m3-bradley-cfv/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m3-bradley-cfv/3.jpg"
+    ],
+    "model": null,
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "weight": "25–30.5 kısa ton (23–28 ton)",
+          "length": "6.45–6.55 m",
+          "width": "320–328 cm",
+          "height": "297 cm",
+          "crew": "5: Komutan, Topçu, Şoför ve iki Keşif"
+        },
+        "full_dossier": {
+          "mobility": "Bradley, arazi açıklarında yüksek kapasiteye sahiptir ve M1 Abrams ile aynı hızda kalma ana tasarım hedeflerinden birine göre hareket eder.",
+          "armor": "Tüm varyantlar için gövde ve taret zırhı çelik, 5083 alüminyum ve taret için benzersiz 7039 alüminyumdur.",
+          "NBC": "M3A1 varyantı, bir gaz partikül filtre sistemi tanıttı.",
+          "damage control": "M3A1 varyantı, bir yangın söndürme sistemi tanıttı.",
+          "concealment": "Tüm sürümler, savunma duman perdesi, parça ve fırlatma için taretin ön kısmında iki dört namlulu M257 Bomba Fırlatıcısı ile donatılmıştır."
+        }
+      },
+      "ru": {
+        "short_specs": {
+          "weight": "25–30.5 тонн (23–28 тонн)",
+          "length": "6.45–6.55 м",
+          "width": "320–328 см",
+          "height": "297 см",
+          "crew": "5: Командир, Наводчик, Водитель и два Разведчика"
+        },
+        "full_dossier": {
+          "mobility": "Брэдли имеет высокую проходимость на открытой местности, в соответствии с одним из основных целей проектирования - поддерживать темп с M1 Abrams.",
+          "armor": "Броня для корпуса и башни всех вариантов - сталь, алюминий 5083 и уникальный для башни алюминий 7039.",
+          "NBC": "Вариант M3A1 ввел систему фильтрации газовых частиц.",
+          "damage control": "Вариант M3A1 ввел систему пожаротушения.",
+          "concealment": "Все версии оснащены двумя четырехствольными гранатометами M257 на передней части башни для создания защитных дымовых завес, ложных целей и осветительных средств."
+        }
+      },
+      "ar": {
+        "short_specs": {
+          "weight": "25–30.5 طن قصير (23–28 طن)",
+          "length": "6.45–6.55 م",
+          "width": "320–328 سم",
+          "height": "297 سم",
+          "crew": "5: قائد، مدفعي، سائق و两个 كشاف"
+        },
+        "full_dossier": {
+          "mobility": "البرادلي لديه القدرة على الحركة في التضاريس المفتوحة، وفقًا لأحد أهداف التصميم الرئيسية للحفاظ على وتيرة مع M1 Abrams.",
+          "armor": "درع الهيكل والبرج لجميع الإصدارات هو الفولاذ، والألومنيوم 5083 والألومنيوم 7039 الفريد للبرج.",
+          "NBC": "الإصدار M3A1 أدخل نظام مرشح جزيئات الغاز.",
+          "damage control": "الإصدار M3A1 أدخل نظام إطفاء الحرائق.",
+          "concealment": "جميع الإصدارات مجهزة بمدفعين رشاشين من طراز M257 على الجزء الأمامي من البرج لإنشاء شاشات دخان دفاعية وشرارات وشرارات."
+        }
+      },
+      "zh": {
+        "short_specs": {
+          "weight": "25–30.5吨（23–28吨）",
+          "length": "6.45–6.55米",
+          "width": "320–328厘米",
+          "height": "297厘米",
+          "crew": "5：指挥官、炮手、驾驶员和两个侦察员"
+        },
+        "full_dossier": {
+          "mobility": "布拉德利在开阔地形中具有很高的机动性，符合其设计目标之一，即与M1艾布拉姆斯坦克保持相同的速度。",
+          "armor": "所有变体的车体和炮塔装甲均采用钢材、5083铝和7039铝制成，炮塔独有的7039铝。",
+          "NBC": "M3A1变体引入了气体颗粒过滤系统。",
+          "damage control": "M3A1变体引入了火灾抑制系统。",
+          "concealment": "所有版本都配备了两个四管式M257榴弹发射器，安装在炮塔前部，用于制造防御烟幕、干扰和信号弹。"
+        }
+      }
+    },
+    "country": "United States",
+    "countryCode": "US",
+    "short_specs": {
+      "weight": "25–30.5 short tons (23–28 tonnes)",
+      "length": "21.2–21.5 ft (6.45–6.55 m)",
+      "width": "126–129 in (320–328 cm)",
+      "height": "117 in (297 cm)",
+      "crew": "5: Commander, Gunner, Driver, and two Scouts"
+    },
+    "full_dossier": {
+      "mobility": "The Bradley is highly capable in cross-country open terrain, in accordance with one of the main design objectives of keeping pace with the M1 Abrams.",
+      "armor": "Armor for the hull and turret for all variants is steel, 5083 aluminum, and unique to the turret is 7039 aluminum.",
+      "NBC": "The M3A1 variant introduced a gas particulate filter system.",
+      "damage control": "The M3A1 variant introduced a fire suppression system.",
+      "concealment": "All versions are equipped with two four-barreled M257 Grenade Launchers on the front of the turret for creating defensive smoke screens, chaff, and flares."
+    }
+  },
+  {
+    "catId": "5",
+    "name": "Akizuki-class",
+    "featured": false,
+    "id": "akizuki-class",
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "type": "Muhrip",
+          "displacement": "2700 LT",
+          "length": "134.2 m",
+          "beam": "11.6 m",
+          "draught": "4.15 m",
+          "propulsion": "2 şaft; 2 × dişli buhar türbini",
+          "speed": "33 kn",
+          "range": "8000 deniz mili 18 kn'da",
+          "power": "3 × su borulu kazan, 52000 shp",
+          "main battery": "4 × Tip 98 çift amaçlı top ikiz montajlarda",
+          "torpedo launcher": "Tip 92 dörtlü torpido fırlatıcısı yeniden yükleme ile",
+          "torpedo": "Tip 93 'Uzun Mızrak' torpidosu",
+          "depth charge projectors": "2 × Tip 94",
+          "depth charges": "54-72",
+          "radar": "Tip 21 hava arama radarı, Tip 13 radar, Tip 22 radar"
+        },
+        "full_dossier": {
+          "design": "Akizuki sınıfı, dört ikiz montajda ana bataryası olarak yeni geliştirilen Tip 98 çift amaçlı toplar kullanılarak inşa edildi, yüksek güvenilirlik, atış hızı ve menzile sahipti.",
+          "fire-control": "Her gemi, yüksek açılı hedefleri hedef alabilen iki Tip 94 yangın kontrol direktörü ile donatılmıştı, ancak üretim kıtlığı nedeniyle sınıfın son beş gemisi ikinci Tip 94'ü asla almadı.",
+          "torpedo capability": "Sınıf, Tip 93 'Uzun Mızrak' torpidosunu atan merkezi bir Tip 92 dörtlü torpido fırlatıcısına sahipti.",
+          "survivability": "Gövde, önceki Kagerō sınıfından 50 feet daha uzundu ve iki ayrı motor ve kazan odasına sahipti, bu da savaşta hayatta kalma oranını artırdı.",
+          "radar capabilities": "Akizuki sınıfı, Tip 21 hava arama radarına sahip olan ilk Japon muhripleri arasındaydı ve 1944'e kadar hayatta kalan gemiler de Tip 13 radarını aldı."
+        }
+      },
+      "ru": {
+        "short_specs": {
+          "type": "Эсминец",
+          "displacement": "2700 LT",
+          "length": "134.2 м",
+          "beam": "11.6 м",
+          "draught": "4.15 м",
+          "propulsion": "2 вала; 2 × паровые турбины",
+          "speed": "33 уз",
+          "range": "8000 морских миль при 18 уз",
+          "power": "3 × водотрубные котлы, 52000 л.с.",
+          "main battery": "4 × 98-мм универсальные орудия в спаренных установках",
+          "torpedo launcher": "Четверной торпедный аппарат Тип 92 с перезарядкой",
+          "torpedo": "Торпеда Тип 93 'Длинный Копьё'",
+          "depth charge projectors": "2 × Тип 94",
+          "depth charges": "54-72",
+          "radar": "Радиолокационная станция Тип 21, Тип 13, Тип 22"
+        },
+        "full_dossier": {
+          "design": "Эсминцы типа «Акицуки» были построены с использованием новых 98-мм универсальных орудий в четырёх спаренных установках в качестве основного вооружения, имеющих высокую надёжность, скорострельность и дальность.",
+          "fire-control": "Каждый корабль был оснащён двумя директоров Тип 94, способными вести огонь по воздушным целям, но из-за нехватки производства последние пять кораблей класса не получили второго директора Тип 94.",
+          "torpedo capability": "Класс был оснащён центральным четырёхторпедным аппаратом Тип 92 с перезарядкой, стреляющим торпедами Тип 93 'Длинный Копьё'.",
+          "survivability": "Корпус был на 50 футов длиннее, а водоизмещение было на 700 тонн больше, чем у предыдущего класса «Кагэро», с двумя отдельными машинными и котельными отделениями для повышения живучести в бою.",
+          "radar capabilities": "Эсминцы типа «Акицуки» были среди первых японских эсминцев, оснащённых радиолокационной станцией Тип 21, а корабли, дожившие до 1944 года, также получили радиолокационную станцию Тип 13."
+        }
+      },
+      "ar": {
+        "short_specs": {
+          "type": "مُدمر",
+          "displacement": "2700 LT",
+          "length": "134.2 م",
+          "beam": "11.6 م",
+          "draught": "4.15 م",
+          "propulsion": "2 محور; 2 × توربين بخارية",
+          "speed": "33 عقدة",
+          "range": "8000 ميل بحري عند 18 عقدة",
+          "power": "3 × غلاية أنابيب مائية، 52000 حصان",
+          "main battery": "4 × مدفع مزدوج الغرض من النوع 98 في تثبيتات مزدوجة",
+          "torpedo launcher": "مُطلقة طوربيد رباعية من النوع 92 مع إعادة تحميل",
+          "torpedo": "طوربيد من النوع 93 'الرمح الطويل'",
+          "depth charge projectors": "2 × النوع 94",
+          "depth charges": "54-72",
+          "radar": "راديو موقع الطائرات من النوع 21، النوع 13، النوع 22"
+        },
+        "full_dossier": {
+          "design": "تم بناء مُدمرات فئة Akizuki باستخدام المدافع المزدوجة الغرض الجديدة من النوع 98 في أربع تثبيتات مزدوجة كمدفعية رئيسية، مع موثوقية عالية وسرعة إطلاق نار ومدى.",
+          "fire-control": "تم تزويد كل سفينة ب两个 مديرين من النوع 94 قادران على استهداف أهداف زوايا عالية، ولكن بسبب نقص الإنتاج، لم تتلق السفن الخمس الأخيرة من الفئة المدير الثاني من النوع 94.",
+          "torpedo capability": "كانت الفئة مجهزة بمنصة إطلاق طوربيد رباعية مركزية من النوع 92 مع إعادة تحميل، تطلق طوربيدات من النوع 93 'الرمح الطويل'.",
+          "survivability": "كان الهيكل أطول بـ 50 قدمًا، وكانت الإزاحة أكبر بـ 700 طن من الفئة السابقة Kagerō، مع غرفتي محرك ومكثف منفصلتين لزيادة القدرة على البقاء في المعركة.",
+          "radar capabilities": "كانت مُدمرات فئة Akizuki من بين أول المُدمرات اليابانية المجهزة براديو موقع الطائرات من النوع 21، كما تلقت السفن التي نجت حتى عام 1944 راديو موقع الطائرات من النوع 13."
+        }
+      },
+      "zh": {
+        "short_specs": {
+          "type": "驱逐舰",
+          "displacement": "2700 LT",
+          "length": "134.2 米",
+          "beam": "11.6 米",
+          "draught": "4.15 米",
+          "propulsion": "2 轴; 2 × 齿轮蒸汽涡轮机",
+          "speed": "33 节",
+          "range": "8000 海里于 18 节",
+          "power": "3 × 水管锅炉，52000 马力",
+          "main battery": "4 × 98 式双用途炮在双联装",
+          "torpedo launcher": "92 式四联装鱼雷发射器带有重新装填",
+          "torpedo": "93 式'长矛'鱼雷",
+          "depth charge projectors": "2 × 94 式",
+          "depth charges": "54-72",
+          "radar": "21 式空中搜索雷达，13 式雷达，22 式雷达"
+        },
+        "full_dossier": {
+          "design": "秋月级驱逐舰采用新开发的98式双用途炮作为主炮，具有高可靠性、射速和射程。",
+          "fire-control": "每艘舰只都配备了两个94式火控指挥仪，可以对高角目标进行瞄准，但由于生产不足，最后五艘舰只没有获得第二个94式火控指挥仪。",
+          "torpedo capability": "该级舰只配备了中央安装的92式四联装鱼雷发射器，发射93式'长矛'鱼雷。",
+          "survivability": "舰体比前一代神风级长50英尺，排水量也大700吨，具有两个独立的机房和锅炉房，以提高战斗中的生存能力。",
+          "radar capabilities": "秋月级驱逐舰是最早配备21式空中搜索雷达的日本驱逐舰之一，到1944年幸存的舰只也获得了13式雷达。"
+        }
+      }
+    },
+    "dangerLevel": 50,
+    "threatType": "Maritime",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Akizuki-class_destroyer_(1942)",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/akizuki-class/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/akizuki-class/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/akizuki-class/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/akizuki-class.glb",
+    "short_specs": {
+      "type": "Destroyer",
+      "displacement": "2700 LT",
+      "length": "134.2 m",
+      "beam": "11.6 m",
+      "draught": "4.15 m",
+      "propulsion": "2 shafts; 2 × geared steam turbines",
+      "speed": "33 kn",
+      "range": "8000 nmi at 18 kn",
+      "power": "3 × water-tube boilers, 52000 shp",
+      "main battery": "4 × Type 98 dual-purpose guns in twin mounts",
+      "torpedo launcher": "Type 92 quadruple torpedo launcher with reloads",
+      "torpedo": "Type 93 'Long Lance' torpedo",
+      "depth charge projectors": "2 × Type 94",
+      "depth charges": "54-72",
+      "radar": "Type 21 air-search radar, Type 13 radar, Type 22 radar"
+    },
+    "full_dossier": {
+      "design": "The Akizuki class was built using the newly developed Type 98 dual-purpose guns in four twin mounts as its main battery, with a high reliability, rate of fire and range.",
+      "fire-control": "Each vessel was fitted with two Type 94 fire-control directors capable of targeting high-angle targets, but due to production shortages, the last five vessels in the class never received their second Type 94.",
+      "torpedo capability": "The class carried a centerline-mounted Type 92 quadruple torpedo launcher with reloads, firing the Type 93 'Long Lance' torpedo.",
+      "survivability": "The hull was 50 feet longer, and the displacement was 700 tons larger than the preceding Kagerō class, with two separate engine and boiler rooms for increased survivability in battle.",
+      "radar capabilities": "The Akizuki class were among the first Japanese destroyers equipped with the Type 21 air-search radar, and ships surviving to 1944 also received the Type 13 radar."
+    }
+  },
+  {
+    "catId": "2",
+    "name": "Chengdu J-10C",
+    "featured": false,
+    "id": "chengdu-j-10c",
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "crew": "1",
+          "length m": "16.9",
+          "span m": "9.8",
+          "height m": "5.7",
+          "wing area sqm": "37",
+          "gross weight kg": "14000",
+          "fuel capacity": "4000 L (3120 kg) harici 3 düşme tankı ile (2 × 1600L + 1 × 800L)",
+          "eng1 name": "WS-10B",
+          "eng1 type": "sonradan yanmalı turbofan motorlar",
+          "eng1 kn": "89.17",
+          "eng1 note": "135 kN",
+          "Mürettebat": "1",
+          "hız": "km/sa"
+        },
+        "full_dossier": {
+          "Radar Sistemi": "J-10B, aktif elektronik taramalı dizin (AESA) veya pasif elektronik taramalı dizin (PESA) radar ile donatılmıştır, AESA radarı CETC 14. Enstitü tarafından geliştirilmiştir.",
+          "Aviyonik": "Kokpit, üç sıvı kristal ekran (LCD) ve bir Çin geliştirme holografik baş üstü ekran (HUD) ile donatılmıştır, bir Çin kask monteli görüş (HMS) ile uyumludur.",
+          "İtme": "J-10, tek bir turbofan ile çalışır, J-10A üretimi Rus Salyut AL-31FN ile girerken, J-10C yerli WS-10B motorunu kullanır."
+        }
+      },
+      "ru": {
+        "short_specs": {
+          "crew": "1",
+          "length m": "16.9",
+          "span m": "9.8",
+          "height m": "5.7",
+          "wing area sqm": "37",
+          "gross weight kg": "14000",
+          "fuel capacity": "4000 Л (3120 кг) внешний с 3 сбрасываемыми баками (2 × 1600Л + 1 × 800Л)",
+          "eng1 name": "WS-10B",
+          "eng1 type": "турбофан двигатели с форсажной камерой",
+          "eng1 kn": "89.17",
+          "eng1 note": "135 кН",
+          "Экипаж": "1",
+          "скорость": "км/ч"
+        },
+        "full_dossier": {
+          "Радарная система": "J-10B оснащен активной фазированной антенной решеткой (АФАР) или пассивной фазированной антенной решеткой (ПФАР) радаром, АФАР радар разработан CETC 14-м институтом.",
+          "Авионика": "Кабина имеет три жидкокристаллических дисплея (ЖКД) и разработанный в Китае голографический дисплей (ГД) с китайским шлемом, установленным зрением (ШИЗ).",
+          "Привод": "J-10 приводится в действие одним турбофаном, J-10A поступает в производство с российским Салютом AL-31FN, а J-10C использует двигатель WS-10B."
+        }
+      },
+      "ar": {
+        "short_specs": {
+          "crew": "1",
+          "length m": "16.9",
+          "span m": "9.8",
+          "height m": "5.7",
+          "wing area sqm": "37",
+          "gross weight kg": "14000",
+          "fuel capacity": "4000 لتر (3120 كجم) خارجي مع 3 خزانات وقود قابلة للإسقاط (2 × 1600 لتر + 1 × 800 لتر)",
+          "eng1 name": "WS-10B",
+          "eng1 type": "محركات توربوفان مع مرحلة بعد الحرق",
+          "eng1 kn": "89.17",
+          "eng1 note": "135 كن",
+          "طاقم": "1",
+          "سرعة": "كم/سا"
+        },
+        "full_dossier": {
+          "نظام الرادار": "يتم تزويد J-10B بنظام رادار مصفوفة مسح إلكتروني نشط (AESA) أو نظام رادار مصفوفة مسح إلكتروني سلبي (PESA)، تم تطوير نظام رادار AESA بواسطة CETC 14th Institute.",
+          "الأجهزة": "تحتوي قمرة القيادة على ثلاثة شاشات عرض سائلة (LCD) وعرض هولوجرافي على رأس مطور في الصين (HUD) متوافق مع نظارة رؤية مثبتة على الخوذة (HMS).",
+          "الدفع": "يتم تشغيل J-10 بواسطة محرك توربوفان واحد، حيث يتم إنتاج J-10A مع محرك Salyut AL-31FN الروسي، بينما يستخدم J-10C محرك WS-10B المحلي."
+        }
+      },
+      "zh": {
+        "short_specs": {
+          "crew": "1",
+          "length m": "16.9",
+          "span m": "9.8",
+          "height m": "5.7",
+          "wing area sqm": "37",
+          "gross weight kg": "14000",
+          "fuel capacity": "4000 L (3120 kg) 外部带有 3 个投放油箱 (2 × 1600L + 1 × 800L)",
+          "eng1 name": "WS-10B",
+          "eng1 type": "带后燃室的涡轮风扇发动机",
+          "eng1 kn": "89.17",
+          "eng1 note": "135 kN",
+          "机组人员": "1",
+          "速度": "公里/小时"
+        },
+        "full_dossier": {
+          "雷达系统": "J-10B 配备有主动电子扫描阵列 (AESA) 或被动电子扫描阵列 (PESA) 雷达，AESA 雷达由 CETC 14 研究所开发。",
+          "航空电子": "驾驶舱内有三块液晶显示器 (LCD) 和中国开发的全息头显显示器 (HUD)，兼容中国头盔安装视觉系统 (HMS)。",
+          "推进系统": "J-10 由单台涡轮风扇发动机驱动，J-10A 开始生产时采用俄罗斯的 Salyut AL-31FN 发动机，而 J-10C 则使用国产 WS-10B 发动机。"
+        }
+      }
+    },
+    "dangerLevel": 60,
+    "threatType": "Medium weight fighter",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Chengdu_J-10",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/chengdu-j-10c/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/chengdu-j-10c/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/chengdu-j-10c/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/chengdu-j-10c.glb",
+    "country": "China",
+    "countryCode": "CN",
+    "short_specs": {
+      "crew": "1",
+      "length m": "16.9",
+      "span m": "9.8",
+      "height m": "5.7",
+      "wing area sqm": "37",
+      "gross weight kg": "14000",
+      "fuel capacity": "4000 L (3120 kg) external with 3 drop tanks (2 × 1600L + 1 × 800L)",
+      "eng1 name": "WS-10B",
+      "eng1 type": "afterburning turbofan engines",
+      "eng1 kn": "89.17",
+      "eng1 note": "135 kN"
+    },
+    "full_dossier": {
+      "Radar System": "The J-10B is equipped with an active electronically scanned array (AESA) or passive electronically scanned array (PESA) radar, with the AESA radar being developed by CETC 14th Institute.",
+      "Avionics": "The cockpit has three liquid crystal displays (LCD) and a Chinese developed holographic head-up display (HUD), compatible with a Chinese helmet mounted sight (HMS).",
+      "Propulsion": "The J-10 is powered by a single turbofan, with the J-10A entering production with the Russian Salyut AL-31FN and the J-10C using the indigenous WS-10B engine."
+    }
+  },
+  {
+    "catId": "4",
+    "name": "Firebird",
+    "featured": false,
+    "id": "firebird",
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "crew": "iki (isteğe bağlı)",
+          "capacity": "564 kg yük",
+          "length": "10.36 m",
+          "span": "19.81 m",
+          "height": "2.96 m",
+          "max takeoff weight": "2268 kg",
+          "engine": "Lycoming TEO-540 düz-6 silindirli piston motoru",
+          "top speed": "370 km/sa",
+          "altitude": "9144 m",
+          "endurance": "40 saat",
+          "wingspan variant": "21.95 ila 24.1 m"
+        },
+        "full_dossier": {
+          "design": "Firebird, 40 saat boyunca 9144 m irtifada 370 km/sa'ye kadar uçabilen orta irtifa ve uzun süreli dayanıklılığa sahip bir uçak olarak tasarlandı.",
+          "configuration": "İkiz gövdeli uçak, itme konfigürasyonuna ve çok az bir ileri eğim açısına sahip uzun ve ince bir kanata sahiptir.",
+          "payload capacity": "Uçak, silah taşıyabilen sert noktalarına ve 564 kg yük kapasitesine sahiptir, ancak şu anda silahsızdır."
+        }
+      },
+      "ru": {
+        "short_specs": {
+          "crew": "два (опционально)",
+          "capacity": "564 кг грузоподъемность",
+          "length": "10,36 м",
+          "span": "19,81 м",
+          "height": "2,96 м",
+          "max takeoff weight": "2268 кг",
+          "engine": "Lycoming TEO-540 плоский-6 цилиндровый поршневой двигатель",
+          "top speed": "370 км/ч",
+          "altitude": "9144 м",
+          "endurance": "40 часов",
+          "wingspan variant": "21,95 до 24,1 м"
+        },
+        "full_dossier": {
+          "design": "Firebird - средневысотный самолет с длительным временем полета, способный летать до 40 часов на высоте 9144 м со скоростью до 370 км/ч.",
+          "configuration": "Двухбалочный самолет имеет толкающую конфигурацию и длинное узкое крыло с небольшим углом наклона вперед.",
+          "payload capacity": "Самолет имеет грузоподъемность 564 кг и узлы для подвески вооружения, хотя в настоящее время он не вооружен."
+        }
+      },
+      "ar": {
+        "short_specs": {
+          "crew": "اثنان (اختياري)",
+          "capacity": "564 كجم حمولة",
+          "length": "10.36 م",
+          "span": "19.81 م",
+          "height": "2.96 م",
+          "max takeoff weight": "2268 كجم",
+          "engine": "محرك ليكومينج TEO-540 مسطح-6 أسطوانات",
+          "top speed": "370 كم/س",
+          "altitude": "9144 م",
+          "endurance": "40 ساعة",
+          "wingspan variant": "21.95 إلى 24.1 م"
+        },
+        "full_dossier": {
+          "design": "طائرة فايربيرد هي طائرة متوسطة الارتفاع وطويلة المدى، مصممة للطيران لمدة تصل إلى 40 ساعة على ارتفاع 9144 متر وبسرعة تصل إلى 370 كم/س.",
+          "configuration": "الطائرة ثنائية البدن لها تكوين دفع وкрыو طويل ورفيع مع زاوية انحناء إلى الأمام.",
+          "payload capacity": "الطائرة لها سعة حمولة 564 كجم ونقاط لتحمل الأسلحة، على الرغم من أنها غير مسلحة حاليًا."
+        }
+      },
+      "zh": {
+        "short_specs": {
+          "crew": "两名（可选）",
+          "capacity": "564公斤有效载荷",
+          "length": "10.36米",
+          "span": "19.81米",
+          "height": "2.96米",
+          "max takeoff weight": "2268公斤",
+          "engine": "莱康明TEO-540平-6缸活塞发动机",
+          "top speed": "370公里/小时",
+          "altitude": "9144米",
+          "endurance": "40小时",
+          "wingspan variant": "21.95至24.1米"
+        },
+        "full_dossier": {
+          "design": "火鸟是一种中高空长航时飞机，设计用于在9144米高空飞行40小时，最高速度可达370公里/小时。",
+          "configuration": "双boom飞机具有推进配置和长而窄的机翼，具有微小的向前倾斜角度。",
+          "payload capacity": "飞机具有564公斤的有效载荷能力和携带武器的硬点，尽管目前它是无武装的。"
+        }
+      }
+    },
+    "dangerLevel": 60,
+    "threatType": "Electronic and visual surveillance",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Northrop_Grumman_Firebird",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/firebird/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/firebird/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/firebird/3.jpg"
+    ],
+    "model": null,
+    "short_specs": {
+      "crew": "two (optional)",
+      "capacity": "1240 lb payload",
+      "length": "34 ft",
+      "span": "65 ft",
+      "height": "9.7 ft",
+      "max takeoff weight": "5000 lb",
+      "engine": "Lycoming TEO-540 flat-six piston engine",
+      "top speed": "230 mph",
+      "altitude": "30000 ft",
+      "endurance": "40 hours",
+      "wingspan variant": "72.2 to 79.2 ft"
+    },
+    "full_dossier": {
+      "design": "The Firebird is a medium-altitude long-endurance aircraft designed to fly up to 40 hours at a top speed of 230 mph at an altitude of 30000 ft.",
+      "configuration": "The twin-boom aircraft has a pusher configuration and a long slender wing with a very slight forward sweep angle.",
+      "payload capacity": "The aircraft has a payload capacity of 1240 lb and hardpoints to carry weapons, though it is currently unarmed."
+    }
+  },
+  {
+    "catId": "4",
+    "name": "Phoenix Ghost",
+    "featured": false,
+    "id": "phoenix-ghost",
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "type": "Bekleme mühimmatı",
+          "origin": "Birleşik Devletler",
+          "manufacturer": "Aevex Aerospace",
+          "vehicle_range": "6+ saatlik uçuş süresi",
+          "guidance": "Otonom; manuel",
+          "crew": "Mürettebat"
+        },
+        "full_dossier": {
+          "design_context": "AeroVironment Switchblade'e benzer olması için tasarlandı",
+          "operational_use": "Rusya'nın Ukrayna'yı işgali sırasında kullanıldı",
+          "development_background": "Rusya'ya karşı savaşmak için yeni bir intihar dronu için Kyiv'den gelen talebe yanıt olarak geliştirildi"
+        }
+      },
+      "ru": {
+        "short_specs": {
+          "type": "Крылатая боеприпась",
+          "origin": "Соединенные Штаты",
+          "manufacturer": "Aevex Aerospace",
+          "vehicle_range": "6+ часовая продолжительность полета",
+          "guidance": "Автономное; ручное",
+          "crew": "Экипаж"
+        },
+        "full_dossier": {
+          "design_context": "Разработан для того, чтобы быть схожим с AeroVironment Switchblade",
+          "operational_use": "Использовался во время вторжения России в Украину",
+          "development_background": "Разработан в ответ на запрос Киева на новый боевой беспилотник для борьбы с Россией"
+        }
+      },
+      "ar": {
+        "short_specs": {
+          "type": "ذخيرة تنتظر",
+          "origin": "الولايات المتحدة",
+          "manufacturer": "Aevex Aerospace",
+          "vehicle_range": "6+ ساعة من مدة الطيران",
+          "guidance": "أوتوماتيكي؛ يدوي",
+          "crew": "طاقم"
+        },
+        "full_dossier": {
+          "design_context": "صمم ليكون مشابهًا لـ AeroVironment Switchblade",
+          "operational_use": "استخدم خلال الغزو الروسي لأوكرانيا",
+          "development_background": "تم تطويره استجابة لطلب من كييف لطائرة بدون طيار جديدة لمحاربة روسيا"
+        }
+      },
+      "zh": {
+        "short_specs": {
+          "type": "逗留弹药",
+          "origin": "美国",
+          "manufacturer": "Aevex Aerospace",
+          "vehicle_range": "6+ 小时飞行时间",
+          "guidance": "自动；手动",
+          "crew": "船员"
+        },
+        "full_dossier": {
+          "design_context": "设计类似于AeroVironment Switchblade",
+          "operational_use": "在俄罗斯入侵乌克兰期间使用",
+          "development_background": "为响应基辅对新型自杀式无人机的请求而开发，以对抗俄罗斯"
+        }
+      }
+    },
+    "dangerLevel": 50,
+    "threatType": "Unmanned Aerial System (UAS)",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Phoenix_Ghost",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/phoenix-ghost/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/phoenix-ghost/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/phoenix-ghost/3.jpg"
+    ],
+    "model": null,
+    "short_specs": {
+      "type": "Loitering munition",
+      "origin": "United States",
+      "manufacturer": "Aevex Aerospace",
+      "vehicle_range": "6+ hour flight duration",
+      "guidance": "Autonomous; manual"
+    },
+    "full_dossier": {
+      "design_context": "Designed to be broadly similar to the AeroVironment Switchblade",
+      "operational_use": "Used in the Russian invasion of Ukraine",
+      "development_background": "Developed in response to a request from Kyiv for a new kamikaze drone to fight Russia"
+    }
+  },
+  {
+    "catId": "3",
+    "name": "S-400 Air Defense Missile System",
+    "featured": false,
+    "id": "s-400-air-defense-missile-system",
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "Maks. hedef hızı": "4.8 km/sa veya 850 m/s'den düşük",
+          "Maks. Hedef tespit mesafesi (km)": "600",
+          "Aerodinamik hedefe karşı menzil (km)": "400 (maksimum), 2 (minimum)",
+          "Aerodinamik hedef için irtifa sınırları (km)": "27 (kolay)/30 (maksimum), 0.005 (minimum)",
+          "Taktik balistik hedeflere karşı menzil (km)": "6 (minimum belirtilmedi)",
+          "Birim maliyeti (Yerel)": "~500 milyon $ bir batarya ve yedek füzeler için",
+          "Birim maliyeti (İhracat)": "1-1.25 milyar $ bir batarya ve yedek füzeler için (2021)",
+          "Hizmet": "6 Ağustos 2007 – günümüz",
+          "Kullanıcı": "Birinci kullanıcı: Rusya",
+          "Tasarımcı": "Almaz-Antey",
+          "Üretici": "Fakel Makine-İmalat Bürosu"
+        },
+        "full_dossier": {
+          "Etkili hedef hızı": "S-400, 4.8 km/sa'ya kadar hızlarda hedefleri etkileyebilir, ancak bu hızın önemli ölçüde üzerinde hızlara sahip hedeflere karşı (örneğin 'HaiMaris' füzeleri) etkinliği azalır.",
+          "Hedef tespit mesafesi": "Sistem, maksimum 600 km mesafedeki hedefleri tespit edebilir.",
+          "Aerodinamik hedef ile mücadele": "S-400, 2 km ile 400 km arasında ve 0.005 km ile 27 km (kolay) veya 30 km (maksimum) arasında irtifalarda aerodinamik hedeflerle mücadele edebilir.",
+          "Balistik hedef ile mücadele": "Sistem, belirsiz bir minimum ve 6 km (maksimum) arasında taktik balistik hedeflerle mücadele edebilir."
+        }
+      },
+      "ru": {
+        "short_specs": {
+          "Макс. скорость цели": "4.8 км/с или ниже 850 м/с",
+          "Макс. расстояние обнаружения цели (км)": "600",
+          "Дальность стрельбы по аэродинамическим целям (км)": "400 (максимально), 2 (минимально)",
+          "Предельные высоты для аэродинамических целей (км)": "27 (легко)/30 (максимально), 0.005 (минимально)",
+          "Дальность стрельбы по тактическим баллистическим целям (км)": "6 (минимальное не указано)",
+          "Стоимость единицы (Внутренний рынок)": "~500 млн долларов за батарею и запасные ракеты",
+          "Стоимость единицы (Экспорт)": "1-1,25 млрд долларов за батарею и запасные ракеты (2021)",
+          "Служба": "6 августа 2007 г. – настоящее время",
+          "Оператор": "Основной оператор: Россия",
+          "Разработчик": "Алмаз-Антей",
+          "Производитель": "Конструкторское бюро машиностроения \"Факел\""
+        },
+        "full_dossier": {
+          "Эффективная скорость цели": "S-400 может поражать цели со скоростью до 4.8 км/с, но его эффективность снижается против целей со скоростью значительно выше этой, таких как ракеты \"ХайМарис\".",
+          "Расстояние обнаружения цели": "Система может обнаруживать цели на максимальном расстоянии 600 км.",
+          "Борьба с аэродинамическими целями": "S-400 может поражать аэродинамические цели на расстоянии от 2 км до 400 км и на высотах от 0.005 км до 27 км (легко) или 30 км (максимально).",
+          "Борьба с баллистическими целями": "Система может поражать тактические баллистические цели на расстоянии от неуказанного минимального до 6 км (максимально)."
+        }
+      },
+      "ar": {
+        "short_specs": {
+          "أقصى سرعة هدف": "4.8 كم/ث أو أقل من 850 م/ث",
+          "أقصى مسافة لاكتشاف الهدف (كم)": "600",
+          "مدى القتال ضد أهداف ديناميكية هوائية (كم)": "400 (أقصى)، 2 (أدنى)",
+          "حدود الارتفاع للاهداف الديناميكية الهوائية (كم)": "27 (بسهولة)/30 (أقصى)، 0.005 (أدنى)",
+          "مدى القتال ضد أهداف باليستية تكتيكية (كم)": "6 (لم يُحدد الحد الأدنى)",
+          "تكلفة الوحدة (داخلية)": "~500 مليون دولار للبطارية والصواريخ الاحتياطية",
+          "تكلفة الوحدة (التصدير)": "1-1.25 مليار دولار للبطارية والصواريخ الاحتياطية (2021)",
+          "الخدمة": "6 أغسطس 2007 – الحاضر",
+          "المستخدم": "المستخدم الرئيسي: روسيا",
+          "المصمم": "المصنع المحدود \"الماسة-أنتي\"",
+          "الشركة المصنعة": "مكتب التصميم والهندسة \"الفاكل\""
+        },
+        "full_dossier": {
+          "سرعة الهدف الفعالة": "يمكن لـ S-400 مهاجمة أهداف بسرعة تصل إلى 4.8 كم/ث، ولكن فعاليتها تقل ضد أهداف بسرعة أعلى بكثير من هذه، مثل صواريخ \"هايماريس\".",
+          "مسافة اكتشاف الهدف": "يمكن للنظام اكتشاف الأهداف على مسافة أقصاها 600 كم.",
+          "مكافحة الأهداف الديناميكية الهوائية": "يمكن لـ S-400 مهاجمة أهداف ديناميكية هوائية على مسافة من 2 كم إلى 400 كم وارتفاعات من 0.005 كم إلى 27 كم (بسهولة) أو 30 كم (أقصى).",
+          "مكافحة الأهداف الباليستية": "يمكن للنظام مهاجمة أهداف باليستية تكتيكية على مسافة من الحد الأدنى غير المحدد إلى 6 كم (أقصى)."
+        }
+      },
+      "zh": {
+        "short_specs": {
+          "最大目标速度": "4.8 公里/秒或低于 850 米/秒",
+          "最大目标探测距离（公里）": "600",
+          "对空气动力学目标的作战距离（公里）": "400（最大），2（最小）",
+          "空气动力学目标的高度限制（公里）": "27（容易）/30（最大），0.005（最小）",
+          "对战术弹道目标的作战距离（公里）": "6（无最小值）",
+          "单位成本（国内）": "~5亿美元（一套系统和备用导弹）",
+          "单位成本（出口）": "10-12.5亿美元（一套系统和备用导弹）（2021）",
+          "服役时间": "2007年8月6日至今",
+          "使用国": "主要使用国：俄罗斯",
+          "设计者": "阿尔玛兹-安泰",
+          "制造商": "法克尔机器制造设计局"
+        },
+        "full_dossier": {
+          "有效目标速度": "S-400可以攻击速度高达4.8公里/秒的目标，但其有效性会降低，对于速度远高于此的目标，如“海马里斯”火箭。",
+          "目标探测距离": "系统可以探测到600公里以外的目标。",
+          "空气动力学目标作战": "S-400可以在2公里到400公里的距离和0.005公里到27公里（容易）或30公里（最大）的高度上攻击空气动力学目标。",
+          "弹道目标作战": "系统可以在不小于6公里的距离上攻击战术弹道目标。"
+        }
+      }
+    },
+    "dangerLevel": 90,
+    "threatType": "air defense missile system",
+    "wikiUrl": "https://en.wikipedia.org/wiki/S-400_missile_system",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-400-air-defense-missile-system/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-400-air-defense-missile-system/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/s-400-air-defense-missile-system/3.jpg"
+    ],
+    "model": null,
+    "country": "Russia",
+    "countryCode": "RU",
+    "short_specs": {
+      "Max. target speed": "4.8 km/s or lower than 850 m/s",
+      "Max. Target detection distance (km)": "600",
+      "Range against aerodynamic target (km)": "400 (maximum), 2 (minimum)",
+      "Altitude limits for aerodynamic target (km)": "27 (easily)/30 (maximum), 0.005 (minimum)",
+      "Range against tactical ballistic targets (km)": "6 (no minimum specified)",
+      "Unit cost (Domestic)": "~$500 million for a battery and reserve missiles",
+      "Unit cost (Export)": "$1–1.25 billion for a battery and reserve missiles (2021)",
+      "Service": "6 August 2007 – present",
+      "Used by": "Primary user: Russia",
+      "Designer": "Almaz-Antey",
+      "Manufacturer": "Fakel Machine-Building Design Bureau"
+    },
+    "full_dossier": {
+      "Effective target speed": "The S-400 can engage targets with speeds up to 4.8 km/s, but its effectiveness decreases against targets with speeds significantly higher than this, such as the 'HaiMaris' rockets.",
+      "Target detection distance": "The system can detect targets at a maximum distance of 600 km.",
+      "Aerodynamic target engagement": "The S-400 can engage aerodynamic targets at ranges between 2 km and 400 km, and at altitudes between 0.005 km and 27 km (easily) or 30 km (maximum).",
+      "Ballistic target engagement": "The system can engage tactical ballistic targets at ranges between an unspecified minimum and 6 km (maximum)."
+    }
+  },
+  {
+    "catId": "1",
+    "name": "M109A7 Paladin",
+    "featured": false,
+    "id": "m109a7-paladin",
+    "dangerLevel": 80,
+    "threatType": "Artillery",
+    "wikiUrl": "https://en.wikipedia.org/wiki/M109_howitzer",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m109a7-paladin/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m109a7-paladin/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m109a7-paladin/3.jpg"
+    ],
+    "model": "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/models/m109a7-paladin.glb",
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "origin": "Birleşik Devletler",
+          "type": "Kendinden hareketli topçu",
+          "length": "hull uzunluğu 6.1 m ve top ileriye doğru 9.1 m (M109), hull uzunluğu 6.1 m, top ileriye doğru 9.7 m (M109A1/A2/A3/A4/A5/A6/A7)",
+          "width": "3.1 m",
+          "height": "3.3 m",
+          "design_date": "1952–1962",
+          "primary_armament": "M126 Top (veya M126A1) 155 mm Obüs (M109), M185 Top 155 mm Obüs (A1/A2/A3/A4), veya M284 Top 155 mm Obüs (A5/A6)",
+          "secondary_armament": "12.7 mm M2 makineli tüfek, Mk 19 Mod 3 40 mm Otomatik El Bombası Fırlatma Cihazı, 7.62 mm M60, M240 makineli tüfek veya L4 makineli tüfek",
+          "engine": "8V71T, 8 silindirli su soğutmalı dizel motor",
+          "horsepower": "390 bg 2300 devir/dakika"
+        },
+        "full_dossier": {
+          "mobility": "M109, 8V71T, 8 silindirli su soğutmalı dizel motor ile çalışıyordu, bu da 2300 devir/dakika'da 390 bg güç sağlıyor ve çeşitli arazilerde etkili mobilite sağlıyordu.",
+          "armament_effectiveness": "M109'un birincil silahı, M126 Top ve M284 Top dahil, çeşitli hedeflere karşı etkili ateş gücü sağlarken, ikincil silahı, .50 kalibre M2 makineli tüfek ve Mk 19 Mod 3 40 mm Otomatik El Bombası Fırlatma Cihazı gibi, yakın mesafede savunma ve alan baskın için ek yetenekler sunuyor."
+        }
+      },
+      "ru": {
+        "short_specs": {
+          "origin": "Соединенные Штаты",
+          "type": "Самоходная артиллерия",
+          "length": "длина корпуса 6.1 м и длина с пушкой вперед 9.1 м (M109), длина корпуса 6.1 м, длина с пушкой вперед 9.7 м (M109A1/A2/A3/A4/A5/A6/A7)",
+          "width": "3.1 м",
+          "height": "3.3 м",
+          "design_date": "1952–1962",
+          "primary_armament": "Пушка M126 (или M126A1) 155 мм гаубица (M109), пушка M185 155 мм гаубица (A1/A2/A3/A4), или пушка M284 155 мм гаубица (A5/A6)",
+          "secondary_armament": "12.7 мм пулемет M2, Mk 19 Mod 3 40 мм автоматический гранатомет, 7.62 мм M60, M240 пулемет или L4 пулемет",
+          "engine": "8V71T, 8-цилиндровый водяной двигатель",
+          "horsepower": "390 л.с. при 2300 об/мин"
+        },
+        "full_dossier": {
+          "mobility": "M109 был оснащен 8V71T, 8-цилиндровым водяным двигателем, который обеспечивал мощность 390 л.с. при 2300 об/мин, что обеспечивало эффективную мобильность на различных местностях.",
+          "armament_effectiveness": "Основное вооружение M109, включая пушки M126 и M284, обеспечивает эффективную огневую мощь против различных целей, в то время как его дополнительное вооружение, такое как 12.7 мм пулемет M2 и Mk 19 Mod 3 40 мм автоматический гранатомет, предлагает дополнительные возможности для ближней обороны и подавления территории."
+        }
+      },
+      "ar": {
+        "short_specs": {
+          "origin": "الولايات المتحدة",
+          "type": "مدفعية ذاتية الحركة",
+          "length": "طول الهيكل 6.1 م وطول مع البندقية إلى الأمام 9.1 م (M109)، طول الهيكل 6.1 م، وطول مع البندقية إلى الأمام 9.7 م (M109A1/A2/A3/A4/A5/A6/A7)",
+          "width": "3.1 م",
+          "height": "3.3 م",
+          "design_date": "1952–1962",
+          "primary_armament": "مدفع M126 (أو M126A1) 155 ملم هاون (M109)، مدفع M185 155 ملم هاون (A1/A2/A3/A4)، أو مدفع M284 155 ملم هاون (A5/A6)",
+          "secondary_armament": "12.7 ملم رشاش M2، Mk 19 Mod 3 40 ملم قاذفة قنابل أوتوماتيكية، 7.62 ملم M60، M240 رشاش أو L4 رشاش",
+          "engine": "8V71T، محرك ديزل مائي 8 أسطوانات",
+          "horsepower": "390 حصان عند 2300 دورة في الدقيقة"
+        },
+        "full_dossier": {
+          "mobility": "كان M109 مزودًا بمحرك 8V71T، محرك ديزل مائي 8 أسطوانات، الذي يوفر قوة 390 حصان عند 2300 دورة في الدقيقة، مما يتيح мобильية فعالة في مختلف التضاريس.",
+          "armament_effectiveness": "الأساسية M109، بما في ذلك المدفع M126 و M284، توفر قوة نارية فعالة ضد أهداف مختلفة، في حين أن سلاحها الثانوي، مثل رشاش 12.7 ملم M2 و Mk 19 Mod 3 40 ملم قاذفة قنابل أوتوماتيكية، يقدم إمكانيات إضافية للدفاع القريب وضغط المنطقة."
+        }
+      },
+      "zh": {
+        "short_specs": {
+          "origin": "美国",
+          "type": "自行火炮",
+          "length": "车体长度6.1米，炮向前长度9.1米（M109），车体长度6.1米，炮向前长度9.7米（M109A1/A2/A3/A4/A5/A6/A7）",
+          "width": "3.1米",
+          "height": "3.3米",
+          "design_date": "1952–1962",
+          "primary_armament": "M126炮（或M126A1）155毫米榴弹炮（M109），M185炮155毫米榴弹炮（A1/A2/A3/A4），或M284炮155毫米榴弹炮（A5/A6）",
+          "secondary_armament": "12.7毫米M2机枪，Mk 19 Mod 3 40毫米自动榴弹发射器，7.62毫米M60，M240机枪或L4机枪",
+          "engine": "8V71T，8缸水冷柴油机",
+          "horsepower": "390马力，2300转/分钟"
+        },
+        "full_dossier": {
+          "mobility": "M109配备8V71T，8缸水冷柴油机，提供390马力，2300转/分钟，实现了在各种地形上的有效机动性。",
+          "armament_effectiveness": "M109的主要武器，包括M126炮和M284炮，提供了对各种目标的有效火力，而其次要武器，如12.7毫米M2机枪和Mk 19 Mod 3 40毫米自动榴弹发射器，提供了近距离防御和区域压制的额外能力。"
+        }
+      }
+    },
+    "country": "United States",
+    "countryCode": "US",
+    "short_specs": {
+      "origin": "United States",
+      "type": "Self-propelled artillery",
+      "length": "hull length of 20.3 ft and length with gun forward of 30 ft (M109), hull length of 20.3 ft, length with gun forward of 32 ft (M109A1/A2/A3/A4/A5/A6/A7)",
+      "width": "10 ft 4 in",
+      "height": "10 ft 8 in",
+      "design_date": "1952–1962",
+      "primary_armament": "M126 Cannon (or M126A1) 155 mm Howitzer (M109), M185 Cannon 155 mm Howitzer (A1/A2/A3/A4), or M284 Cannon 155 mm Howitzer (A5/A6)",
+      "secondary_armament": ".50 caliber (12.7 mm) M2 machine gun, Mk 19 Mod 3 40 mm Automatic Grenade Launcher, 7.62 mm M60, M240 machine gun or L4 machine gun",
+      "engine": "8V71T, a 8-cylinder water-cooled diesel engine",
+      "horsepower": "390 hp at 2300 rpm"
+    },
+    "full_dossier": {
+      "mobility": "The M109 was powered by the 8V71T, a 8-cylinder water-cooled diesel engine, which provided a horsepower of 390 hp at 2300 rpm, allowing for effective mobility in various terrains.",
+      "armament_effectiveness": "The M109's primary armament, including the M126 Cannon and M284 Cannon, provides effective firepower against various targets, while its secondary armament, such as the .50 caliber M2 machine gun and Mk 19 Mod 3 40 mm Automatic Grenade Launcher, offers additional capabilities for close-range defense and area suppression."
+    }
+  },
+  {
+    "catId": "1",
+    "name": "M7 BFIST",
+    "featured": false,
+    "id": "m7-bfist",
+    "translations": {
+      "tr": {
+        "short_specs": {
+          "length": "6.55 m",
+          "width": "3.6 m",
+          "height": "2.98 m",
+          "weight": "27.6 t",
+          "25 mm chain gun rate of fire": "100 veya 300 mermi/dakika",
+          "TOW missile range": "4000 m",
+          "25 mm gun accuracy range": "3000 m",
+          "TOW missile capacity": "2 dolu füze",
+          "coaxial machine gun caliber": "7.62 mm",
+          "M242 Bushmaster ammunition storage": "300 mermi (hazır kutular) + 600 veya 1200 mermi (depolama)",
+          "armor-piercing rounds": "M791 APDS-T, M919 APFSDS-T"
+        },
+        "full_dossier": {
+          "design_origin": "Sovyet BMP ailesini bertaraf etmek ve zırhlı personel taşıyıcısı olarak geliştirildi",
+          "speed_requirement": "M1 Abrams zırhlı tank hızına eşitlenmesi için tasarlandı",
+          "TOW_missile_limitation": "TOW füzeleri sadece dururken atılabilir",
+          "Desert_Storm_effectiveness": "M791 APDS-T mermileri, Körfez Fırtınası'nda Irak T-55 tanklarına karşı etkiliydi",
+          "ammunition_variants": "APDS-T ve HEI-T mermileri, farklı savaş senaryoları için seçilebilir",
+          "armor_penetration": "M919 APFSDS-T, zırh delme kapasitesini artırmak için azot zenginleştirilmiş uranyum kullanır"
+        }
+      },
+      "ru": {
+        "short_specs": {
+          "length": "6,55 м",
+          "width": "3,6 м",
+          "height": "2,98 м",
+          "weight": "27,6 т",
+          "25 mm chain gun rate of fire": "100 или 300 патронов в минуту",
+          "TOW missile range": "4000 м",
+          "25 mm gun accuracy range": "3000 м",
+          "TOW missile capacity": "2 заряженных ракеты",
+          "coaxial machine gun caliber": "7,62 мм",
+          "M242 Bushmaster ammunition storage": "300 патронов (готовые ящики) + 600 или 1200 патронов (хранение)",
+          "armor-piercing rounds": "M791 APDS-T, M919 APFSDS-T"
+        },
+        "full_dossier": {
+          "design_origin": "Создан для противодействия советской семье БМП как танкобор и бронетранспортер",
+          "speed_requirement": "Спроектирован для соответствия скорости танка M1 Abrams для сохранения боевой формации",
+          "TOW_missile_limitation": "Ракеты TOW могут запускаться только при остановке",
+          "Desert_Storm_effectiveness": "Снаряды M791 APDS-T доказали свою эффективность против иракских танков Т-55 в Персидском заливе",
+          "ammunition_variants": "Выборочный набор снарядов APDS-T и HEI-T для различных боевых сценариев",
+          "armor_penetration": "M919 APFSDS-T использует обедненный уран для усиления бронепробиваемости"
+        }
+      },
+      "ar": {
+        "short_specs": {
+          "length": "6.55 م",
+          "width": "3.6 م",
+          "height": "2.98 م",
+          "weight": "27.6 طن",
+          "25 mm chain gun rate of fire": "100 أو 300 طلقة في الدقيقة",
+          "TOW missile range": "4000 م",
+          "25 mm gun accuracy range": "3000 م",
+          "TOW missile capacity": "2 صاروخ مُعبأ",
+          "coaxial machine gun caliber": "7.62 مم",
+          "M242 Bushmaster ammunition storage": "300 طلقة (صناديق جاهزة) + 600 أو 1200 طلقة (تخزين)",
+          "armor-piercing rounds": "M791 APDS-T، M919 APFSDS-T"
+        }
+      }
+    },
+    "dangerLevel": 80,
+    "threatType": "Light",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Bradley_Fighting_Vehicle",
+    "images": [
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m7-bfist/1.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m7-bfist/2.jpg",
+      "https://pub-2c4d302f7a9147f2b8723c7d066dc44f.r2.dev/images/m7-bfist/3.jpg"
+    ],
+    "model": null,
+    "country": "United States",
+    "countryCode": "US",
+    "short_specs": {
+      "length": "6.55 m",
+      "width": "3.6 m",
+      "height": "2.98 m",
+      "weight": "27.6 t",
+      "25 mm chain gun rate of fire": "100 or 300 rounds per minute",
+      "TOW missile range": "4000 m",
+      "25 mm gun accuracy range": "3000 m",
+      "TOW missile capacity": "2 loaded missiles",
+      "coaxial machine gun caliber": "7.62 mm",
+      "M242 Bushmaster ammunition storage": "300 rounds (ready boxes) + 600 or 1200 rounds (storage)",
+      "armor-piercing rounds": "M791 APDS-T, M919 APFSDS-T"
+    },
+    "full_dossier": {
+      "design_origin": "Developed to counter Soviet BMP family as a tank-killer and armored personnel carrier",
+      "speed_requirement": "Designed to match M1 Abrams tank speed for formation cohesion",
+      "TOW_missile_limitation": "TOW missiles can only be fired while stationary",
+      "Desert_Storm_effectiveness": "M791 APDS-T rounds proved effective against Iraqi T-55 tanks in Desert Storm",
+      "ammunition_variants": "Selectable mix of APDS-T and HEI-T rounds for different combat scenarios",
+      "armor_penetration": "M919 APFSDS-T uses depleted uranium for enhanced armor-piercing capability"
+    }
   }
 ]

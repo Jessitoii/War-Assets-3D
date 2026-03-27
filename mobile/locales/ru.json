@@ -64,7 +64,9 @@
     "toggle_theme": "Переключить тему оформления",
     "view_3d": "Просмотр в 3-D",
     "view_asset_intel": "ПРОСМОТР РАЗВЕДКИ",
-    "view_on_wiki_fallback": "Исходная страница Wikipedia"
+    "view_on_wiki_fallback": "Исходная страница Wikipedia",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Добавить объект",

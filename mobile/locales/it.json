@@ -64,7 +64,9 @@
     "toggle_theme": "Cambia tema applicazione",
     "view_3d": "Visualizza in 3-D",
     "view_asset_intel": "VEDI INTELLIGENCE ASSET",
-    "view_on_wiki_fallback": "Vedi pagina Wikipedia originale"
+    "view_on_wiki_fallback": "Vedi pagina Wikipedia originale",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Aggiungi Asset",

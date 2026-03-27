@@ -64,7 +64,9 @@
     "toggle_theme": "切换应用主题",
     "view_3d": "3D 视图显示",
     "view_asset_intel": "查看资产情报",
-    "view_on_wiki_fallback": "查看维基百科原始内容"
+    "view_on_wiki_fallback": "查看维基百科原始内容",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "添加资产",

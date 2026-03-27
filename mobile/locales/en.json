@@ -64,7 +64,9 @@
     "view_on_wiki_fallback": "View raw Wikipedia page",
     "view_3d": "View in 3-D",
     "legal": "LEGAL",
-    "privacy_policy": "Privacy Policy"
+    "privacy_policy": "Privacy Policy",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Add Asset",

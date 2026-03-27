@@ -64,7 +64,9 @@
     "toggle_theme": "Växla app-tema",
     "view_3d": "Visa i 3-D",
     "view_asset_intel": "VISA UNDERRÄTTELSEDATA",
-    "view_on_wiki_fallback": "Visa ursprunglig Wikipedia-sida"
+    "view_on_wiki_fallback": "Visa ursprunglig Wikipedia-sida",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Lägg till objekt",

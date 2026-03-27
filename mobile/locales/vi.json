@@ -64,7 +64,9 @@
     "toggle_theme": "Chuyển đổi chủ đề",
     "view_3d": "Xem dưới dạng 3-D",
     "view_asset_intel": "XEM THÔNG TIN CHIẾN THUẬT",
-    "view_on_wiki_fallback": "Xem trang Wikipedia gốc"
+    "view_on_wiki_fallback": "Xem trang Wikipedia gốc",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Thêm khí tài",

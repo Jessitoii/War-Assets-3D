@@ -64,7 +64,9 @@
     "toggle_theme": "Εναλλαγή θέματος εφαρμογής",
     "view_3d": "Προβολή σε 3-D",
     "view_asset_intel": "ΠΡΟΒΟΛΗ ΠΛΗΡΟΦΟΡΙΩΝ ΑΝΤΙΚΕΙΜΕΝΟΥ",
-    "view_on_wiki_fallback": "Προβολή ακατέργαστης σελίδας Wikipedia"
+    "view_on_wiki_fallback": "Προβολή ακατέργαστης σελίδας Wikipedia",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Προσθήκη Αντικειμένου",

@@ -64,7 +64,9 @@
     "toggle_theme": "Змінити тему оформлення",
     "view_3d": "Перегляд у 3-D",
     "view_asset_intel": "ПЕРЕГЛЯД РОЗВІДКИ",
-    "view_on_wiki_fallback": "Оригінальна сторінка Wikipedia"
+    "view_on_wiki_fallback": "Оригінальна сторінка Wikipedia",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Додати об'єкт",

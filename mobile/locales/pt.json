@@ -64,7 +64,9 @@
     "toggle_theme": "Alternar tema do aplicativo",
     "view_3d": "Ver em 3-D",
     "view_asset_intel": "VER INTELIGÊNCIA DO ATIVO",
-    "view_on_wiki_fallback": "Ver página original da Wikipedia"
+    "view_on_wiki_fallback": "Ver página original da Wikipedia",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Adicionar Ativo",

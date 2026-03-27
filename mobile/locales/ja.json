@@ -64,7 +64,9 @@
     "toggle_theme": "アプリのテーマを切り替え",
     "view_3d": "3Dビューで表示",
     "view_asset_intel": "資産情報を表示",
-    "view_on_wiki_fallback": "Wikipediaの生データを表示"
+    "view_on_wiki_fallback": "Wikipediaの生データを表示",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "資産を追加",

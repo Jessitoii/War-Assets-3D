@@ -64,7 +64,9 @@
     "toggle_theme": "테마 전환",
     "view_3d": "3D 뷰어 표시",
     "view_asset_intel": "자산 정보 보기",
-    "view_on_wiki_fallback": "위키백과 원문 페이지 보기"
+    "view_on_wiki_fallback": "위키백과 원문 페이지 보기",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "자산 추가",

@@ -64,7 +64,9 @@
     "toggle_theme": "Changer le thème de l'application",
     "view_3d": "Voir en 3-D",
     "view_asset_intel": "VOIR LE RENSEIGNEMENT",
-    "view_on_wiki_fallback": "Voir la page Wikipedia brute"
+    "view_on_wiki_fallback": "Voir la page Wikipedia brute",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Ajouter un Actif",

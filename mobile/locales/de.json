@@ -64,7 +64,9 @@
     "toggle_theme": "Anwendungs-Design umschalten",
     "view_3d": "In 3-D anzeigen",
     "view_asset_intel": "AUFKLÄRUNGSDATEN ANZEIGEN",
-    "view_on_wiki_fallback": "Wikipedia-Rohseite anzeigen"
+    "view_on_wiki_fallback": "Wikipedia-Rohseite anzeigen",
+    "technical_specs": "Technical Specs",
+    "light_mode": "Light Mode"
   },
   "comparison": {
     "add_asset": "Objekt hinzufügen",
